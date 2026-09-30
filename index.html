@@ -233,6 +233,8 @@ th{color:var(--muted);font-weight:600;font-size:12.5px}
       <button class="chip" data-d="3">高分</button>
     </span>
     <label>每天新词</label><input type="number" id="inpPerDay" min="5" max="100" step="5" style="width:66px">
+    <label>顺序</label><select id="selOrder" style="width:auto">
+      <option value="seq">正序（按词库顺序）</option><option value="random">随机</option></select>
     <button class="btn gray sm" id="btnRegen">重抽今日新词</button>
   </div>
 
@@ -332,7 +334,7 @@ const GRAD=INTERVALS.length;           /* level >= GRAD 视为已掌握 */
 function freshState(){
   return {v:2,theme:'blue',bank:'cet4',diffs:[1,2,3],perDay:35,lastDate:null,streak:0,days:0,
     cards:{},queue:[],neww:[],stage:1,qi:0,sess:{right:0,wrong:0,res:[]},
-    news:[],history:[],custom:[],ext:{},skippedKnown:0};
+    news:[],history:[],custom:[],ext:{},order:'random',seqFrom:'',skippedKnown:0};
 }
 let S=(function(){
   try{const r=localStorage.getItem(LSKEY);
@@ -347,6 +349,8 @@ function migrate(o){
     if(!c.seen)c.seen=1;
     if(!Array.isArray(c.banks))c.banks=[c.bank];
   });
+  if(!o.order)o.order='random';
+  if(o.seqFrom===undefined)o.seqFrom='';
   if(!o.theme)o.theme='blue';
   if(o.theme==='dark')o.theme='midnight';
   o.v=2;return o;
@@ -468,12 +472,32 @@ function zoneOf(c){
 function pickNew(n){
   const all=bankWords().filter(function(w){return S.diffs.indexOf(w.diff)>=0;});
   const out=[]; let skipped=0;
-  for(let i=0;i<all.length;i++){
-    if(out.length>=n)break;
-    const k=key(all[i].w);
-    if(S.cards[k]){skipped++;continue;}   /* 跨词库已学过 → 全局去重跳过 */
-    out.push(all[i]);
+  if(S.order==='random'){
+    const cand=[];
+    for(let i=0;i<all.length;i++){
+      const k=key(all[i].w);
+      if(S.cards[k]){skipped++;continue;}   /* 已学过 → 排除 */
+      cand.push(all[i]);
+    }
+    for(let i=0;i<cand.length&&out.length<n;i++){   /* 部分洗牌，取前 n */
+      const j=i+Math.floor(Math.random()*(cand.length-i));
+      const t=cand[i]; cand[i]=cand[j]; cand[j]=t;
+      out.push(cand[i]);
+    }
+  }else{
+    let start=0;                                    /* 正序：从上次抽到的词之后继续 */
+    if(S.seqFrom){
+      for(let i=0;i<all.length;i++){ if(key(all[i].w)===S.seqFrom){start=i+1;break;} }
+    }
+    for(let c=0;c<all.length;c++){
+      if(out.length>=n)break;
+      const w=all[(start+c)%all.length];
+      const k=key(w.w);
+      if(S.cards[k]){skipped++;continue;}   /* 跨词库已学过 → 全局去重跳过 */
+      out.push(w);
+    }
   }
+  if(out.length)S.seqFrom=key(out[out.length-1].w);
   return {out:out,skipped:skipped};
 }
 function clearUnlearnedNew(){
@@ -644,9 +668,15 @@ $('#inpPerDay').addEventListener('change',function(e){
   S.perDay=n; e.target.value=n; save(); drawTodayNew(); save();
   if(curView===3)renderNew();
 });
+$('#selOrder').addEventListener('change',function(e){
+  S.order=e.target.value; save(); drawTodayNew(); save(); renderHeader();
+  if(curView===3)renderNew(); else goView(3);
+  toast('推送顺序：'+(S.order==='random'?'随机':'正序')+'，今日新词已重抽');
+});
 $('#btnRegen').addEventListener('click',function(){
   drawTodayNew(); save(); renderNew(); renderHeader();
-  toast('已重抽今日新词（跳过 '+S.skippedKnown+' 个已学过的）');
+  toast('已重抽今日新词 · '+(S.order==='random'?'随机':'正序，换下一批')
+    +'（排除 '+S.skippedKnown+' 个已学过的）');
 });
 function renderHeader(){
   $('#dateTxt').textContent=cnDate(todayStr());
@@ -969,7 +999,7 @@ $('#btnFinish').addEventListener('click',function(){
       '<div><div class="big">'+S.sess.right+'</div><div class="hint">答对</div></div>'+
       '<div><div class="big">'+S.sess.wrong+'</div><div class="hint">答错</div></div>'+
       '<div><div class="big">'+(S.neww||[]).length+'</div><div class="hint">今日新词</div></div></div>'+
-    (S.skippedKnown?'<div class="hint">本次跳过了 '+S.skippedKnown+' 个你在其它词库已学过的词。</div>':'')+
+    (S.skippedKnown?'<div class="hint">本次排除了 '+S.skippedKnown+' 个已学过的词。</div>':'')+
     (wrongs.length?'<b>错题</b><div style="margin:5px 0 10px">'+wrongs.map(function(r){return esc(r.w);}).join('、')+'</div>'
       :'<div class="hint">没有错题，很稳。</div>')+
     '<div class="hint">错题已自动排进明天的复习队列。</div>'+
@@ -1170,6 +1200,7 @@ buildSections();
 buildBankSelect();
 renderChips();
 $('#inpPerDay').value=S.perDay;
+$('#selOrder').value=S.order||'random';
 renderHeader();
 renderNews();
 goView(Math.min(Math.max(S.stage,1),5));
