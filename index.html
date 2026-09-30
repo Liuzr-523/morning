@@ -174,6 +174,10 @@ textarea:focus{outline:2px solid #bfd3ff}
 .wrow .kw{font-weight:700;color:var(--accent);min-width:118px}
 .wrow .cn2{flex:1;color:#374151}
 .wrow .due{font-size:12px;color:var(--muted);min-width:96px;text-align:right}
+.wrow input[type=checkbox]{width:15px;height:15px;flex:none;cursor:pointer;accent-color:var(--accent)}
+.wrow.picked{background:var(--accent-soft);border-radius:7px}
+.bulkbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;border:1px dashed var(--bar);
+  background:var(--soft);border-radius:10px;padding:8px 11px;margin-bottom:10px;font-size:13px}
 .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:9px}
 .stat{border:1px solid var(--line);border-radius:11px;padding:11px;text-align:center;background:var(--soft)}
 .stat .n{font-size:23px;font-weight:700;color:var(--accent)}
@@ -297,6 +301,7 @@ th{color:var(--muted);font-weight:600;font-size:12.5px}
         <button class="btn gray sm" id="zPrev">上一页</button>
         <button class="btn gray sm" id="zNext">下一页</button>
       </div>
+      <div class="bulkbar" id="zoneBulk"></div>
       <div id="zoneList"></div>
     </div>
   </section>
@@ -1206,10 +1211,10 @@ $('#btnFinish').addEventListener('click',function(){
 
 /* ===================== 单词分区 ===================== */
 const PAGE=60;
-let curZone='new', zPage=0, zSearch='';
+let curZone='new', zPage=0, zSearch='', zSel=[];
 $('#zoneTabs').addEventListener('click',function(e){
   const b=e.target.closest('button[data-z]'); if(!b)return;
-  curZone=b.dataset.z; zPage=0; renderZone();
+  curZone=b.dataset.z; zPage=0; zSel=[]; renderZone();
 });
 $('#zoneSearch').addEventListener('input',function(e){
   zSearch=e.target.value.trim().toLowerCase(); zPage=0; renderZone();
@@ -1226,6 +1231,20 @@ function ensureCard(k){
     level:0,due:addDays(todayStr(),1),wrong:0,right:0,seen:0,added:todayStr(),status:'learning'};
   save(); return S.cards[k];
 }
+/* 当前分区 + 搜索条件下的全部行（跨页） */
+function zoneRows(){
+  const all=bankWords().filter(function(w){return S.diffs.indexOf(w.diff)>=0;});
+  let rows=all.filter(function(x){return zoneOf(cardOf(x.w))===curZone;});
+  if(zSearch)rows=rows.filter(function(x){
+    const c=cardOf(x.w);
+    return key(x.w).indexOf(zSearch)>=0||String((c&&c.cn)||x.cn).toLowerCase().indexOf(zSearch)>=0;
+  });
+  return rows;
+}
+/* 「未学」区里有学习记录、但从没背过的词 —— 抽到过又没学的残留。
+   今天正在背的那批（S.neww）不算，免得一键清理把今天的活儿也抹了 */
+function inTodayNew(k){return (S.neww||[]).some(function(o){return key(o.w)===k;});}
+function isTaint(c,k){return !!c&&!c.seen&&!c.right&&!c.wrong&&c.status!=='mastered'&&!inTodayNew(k);}
 function renderZone(){
   const t=todayStr();
   const all=bankWords().filter(function(w){return S.diffs.indexOf(w.diff)>=0;});
@@ -1235,34 +1254,29 @@ function renderZone(){
   $('#cDue').textContent=cnt.due;$('#cDone').textContent=cnt.done;
   document.querySelectorAll('#zoneTabs button[data-z]').forEach(function(b){
     b.classList.toggle('on',b.dataset.z===curZone);});
-  let rows=all.filter(function(x){
-    const z=zoneOf(cardOf(x.w));
-    if(curZone==='due')return z==='due';
-    if(curZone==='learn')return z==='learn';
-    return z===curZone;
-  });
-  if(zSearch)rows=rows.filter(function(x){
-    const c=cardOf(x.w);
-    return key(x.w).indexOf(zSearch)>=0||String((c&&c.cn)||x.cn).toLowerCase().indexOf(zSearch)>=0;
-  });
+  const rows=zoneRows();
   const pages=Math.ceil(rows.length/PAGE)||1;
   if(zPage>=pages)zPage=pages-1; if(zPage<0)zPage=0;
   const slice=rows.slice(zPage*PAGE,zPage*PAGE+PAGE);
+  const pageKeys=slice.map(function(x){return key(x.w);});
+  zSel=zSel.filter(function(k){return true;});   /* 跨页保留选择 */
   $('#zonePager').textContent='第 '+(zPage+1)+'/'+pages+' 页 · 共 '+rows.length+' 词';
   $('#zoneHint').textContent='当前词库：'+bankName()+'（'+all.length+' 词，难度 '+
     S.diffs.map(function(d){return DIFF_NAME[d];}).join('/')+'）';
+  renderBulkBar(rows,pageKeys);
   $('#zoneList').innerHTML=slice.length?slice.map(function(x){
-    const c=cardOf(x.w), z=zoneOf(c);
+    const c=cardOf(x.w), z=zoneOf(c), kk=key(x.w);
     const meta=c?(DIFF_NAME[c.diff||2]+' · L'+(c.level||0)+' · 错 '+(c.wrong||0)+' 次'):DIFF_NAME[x.diff];
-    return '<div class="wrow">'+
+    return '<div class="wrow'+(zSel.indexOf(kk)>=0?' picked':'')+'">'+
+      '<input type="checkbox" class="zpick" data-k="'+esc(kk)+'"'+(zSel.indexOf(kk)>=0?' checked':'')+'>'+
       '<span class="kw">'+esc(x.w)+'</span>'+
       '<span class="cn2">'+esc((c&&c.cn)||x.cn)+' <span class="hint">'+esc((c&&c.ph)||x.ph)+'</span></span>'+
       '<span class="badge b-'+z+'">'+ZN[z]+'</span>'+
-      '<span class="due">'+meta+'</span>'+
+      '<span class="due">'+meta+(isTaint(c,kk)?'<br><span style="color:var(--warn)">有残留记录</span>':'')+'</span>'+
       (z==='done'
-        ? '<button class="btn gray sm" data-reset="'+esc(key(x.w))+'">重学</button>'
-        : '<button class="btn gray sm" data-master="'+esc(key(x.w))+'">标掌握</button>'+
-          '<button class="btn gray sm" data-review="'+esc(key(x.w))+'">今天考</button>')+
+        ? '<button class="btn gray sm" data-reset="'+esc(kk)+'">重学</button>'
+        : '<button class="btn gray sm" data-master="'+esc(kk)+'">标掌握</button>'+
+          '<button class="btn gray sm" data-review="'+esc(kk)+'">今天考</button>')+
     '</div>';
   }).join(''):'<div class="empty">这个分区暂时没有单词。</div>';
   document.querySelectorAll('#zoneList [data-master]').forEach(function(b){
@@ -1283,6 +1297,115 @@ function renderZone(){
       c.due=t;c.seen=Math.max(c.seen,1);
       if(S.queue.indexOf(key(c.w))<0)S.queue.push(key(c.w));
       save();renderZone();toast('已加入今日复习队列');});
+  });
+  document.querySelectorAll('#zoneList .zpick').forEach(function(b){
+    b.addEventListener('change',function(){
+      const k=b.dataset.k, i=zSel.indexOf(k);
+      if(b.checked&&i<0)zSel.push(k);
+      if(!b.checked&&i>=0)zSel.splice(i,1);
+      b.closest('.wrow').classList.toggle('picked',b.checked);
+      renderBulkBar(zoneRows(),pageKeys);
+    });
+  });
+}
+
+/* ---------- 批量操作 ---------- */
+let zMoveTo='learn';
+function renderBulkBar(rows,pageKeys){
+  const box=$('#zoneBulk'); if(!box)return;
+  const taintN=(curZone==='new')?rows.filter(function(x){return isTaint(cardOf(x.w),key(x.w));}).length:0;
+  const opts=[['learn','学习中'],['due','今日待复习'],['done','已掌握'],['new','未学（清空记录）']]
+    .map(function(o){return '<option value="'+o[0]+'"'+(zMoveTo===o[0]?' selected':'')+'>'+o[1]+'</option>';}).join('');
+  box.innerHTML='<button class="btn gray sm" data-b="page">全选本页</button>'+
+    '<button class="btn gray sm" data-b="all">全选全部（'+rows.length+'）</button>'+
+    '<button class="btn gray sm" data-b="none">取消选择</button>'+
+    '<span class="hint">已选 <b>'+zSel.length+'</b> 个</span>'+
+    (taintN?'<button class="btn gray sm" data-b="taint">选中 '+taintN+' 个残留记录</button>':'')+
+    (taintN?'<button class="btn gray sm" data-b="clean">清空它们</button>':'')+
+    '<span style="flex:1"></span><span class="hint">转移到</span>'+
+    '<select id="zMoveTo" style="padding:4px 8px;font-size:13px">'+opts+'</select>'+
+    '<button class="btn sm" id="zMove">转移</button>';
+  box.querySelectorAll('[data-b]').forEach(function(b){
+    b.addEventListener('click',function(){
+      const m=b.dataset.b;
+      if(m==='page')zSel=pageKeys.slice();
+      else if(m==='all')zSel=zoneRows().map(function(x){return key(x.w);});
+      else if(m==='none')zSel=[];
+      else if(m==='taint')zSel=zoneRows().filter(function(x){return isTaint(cardOf(x.w),key(x.w));})
+        .map(function(x){return key(x.w);});
+      else if(m==='clean'){cleanTaint();return;}
+      renderZone();
+    });
+  });
+  $('#zMoveTo').addEventListener('change',function(e){zMoveTo=e.target.value;});
+  $('#zMove').addEventListener('click',function(){
+    const keys=zSel.slice();
+    if(!keys.length)return toast('先勾选要转移的单词');
+    if(zMoveTo===curZone&&zMoveTo!=='new')return toast('它们已经在「'+ZN[zMoveTo]+'」了');
+    if(zMoveTo==='new'){
+      show('<h3>清空 '+keys.length+' 个词的学习记录？</h3>'+
+        '<div class="hint">会恢复成「完全没学过」：进度清零，之后会重新被抽到。<b>此操作不可撤销</b>。</div>'+
+        '<div class="row" style="justify-content:flex-end;margin-top:14px">'+
+        '<button class="btn gray" onclick="closeModal()">取消</button>'+
+        '<button class="btn" id="mYes">确定清空</button></div>');
+      $('#mYes').addEventListener('click',function(){closeModal();run();});
+    }else{
+      show('<h3>转移 '+keys.length+' 个词到「'+ZN[zMoveTo]+'」？</h3>'+
+        '<div class="hint">'+ zMoveHint(zMoveTo) +'</div>'+
+        '<div class="row" style="justify-content:flex-end;margin-top:14px">'+
+        '<button class="btn gray" onclick="closeModal()">取消</button>'+
+        '<button class="btn" id="mYes">确定</button></div>');
+      $('#mYes').addEventListener('click',function(){closeModal();run();});
+    }
+    function run(){
+      const n=moveWords(keys,zMoveTo);
+      zSel=[]; save(); renderZone(); renderHeader(); updateSecBadges();
+      toast(zMoveTo==='new'?('已清空 '+n+' 个词的学习记录'):('已转移 '+n+' 个词到「'+ZN[zMoveTo]+'」'));
+    }
+  });
+}
+function zMoveHint(z){
+  return z==='learn'?'之后会按第 1 档间隔排进复习（明天）：适合确实背过、但进度被弄乱了。'
+    :z==='due'?'今天就会在自测里考到：适合现在就想背它们。'
+    :z==='done'?'标记为已掌握，不再进入复习队列：适合早就认识的词。'
+    :'恢复成完全没学过的状态。';
+}
+/* 把一组词搬到目标分区：分区是派生状态，改的就是 level / status / due */
+function moveWords(keys,target){
+  const t=todayStr(); let n=0;
+  keys.forEach(function(k){
+    if(target==='new'){
+      const qi=S.queue.indexOf(k); if(qi>=0)S.queue.splice(qi,1);
+      if(S.cards[k]){delete S.cards[k];n++;}
+      return;
+    }
+    const c=ensureCard(k);
+    if(target==='done'){c.status='mastered';c.level=GRAD;c.due=addDays(t,60);c.seen=Math.max(c.seen||0,1);}
+    else if(target==='learn'){c.status='learning';c.level=Math.max(0,Math.min(c.level||0,GRAD-1));
+      c.seen=Math.max(c.seen||0,1);c.due=addDays(t,1);}
+    else{c.status='learning';c.seen=Math.max(c.seen||0,1);
+      c.level=Math.max(1,Math.min(c.level||1,GRAD-1));c.due=t;}
+    const qi=S.queue.indexOf(k);
+    if(target==='due'){if(qi<0)S.queue.push(k);} else if(qi>=0)S.queue.splice(qi,1);
+    n++;
+  });
+  return n;
+}
+/* 「未学」分区里应付用的残留记录：抽到过但从没背过 —— 一键清掉 */
+function cleanTaint(){
+  const keys=zoneRows().filter(function(x){return isTaint(cardOf(x.w),key(x.w));})
+    .map(function(x){return key(x.w);});
+  if(!keys.length)return toast('这个分区没有残留记录');
+  show('<h3>清空 '+keys.length+' 个「抽到过但没背」的记录？</h3>'+
+    '<div class="hint">这些词被标记成学过、占着名额，但你其实没背过。清掉后会重新出现在新词里。</div>'+
+    '<div class="row" style="justify-content:flex-end;margin-top:14px">'+
+    '<button class="btn gray" onclick="closeModal()">取消</button>'+
+    '<button class="btn" id="mYes">确定清空</button></div>');
+  $('#mYes').addEventListener('click',function(){
+    closeModal();
+    const n=moveWords(keys,'new');
+    zSel=[];zPage=0;save();renderZone();renderHeader();updateSecBadges();
+    toast('已清空 '+n+' 个残留记录，它们回到未学状态');
   });
 }
 
