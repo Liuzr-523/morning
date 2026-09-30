@@ -735,11 +735,11 @@ function newsCount(){const g=newsGroups();return g.auto.length+g.manual.length;}
 function renderNewsStatus(){
   const el=$('#newsStatus'); if(!el)return;
   const M={
-    loading:['pill','正在读取数据源…'],
-    ok:['pill ok','今日已更新 · 由定时任务自动生成'],
-    stale:['pill warn','今日未更新 · 正在显示 '+NEWS.date+' 的数据'],
-    cache:['pill warn','读取失败 · 显示上次成功获取的 '+NEWS.date+' 数据'],
-    manual:['pill','自动数据源不可用 · 当前为手动导入'],
+    loading:['pill',''],
+    ok:['pill ok','由定时任务自动生成'],
+    stale:['pill warn','今日尚未更新，正在显示 '+NEWS.date+' 的数据'],
+    cache:['pill warn','读取失败，显示上次成功获取的 '+NEWS.date+' 数据'],
+    manual:['pill','自动数据源不可用，当前为手动导入'],
     error:['pill bad',NEWS.err||'无法读取 data/latest.json']
   };
   const m=M[NEWS.state]||M.error;
@@ -784,21 +784,21 @@ function loadNews(){
   }
   const t=todayStr();
   const urls=['data/latest.json','data/archive/'+t+'.json'];
-  let best=null;
+  let best=null, bestFrom='';
   function step(i){
     if(i>=urls.length)return Promise.resolve();
     return newsFetch(urls[i]).then(function(o){
       const n=newsNorm(o);
-      if(n.items.length&&(!best||(n.date===t&&best.date!==t)))best=n;
+      if(n.items.length&&(!best||(n.date===t&&best.date!==t))){best=n;bestFrom=urls[i];}
       if(best&&best.date===t)return null;
       return step(i+1);
     },function(){return step(i+1);});
   }
   return step(0).then(function(){
     if(best&&best.date===t){
-      NEWS=Object.assign(best,{state:'ok',from:'latest'}); newsWriteCache(best);
+      NEWS=Object.assign(best,{state:'ok',from:bestFrom}); newsWriteCache(best);
     }else if(best){
-      NEWS=Object.assign(best,{state:'stale',from:'archive'});
+      NEWS=Object.assign(best,{state:'stale',from:bestFrom});
     }else{
       const c=newsReadCache();
       if(c&&c.items&&c.items.length)NEWS=Object.assign(c,{state:'cache',from:'cache'});

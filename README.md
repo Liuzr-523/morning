@@ -74,3 +74,109 @@
 
 见同目录上级的 `定时任务-Prompt.md`：让 Agent 每天生成固定格式的 `daily-YYYY-MM-DD.json`，
 用户把文件拖进页面即可导入当日新闻与单词。
+
+
+---
+
+## 新闻每天自动更新（06:30）
+
+### 架构：谁在什么时候做什么
+
+```
+每天 06:30  WorkBuddy 定时任务 ──搜索当天新闻──> 写 data/latest.json ──> git commit + push
+                                                                              │
+每天 06:35  GitHub Actions（云端）──若当天数据缺失──> 用 RSS 补写 ──> 自动 push │
+                                                                              ▼
+                                              GitHub Pages 把仓库当静态站点发布
+                                                                              │
+                                            网页打开时 fetch data/latest.json ─┘
+```
+
+**关键点**：GitHub Pages 只能放静态文件，它自己不会"跑任务"。所以定时任务必须跑在别处——
+主任务跑在 WorkBuddy（能搜索、能写内容），兜底任务跑在 GitHub 云端（不怕你电脑关机）。
+
+### 定时任务创建在哪 / 配置在哪个文件
+
+| 任务 | 创建位置 | 配置文件 | 时间写法 |
+|---|---|---|---|
+| 主任务（生成新闻） | WorkBuddy 应用 →「自动化」面板 | 数据存 `~/.workbuddy`，日志 `~/.workbuddy/logs/automation.log` | RRULE：`FREQ=DAILY;BYHOUR=6;BYMINUTE=30` |
+| 兜底任务（RSS 补写） | 随仓库一起提交 | `.github/workflows/daily-news.yml` | cron：`cron: '35 22 * * *'` |
+| 本机 cron（可选） | `crontab -e` | — | `30 6 * * * cd /Users/liuzirui/Documents/GitHub/morning && /usr/bin/python3 tools/publish_news.py` |
+
+⚠️ **GitHub Actions 的 cron 用 UTC**。北京时间 = UTC+8，所以北京时间 06:30 要写成 `30 22 * * *`（前一天 22:30 UTC）。
+另外 GitHub 的定时任务不保证准点，通常延迟 0–15 分钟，负载高时可能跳过——所以它只作兜底。
+
+### 新闻数据格式
+
+主数据 `data/latest.json`（每天覆盖）：
+
+```json
+{
+  "date": "2026-09-30",
+  "generatedAt": "2026-09-30T06:30:12+08:00",
+  "generator": "workbuddy-daily-news",
+  "news": [
+    {"title":"标题","sum":"一句话摘要","url":"https://原文链接","source":"新华社","tag":"科技"}
+  ]
+}
+```
+
+- `date` 必须是**北京时间**当天；`url` 必须是真实链接（脚本会校验，缺 title 或以非 http 开头会报错）
+- 每天同时归档一份到 `data/archive/<date>.json`，前端回退时用
+- `generator` 字段区分来源：`workbuddy-daily-news`（AI 生成）或 `github-actions-rss`（RSS 兜底）
+
+### 前端怎么读
+
+打开页面时按优先级尝试，谁先成功用谁：
+
+1. `data/latest.json`（日期是今天 → 显示「今日已更新」）
+2. `data/archive/<今天>.json`（日期不是今天 → 显示「今日尚未更新，正在显示 X 月 X 日的数据」）
+3. 浏览器本地缓存（上次成功的内容 → 显示「离线缓存」）
+4. 都没有 → 显示「获取失败」并提示展开手动导入
+
+页面顶部状态条会明确告诉你**数据是哪一天的、谁来生成的**，不会再出现"看着像新的其实是旧的"。
+
+### 手动触发一次（验证用）
+
+```bash
+cd /Users/liuzirui/Documents/GitHub/morning
+/usr/bin/python3 tools/publish_news.py          # 校验+归档+提交+推送
+/usr/bin/python3 tools/publish_news.py --no-push # 只提交不推送
+```
+
+兜底任务也可以手动触发：GitHub 仓库页面 → `Actions` → `daily-news` → `Run workflow`。
+
+脚本退出码：`0` 成功 / `1` 数据校验失败 / `2` 提交或推送失败（提交会保留在本地）。
+
+### 没按时执行 / 失败了怎么查
+
+| 现象 | 先查这里 |
+|---|---|
+| 网页显示「今日尚未更新」 | 说明拿到的是旧文件：看 GitHub 仓库里 `data/latest.json` 的 `date` 字段是不是今天 |
+| 仓库里根本没有当天文件 | WorkBuddy 自动化没跑成：看 `~/.workbuddy/logs/automation.log`；确认 06:30 电脑没关机、WorkBuddy 在运行 |
+| 文件在本地但线上没有 | 推送失败：在仓库目录跑 `git status -sb`，显示 `ahead N` 就是没推上去 |
+| 推送报 could not read Username | 缺凭据，见下面的 PAT 配置 |
+| 推送报 HTTP2 framing / CONNECT 502 | 网络代理问题，脚本已自动尝试系统代理；仍失败就手动跑 `git -c http.proxy=http://127.0.0.1:6696 push` |
+| Actions 没跑 | GitHub → Actions 页面看运行记录；免费账号仓库 60 天无任何提交时会自动停用定时任务 |
+| 兜底也没补上 | 手动跑 `python3 tools/fetch_rss.py` 看 RSS 源是否还能抓 |
+
+**三层兜底保证网站不会空**：WorkBuddy 没跑 → Actions 用 RSS 补；Actions 也失败 → 前端显示昨天的存档 + 明确提示；全都失败 → 还能手动导入。
+
+### 一次性凭据配置（不配也能用，配了才零点击）
+
+不配 PAT 时：自动化会生成并**提交到本地**，你在 GitHub Desktop 点一下 `Push` 即可上线；
+同时 GitHub Actions 的 RSS 兜底**不受影响**，网站照样每天自动更新。
+
+想做到完全零点击，创建一个 Personal Access Token 并存进钥匙串：
+
+1. GitHub 网页 → 右上角头像 → `Settings` → `Developer settings` → `Personal access tokens` → `Tokens (classic)` → `Generate new token (classic)`
+2. 勾 `repo`（或细粒度 token 只勾 `morning` 仓库的 `Contents: Read and write`），过期选 `No expiration`
+3. 生成后**复制那串 token**（关掉页面就看不见了）
+4. 在终端执行下面两条（把 `<TOKEN>` 换成刚复制的串）：
+
+```bash
+git config --global credential.helper osxkeychain
+printf 'protocol=https\nhost=github.com\nusername=Liuzr-523\npassword=<TOKEN>\n' | git credential-osxkeychain store
+```
+
+5. 验证：`cd /Users/liuzirui/Documents/GitHub/morning && /usr/bin/python3 tools/publish_news.py` 应输出「已推送」
