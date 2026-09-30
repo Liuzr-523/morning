@@ -1,0 +1,38 @@
+name: daily-news
+
+# 北京时间 06:35 跑一次（GitHub Actions 的 cron 用 UTC，UTC+8 = 北京）
+# UTC 22:35 = 北京时间次日 06:35
+on:
+  schedule:
+    - cron: '35 22 * * *'
+  workflow_dispatch:      # 允许在 GitHub 网页上手动点「Run workflow」触发
+
+permissions:
+  contents: write
+
+jobs:
+  fill-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 若当日新闻缺失则用 RSS 补写
+        run: python3 tools/fetch_rss.py
+
+      - name: 提交并推送
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "无变更，跳过提交"
+          else
+            git commit -m "news: RSS 兜底补写当日新闻"
+            git push
+          fi
