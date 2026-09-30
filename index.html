@@ -211,6 +211,8 @@ th{color:var(--muted);font-weight:600;font-size:12.5px}
   <header class="top">
     <div><h1>晨间学习台</h1><div class="sub">新闻与英语学习 · 分开管理</div></div>
     <div class="meta"><span id="dateTxt"></span><br>连续 <b id="streakTxt">0</b> 天 ｜ 已学 <b id="learnedTxt">0</b> 词
+      <span style="margin-left:8px"><button class="btn gray sm" id="acctBtn">登录 / 注册</button>
+        <span class="hint" id="syncTxt" style="margin-left:6px"></span></span>
       <span class="theme-wrap">
         <button class="theme-btn" id="themeBtn" title="切换主题"><span class="tb-dot" id="tbDot"></span><span id="tbName">经典蓝</span></button>
         <div class="theme-panel" id="themePanel"></div>
@@ -381,9 +383,10 @@ function migrate(o){
   if(!Array.isArray(o.newsTags))o.newsTags=[];
   if(!o.theme)o.theme='blue';
   if(o.theme==='dark')o.theme='midnight';
+  if(!o._t)o._t=0;
   o.v=2;return o;
 }
-function save(){localStorage.setItem(LSKEY,JSON.stringify(S));}
+function save(){S._t=Date.now();localStorage.setItem(LSKEY,JSON.stringify(S));cbSchedulePush();}
 
 /* ============ 主题：日间 / 夜间 两组 ============ */
 const THEME_GROUPS=[
@@ -897,7 +900,9 @@ function loadNews(){
     renderNews(); return Promise.resolve();
   }
   const t=todayStr();
-  const urls=['data/latest.json','data/archive/'+t+'.json'];
+  /* 新闻只需在 GitHub 上维护一份；云端托管的那份从这里跨源读取（GitHub Pages 允许跨域） */
+  const urls=['data/latest.json','data/archive/'+t+'.json',
+    'https://Liuzr-523.github.io/morning/data/latest.json'];
   let best=null, bestFrom='';
   function step(i){
     if(i>=urls.length)return Promise.resolve();
@@ -1510,6 +1515,250 @@ $('#btnReset').addEventListener('click',function(){
   $('#doReset').addEventListener('click',function(){localStorage.removeItem(LSKEY);location.reload();});
 });
 
+/* ===================== 云端账号（自研接口 + 腾讯云云函数） =====================
+   - 没登录：和以前一样只存本机浏览器（localStorage）
+   - 登录后：进度存云端，换手机 / 换电脑登录同一个账号就能接着背
+   安全说明：网页里只有接口地址，没有任何数据库钥匙；密码用 scrypt 加盐存在服务端，
+   登录凭证是一张带签名的令牌，签名密钥只放在云函数里。别人就算抄走接口地址也读不到你的数据。
+=========================================================================== */
+const API='https://morning-d4g806jmr239b8c5b-1498846442.ap-shanghai.app.tcloudbase.com/morning-api';
+const TOKEN_KEY='morning_token_v1';
+const USER_KEY='morning_user_v1';
+let CBUSER=null,CBTIMER=null,CBBOOTED=false,CBSAVEDAT=0;
+let _cbUser='';
+
+function cbToken(){try{return localStorage.getItem(TOKEN_KEY)||'';}catch(e){return '';}}
+function cbSetToken(t){try{if(t)localStorage.setItem(TOKEN_KEY,t);else localStorage.removeItem(TOKEN_KEY);}catch(e){}}
+function cbLoadUser(){
+  try{const s=localStorage.getItem(USER_KEY);return s?JSON.parse(s):null;}catch(e){return null;}
+}
+function cbSaveUser(u){try{if(u)localStorage.setItem(USER_KEY,JSON.stringify(u));else localStorage.removeItem(USER_KEY);}catch(e){}}
+function cbSetSync(t){const el=$('#syncTxt');if(el)el.textContent=t||'';}
+
+async function api(body){
+  const t=cbToken();
+  const headers={'Content-Type':'application/json'};
+  if(t)headers['Authorization']='Bearer '+t;
+  let r;
+  try{
+    r=await fetch(API,{method:'POST',headers:headers,body:JSON.stringify(body)});
+  }catch(e){
+    throw new Error('连不上服务器，检查网络后再试');
+  }
+  let j=null;
+  try{j=await r.json();}catch(e){throw new Error('服务器返回异常（'+r.status+'）');}
+  if(r.status===401){
+    cbSetToken('');cbSaveUser(null);CBUSER=null;cbRenderAcct();
+    throw new Error((j&&j.msg)||'登录状态已失效，请重新登录');
+  }
+  return j||{};
+}
+
+function cbUid(){return CBUSER&&CBUSER.uid?CBUSER.uid:'';}
+
+async function cbSession(){
+  if(!cbToken())return null;
+  try{
+    const r=await api({action:'me'});
+    if(!r.ok||!r.uid)return null;
+    CBUSER=cbLoadUser()||{uid:r.uid,nick:''};
+    CBUSER.uid=r.uid;cbSaveUser(CBUSER);
+    return {uid:r.uid};
+  }catch(e){return null;}
+}
+
+async function cbPull(){
+  if(!cbUid())return null;
+  try{
+    const r=await api({action:'pull'});
+    if(!r||!r.ok)return null;
+    CBSAVEDAT=r.savedAt?Date.parse(r.savedAt):0;
+    return r.exists?r:null;
+  }catch(e){console.warn('cloud pull failed',e);return null;}
+}
+
+async function cbPush(force){
+  if(!cbUid())return false;
+  let learned=0;
+  try{
+    learned=Object.keys(S.cards||{}).filter(function(k){
+      const c=S.cards[k];return c&&(c.seen>0||c.status==='mastered');
+    }).length;
+  }catch(e){}
+  const body={action:'push',payload:JSON.parse(JSON.stringify(S)),
+    learned:learned,streak:S.streak||0,days:S.days||0,
+    basedAt:force?0:CBSAVEDAT};
+  try{
+    const r=await api(body);
+    if(r&&r.ok){
+      CBSAVEDAT=r.savedAt?Date.parse(r.savedAt):Date.now();
+      cbSetSync('已同步 '+new Date().toTimeString().slice(0,5));
+      return true;
+    }
+    if(r&&r.conflict){cbConflict(r.server);return false;}
+    cbSetSync('同步失败：'+((r&&r.msg)||'未知原因'));
+    return false;
+  }catch(e){
+    console.warn('cloud push failed',e);
+    cbSetSync('同步失败（进度仍在本地）');
+    return false;
+  }
+}
+function cbSchedulePush(){
+  if(!cbUid())return;
+  clearTimeout(CBTIMER);
+  cbSetSync('保存中…');
+  CBTIMER=setTimeout(function(){cbPush();},1500);
+}
+
+/* 两边都改过：让本人决定用哪边 */
+function cbConflict(server){
+  if(!server)return;
+  cbSetSync('云端和本机不一致');
+  const st=server.savedAt?new Date(server.savedAt).toLocaleString('zh-CN'):'未知时间';
+  show('<h3>进度冲突了</h3>'+
+    '<div class="warnbox">云端存档更新于 '+esc(st)+'，和这台设备上的不一样。选一个保留，另一个会被覆盖。</div>'+
+    '<div class="row" style="justify-content:flex-end;margin-top:14px">'+
+    '<button class="btn gray" id="cfUseLocal">用本机的覆盖云端</button> '+
+    '<button class="btn" id="cfUseCloud">用云端的覆盖本机</button></div>');
+  const l=$('#cfUseLocal'),c=$('#cfUseCloud');
+  if(l)l.addEventListener('click',async function(){
+    closeModal();cbSetSync('上传中…');
+    const ok=await cbPush(true);
+    toast(ok?'已用本机进度覆盖云端':'覆盖失败，稍后再试');
+  });
+  if(c)c.addEventListener('click',function(){
+    closeModal();
+    try{
+      const merged=Object.assign(freshState(),server.payload||{});
+      S=migrate(merged);save();cbRenderAll();
+      CBSAVEDAT=server.savedAt?Date.parse(server.savedAt):Date.now();
+      toast('已同步云端进度');
+    }catch(e){toast('云端数据异常，已保留本地进度');}
+  });
+}
+
+function cbRenderAll(){
+  try{renderHeader();}catch(e){}
+  try{updateSecBadges();}catch(e){}
+  try{renderNews();}catch(e){}
+  try{renderZone();}catch(e){}
+  try{renderNew();}catch(e){}
+  try{renderQuiz();}catch(e){}
+}
+
+async function cbAfterLogin(){
+  cbSetSync('读取云端进度…');
+  const row=await cbPull();
+  const localEmpty=!Object.keys(S.cards||{}).length&&!(S.neww||[]).length;
+  if(row){
+    const ct=row.savedAt?Date.parse(row.savedAt):0;
+    if(localEmpty||ct>(S._t||0)+1000){
+      try{
+        const merged=Object.assign(freshState(),row.payload||{});
+        S=migrate(merged);
+        localStorage.setItem(LSKEY,JSON.stringify(S));
+        cbSetSync('已同步 '+new Date().toTimeString().slice(0,5));
+        toast('已同步云端进度');
+      }catch(e){toast('云端数据异常，已保留本地进度');}
+    }else{
+      const ok=await cbPush(true);
+      if(ok)toast('本机进度更新，已覆盖云端');
+    }
+  }else{
+    const ok=await cbPush(true);
+    if(ok)toast('已在云端创建你的存档');
+  }
+  cbRenderAll();
+}
+
+function cbRenderAcct(){
+  const b=$('#acctBtn'); if(!b)return;
+  if(CBUSER){
+    b.textContent=(CBUSER.nick||CBUSER.user||'我的账号')+' · 退出';
+    b.className='btn sm';
+  }else{
+    b.textContent='登录 / 注册';
+    b.className='btn gray sm';
+  }
+}
+
+/* 登录 / 注册弹窗 */
+function cbOpen(mode,msg){
+  mode=mode||'pwd';
+  const isReg=mode==='reg';
+  const h='<h3>'+(isReg?'注册账号':'登录')+'</h3>'+
+    (msg?'<div class="warnbox">'+esc(msg)+'</div>':'')+
+    '<input type="text" id="cbUser" placeholder="用户名（3-20 位字母、数字或下划线）" style="width:100%;margin-bottom:8px" value="'+esc(_cbUser)+'">'+
+    '<input type="password" id="cbPwd" placeholder="密码（至少 6 位）" style="width:100%;margin-bottom:8px">'+
+    '<div class="row" style="justify-content:space-between;margin-top:14px">'+
+      '<span class="hint">'+
+        (isReg?'<a href="javascript:void(0)" id="cbGoPwd">已有账号？去登录</a>':
+               '<a href="javascript:void(0)" id="cbGoReg">没有账号？注册</a>')+
+      '</span>'+
+      '<span><button class="btn gray" onclick="closeModal()">取消</button> '+
+      '<button class="btn" id="cbGo">'+(isReg?'注册':'登录')+'</button></span>'+
+    '</div>'+
+    '<div class="hint" style="margin-top:10px">不登录也能用，进度只存在这台设备的浏览器里；登录后换设备可继续。</div>';
+  show(h);
+  const goPwd=$('#cbGoPwd'),goReg=$('#cbGoReg');
+  if(goPwd)goPwd.addEventListener('click',function(){cbOpen('pwd');});
+  if(goReg)goReg.addEventListener('click',function(){cbOpen('reg');});
+  const go=$('#cbGo');
+  if(go)go.addEventListener('click',function(){cbSubmit(mode);});
+  const pwdEl=$('#cbPwd');
+  if(pwdEl)pwdEl.addEventListener('keydown',function(e){if(e.key==='Enter')cbSubmit(mode);});
+}
+
+async function cbSubmit(mode){
+  const user=($('#cbUser')&&$('#cbUser').value||'').trim();
+  const pwd=($('#cbPwd')&&$('#cbPwd').value||'');
+  if(!/^[A-Za-z0-9_]{3,20}$/.test(user)){cbOpen(mode,'用户名需 3-20 位字母、数字或下划线');return;}
+  if(pwd.length<6){cbOpen(mode,'密码至少 6 位');return;}
+  _cbUser=user;
+  const btn=$('#cbGo'); if(btn){btn.disabled=true;btn.textContent='处理中…';}
+  try{
+    const r=await api({action:mode==='reg'?'register':'login',user:user,pass:pwd,nick:user});
+    if(!r||!r.ok){cbOpen(mode,(r&&r.msg)||'出错了，稍后再试');return;}
+    cbSetToken(r.token);
+    CBUSER={uid:r.uid,nick:r.nick||user,user:user};
+    cbSaveUser(CBUSER);
+    cbRenderAcct();closeModal();
+    toast(mode==='reg'?'注册成功':'登录成功');
+    await cbAfterLogin();
+  }catch(e){
+    cbOpen(mode,String((e&&e.message)||e||'出错了'));
+  }
+}
+
+async function cbBoot(){
+  if(CBBOOTED)return; CBBOOTED=true;
+  const b=$('#acctBtn');
+  if(b)b.addEventListener('click',function(){
+    if(CBUSER){
+      show('<h3>退出登录</h3><div class="hint">退出后进度仍留在这台设备上，下次登录会再和云端合并。</div>'+
+        '<div class="row" style="justify-content:flex-end;margin-top:14px">'+
+        '<button class="btn gray" onclick="closeModal()">取消</button>'+
+        '<button class="btn" id="cbOut">退出</button></div>');
+      const o=$('#cbOut');
+      if(o)o.addEventListener('click',function(){
+        cbSetToken('');cbSaveUser(null);CBUSER=null;CBSAVEDAT=0;
+        cbSetSync('');cbRenderAcct();closeModal();toast('已退出');
+      });
+    }else{cbOpen('pwd');}
+  });
+  if(!cbToken()){
+    const u=cbLoadUser();
+    if(u){cbSetToken('');cbSaveUser(null);}
+    cbRenderAcct();return;
+  }
+  cbSetSync('正在恢复登录…');
+  const s=await cbSession();
+  cbRenderAcct();
+  if(s&&CBUSER){await cbAfterLogin();}
+  else{cbSetSync('登录已过期，请重新登录');}
+}
+
 /* ===================== 启动 ===================== */
 rollover();
 applyTheme();
@@ -1525,6 +1774,7 @@ goView(Math.min(Math.max(S.stage,1),5));
 if(curView===2)renderQuiz();
 if(curView===3)renderNew();
 updateSecBadges();
+cbBoot();
 var _bm=document.getElementById('bootMask'); if(_bm)_bm.remove();
 </script>
 </body>
