@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "generatedAt": "2026-10-01T00:19:37+08:00",
+  "generatedAt": "2026-10-01T00:37:00+08:00",
   "generator": "github-actions-rss",
   "perTag": 5,
   "news": [
@@ -40,6 +40,13 @@
       "tag": "ai"
     },
     {
+      "title": "怀柔储备“十五五”科技设施项目近30个",
+      "sum": "",
+      "url": "https://news.google.com/rss/articles/CBMi4gNBVV95cUxNOVpNamU5dXRRNnFINTNkZTR3aldSVWxvMG84NTFHS2Y5eXRkaGlwRWlPUlNEYzdSMkNuU1BCd3l5X215M042QW5yLVRfdVlFMWhfSGVCaGpvRjV5VW51Y2M2UDUwdHExTVUwVFVfeURCVW1sdzJFRWFublpBc1N3TExOWjB4SEZ2ZWdlUTdyNW15VC13bmFNUFAyenhrSUJ6NlRCdWZRdnIyUG1keW5SZVNHODJ2VGRha09RRVNpdkFIZUx6S3FHd3ZFY19ORFVZbzhHbFRBRE14Uk1ZVFFTWnJnVmFUUFFubENpMXFONUJoZl82d0QwSEFRNk85blFuZ2xPN2toakFwV3FxNlU5dlFPOGtZOE9tdjZnRWVJcnZXS1k3elRpZ291bW1MSFNZTFRMSFR4V2Q1aEt4dThXaC1VLUlvaGcwMjZ4YXdVWEhQWk9oaDlYNFRSS1Q0UU5CRmc0R3poeUd2TlZEQ3BpLTY1WHM2TEdrWi1RbklSSDlUNlZsQU5pSVNkMERGT2liME5scWxvREVWTW9GVXExaDlCVVE0NUQ1Rl9sMEw2czNHOGdmQ2NIZDAtTGlMRU1QNXNwX3YyanN6ZXBfTFNUTEVKWThvQ0RLdWFNb0liTF94dw?oc=5",
+      "source": "finance.sina.com.cn",
+      "tag": "tech"
+    },
+    {
       "title": "2026川渝科技学术大会在绵阳开幕",
       "sum": "",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1VemNldW9UenJNamlJamk2Q0Z2dHUtVWdyNVltUTR5TFI5VTZkTFVyYmJPeUpoUHZmd0xmZVN2WXE3ME1FTk5GQVROOGN1NXVmVnVpUTFjOGI1X1dla3dHRFJxOFQ4cjlHVk1Kdld3aHNlZk00cVE?oc=5",
@@ -61,16 +68,9 @@
       "tag": "tech"
     },
     {
-      "title": "电锤、电镐龙头闯北交所：德硕科技产品靠贴牌代工，关联交易暗藏风险",
+      "title": "“牵手”中国稀土，本末科技（06731.HK）的想象空间打开了",
       "sum": "",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9zeEpiTkhweTlzY2Z5S0E5azN0ZndyMWQtUk9VZEhvVnVVZWNHMnpXVWJUaTBiX3AxN29CdS1ycFhjNHp5b09JU1FBdy1IajNZ?oc=5",
-      "source": "凤凰网",
-      "tag": "tech"
-    },
-    {
-      "title": "“科技改变生活”，打开实验室助力青少年“看见未来”",
-      "sum": "",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE44bG1YRW9obFhMdTdxS2NGbUN0eHB1LS1sSkFhNzhIb1otZjllQ1FLVEt4dkRaUm5wUl9NY241YjNPaE1lRXpKUXFMNGtjYXl1M195OHV1TzB1Qi11dTBRWmlpT1JDYkhEY1lfQ21INzlLRnl5eXFFNg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8yRjlkc2dtQ2phYnZIU0JCWmZLekh1RnlINmlDMEhwSnRTMl9SNW1XMEwyNDI5d2gteFVWbzNweTdBajdtZWY2MjBRY1IwTjlZYnk0X3hieUlabGdMRUtEdUk0Qy16Tmlzb0JzeFJ5QlExcV8tZEE?oc=5",
       "source": "新浪财经",
       "tag": "tech"
     },
@@ -96,17 +96,17 @@
       "tag": "fin"
     },
     {
-      "title": "首期向荣国际—HIT财经讲武堂在哈工大开班",
-      "sum": "",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1ISGJZUlVDRktObEN4ZUZNZDczTmlkN1R3TG1jRVRBNmZqc3lXZkV3RFlrY2pyU0lHUUF1TmFLZmxjYmloc25Ccnl4VXhWZTdDS3dtVlJpalhET01jTG1FOVJOTDQ2Zw?oc=5",
-      "source": "哈尔滨工业大学",
-      "tag": "fin"
-    },
-    {
       "title": "【财经分析】双重压力重挫美国消费者信心- 中国金融信息网",
       "sum": "",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1vbGY3OTc0aGNEeF9QXzEzY2E2eFoyYjE0SmQ4QVNwRzI1Mm5xekIwVG82dGdYcmhyLWpNZHpIOGs4TUNwbFJ2NFFFaTIwZVI2OEFnTFRjcW1WWDJGWWhwdGs4U084WWM?oc=5",
       "source": "中国金融信息网",
+      "tag": "fin"
+    },
+    {
+      "title": "上财成立财经纪检监察研究院，8家单位共建",
+      "sum": "",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9zV3ZHU09DSEhGYTdKWGp4VUR4NkRjUkw4cFZCd19OZUgwOHlGQ0ZnZ0tQcmxhNkNlRlpQd2d1WnpwckJwQjFQd1RmdDZKRmIwU1ZmQmZpNXpMQQ?oc=5",
+      "source": "上观新闻",
       "tag": "fin"
     },
     {
@@ -117,10 +117,10 @@
       "tag": "cn"
     },
     {
-      "title": "加强普惠性、基础性、兜底性民生建设-国内新闻",
+      "title": "美国媒体人士高度评价中美元首会晤-国内新闻",
       "sum": "",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE04ZlhvMUlpNEpwMEhUSXY3cXVlMmJDNW5YY0NNTGtKaWluRWxTbEN0NWYwUlpZUW5nLTB0bF9hQnd5QzRyNkpmVkJrb05EU3k5ek9udWd6ZVkwMjFpQ25renYzNFM?oc=5",
-      "source": "水母网",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1HWDlLZWRIWFRNVDhtS2NtdV9BOWlFaFJ1ZUlHb1dnQ2tabS1QTERYd3daYmVUc1BEQllFbUptZDVFbFlOUmtFemk5ZFNCVHlaaWZjV180OThJZFZfWDFQQnhR?oc=5",
+      "source": "u.shm.com.cn",
       "tag": "cn"
     },
     {

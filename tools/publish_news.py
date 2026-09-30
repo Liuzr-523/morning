@@ -23,10 +23,17 @@ DATA = os.path.join(ROOT, "data")
 LATEST = os.path.join(DATA, "latest.json")
 ARCHIVE = os.path.join(DATA, "archive")
 
+# 与网页 index.html 的 NEWS_TAGS 一致；写错会让新闻落进「其他」
+STD_TAGS = ["ai", "tech", "fin", "cn", "intl", "edu", "cul", "sport", "life", "other"]
+PER_TAG = 5
+
+
+CST = datetime.timezone(datetime.timedelta(hours=8))
+
 
 def today():
     """北京时间（UTC+8）的今天"""
-    return (datetime.datetime.utcnow() + datetime.timedelta(hours=8)).strftime("%Y-%m-%d")
+    return datetime.datetime.now(CST).strftime("%Y-%m-%d")
 
 
 def log(msg):
@@ -84,15 +91,28 @@ def validate(obj, allow_stale):
         return "date 格式必须是 YYYY-MM-DD"
     if not allow_stale and str(obj["date"]) != today():
         return "date=%s 不是今天（%s）。若确有需要请加 --allow-stale" % (obj["date"], today())
-    if not obj["news"]:
-        return "news 为空"
+    if not obj.get("news"):
+        return None, "news 为空"
+    counts = {}
     for i, n in enumerate(obj["news"]):
         if not isinstance(n, dict) or not str(n.get("title", "")).strip():
-            return "第 %d 条新闻缺少 title" % (i + 1)
+            return None, "第 %d 条新闻缺少 title" % (i + 1)
         u = str(n.get("url", "")).strip()
         if u and not u.startswith("http"):
-            return "第 %d 条新闻的 url 不合法：%s" % (i + 1, u)
-    return None
+            return None, "第 %d 条新闻的 url 不合法：%s" % (i + 1, u)
+        tg = str(n.get("tag", "")).strip() or "other"
+        if tg not in STD_TAGS:
+            return None, "第 %d 条新闻的 tag 是 %r，不是标准标签（应为：%s）" % (i + 1, tg, "/".join(STD_TAGS))
+        counts[tg] = counts.get(tg, 0) + 1
+    return counts, None
+
+
+def report(counts):
+    line = " ".join("%s=%d" % (t, counts.get(t, 0)) for t in STD_TAGS)
+    miss = [t for t in STD_TAGS if t != "other" and counts.get(t, 0) < PER_TAG]
+    log("[i] 各标签条数：%s" % line)
+    if miss:
+        log("[!] 以下标签不足 %d 条：%s" % (PER_TAG, "、".join(miss)))
 
 
 def main():
@@ -110,10 +130,11 @@ def main():
         log("[x] data/latest.json 不是合法 JSON：%s" % e)
         return 1
 
-    err = validate(obj, args.allow_stale)
+    counts, err = validate(obj, args.allow_stale)
     if err:
         log("[x] 校验失败：%s" % err)
         return 1
+    report(counts)
     log("[v] 校验通过：%s，%d 条新闻" % (obj["date"], len(obj["news"])))
 
     os.makedirs(ARCHIVE, exist_ok=True)

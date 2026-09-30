@@ -200,6 +200,56 @@ th{color:var(--muted);font-weight:600;font-size:12.5px}
 .toast.on{opacity:1;bottom:38px}
 .empty{text-align:center;color:var(--muted);padding:22px 10px;font-size:13.5px}
 .warnbox{background:var(--warn-soft);border:1px solid #f2d9a8;color:#8a5a00;border-radius:10px;padding:10px 12px;font-size:13px}
+.errbox{background:var(--bad-soft);border:1px solid #f6cfcf;color:var(--bad);border-radius:10px;padding:10px 12px;font-size:13px;margin-bottom:12px}
+/* ── 登录 / 注册卡片 ── */
+.auth{max-width:400px;margin:0 auto}
+.auth-head{text-align:center;margin-bottom:15px}
+.auth-logo{width:54px;height:54px;border-radius:16px;margin:0 auto 10px;display:flex;align-items:center;
+  justify-content:center;font-size:17px;font-weight:800;color:#fff;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 6px 16px var(--accent-soft)}
+.auth-head h3{margin:0 0 3px;font-size:19px}
+.auth-head p{margin:0;font-size:12.5px;color:var(--muted)}
+.auth-tabs{display:flex;gap:4px;background:var(--soft);border:1px solid var(--line);border-radius:11px;
+  padding:4px;margin:0 0 15px}
+.auth-tabs button{flex:1;border:none;background:transparent;font-family:inherit;font-size:13.5px;font-weight:600;
+  color:var(--muted);padding:7px 8px;border-radius:8px;cursor:pointer}
+.auth-tabs button.on{background:var(--card);color:var(--accent);box-shadow:0 1px 3px rgba(17,24,39,.10)}
+.fld{margin-bottom:11px}
+.fld>label{display:block;font-size:12.5px;font-weight:600;color:var(--muted);margin-bottom:5px}
+.inp{width:100%;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:14px;
+  font-family:inherit;color:var(--text);background:var(--field,#fff);transition:border-color .15s}
+.inp::placeholder{color:var(--muted);opacity:.75}
+.inp:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.inp.bad{border-color:var(--bad);box-shadow:0 0 0 3px var(--bad-soft)}
+.pw-wrap{position:relative}
+.pw-wrap .inp{padding-right:44px}
+.pw-eye{position:absolute;right:5px;top:50%;transform:translateY(-50%);width:34px;height:34px;padding:0;
+  border:none;background:transparent;color:var(--muted);cursor:pointer;border-radius:9px;
+  display:flex;align-items:center;justify-content:center}
+.pw-eye:hover{background:var(--soft);color:var(--accent)}
+.pw-eye svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round}
+.fld-err{font-size:12px;color:var(--bad);margin-top:5px;display:none}
+.fld-err.on{display:block}
+.fld-tip{font-size:11.5px;color:var(--muted);margin-top:5px}
+.pw-meter{display:flex;gap:4px;margin-top:7px}
+.pw-meter i{flex:1;height:4px;border-radius:3px;background:var(--track);transition:.2s}
+.pw-meter.s1 i:nth-child(1){background:var(--bad)}
+.pw-meter.s2 i:nth-child(-n+2){background:var(--warn)}
+.pw-meter.s3 i{background:var(--ok)}
+.pw-meter-txt{font-size:11.5px;color:var(--muted);margin-top:4px}
+.btn.auth-go{width:100%;margin-top:6px;padding:10px 15px;font-size:14.5px}
+.btn.auth-go:disabled{opacity:.6;cursor:default}
+.auth-foot{text-align:center;font-size:12.5px;color:var(--muted);margin-top:13px;line-height:1.7}
+.auth-foot a{color:var(--accent);text-decoration:none;font-weight:600}
+.auth-foot a:hover{text-decoration:underline}
+.auth-note{font-size:11.5px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.6}
+/* ── 新闻：随机混排提示 ── */
+.news-mixbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:2px 0 10px;font-size:12.5px;color:var(--muted)}
+.news-mixbar .dot{width:6px;height:6px;border-radius:50%;background:var(--ok);display:inline-block}
+.news-mixbar button[data-shuffle]{border:1px solid var(--line);background:var(--soft);color:var(--muted);
+  border-radius:20px;padding:3px 11px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit}
+.news-mixbar button[data-shuffle]:hover{border-color:var(--bar);color:var(--accent)}
 </style>
 </head>
 <body>
@@ -227,28 +277,12 @@ th{color:var(--muted);font-weight:600;font-size:12.5px}
       <h2>今日新闻 <span class="badge b-new" id="newsCount">0 条</span></h2>
       <div id="newsStatus" class="news-status">正在获取今日新闻…</div>
       <div id="newsTagBar" class="tag-bar"></div>
+      <div id="newsMix" class="news-mixbar"></div>
       <div id="newsList"></div>
       <div class="row" style="margin-top:12px;justify-content:flex-end">
         <button class="btn gray sm" id="btnRefreshNews">重新获取</button>
         <button class="btn ok" id="btnToQuiz">新闻读完，开始自测</button>
       </div>
-    </div>
-    <div class="card">
-      <h2>数据来源 <span class="hint" style="font-weight:400">每天 06:30 自动生成，无需粘贴</span></h2>
-      <div id="newsMeta" class="hint">读取 <b>data/latest.json</b>；若当天文件缺失，自动回退到最近一次存档。</div>
-      <details style="margin-top:10px">
-        <summary class="hint" style="cursor:pointer">手动导入 / 兜底选项（平时不需要）</summary>
-        <div class="drop" id="dropZone" style="margin:10px 0">
-          把 <b>daily-YYYY-MM-DD.json</b> 拖到这里（或点击选择）→ 导入新闻 + 今日单词
-          <input type="file" id="fileDaily" accept=".json,.txt" style="display:none">
-        </div>
-        <textarea id="newsInput" placeholder="示例：&#10;【新闻标题】简要摘要（1-2 句）&#10;原文链接：https://..."></textarea>
-        <div class="row" style="margin-top:9px">
-          <button class="btn" id="btnParseNews">解析新闻</button>
-          <button class="btn gray sm" id="btnAddNews">手动添加</button>
-          <button class="btn gray sm" id="btnClearNews">清空今日</button>
-        </div>
-      </details>
     </div>
   </section>
 
@@ -761,22 +795,50 @@ function hitTag(txt,list){
   }
   return false;
 }
-/* 归类顺序：① AI 关键词优先（最常被单独关注）② 数据自带 tag ③ 其它关键词 ④ 其他 */
+/* 归类顺序：① 数据自带的标准 tag（含 other，直接信任，避免二次猜测把条目挪走）
+   ② AI 关键词优先（最常被单独关注）③ 中文别名映射 ④ 其它关键词 ⑤ 其他 */
 function tagOf(n){
+  const raw=String(n&&n.tag||'').trim();
+  const rk=raw.toLowerCase();
+  if(TAG_MAP[rk])return rk;
   const txt=(String(n&&n.tag||'')+' '+String(n&&n.title||'')+' '+String(n&&n.sum||'')+' '+String(n&&n.source||'')).toLowerCase();
   if(hitTag(txt,NEWS_TAGS[0].hit))return 'ai';
-  const raw=String(n&&n.tag||'').trim();
   if(raw){
     for(let i=0;i<NEWS_TAGS.length;i++){
-      if(NEWS_TAGS[i].n===raw||NEWS_TAGS[i].k===raw.toLowerCase())return NEWS_TAGS[i].k;
+      if(NEWS_TAGS[i].n===raw||NEWS_TAGS[i].k===rk)return NEWS_TAGS[i].k;
     }
-    const al=TAG_ALIAS[raw]||TAG_ALIAS[raw.toLowerCase()];
+    const al=TAG_ALIAS[raw]||TAG_ALIAS[rk];
     if(al&&TAG_MAP[al])return al;
   }
   for(let i=1;i<NEWS_TAGS.length;i++){ if(hitTag(txt,NEWS_TAGS[i].hit))return NEWS_TAGS[i].k; }
   return 'other';
 }
 function newsTagged(list){return (list||[]).map(function(n){return Object.assign({},n,{tagKey:tagOf(n)});});}
+/* 确定性洗牌：同一天内顺序固定（刷新不跳），换一天自动重排 */
+function seedHash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;}
+function shuffled(arr,seed){
+  const a=arr.slice();let x=seedHash(String(seed))||1;
+  for(let i=a.length-1;i>0;i--){
+    x^=x<<13;x>>>=0;x^=x>>>17;x^=x<<5;x>>>=0;
+    const j=x%(i+1),t=a[i];a[i]=a[j];a[j]=t;
+  }
+  return a;
+}
+let NEWS_SEED=0;                      /* 点「换一批」时自增，用来换一种混排顺序 */
+function newsMixSeed(){return (NEWS.date||todayStr())+'|'+NEWS_SEED;}
+function renderNewsMix(isMix,total){
+  const el=$('#newsMix'); if(!el)return;
+  if(!isMix){el.innerHTML='';return;}
+  el.innerHTML='<span class="dot"></span><span>混合随机排序 · 共 '+total+' 条，来自 '+esc(newsTagCount()+' 个领域')+'</span>'+
+    '<button data-shuffle>换一批顺序</button>';
+  const b=el.querySelector('[data-shuffle]');
+  if(b)b.addEventListener('click',function(){NEWS_SEED++;renderNewsList();});
+}
+function newsTagCount(){
+  const g=newsGroups(),c={};
+  newsTagged(g.auto.concat(g.manual)).forEach(function(n){c[n.tagKey]=1;});
+  return Object.keys(c).length;
+}
 function newsSel(){return Array.isArray(S.newsTags)?S.newsTags:[];}
 function newsPass(n){const s=newsSel();return !s.length||s.indexOf(n.tagKey)>=0;}
 function newsVisible(){
@@ -804,7 +866,7 @@ function newsFetch(u){
 function newsGroups(){
   const t=todayStr();
   const manual=(S.news||[]).filter(function(n){return n.date===t;}).map(function(n){
-    return {title:n.title,sum:n.sum||'',url:n.url||'',source:'手动导入',tag:n.tag||''};});
+    return {title:n.title,sum:n.sum||'',url:n.url||'',source:'我自己添加的',tag:n.tag||''};});
   return {auto:NEWS.items||[],manual:manual};
 }
 function newsCount(){const g=newsGroups();return g.auto.length+g.manual.length;}
@@ -815,7 +877,7 @@ function renderNewsStatus(){
     ok:['pill ok','由定时任务自动生成'],
     stale:['pill warn','今日尚未更新，正在显示 '+NEWS.date+' 的数据'],
     cache:['pill warn','读取失败，显示上次成功获取的 '+NEWS.date+' 数据'],
-    manual:['pill','自动数据源不可用，当前为手动导入'],
+    manual:['pill','自动数据源不可用，当前为自己添加的新闻'],
     error:['pill bad',NEWS.err||'无法读取 data/latest.json']
   };
   const m=M[NEWS.state]||M.error;
@@ -863,9 +925,15 @@ function renderNewsList(){
   const auto=newsTagged(g.auto);
   const man=newsTagged(g.manual).map(function(n,i){return Object.assign(n,{_del:i});});
   const all=auto.concat(man), vis=all.filter(newsPass), sel=newsSel();
-  $('#newsCount').textContent=(vis.length===all.length)?(all.length+' 条'):(vis.length+' / '+all.length+' 条');
+  const isMix=!sel.length&&vis.length>1;
+  const list=isMix?shuffled(vis,newsMixSeed()):vis;
+  renderNewsMix(isMix,vis.length);
+  $('#newsCount').textContent=vis.length===all.length
+    ? (all.length+' 条'+(isMix?' · 随机':''))
+    : (vis.length+' / '+all.length+' 条');
   if(!all.length){
-    box.innerHTML='<div class="empty">今天还没有新闻。数据由每天 06:30 的定时任务自动生成；若任务未执行，可展开下方「手动导入」临时补一条。</div>';
+    box.innerHTML='<div class="empty">今天还没有新闻。数据由每天 06:30 的定时任务自动生成；'+
+      '可以点上面的「重新获取」再拉一次。</div>';
     return;
   }
   if(!vis.length){
@@ -882,7 +950,7 @@ function renderNewsList(){
       '<div class="news-src">'+meta+'</div>'+
       '</div>'+(n._del!==undefined?'<button class="btn gray sm" data-del="'+n._del+'">删除</button>':'')+'</div></div>';
   };
-  box.innerHTML=vis.map(one).join('');
+  box.innerHTML=list.map(one).join('');
   box.querySelectorAll('[data-del]').forEach(function(b){
     b.addEventListener('click',function(){
       const t=todayStr(); let k=0;
@@ -929,144 +997,12 @@ function loadNews(){
     renderNews();
   });
 }
-function addNewsFromText(raw){
-  let added=0;
-  String(raw).split(/\n(?=【|\[|\d+[\.、]|[-•*]\s)/).forEach(function(bk){
-    const t=bk.trim(); if(!t)return;
-    const urlM=t.match(/https?:\/\/[^\s，。）)"']+/);
-    let title='';
-    const tm=t.match(/【([^】]+)】/);
-    if(tm)title=tm[1];
-    else{
-      const md=t.match(/\[([^\]]{4,})\]\((https?:\/\/[^)]+)\)/);
-      if(md)title=md[1];
-      else title=t.split(/\n/)[0].replace(/^\d+[\.、]\s*/,'').replace(/^[-•*]\s*/,'').replace(/^\*\*|\*\*$/g,'').slice(0,60);
-    }
-    let body=t.replace(/【[^】]+】/,'').replace(/\[[^\]]+\]\([^)]+\)/,'')
-      .replace(/[🔗]?\s*原文链接[：: ]*/g,'').replace(urlM?urlM[0]:'§§','').replace(/^\s*[-•*]?\s*/,'').trim();
-    const lines=body.split('\n').map(function(x){return x.trim();})
-      .filter(function(x){return x&&!/^https?:/.test(x)&&!/^[-—]+$/.test(x);});
-    if(!title)return;
-    S.news.push({date:todayStr(),title:title,sum:lines.join(' ').slice(0,200),url:urlM?urlM[0]:'',
-      tag:tagOf({title:title,sum:lines.join(' ').slice(0,200)})});
-    added++;
-  });
-  save(); renderNews(); return added;
-}
 $('#btnRefreshNews').addEventListener('click',function(){loadNews();toast('已重新获取');});
-$('#btnParseNews').addEventListener('click',function(){
-  const raw=$('#newsInput').value.trim(); if(!raw)return toast('先粘贴新闻内容');
-  const ok=addNewsFromText(raw);
-  $('#newsInput').value='';
-  toast(ok?(ok+' 条新闻已导入'):'没解析出新闻，检查格式');
-});
-$('#btnAddNews').addEventListener('click',function(){
-  const opt=NEWS_TAGS.concat([TAG_OTHER]).map(function(t){
-    return '<option value="'+t.k+'">'+esc(t.n)+'</option>';}).join('');
-  show('<h3>手动添加新闻</h3><input type="text" id="mTitle" placeholder="标题" style="width:100%;margin-bottom:8px">'+
-    '<input type="text" id="mUrl" placeholder="链接（可留空）" style="width:100%;margin-bottom:8px">'+
-    '<textarea id="mSum" placeholder="一句话摘要"></textarea>'+
-    '<div class="hint" style="margin-top:8px">分类：'+
-    '<select id="mTag" style="margin-left:6px">'+opt+'</select>'+
-    '<span style="margin-left:6px">（留空它会自己猜，可手动改）</span></div>'+
-    '<div class="row" style="justify-content:flex-end;margin-top:12px">'+
-    '<button class="btn gray" onclick="closeModal()">取消</button>'+
-    '<button class="btn" id="mOk">添加</button></div>');
-  $('#mOk').addEventListener('click',function(){
-    const t=$('#mTitle').value.trim(); if(!t)return toast('标题不能为空');
-    const tg=($('#mTag')&&$('#mTag').value)||tagOf({title:t,sum:$('#mSum').value});
-    S.news.push({date:todayStr(),title:t,url:$('#mUrl').value.trim(),sum:$('#mSum').value.trim(),tag:tg});
-    save();renderNews();closeModal();toast('已添加');
-  });
-});
-$('#btnClearNews').addEventListener('click',function(){
-  S.news=(S.news||[]).filter(function(n){return n.date!==todayStr();});save();renderNews();toast('已清空');
-});
 $('#btnToQuiz').addEventListener('click',function(){
   if(S.stage<2)S.stage=2; save(); goView(2); renderQuiz();
 });
 
-/* ===================== 数据桥接：daily json ===================== */
-$('#dropZone').addEventListener('click',function(){$('#fileDaily').click();});
-$('#fileDaily').addEventListener('change',function(e){if(e.target.files[0])readAnyFile(e.target.files[0]);});
-['dragenter','dragover'].forEach(function(ev){
-  document.addEventListener(ev,function(e){
-    if(e.target.closest&&e.target.closest('#dropZone')){e.preventDefault();$('#dropZone').classList.add('over');}
-  });
-});
-document.addEventListener('dragleave',function(e){
-  if(e.target.closest&&e.target.closest('#dropZone'))$('#dropZone').classList.remove('over');
-});
-document.addEventListener('drop',function(e){
-  e.preventDefault();
-  $('#dropZone').classList.remove('over');
-  const f=e.dataTransfer&&e.dataTransfer.files[0];
-  if(f)readAnyFile(f);
-});
-function readAnyFile(f){
-  const r=new FileReader();
-  r.onload=function(){applyDaily(String(r.result));};
-  r.readAsText(f);
-}
-function applyDaily(txt){
-  let o=null;
-  try{o=JSON.parse(txt);}catch(e){}
-  if(!o||typeof o!=='object'){
-    const n=addNewsFromText(txt); renderNews();
-    return toast(n?(n+' 条新闻已导入'):'无法识别该文件内容');
-  }
-  const msg=[];
-  if(o.news&&o.news.length){
-    S.news=S.news||[];
-    o.news.forEach(function(x){
-      if(!x||!x.title)return;
-      S.news.push({date:todayStr(),title:x.title,sum:x.summary||x.sum||'',url:x.url||''});
-    });
-    msg.push(o.news.length+' 条新闻');
-  }
-  const isBankPack = (o.type==='bank') || (o.append===true) || ((o.words||[]).length>=50 && !!o.bank);
-  if(isBankPack&&o.words&&o.words.length){
-    const bk=(BANKS[o.bank]||o.bank==='custom')?o.bank:(S.bank||'cet4');
-    let added=0;
-    S.ext=S.ext||{}; S.ext[bk]=S.ext[bk]||[];
-    const have={};
-    S.ext[bk].forEach(function(x){have[key(x[0])]=1;});
-    o.words.forEach(function(x){
-      let w,ph='',cn='',ex='',diff=2;
-      if(Array.isArray(x)){w=x[0];ph=x[1]||'';cn=x[2]||'';ex=x[3]||'';diff=x[4]||2;}
-      else{w=x.w||x.word;ph=x.ph||x.phonetic||'';cn=x.cn||x.meaning||x.translation||'';ex=x.ex||x.example||'';diff=x.diff||2;}
-      const k=key(w);
-      if(!k||!/^[a-z][a-z'-]{0,25}$/.test(k))return;
-      if(have[k])return; have[k]=1;
-      S.ext[bk].push([w,ph,cn,ex,diff]); added++;
-    });
-    save(); renderHeader();
-    if(curView===4)renderZone();
-    if(curView===5)renderStats();
-    return toast(added?('已扩充「'+bankName(bk)+'」词库 +'+added+' 词'):'这批单词都已存在');
-  }
-  if(o.words&&o.words.length){
-    const list=[];
-    o.words.forEach(function(x){
-      let w,ph='',cn='',ex='',diff=2;
-      if(Array.isArray(x)){w=x[0];ph=x[1]||'';cn=x[2]||'';ex=x[3]||'';diff=x[4]||2;}
-      else{w=x.w||x.word;ph=x.ph||x.phonetic||'';cn=x.cn||x.meaning||'';ex=x.ex||x.example||'';diff=x.diff||2;}
-      const k=key(w);
-      if(!k||!/^[a-z][a-z'-]{0,25}$/.test(k))return;
-      if(cn&&/\p{Script=Han}/u.test(String(cn))&&!ex){} /* 保持原样即可 */
-      list.push({w:w,ph:ph,cn:cn,ex:ex,diff:diff});
-    });
-    if(list.length){
-      clearUnlearnedNew();
-      S.neww=list; commitNew();
-      msg.push(list.length+' 个单词');
-    }
-  }
-  if(o.bank&&(BANKS[o.bank]||o.bank==='custom')){S.bank=o.bank;$('#selBank').value=o.bank;}
-  save(); renderNews(); renderHeader();
-  if(curView===3)renderNew();
-  toast(msg.length?('已导入 '+msg.join('、')):'文件里没有可识别的新闻或单词');
-}
+
 
 
 /* ===================== 自测 ===================== */
@@ -1683,51 +1619,162 @@ function cbRenderAcct(){
   }
 }
 
-/* 登录 / 注册弹窗 */
+/* ---------- 登录 / 注册弹窗 ---------- */
+const EYE_SHOW='<svg viewBox="0 0 24 24"><path d="M2.2 12S6 5.8 12 5.8 21.8 12 21.8 12 18 18.2 12 18.2 2.2 12 2.2 12z"/><circle cx="12" cy="12" r="2.9"/></svg>';
+const EYE_HIDE='<svg viewBox="0 0 24 24"><path d="M4 4l16 16"/><path d="M9.7 6a10.6 10.6 0 0 1 2.3-.2c6 0 9.8 6.2 9.8 6.2a18.7 18.7 0 0 1-2.6 3.4"/><path d="M6.5 8.3A17 17 0 0 0 2.2 12S6 18.2 12 18.2c1.2 0 2.4-.2 3.5-.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>';
+/* 密码强度：只看复杂度，不上传、不做限制 */
+function pwStrength(p){
+  if(!p)return 0;
+  let s=0;
+  if(p.length>=6)s=1;
+  if(p.length>=8&&/[A-Za-z]/.test(p)&&/[0-9]/.test(p))s=2;
+  if(p.length>=10&&/[A-Za-z]/.test(p)&&/[0-9]/.test(p)&&/[^A-Za-z0-9]/.test(p))s=3;
+  return s;
+}
+function cbErr(msg){
+  const el=$('#cbErr'); if(!el)return;
+  if(!msg){el.style.display='none';el.textContent='';return;}
+  el.textContent=msg; el.style.display='';
+}
+function cbFieldErr(name,msg){
+  const el=$('#cb'+name+'Err'), inp=$('#cb'+name);
+  if(el){el.textContent=msg||'';el.classList.toggle('on',!!msg);}
+  if(inp)inp.classList.toggle('bad',!!msg);
+}
+function cbClearErr(){['User','Pwd','Pwd2'].forEach(function(k){cbFieldErr(k,'');});cbErr('');}
+function cbPwdFld(id,label,ph,mode){
+  const ac=(id==='cbPwd'&&mode!=='reg')?'current-password':'new-password';
+  return '<div class="fld"><label for="'+id+'">'+label+'</label>'+
+    '<div class="pw-wrap">'+
+      '<input class="inp" type="password" id="'+id+'" placeholder="'+ph+'" autocomplete="'+ac+'">'+
+      '<button class="pw-eye" type="button" data-eye="'+id+'" title="显示密码" aria-label="显示密码">'+EYE_SHOW+'</button>'+
+    '</div><div class="fld-err" id="'+id+'Err"></div></div>';
+}
 function cbOpen(mode,msg){
   mode=mode||'pwd';
   const isReg=mode==='reg';
-  const h='<h3>'+(isReg?'注册账号':'登录')+'</h3>'+
-    (msg?'<div class="warnbox">'+esc(msg)+'</div>':'')+
-    '<input type="text" id="cbUser" placeholder="用户名（3-20 位字母、数字或下划线）" style="width:100%;margin-bottom:8px" value="'+esc(_cbUser)+'">'+
-    '<input type="password" id="cbPwd" placeholder="密码（至少 6 位）" style="width:100%;margin-bottom:8px">'+
-    '<div class="row" style="justify-content:space-between;margin-top:14px">'+
-      '<span class="hint">'+
-        (isReg?'<a href="javascript:void(0)" id="cbGoPwd">已有账号？去登录</a>':
-               '<a href="javascript:void(0)" id="cbGoReg">没有账号？注册</a>')+
-      '</span>'+
-      '<span><button class="btn gray" onclick="closeModal()">取消</button> '+
-      '<button class="btn" id="cbGo">'+(isReg?'注册':'登录')+'</button></span>'+
+  const h='<div class="auth">'+
+    '<div class="auth-head">'+
+      '<div class="auth-logo">晨</div>'+
+      '<h3>'+(isReg?'创建你的账号':'欢迎回来')+'</h3>'+
+      '<p>'+(isReg?'注册后进度自动上云，换设备也能接着背':'登录即可接着之前的进度背')+'</p>'+
     '</div>'+
-    '<div class="hint" style="margin-top:10px">不登录也能用，进度只存在这台设备的浏览器里；登录后换设备可继续。</div>';
+    '<div class="auth-tabs">'+
+      '<button type="button" data-m="pwd"'+(isReg?'':' class="on"')+'>登录</button>'+
+      '<button type="button" data-m="reg"'+(isReg?' class="on"':'')+'>注册</button>'+
+    '</div>'+
+    '<div class="errbox" id="cbErr" style="display:none"></div>'+
+    '<div class="fld">'+
+      '<label for="cbUser">用户名</label>'+
+      '<input class="inp" type="text" id="cbUser" autocomplete="username" '+
+        'placeholder="3-20 位字母、数字或下划线" value="'+esc(_cbUser)+'">'+
+      '<div class="fld-err" id="cbUserErr"></div>'+
+    '</div>'+
+    cbPwdFld('cbPwd','密码',isReg?'至少 6 位，建议字母+数字':'请输入密码',mode)+
+    (isReg
+      ? cbPwdFld('cbPwd2','确认密码','再输入一次密码',mode)+
+        '<div class="pw-meter" id="cbMeter"><i></i><i></i><i></i></div>'+
+        '<div class="pw-meter-txt" id="cbMeterTxt">密码强度：—</div>'
+      : '')+
+    '<button class="btn auth-go" id="cbGo">'+(isReg?'注册并登录':'登录')+'</button>'+
+    '<div class="auth-foot">'+(isReg
+        ? '已经有账号了？<a href="javascript:void(0)" id="cbGoPwd">直接登录</a>'
+        : '还没有账号？<a href="javascript:void(0)" id="cbGoReg">注册一个</a>')+'</div>'+
+    '<div class="auth-note">不登录也能正常使用，只是进度只存在这台设备的浏览器里。</div>'+
+  '</div>';
   show(h);
+  /* 明文 / 密文切换 */
+  document.querySelectorAll('.pw-eye').forEach(function(b){
+    b.addEventListener('click',function(){
+      const inp=document.getElementById(b.dataset.eye); if(!inp)return;
+      const toText=inp.type==='password';
+      inp.type=toText?'text':'password';
+      b.innerHTML=toText?EYE_HIDE:EYE_SHOW;
+      b.title=toText?'隐藏密码':'显示密码';
+      try{inp.focus();}catch(e){}
+    });
+  });
+  /* 登录 / 注册 切换：保留已填的用户名 */
+  const keepName=function(){const e=$('#cbUser');if(e)_cbUser=(e.value||'').trim();};
+  document.querySelectorAll('.auth-tabs button').forEach(function(b){
+    b.addEventListener('click',function(){keepName();cbOpen(b.dataset.m);});
+  });
   const goPwd=$('#cbGoPwd'),goReg=$('#cbGoReg');
-  if(goPwd)goPwd.addEventListener('click',function(){cbOpen('pwd');});
-  if(goReg)goReg.addEventListener('click',function(){cbOpen('reg');});
+  if(goPwd)goPwd.addEventListener('click',function(){keepName();cbOpen('pwd');});
+  if(goReg)goReg.addEventListener('click',function(){keepName();cbOpen('reg');});
+  /* 输入时清掉对应错误；注册页实时显示强度与一致性 */
+  const pwd=$('#cbPwd'),pwd2=$('#cbPwd2');
+  if(pwd)pwd.addEventListener('input',function(){
+    cbFieldErr('Pwd','');cbErr('');
+    const m=$('#cbMeter'),mt=$('#cbMeterTxt');
+    if(m&&mt){
+      const s=pwStrength(pwd.value);
+      m.className='pw-meter'+(s?(' s'+s):'');
+      const T=['—','弱','中','强'];
+      mt.textContent='密码强度：'+T[s];
+    }
+    if(pwd2&&pwd2.value)cbFieldErr('Pwd2',pwd2.value===pwd.value?'':'两次输入的密码不一致');
+  });
+  if(pwd2)pwd2.addEventListener('input',function(){
+    cbErr('');
+    cbFieldErr('Pwd2',(pwd2.value&&pwd2.value!==pwd.value)?'两次输入的密码不一致':'');
+  });
+  const uEl=$('#cbUser');
+  if(uEl)uEl.addEventListener('input',function(){cbFieldErr('User','');cbErr('');});
+  /* 回车提交 */
+  [uEl,pwd,pwd2].forEach(function(el){
+    if(!el)return;
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();cbSubmit(mode);}});
+  });
   const go=$('#cbGo');
   if(go)go.addEventListener('click',function(){cbSubmit(mode);});
-  const pwdEl=$('#cbPwd');
-  if(pwdEl)pwdEl.addEventListener('keydown',function(e){if(e.key==='Enter')cbSubmit(mode);});
+  if(msg)cbErr(msg);
+  else if(isReg){const m=$('#cbMeter');if(m)m.className='pw-meter';}
 }
 
 async function cbSubmit(mode){
-  const user=($('#cbUser')&&$('#cbUser').value||'').trim();
-  const pwd=($('#cbPwd')&&$('#cbPwd').value||'');
-  if(!/^[A-Za-z0-9_]{3,20}$/.test(user)){cbOpen(mode,'用户名需 3-20 位字母、数字或下划线');return;}
-  if(pwd.length<6){cbOpen(mode,'密码至少 6 位');return;}
+  mode=mode||'pwd';
+  const isReg=mode==='reg';
+  const uEl=$('#cbUser'),pEl=$('#cbPwd'),p2El=$('#cbPwd2');
+  if(!uEl||!pEl)return cbOpen(mode);
+  const user=(uEl.value||'').trim(), pwd=pEl.value||'', pwd2=p2El?(p2El.value||''):'';
+  cbClearErr();
+  let first=null;
+  const bad=function(n,m){cbFieldErr(n,m);if(!first)first=n;};
+  if(!user)bad('User','请输入用户名');
+  else if(!/^[A-Za-z0-9_]{3,20}$/.test(user))bad('User','3-20 位，只能用字母、数字或下划线');
+  if(!pwd)bad('Pwd','请输入密码');
+  else if(pwd.length<6)bad('Pwd','密码至少 6 位');
+  if(isReg){
+    if(!pwd2)bad('Pwd2','请再次输入密码');
+    else if(pwd2!==pwd)bad('Pwd2','两次输入的密码不一致');
+  }
+  const btn=$('#cbGo');
+  if(first){
+    const el=$('#cb'+first); if(el)el.focus();
+    return;
+  }
+  if(btn){btn.disabled=true;btn.textContent=isReg?'注册中…':'登录中…';}
+  const restore=function(){if(btn){btn.disabled=false;btn.textContent=isReg?'注册并登录':'登录';}};
   _cbUser=user;
-  const btn=$('#cbGo'); if(btn){btn.disabled=true;btn.textContent='处理中…';}
   try{
-    const r=await api({action:mode==='reg'?'register':'login',user:user,pass:pwd,nick:user});
-    if(!r||!r.ok){cbOpen(mode,(r&&r.msg)||'出错了，稍后再试');return;}
+    const r=await api({action:isReg?'register':'login',user:user,pass:pwd,nick:user});
+    if(!r||!r.ok){
+      const m=(r&&r.msg)||'出错了，稍后再试';
+      if(/用户名|已存在|占用/.test(m))cbFieldErr('User',m);
+      else if(/密码/.test(m)&&/错误|不对|不正确/.test(m))cbFieldErr('Pwd',m);
+      else cbErr(m);
+      restore();return;
+    }
     cbSetToken(r.token);
     CBUSER={uid:r.uid,nick:r.nick||user,user:user};
     cbSaveUser(CBUSER);
     cbRenderAcct();closeModal();
-    toast(mode==='reg'?'注册成功':'登录成功');
+    toast(isReg?'注册成功':'欢迎回来');
     await cbAfterLogin();
   }catch(e){
-    cbOpen(mode,String((e&&e.message)||e||'出错了'));
+    cbErr(String((e&&e.message)||e||'出错了'));
+    restore();
   }
 }
 
