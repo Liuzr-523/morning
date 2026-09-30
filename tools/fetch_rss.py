@@ -19,11 +19,37 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 LATEST = os.path.join(DATA, "latest.json")
 
-# 中文源优先，英文源补充
+# 中文源优先，英文源补充；tag 为兜底分类（标题命中更具体的标签时以其为准）
 FEEDS = [
-    {"url": "https://www.chinanews.com.cn/rss/scroll-news.xml", "name": "中国新闻网", "lang": "zh", "take": 3},
-    {"url": "https://feeds.bbci.co.uk/news/world/rss.xml", "name": "BBC News", "lang": "en", "take": 2},
+    {"url": "https://www.chinanews.com.cn/rss/scroll-news.xml", "name": "中国新闻网", "lang": "zh", "take": 3, "tag": "cn"},
+    {"url": "https://feeds.bbci.co.uk/news/world/rss.xml", "name": "BBC News", "lang": "en", "take": 2, "tag": "intl"},
 ]
+
+# 与网页内 NEWS_TAGS 保持一致：ai / tech / fin / cn / intl / edu / cul / sport / life
+TAGS = [
+    ("ai", ["ai", "人工智能", "大模型", "生成式", "gpt", "机器学习", "深度学习", "智能体", "openai", "英伟达", "算力", "artificial intelligence"]),
+    ("tech", ["科技", "科学", "航天", "卫星", "火箭", "量子", "互联网", "数码", "机器人", "新能源", "电池", "5g", "6g"]),
+    ("fin", ["财经", "经济", "金融", "股市", "a股", "楼市", "房价", "贷款", "利率", "消费", "财报", "营收", "央行", "economy", "market"]),
+    ("cn", ["国内", "时政", "政策", "国务院", "印发", "部署", "会议", "条例", "规划"]),
+    ("intl", ["国际", "全球", "海外", "美国", "欧盟", "欧洲", "日本", "韩国", "联合国", "俄乌", "中东", "world"]),
+    ("edu", ["教育", "高考", "中考", "大学", "高校", "考研", "学生", "教师", "学校", "招生"]),
+    ("cul", ["文化", "文物", "遗产", "博物馆", "影视", "电影", "演出", "艺术", "文旅", "非遗"]),
+    ("sport", ["体育", "足球", "篮球", "国足", "奥运", "赛事", "世界杯", "亚运", "夺冠", "联赛"]),
+    ("life", ["民生", "健康", "医疗", "医保", "天气", "交通", "旅游", "美食", "养老", "就业", "社保"]),
+]
+
+
+def tag_of(text):
+    """按标题/摘要猜标准标签；猜不到返回 None（交给 feed 的兜底 tag）"""
+    t = (text or "").lower()
+    for key, words in TAGS:
+        for word in words:
+            if len(word) <= 5 and re.match(r"^[a-z0-9]+$", word):
+                if re.search(r"(^|[^a-z0-9])%s([^a-z0-9]|$)" % re.escape(word), t):
+                    return key
+            elif word in t:
+                return key
+    return None
 
 
 def today():
@@ -63,7 +89,7 @@ def parse(xml_bytes, feed):
             "sum": desc[:90],
             "url": link,
             "source": feed["name"],
-            "tag": feed["lang"],
+            "tag": tag_of(title + " " + desc) or feed.get("tag", "other"),
         })
         if len(out) >= feed["take"]:
             break

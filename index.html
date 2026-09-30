@@ -129,6 +129,16 @@ textarea:focus{outline:2px solid #bfd3ff}
 .pill.warn{background:var(--warn-soft);color:var(--warn)}
 .pill.bad{background:var(--bad-soft);color:var(--bad)}
 .news-src{font-size:11.5px;color:var(--muted);margin-top:4px}
+.tag-bar{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin:2px 0 12px}
+.tag-bar .lab{font-size:12.5px;color:var(--muted)}
+.tagchip{font-size:12.5px;border:1px solid var(--line);background:var(--soft);color:var(--muted);
+  border-radius:20px;padding:4px 11px;cursor:pointer;font-weight:600;font-family:inherit}
+.tagchip:hover{border-color:var(--bar)}
+.tagchip.on{background:var(--accent-soft);border-color:var(--bar);color:var(--accent)}
+.tagchip .n{font-weight:400;opacity:.7;margin-left:4px}
+.tagchip.all{background:transparent}
+.tag-pill{font-size:11px;padding:1px 8px;border-radius:20px;background:var(--accent-soft);color:var(--accent);
+  margin-left:6px;font-weight:600;white-space:nowrap}
 .news-item{border:1px solid var(--line);border-radius:11px;padding:11px 13px;margin-bottom:9px;background:var(--soft)}
 .news-item a{color:var(--accent);font-weight:700;text-decoration:none;font-size:15px}
 .news-item a:hover{text-decoration:underline}
@@ -210,6 +220,7 @@ th{color:var(--muted);font-weight:600;font-size:12.5px}
     <div class="card">
       <h2>今日新闻 <span class="badge b-new" id="newsCount">0 条</span></h2>
       <div id="newsStatus" class="news-status">正在获取今日新闻…</div>
+      <div id="newsTagBar" class="tag-bar"></div>
       <div id="newsList"></div>
       <div class="row" style="margin-top:12px;justify-content:flex-end">
         <button class="btn gray sm" id="btnRefreshNews">重新获取</button>
@@ -345,7 +356,7 @@ const GRAD=INTERVALS.length;           /* level >= GRAD 视为已掌握 */
 function freshState(){
   return {v:2,theme:'blue',bank:'cet4',diffs:[1,2,3],perDay:35,lastDate:null,streak:0,days:0,
     cards:{},queue:[],neww:[],stage:1,qi:0,sess:{right:0,wrong:0,res:[]},
-    news:[],history:[],custom:[],ext:{},order:'random',seqFrom:'',skippedKnown:0};
+    news:[],history:[],custom:[],ext:{},order:'random',seqFrom:'',skippedKnown:0,newsTags:[]};
 }
 let S=(function(){
   try{const r=localStorage.getItem(LSKEY);
@@ -362,6 +373,7 @@ function migrate(o){
   });
   if(!o.order)o.order='random';
   if(o.seqFrom===undefined)o.seqFrom='';
+  if(!Array.isArray(o.newsTags))o.newsTags=[];
   if(!o.theme)o.theme='blue';
   if(o.theme==='dark')o.theme='midnight';
   o.v=2;return o;
@@ -561,7 +573,7 @@ function rollover(){
 const SECTIONS=[
   {id:'news',tag:'NEWS',name:'今日新闻',desc:'导入 · 阅读 · 原文链接',
    views:[{v:1,name:'今日新闻'}],
-   badge:function(){return newsCount()+' 条';}},
+   badge:function(){const v=newsVisible().length;return v?(v+' 条'):'暂无';}},
   {id:'en',tag:'ABC',name:'英语学习',desc:'自测 · 新词 · 分区 · 统计',
    views:[{v:2,name:'单词自测',on:'renderQuiz'},{v:3,name:'今日新词',on:'renderNew'},
           {v:4,name:'单词分区',on:'renderZone'},{v:5,name:'统计 / 数据',on:'renderStats'}],
@@ -708,6 +720,62 @@ function updateSecBadges(){
 const NEWS_CACHE='cet4_news_v1';
 let NEWS={state:'loading',date:'',items:[],source:'',genAt:'',from:'',err:''};
 
+/* 新闻标签：hit 为归类关键词（中文直接包含，英文短词按词边界匹配） */
+const NEWS_TAGS=[
+  {k:'ai',   n:'AI',   hit:['AI','人工智能','大模型','生成式','GPT','算力','机器学习','深度学习','智能体','Agent','OpenAI','英伟达','大模型']},
+  {k:'tech', n:'科技', hit:['科技','科学','航天','卫星','火箭','量子','互联网','数码','机器人','新能源','汽车','电池','5G','6G']},
+  {k:'fin',  n:'财经', hit:['财经','经济','金融','股市','A股','楼市','房价','贷款','利率','消费','财报','营收','央行','基金']},
+  {k:'cn',   n:'国内', hit:['国内','时政','政策','国务院','印发','部署','通知','会议','代表','条例','规划']},
+  {k:'intl', n:'国际', hit:['国际','全球','海外','美国','欧盟','欧洲','日本','韩国','联合国','俄乌','中东','特朗普']},
+  {k:'edu',  n:'教育', hit:['教育','高考','中考','大学','高校','考研','学生','教师','学校','招生']},
+  {k:'cul',  n:'文化', hit:['文化','文物','遗产','博物馆','影视','电影','演出','艺术','文旅','非遗','出版']},
+  {k:'sport',n:'体育', hit:['体育','足球','篮球','国足','男足','女足','世预赛','奥运','赛事','世界杯','亚运','夺冠','联赛','运动员','比赛']},
+  {k:'life', n:'生活', hit:['民生','健康','医疗','医保','天气','交通','旅游','美食','养老','就业','社保']}
+];
+/* 数据源 / 手动输入可能写同义词，统一映射到标准标签 */
+const TAG_ALIAS={'民生':'life','社会':'life','社会新闻':'life','健康':'life','生活':'life',
+ '时政':'cn','政策':'cn','政务':'cn','国内':'cn','中国':'cn',
+ '财经':'fin','经济':'fin','金融':'fin','股市':'fin','房地产':'fin','商业':'fin',
+ '科技':'tech','科学':'tech','互联网':'tech','数码':'tech','通信':'tech',
+ '国际':'intl','国外':'intl','世界':'intl','外交':'intl',
+ '教育':'edu','校园':'edu','考试':'edu','文化':'cul','娱乐':'cul','影视':'cul','文旅':'cul',
+ '体育':'sport','运动':'sport','ai':'ai','人工智能':'ai','artificial intelligence':'ai','科技(ai)':'ai'};
+const TAG_OTHER={k:'other',n:'其他',hit:[]};
+const TAG_MAP={}; NEWS_TAGS.concat([TAG_OTHER]).forEach(function(t){TAG_MAP[t.k]=t;});
+function tagName(k){return (TAG_MAP[k]||TAG_OTHER).n;}
+/* 关键词命中检测：英文短词按词边界，中文直接包含 */
+function hitTag(txt,list){
+  for(let j=0;j<list.length;j++){
+    const hl=String(list[j]).toLowerCase();
+    if(/^[a-z0-9]{1,5}$/.test(hl)){
+      if(new RegExp('(^|[^a-z0-9])'+hl.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'([^a-z0-9]|$)').test(txt))return true;
+    }else if(txt.indexOf(hl)>=0)return true;
+  }
+  return false;
+}
+/* 归类顺序：① AI 关键词优先（最常被单独关注）② 数据自带 tag ③ 其它关键词 ④ 其他 */
+function tagOf(n){
+  const txt=(String(n&&n.tag||'')+' '+String(n&&n.title||'')+' '+String(n&&n.sum||'')+' '+String(n&&n.source||'')).toLowerCase();
+  if(hitTag(txt,NEWS_TAGS[0].hit))return 'ai';
+  const raw=String(n&&n.tag||'').trim();
+  if(raw){
+    for(let i=0;i<NEWS_TAGS.length;i++){
+      if(NEWS_TAGS[i].n===raw||NEWS_TAGS[i].k===raw.toLowerCase())return NEWS_TAGS[i].k;
+    }
+    const al=TAG_ALIAS[raw]||TAG_ALIAS[raw.toLowerCase()];
+    if(al&&TAG_MAP[al])return al;
+  }
+  for(let i=1;i<NEWS_TAGS.length;i++){ if(hitTag(txt,NEWS_TAGS[i].hit))return NEWS_TAGS[i].k; }
+  return 'other';
+}
+function newsTagged(list){return (list||[]).map(function(n){return Object.assign({},n,{tagKey:tagOf(n)});});}
+function newsSel(){return Array.isArray(S.newsTags)?S.newsTags:[];}
+function newsPass(n){const s=newsSel();return !s.length||s.indexOf(n.tagKey)>=0;}
+function newsVisible(){
+  const g=newsGroups();
+  return newsTagged(g.auto.concat(g.manual)).filter(newsPass);
+}
+
 function newsNorm(o){
   const arr=(o&&o.news)||[], items=[];
   arr.forEach(function(n){
@@ -728,7 +796,7 @@ function newsFetch(u){
 function newsGroups(){
   const t=todayStr();
   const manual=(S.news||[]).filter(function(n){return n.date===t;}).map(function(n){
-    return {title:n.title,sum:n.sum||'',url:n.url||'',source:'手动导入',tag:''};});
+    return {title:n.title,sum:n.sum||'',url:n.url||'',source:'手动导入',tag:n.tag||''};});
   return {auto:NEWS.items||[],manual:manual};
 }
 function newsCount(){const g=newsGroups();return g.auto.length+g.manual.length;}
@@ -749,24 +817,65 @@ function renderNewsStatus(){
     '<span>'+esc(m[1])+'</span>'+
     (NEWS.genAt?'<span class="news-src">生成于 '+esc(String(NEWS.genAt).slice(0,16).replace('T',' '))+'</span>':'');
 }
+/* 标签筛选栏：只显示今天数据里出现过的标签（+ 已勾选但今天没出现的） */
+function renderNewsTags(){
+  const box=$('#newsTagBar'); if(!box)return;
+  const g=newsGroups(), tagged=newsTagged(g.auto.concat(g.manual));
+  const cnt={}; tagged.forEach(function(n){cnt[n.tagKey]=(cnt[n.tagKey]||0)+1;});
+  const sel=newsSel();
+  const keys=NEWS_TAGS.map(function(t){return t.k;})
+    .filter(function(k){return cnt[k]||sel.indexOf(k)>=0;});
+  if(cnt.other||sel.indexOf('other')>=0)keys.push('other');
+  if(!keys.length){box.innerHTML='';return;}
+  let h='<span class="lab">只看：</span>'+
+    '<button class="tagchip all'+(sel.length?'':' on')+'" data-tag="">全部<span class="n">'+tagged.length+'</span></button>';
+  keys.forEach(function(k){
+    h+='<button class="tagchip'+(sel.indexOf(k)>=0?' on':'')+'" data-tag="'+k+'">'+
+      esc(tagName(k))+'<span class="n">'+(cnt[k]||0)+'</span></button>';
+  });
+  if(sel.length)h+='<button class="tagchip" data-tag="__clear">清除筛选</button>';
+  box.innerHTML=h;
+  box.querySelectorAll('.tagchip').forEach(function(b){
+    b.addEventListener('click',function(){
+      const v=b.dataset.tag;
+      if(v==='__clear'){S.newsTags=[];}
+      else if(v===''){S.newsTags=[];}
+      else{
+        S.newsTags=newsSel().slice();
+        const i=S.newsTags.indexOf(v);
+        if(i>=0)S.newsTags.splice(i,1); else S.newsTags.push(v);
+      }
+      save(); renderNews();
+    });
+  });
+}
 function renderNewsList(){
   const box=$('#newsList'); if(!box)return;
-  const g=newsGroups(), all=g.auto.concat(g.manual);
-  $('#newsCount').textContent=all.length+' 条';
+  const g=newsGroups();
+  const auto=newsTagged(g.auto);
+  const man=newsTagged(g.manual).map(function(n,i){return Object.assign(n,{_del:i});});
+  const all=auto.concat(man), vis=all.filter(newsPass), sel=newsSel();
+  $('#newsCount').textContent=(vis.length===all.length)?(all.length+' 条'):(vis.length+' / '+all.length+' 条');
   if(!all.length){
     box.innerHTML='<div class="empty">今天还没有新闻。数据由每天 06:30 的定时任务自动生成；若任务未执行，可展开下方「手动导入」临时补一条。</div>';
     return;
   }
-  const one=function(n,del){
+  if(!vis.length){
+    box.innerHTML='<div class="empty">今天没有「'+esc(sel.map(tagName).join('、'))+'」类的新闻（共 '+all.length+' 条）。'+
+      '<br>点上方「全部」查看全部，或换一个标签。</div>';
+    return;
+  }
+  const one=function(n){
+    const meta=(n.source?esc(n.source):'')+
+      '<span class="tag-pill">'+esc(tagName(n.tagKey))+(n.tag&&tagName(n.tagKey)!==n.tag?' · '+esc(n.tag):'')+'</span>';
     return '<div class="news-item"><div class="bar2"><div>'+
       (n.url?'<a href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(n.title)+'</a>':'<b>'+esc(n.title)+'</b>')+
       (n.sum?'<div class="sum">'+esc(n.sum)+'</div>':'')+
-      (n.source?'<div class="news-src">'+esc(n.source)+(n.tag?' · '+esc(n.tag):'')+'</div>':'')+
-      '</div>'+(del!==undefined?'<button class="btn gray sm" data-del="'+del+'">删除</button>':'')+'</div></div>';
+      '<div class="news-src">'+meta+'</div>'+
+      '</div>'+(n._del!==undefined?'<button class="btn gray sm" data-del="'+n._del+'">删除</button>':'')+'</div></div>';
   };
-  box.innerHTML=g.auto.map(function(n){return one(n);}).join('')+
-    g.manual.map(function(n,i){return one(n,i);}).join('');
-  document.querySelectorAll('#newsList [data-del]').forEach(function(b){
+  box.innerHTML=vis.map(one).join('');
+  box.querySelectorAll('[data-del]').forEach(function(b){
     b.addEventListener('click',function(){
       const t=todayStr(); let k=0;
       S.news=(S.news||[]).filter(function(n){return !(n.date===t&&k++===+b.dataset.del);});
@@ -774,7 +883,7 @@ function renderNewsList(){
     });
   });
 }
-function renderNews(){renderNewsStatus();renderNewsList();updateSecBadges();}
+function renderNews(){renderNewsStatus();renderNewsTags();renderNewsList();updateSecBadges();}
 function loadNews(){
   NEWS={state:'loading',date:'',items:[],source:'',genAt:'',from:'',err:''};
   renderNews();
@@ -828,7 +937,8 @@ function addNewsFromText(raw){
     const lines=body.split('\n').map(function(x){return x.trim();})
       .filter(function(x){return x&&!/^https?:/.test(x)&&!/^[-—]+$/.test(x);});
     if(!title)return;
-    S.news.push({date:todayStr(),title:title,sum:lines.join(' ').slice(0,200),url:urlM?urlM[0]:''});
+    S.news.push({date:todayStr(),title:title,sum:lines.join(' ').slice(0,200),url:urlM?urlM[0]:'',
+      tag:tagOf({title:title,sum:lines.join(' ').slice(0,200)})});
     added++;
   });
   save(); renderNews(); return added;
@@ -841,15 +951,21 @@ $('#btnParseNews').addEventListener('click',function(){
   toast(ok?(ok+' 条新闻已导入'):'没解析出新闻，检查格式');
 });
 $('#btnAddNews').addEventListener('click',function(){
+  const opt=NEWS_TAGS.concat([TAG_OTHER]).map(function(t){
+    return '<option value="'+t.k+'">'+esc(t.n)+'</option>';}).join('');
   show('<h3>手动添加新闻</h3><input type="text" id="mTitle" placeholder="标题" style="width:100%;margin-bottom:8px">'+
     '<input type="text" id="mUrl" placeholder="链接（可留空）" style="width:100%;margin-bottom:8px">'+
     '<textarea id="mSum" placeholder="一句话摘要"></textarea>'+
+    '<div class="hint" style="margin-top:8px">分类：'+
+    '<select id="mTag" style="margin-left:6px">'+opt+'</select>'+
+    '<span style="margin-left:6px">（留空它会自己猜，可手动改）</span></div>'+
     '<div class="row" style="justify-content:flex-end;margin-top:12px">'+
     '<button class="btn gray" onclick="closeModal()">取消</button>'+
     '<button class="btn" id="mOk">添加</button></div>');
   $('#mOk').addEventListener('click',function(){
     const t=$('#mTitle').value.trim(); if(!t)return toast('标题不能为空');
-    S.news.push({date:todayStr(),title:t,url:$('#mUrl').value.trim(),sum:$('#mSum').value.trim()});
+    const tg=($('#mTag')&&$('#mTag').value)||tagOf({title:t,sum:$('#mSum').value});
+    S.news.push({date:todayStr(),title:t,url:$('#mUrl').value.trim(),sum:$('#mSum').value.trim(),tag:tg});
     save();renderNews();closeModal();toast('已添加');
   });
 });
