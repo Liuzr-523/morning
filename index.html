@@ -269,6 +269,20 @@ th{color:var(--muted);font-weight:600;font-size:12.5px}
 .mus-time.run{color:var(--accent)}
 .mus-time.rest{color:var(--ok)}
 .mus-note{font-size:12.5px;color:var(--muted);margin-top:11px;padding-top:9px;border-top:1px solid var(--line)}
+/* ── 今日新词：已掌握收纳区 ── */
+.done-dock{background:var(--soft);border:1.5px dashed var(--bar);border-radius:14px;
+  padding:13px 13px 14px;margin-top:18px}
+.done-dock .dock-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.done-dock .dock-head h2{margin:0;font-size:15px;color:var(--muted)}
+.done-dock .empty{padding:12px 6px}
+.wcard.is-done{opacity:.6;background:var(--track)}
+.wcard.is-done .w{color:var(--muted)}
+.wcard.is-done .cn,.wcard.is-done .ex{color:var(--muted)}
+.wcard.is-done:hover{opacity:.92}
+button.btn.danger{background:var(--bad-soft);color:var(--bad);border:1px solid #f2b8b8}
+[data-mode="dark"] button.btn.danger{background:rgba(220,38,38,.18);border-color:rgba(220,38,38,.45)}
+@keyframes cardIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+.card-move{animation:cardIn .3s ease}
 </style>
 </head>
 <body>
@@ -332,8 +346,15 @@ th{color:var(--muted);font-weight:600;font-size:12.5px}
   <section id="view-3" data-sec="en" style="display:none">
     <div class="card">
       <h2>今日新词 <span class="badge b-new" id="newCount">0 个</span></h2>
-      <div class="hint">先通读留印象；已经会的点「已掌握」，它会推迟进入复习队列。</div>
+      <div class="hint">先通读留印象；已经会的点绿色「✓ 已掌握」，它会立刻收进页面底部的灰色收纳区。</div>
       <div class="grid" id="newList" style="margin-top:11px"></div>
+      <div class="done-dock" id="doneDock">
+        <div class="dock-head">
+          <h2>已掌握 <span class="badge b-done" id="doneCount">0 个</span></h2>
+          <span class="hint">收进这里的词不再进入复习队列；点错了点红字「取消掌握」退回上面。</span>
+        </div>
+        <div class="grid" id="doneList"></div>
+      </div>
       <div class="row" style="margin-top:14px">
         <button class="btn ok" id="btnFinish">完成今日学习，看报告</button>
         <button class="btn ghost" id="btnCopyWords">复制今日词表</button>
@@ -1173,25 +1194,43 @@ function submit(give){
 }
 
 /* ===================== 今日新词 ===================== */
+let newMovedKey='';   /* 刚被移动的词，重绘时只给它播动画 */
+function newCardHTML(c,done,moved){
+  return '<div class="wcard'+(done?' is-done':'')+(moved?' card-move':'')+'">'+
+    '<div><span class="w">'+esc(c.w)+'</span><span class="ph">'+esc(c.ph)+'</span>'+
+    '<span class="badge '+(done?'b-done':'b-new')+'">'+DIFF_NAME[c.diff||2]+'</span></div>'+
+    '<div class="cn">'+esc(c.cn)+'</div><div class="ex">'+esc(c.ex)+'</div>'+
+    '<div class="row" style="margin-top:8px">'+
+    (done
+      ?'<button class="btn danger sm" data-know="'+esc(key(c.w))+'" title="退回今日单词，恢复未掌握">取消掌握</button>'
+      :'<button class="btn ok sm" data-know="'+esc(key(c.w))+'" title="收进下方已掌握区">✓ 已掌握</button>')+
+    '</div></div>';
+}
 function renderNew(){
-  const list=(S.neww||[]).map(function(o){return cardOf(o.w);}).filter(Boolean);
-  $('#newCount').textContent=list.length+' 个';
-  $('#newList').innerHTML=list.length?list.map(function(c){
-    const done=zoneOf(c)==='done';
-    return '<div class="wcard">'+
-      '<div><span class="w">'+esc(c.w)+'</span><span class="ph">'+esc(c.ph)+'</span>'+
-      '<span class="badge '+(done?'b-done':'b-new')+'">'+DIFF_NAME[c.diff||2]+'</span></div>'+
-      '<div class="cn">'+esc(c.cn)+'</div><div class="ex">'+esc(c.ex)+'</div>'+
-      '<div class="row" style="margin-top:7px">'+
-      '<button class="btn gray sm" data-know="'+esc(key(c.w))+'">'+(done?'取消掌握':'已掌握')+'</button>'+
-      (S.source==='agent'?'<span class="hint">来自导入</span>':'')+'</div>'+
-    '</div>';
-  }).join(''):'<div class="empty">今天没有新词 —— 当前筛选下的词都学过了。换个词库 / 难度，或导入更多单词。</div>';
-  document.querySelectorAll('#newList [data-know]').forEach(function(b){
+  const all=(S.neww||[]).map(function(o){return cardOf(o.w);}).filter(Boolean);
+  const todo=all.filter(function(c){return zoneOf(c)!=='done';});
+  const done=all.filter(function(c){return zoneOf(c)==='done';});
+  $('#newCount').textContent=todo.length+' 个';
+  $('#newList').innerHTML=todo.length
+    ?todo.map(function(c){return newCardHTML(c,false,key(c.w)===newMovedKey);}).join('')
+    :'<div class="empty">'+(all.length
+      ?'今天的词已经全部收进下方「已掌握」了，真棒。'
+      :'今天没有新词 —— 当前筛选下的词都学过了。换个词库 / 难度，或导入更多单词。')+'</div>';
+  $('#doneCount').textContent=done.length+' 个';
+  $('#doneList').innerHTML=done.length
+    ?done.map(function(c){return newCardHTML(c,true,key(c.w)===newMovedKey);}).join('')
+    :'<div class="empty">点上方单词的绿色「✓ 已掌握」，它就会收进这里。</div>';
+  document.querySelectorAll('#newList [data-know],#doneList [data-know]').forEach(function(b){
     b.addEventListener('click',function(){
       const c=S.cards[b.dataset.know]; if(!c)return;
-      if(zoneOf(c)==='done'){c.status='learning';c.level=0;c.due=nextDue(0);}
-      else{c.status='mastered';c.level=GRAD;c.due=addDays(todayStr(),60);c.seen=Math.max(c.seen,1);}
+      newMovedKey=b.dataset.know;
+      if(zoneOf(c)==='done'){
+        c.status='learning';c.level=0;c.due=nextDue(0);
+        toast('「'+c.w+'」已退回今日单词');
+      }else{
+        c.status='mastered';c.level=GRAD;c.due=addDays(todayStr(),60);c.seen=Math.max(c.seen,1);
+        toast('「'+c.w+'」已收进下方已掌握区');
+      }
       save(); renderNew(); renderHeader();
     });
   });
