@@ -250,6 +250,25 @@ th{color:var(--muted);font-weight:600;font-size:12.5px}
 .news-mixbar button[data-shuffle]{border:1px solid var(--line);background:var(--soft);color:var(--muted);
   border-radius:20px;padding:3px 11px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit}
 .news-mixbar button[data-shuffle]:hover{border-color:var(--bar);color:var(--accent)}
+/* ── 音乐台 ── */
+.mus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:11px 0 12px}
+@media(max-width:560px){.mus-grid{grid-template-columns:repeat(2,1fr)}}
+.mus-tile{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--soft);
+  color:var(--muted);border-radius:11px;padding:9px 10px;cursor:pointer;font-family:inherit;font-size:13.5px;
+  font-weight:600;text-align:left;line-height:1.3}
+.mus-tile:hover{border-color:var(--bar)}
+.mus-tile.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.mus-tile svg{flex:0 0 18px;width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6;
+  stroke-linecap:round;stroke-linejoin:round}
+.mus-tile span{min-width:0}
+.mus-ctrl{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-top:2px}
+.mus-vol{flex:1;min-width:140px;accent-color:var(--accent);background:transparent}
+.mus-lab{font-size:12.5px;color:var(--muted);font-weight:600}
+.mus-time{font-size:34px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:1px;
+  color:var(--text);line-height:1.1}
+.mus-time.run{color:var(--accent)}
+.mus-time.rest{color:var(--ok)}
+.mus-note{font-size:12.5px;color:var(--muted);margin-top:11px;padding-top:9px;border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
@@ -380,6 +399,50 @@ th{color:var(--muted);font-weight:600;font-size:12.5px}
       <div class="row" style="margin-top:9px"><button class="btn" id="btnCopyMemory">复制「今日学习记忆」</button></div>
     </div>
   </section>
+
+  <section id="view-6" data-sec="music" style="display:none">
+    <div class="card">
+      <h2>环境音 <span class="hint" style="font-weight:400">浏览器实时合成 · 无版权 · 离线可用</span></h2>
+      <div class="hint">背单词、读论文属于言语记忆任务，对歌词最敏感 —— 这两个阶段请保持安静，或者用下面这些无歌词的低刺激背景音。</div>
+      <div class="mus-grid" id="musGrid"></div>
+      <div class="mus-ctrl">
+        <button class="btn" id="musPlay">播放</button>
+        <span class="mus-lab">音量</span>
+        <input type="range" id="musVol" class="mus-vol" min="0" max="100" step="1" value="35">
+        <span class="hint" id="musVolTxt">35%</span>
+      </div>
+      <div class="mus-note">音量调到「刚好能听见」最合适 —— 音量比音色更关键。同一种听久了会习惯化、唤醒作用衰减，隔几天换一种或干脆静音。</div>
+    </div>
+    <div class="card">
+      <h2>番茄计时 <span class="hint" style="font-weight:400">专注 25 分钟 · 休息 5 分钟</span></h2>
+      <div class="row" style="align-items:center;gap:16px">
+        <div class="mus-time" id="musClock">25:00</div>
+        <div class="row" style="gap:7px">
+          <button class="btn" id="musStart">开始</button>
+          <button class="btn gray sm" id="musPause">暂停</button>
+          <button class="btn gray sm" id="musReset">重置</button>
+        </div>
+      </div>
+      <div class="row" style="margin-top:11px;gap:7px">
+        <button class="chip" data-min="25">25 分钟专注</button>
+        <button class="chip" data-min="45">45 分钟专注</button>
+        <button class="chip" data-min="5">5 分钟休息</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>开场曲 <span class="hint" style="font-weight:400">仪式锚点 · 只在开始学习前用</span></h2>
+      <div class="hint">固定同一首，听到它就知道「要开始了」。填一个 B 站或网易云的单曲链接，点一下在新标签页播放，3 分钟后提醒你切回安静或环境音。</div>
+      <div class="row" style="margin-top:10px;gap:8px">
+        <input type="text" id="musSongName" placeholder="曲名（可留空）" style="flex:0 1 150px">
+        <input type="text" id="musSongUrl" placeholder="https://… 单曲链接" style="flex:1;min-width:200px">
+      </div>
+      <div class="row" style="margin-top:10px;gap:8px">
+        <button class="btn ok" id="musSongPlay">播放开场曲</button>
+        <button class="btn ghost" id="musSongSave">保存</button>
+        <span class="hint" id="musSongTxt"></span>
+      </div>
+    </div>
+  </section>
 </div>
 
 <div class="mask" id="mask"><div class="modal" id="modal"></div></div>
@@ -397,7 +460,8 @@ const GRAD=INTERVALS.length;           /* level >= GRAD 视为已掌握 */
 function freshState(){
   return {v:2,theme:'blue',bank:'cet4',diffs:[1,2,3],perDay:35,lastDate:null,streak:0,days:0,
     cards:{},queue:[],neww:[],stage:1,qi:0,sess:{right:0,wrong:0,res:[]},
-    news:[],history:[],custom:[],ext:{},order:'random',seqFrom:'',skippedKnown:0,newsTags:[]};
+    news:[],history:[],custom:[],ext:{},order:'random',seqFrom:'',skippedKnown:0,newsTags:[],
+    music:{vol:35,last:'rain',song:'',songName:''}};
 }
 let S=(function(){
   try{const r=localStorage.getItem(LSKEY);
@@ -415,6 +479,8 @@ function migrate(o){
   if(!o.order)o.order='random';
   if(o.seqFrom===undefined)o.seqFrom='';
   if(!Array.isArray(o.newsTags))o.newsTags=[];
+  if(!o.music||typeof o.music!=='object')o.music={vol:35,last:'rain',song:'',songName:''};
+  if(typeof o.music.vol!=='number')o.music.vol=35;
   if(!o.theme)o.theme='blue';
   if(o.theme==='dark')o.theme='midnight';
   if(!o._t)o._t=0;
@@ -620,7 +686,13 @@ const SECTIONS=[
    views:[{v:2,name:'单词自测',on:'renderQuiz'},{v:3,name:'今日新词',on:'renderNew'},
           {v:4,name:'单词分区',on:'renderZone'},{v:5,name:'统计 / 数据',on:'renderStats'}],
    badge:function(){return (S.queue||[]).length?(S.queue.length+' 待复习')
-     :('今日 '+((S.neww||[]).length)+' 新词');}}
+     :('今日 '+((S.neww||[]).length)+' 新词');}},
+  {id:'music',tag:'AUD',name:'音乐台',desc:'环境音 · 计时 · 开场曲',
+   views:[{v:6,name:'音乐台'}],
+   badge:function(){
+     if(POMO.on)return musFmt(POMO.left)+(POMO.rest?' 休息':'');
+     if(MUS.playing)return (musName(MUS.cur)||'')+' 播放中';
+     return '未播放';}}
 ];
 let curView=1, curSec='news';
 const secLast={};   /* 各板块最后停留的子页 */
@@ -1806,11 +1878,282 @@ async function cbBoot(){
   else{cbSetSync('登录已过期，请重新登录');}
 }
 
+/* ===================== 音乐台：Web Audio 实时合成 =====================
+   六种环境音全部由浏览器算出来，不加载任何音频文件：零体积、无版权、离线可用。 */
+const MUS_SOUNDS=[
+  {id:'rain',name:'雨声',kind:'white',base:.45,lfo:[.06,.12,'gain'],
+   chain:[['highpass',900,.7],['lowpass',9000,.7]],
+   icon:'M4.6 2.6l-1.7 4.2M9.2 2.6l-1.7 4.2M13.8 2.6l-1.7 4.2M6.8 9.4l-1.7 4.2M11.4 9.4l-1.7 4.2'},
+  {id:'stream',name:'溪流',kind:'white',base:.32,lfo:[.13,.10,'gain'],
+   chain:[['bandpass',1500,.9],['highpass',600,.7]],
+   icon:'M2 6.5c1.8-2 3.6 2 5.4 0s3.6 2 5.4 0M2 11c1.8-2 3.6 2 5.4 0s3.6 2 5.4 0'},
+  {id:'waves',name:'海浪',kind:'brown',base:.55,lfo:[.07,.35,'gain'],
+   chain:[['lowpass',700,.7]],
+   icon:'M2 8.5c2.5-3.4 5-3.4 7.5 0s4 2.4 6.5-1M4 13c2-2 4-2 6 0s3 1.6 5-.6'},
+  {id:'wind',name:'风声',kind:'brown',base:.75,lfo:[.05,260,'freq',500],
+   chain:[['bandpass',500,1.3]],
+   icon:'M2 6.2h8.5a2.4 2.4 0 1 0-2.4-2.4M2 11.5h11a2.4 2.4 0 1 1-2.4 2.4'},
+  {id:'white',name:'白噪音',kind:'white',base:.16,lfo:null,
+   chain:[['lowpass',11000,.7]],
+   icon:'M3 13V4M6.2 13V2.5M9.4 13V5.5M12.6 13V3M15.4 13V6.5'},
+  {id:'brown',name:'低频噪音',kind:'brown',base:.95,lfo:[.04,.08,'gain'],
+   chain:[['lowpass',420,.7]],
+   icon:'M2 12c3-7 6 5 9-1s3.4 3 5 2'}
+];
+const MUS={ctx:null,master:null,nodes:[],playing:false,cur:'rain',vol:.35,buf:{},gen:0};
+const POMO={on:false,rest:false,min:25,left:1500,timer:null};
+const SONG={left:0,timer:null};
+function musName(id){
+  const s=MUS_SOUNDS.filter(function(x){return x.id===id;})[0];
+  return s?s.name:'';
+}
+function musFmt(s){
+  s=Math.max(0,Math.round(s));
+  const m=Math.floor(s/60),r=s%60;
+  return (m<10?'0':'')+m+':'+(r<10?'0':'')+r;
+}
+function musCtx(){
+  if(MUS.ctx)return MUS.ctx;
+  const AC=window.AudioContext||window.webkitAudioContext;
+  if(!AC)return null;
+  MUS.ctx=new AC();
+  MUS.master=MUS.ctx.createGain();
+  MUS.master.gain.value=MUS.vol;
+  MUS.master.connect(MUS.ctx.destination);
+  return MUS.ctx;
+}
+function musNoise(kind){
+  if(MUS.buf[kind])return MUS.buf[kind];
+  const ctx=MUS.ctx,len=Math.floor(ctx.sampleRate*6);
+  const buf=ctx.createBuffer(1,len,ctx.sampleRate),d=buf.getChannelData(0);
+  let i,w,last,b0=0,b1=0,b2=0,b3=0,b4=0,b5=0,b6=0;
+  if(kind==='white'){for(i=0;i<len;i++)d[i]=Math.random()*2-1;}
+  else if(kind==='brown'){
+    last=0;
+    for(i=0;i<len;i++){w=Math.random()*2-1;last=(last+0.02*w)/1.02;d[i]=last*3.2;}
+  }else{
+    for(i=0;i<len;i++){
+      w=Math.random()*2-1;
+      b0=0.99886*b0+w*0.0555179;b1=0.99332*b1+w*0.0750759;b2=0.96900*b2+w*0.1538520;
+      b3=0.86650*b3+w*0.3104856;b4=0.55000*b4+w*0.5329522;b5=-0.7616*b5-w*0.0168980;
+      d[i]=(b0+b1+b2+b3+b4+b5+b6+w*0.5362)*0.11;b6=w*0.115926;
+    }
+  }
+  if(kind!=='white'){
+    const f=Math.floor(ctx.sampleRate*0.05);
+    for(i=0;i<f;i++){const k=i/f;d[i]=d[i]*k+d[len-f+i]*(1-k);}
+  }
+  MUS.buf[kind]=buf;return buf;
+}
+function musKill(list){
+  list.forEach(function(n){
+    try{if(n.stop)n.stop();}catch(e){}
+    try{n.disconnect();}catch(e){}
+  });
+}
+function musBuild(id){
+  const ctx=MUS.ctx;
+  const cfg=MUS_SOUNDS.filter(function(s){return s.id===id;})[0]||MUS_SOUNDS[0];
+  const out=ctx.createGain(); out.gain.value=1; out.connect(MUS.master);
+  const src=ctx.createBufferSource(); src.buffer=musNoise(cfg.kind); src.loop=true;
+  let node=src,lastF=null;
+  (cfg.chain||[]).forEach(function(c){
+    const f=ctx.createBiquadFilter();
+    f.type=c[0]; f.frequency.value=c[1]; if(c[2]!=null)f.Q.value=c[2];
+    node.connect(f); node=f; lastF=f; MUS.nodes.push(f);
+  });
+  const gm=ctx.createGain(); gm.gain.value=cfg.base;
+  node.connect(gm); gm.connect(out); MUS.nodes.push(gm,out);
+  if(cfg.lfo){
+    const o=ctx.createOscillator(); o.type='sine'; o.frequency.value=cfg.lfo[0];
+    const g=ctx.createGain(); g.gain.value=cfg.lfo[1];
+    o.connect(g);
+    if(cfg.lfo[2]==='freq'&&lastF){lastF.frequency.value=cfg.lfo[3];g.connect(lastF.frequency);}
+    else{g.connect(gm.gain);}
+    o.start(); MUS.nodes.push(o,g);
+  }
+  src.start(); MUS.nodes.push(src);
+  return out;
+}
+function musFade(to,sec){
+  if(!MUS.ctx)return;
+  const t=MUS.ctx.currentTime,g=MUS.master.gain;
+  try{
+    g.cancelScheduledValues(t);
+    g.setValueAtTime(Math.max(0.0001,g.value),t);
+    g.linearRampToValueAtTime(Math.max(0.0001,to),t+sec);
+  }catch(e){}
+}
+function musPlay(id){
+  const ctx=musCtx();
+  if(!ctx){toast('当前浏览器不支持网页音频');return;}
+  if(ctx.state==='suspended')ctx.resume();
+  MUS.cur=id;
+  const g=++MUS.gen;
+  const go=function(){
+    if(g!==MUS.gen)return;              /* 期间被停止或再次切换，放弃这次启动 */
+    musBuild(id);
+    musFade(MUS.vol,1.0);
+    MUS.playing=true;
+    musRender();
+    try{updateSecBadges();}catch(e){}
+  };
+  if(MUS.playing){
+    const dead=MUS.nodes||[];MUS.nodes=[];
+    musFade(0.0001,0.35);
+    setTimeout(function(){musKill(dead);go();},400);
+  }else go();
+}
+function musStop(){
+  if(!MUS.playing)return;
+  MUS.gen++;                            /* 让切换途中待启动的那次失效 */
+  const dead=MUS.nodes||[];MUS.nodes=[];
+  musFade(0.0001,0.45);
+  setTimeout(function(){musKill(dead);},500);
+  MUS.playing=false;
+}
+function musToggle(){
+  if(MUS.playing){musStop();toast('已停止');}
+  else musPlay(MUS.cur||S.music.last||'rain');
+  musRender();
+  try{updateSecBadges();}catch(e){}
+}
+function musApplyVol(v,persist){
+  MUS.vol=Math.min(1,Math.max(0,v));
+  if(MUS.playing&&MUS.ctx)musFade(MUS.vol,0.15);
+  else if(MUS.master)MUS.master.gain.value=MUS.vol;
+  const pct=Math.round(MUS.vol*100);
+  const t=$('#musVolTxt'); if(t)t.textContent=pct+'%';
+  if(persist){S.music.vol=pct;save();}
+}
+function musDing(){
+  const ctx=musCtx(); if(!ctx)return;
+  if(ctx.state==='suspended')ctx.resume();
+  [0,.35,.7].forEach(function(dt){
+    const t=ctx.currentTime+dt,o=ctx.createOscillator(),g=ctx.createGain();
+    o.type='sine'; o.frequency.value=880;
+    g.gain.setValueAtTime(0.0001,t);
+    g.gain.exponentialRampToValueAtTime(0.3,t+0.02);
+    g.gain.exponentialRampToValueAtTime(0.0001,t+0.5);
+    o.connect(g); g.connect(ctx.destination);
+    o.start(t); o.stop(t+0.55);
+  });
+}
+function musTick(){
+  POMO.left--;
+  if(POMO.left<=0){
+    clearInterval(POMO.timer);POMO.timer=null;POMO.on=false;POMO.left=0;
+    musDing();
+    if(POMO.rest){toast('休息结束，回到学习');POMO.rest=false;POMO.min=25;POMO.left=1500;}
+    else{toast(POMO.min+' 分钟到了，休息 5 分钟');POMO.rest=true;POMO.min=5;POMO.left=300;}
+    musRender();try{updateSecBadges();}catch(e){}
+    return;
+  }
+  musRender();
+  try{updateSecBadges();}catch(e){}
+}
+function musStartTimer(){
+  if(POMO.on)return;
+  const ctx=musCtx(); if(ctx&&ctx.state==='suspended')ctx.resume();
+  POMO.on=true;
+  POMO.timer=setInterval(musTick,1000);
+  musRender();try{updateSecBadges();}catch(e){}
+}
+function musPauseTimer(){
+  if(POMO.timer){clearInterval(POMO.timer);POMO.timer=null;}
+  POMO.on=false;musRender();try{updateSecBadges();}catch(e){}
+}
+function musResetTimer(min){
+  if(POMO.timer){clearInterval(POMO.timer);POMO.timer=null;}
+  POMO.on=false;
+  if(min){POMO.min=min;POMO.rest=(min<=5);}
+  POMO.left=POMO.min*60;
+  document.querySelectorAll('.chip[data-min]').forEach(function(b){
+    b.classList.toggle('on',+b.dataset.min===POMO.min);
+  });
+  musRender();
+}
+function musSongRender(){
+  const t=$('#musSongTxt'); if(!t)return;
+  if(SONG.left>0){t.textContent='开场中 '+musFmt(SONG.left)+'，到点切回安静';return;}
+  const n=(S.music||{}).songName||'',u=(S.music||{}).song||'';
+  t.textContent=u?('已保存：'+(n||'未命名')):'还没填链接';
+}
+function musSongPlay(){
+  const u=($('#musSongUrl').value||'').trim();
+  if(!u){toast('先填一个单曲链接');return;}
+  if(!/^https?:\/\//i.test(u)){toast('链接要以 http:// 或 https:// 开头');return;}
+  const nm=($('#musSongName').value||'').trim();
+  if(u!==(S.music.song||'')){S.music.song=u;S.music.songName=nm;save();}
+  if(MUS.playing){musStop();musRender();try{updateSecBadges();}catch(e){}}
+  const w=window.open(u,'_blank');
+  if(!w)toast('浏览器拦截了新窗口，请允许本页弹出窗口');
+  SONG.left=180;
+  if(SONG.timer)clearInterval(SONG.timer);
+  SONG.timer=setInterval(function(){
+    SONG.left--;
+    if(SONG.left<=0){clearInterval(SONG.timer);SONG.timer=null;SONG.left=0;
+      toast('开场结束 —— 切回安静或环境音');}
+    musSongRender();
+  },1000);
+  musSongRender();
+}
+function musRender(){
+  const g=$('#musGrid');
+  if(g){
+    g.innerHTML=MUS_SOUNDS.map(function(s){
+      return '<button class="mus-tile'+(MUS.playing&&MUS.cur===s.id?' on':'')+'" data-s="'+s.id+'">'+
+        '<svg viewBox="0 0 18 18"><path d="'+s.icon+'"/></svg><span>'+s.name+'</span></button>';
+    }).join('');
+  }
+  const p=$('#musPlay'); if(p)p.textContent=MUS.playing?'停止':'播放';
+  const c=$('#musClock');
+  if(c){c.textContent=musFmt(POMO.left);
+    c.className='mus-time'+(POMO.on?(POMO.rest?' run rest':' run'):'');}
+}
+function musBoot(){
+  const m=S.music||{};
+  MUS.vol=Math.min(1,Math.max(0,(+m.vol||0)/100));
+  MUS.cur=m.last||'rain';
+  const v=$('#musVol'); if(v)v.value=Math.round(MUS.vol*100);
+  const vt=$('#musVolTxt'); if(vt)vt.textContent=Math.round(MUS.vol*100)+'%';
+  const sn=$('#musSongName'); if(sn)sn.value=m.songName||'';
+  const su=$('#musSongUrl'); if(su)su.value=m.song||'';
+  musResetTimer(25);
+  musSongRender();
+  musRender();
+}
+$('#musPlay').addEventListener('click',musToggle);
+$('#musGrid').addEventListener('click',function(e){
+  const b=e.target.closest('.mus-tile'); if(!b)return;
+  const id=b.dataset.s;
+  S.music.last=id; save();
+  if(MUS.playing&&MUS.cur===id){musStop();toast('已停止');musRender();}
+  else musPlay(id);
+  musRender();
+  try{updateSecBadges();}catch(err){}
+});
+$('#musVol').addEventListener('input',function(e){musApplyVol(+e.target.value/100,false);});
+$('#musVol').addEventListener('change',function(e){musApplyVol(+e.target.value/100,true);toast('音量已保存');});
+$('#musStart').addEventListener('click',musStartTimer);
+$('#musPause').addEventListener('click',musPauseTimer);
+$('#musReset').addEventListener('click',function(){musResetTimer();});
+document.querySelectorAll('.chip[data-min]').forEach(function(b){
+  b.addEventListener('click',function(){musResetTimer(+b.dataset.min);});
+});
+$('#musSongSave').addEventListener('click',function(){
+  S.music.songName=($('#musSongName').value||'').trim();
+  S.music.song=($('#musSongUrl').value||'').trim();
+  save();musSongRender();toast('开场曲已保存');
+});
+$('#musSongPlay').addEventListener('click',musSongPlay);
+
 /* ===================== 启动 ===================== */
 rollover();
 applyTheme();
 buildThemePanel();
 buildSections();
+musBoot();
 buildBankSelect();
 renderChips();
 $('#inpPerDay').value=S.perDay;
