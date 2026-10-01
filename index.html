@@ -269,12 +269,14 @@ th{color:var(--muted);font-weight:600;font-size:12.5px}
 .mus-time.run{color:var(--accent)}
 .mus-time.rest{color:var(--ok)}
 .mus-note{font-size:12.5px;color:var(--muted);margin-top:11px;padding-top:9px;border-top:1px solid var(--line)}
-/* ── 今日新词：已掌握收纳区 ── */
+/* ── 今日新词：学会区 / 跳过区 ── */
+.learn-dock{background:var(--accent-soft);border:1.5px solid var(--bar);border-radius:14px;
+  padding:13px 13px 14px;margin-top:18px}
 .done-dock{background:var(--soft);border:1.5px dashed var(--bar);border-radius:14px;
   padding:13px 13px 14px;margin-top:18px}
-.done-dock .dock-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
-.done-dock .dock-head h2{margin:0;font-size:15px;color:var(--muted)}
-.done-dock .empty{padding:12px 6px}
+.done-dock .dock-head,.learn-dock .dock-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.done-dock .dock-head h2,.learn-dock .dock-head h2{margin:0;font-size:15px;color:var(--muted)}
+.done-dock .empty,.learn-dock .empty{padding:12px 6px}
 .wcard.is-done{opacity:.6;background:var(--track)}
 .wcard.is-done .w{color:var(--muted)}
 .wcard.is-done .cn,.wcard.is-done .ex{color:var(--muted)}
@@ -345,13 +347,21 @@ button.btn.danger{background:var(--bad-soft);color:var(--bad);border:1px solid #
 
   <section id="view-3" data-sec="en" style="display:none">
     <div class="card">
-      <h2>今日新词 <span class="badge b-new" id="newCount">0 个</span></h2>
-      <div class="hint">先通读留印象；已经会的点绿色「✓ 已掌握」，它会立刻收进页面底部的灰色收纳区。</div>
+      <h2>今日单词 <span class="badge b-new" id="newCount">0 个</span></h2>
+      <div class="hint">通读完一遍后：这个词今天背下来了 —— 点蓝色「今天学会了」；早就认识的词 —— 点绿色「早就认识」，它会被跳过并自动补一个新词进来，今天的定额不缩水。</div>
+      <div class="hint" id="newProgress" style="margin-top:5px"></div>
       <div class="grid" id="newList" style="margin-top:11px"></div>
+      <div class="learn-dock" id="learnDock">
+        <div class="dock-head">
+          <h2>今天学会了 <span class="badge b-learn" id="learnCount">0 个</span></h2>
+          <span class="hint">这些算今天真正学到的，会按遗忘曲线排进后面的复习。点错了可以退回上面。</span>
+        </div>
+        <div class="grid" id="learnList"></div>
+      </div>
       <div class="done-dock" id="doneDock">
         <div class="dock-head">
-          <h2>已掌握 <span class="badge b-done" id="doneCount">0 个</span></h2>
-          <span class="hint">收进这里的词不再进入复习队列；点错了点红字「取消掌握」退回上面。</span>
+          <h2>早就认识 <span class="badge b-done" id="doneCount">0 个</span></h2>
+          <span class="hint">已跳过、不再复习；每跳过一个都会自动补一个新词。点错了用红字退回去。</span>
         </div>
         <div class="grid" id="doneList"></div>
       </div>
@@ -482,13 +492,16 @@ function freshState(){
   return {v:2,theme:'blue',bank:'cet4',diffs:[1,2,3],perDay:35,lastDate:null,streak:0,days:0,
     cards:{},queue:[],neww:[],stage:1,qi:0,sess:{right:0,wrong:0,res:[]},
     news:[],history:[],custom:[],ext:{},order:'random',seqFrom:'',skippedKnown:0,newsTags:[],
-    music:{vol:35,last:'rain',song:'',songName:''}};
+    music:{vol:35,last:'rain',song:'',songName:''},skipToday:[],newDate:''};
 }
 let S=(function(){
   try{const r=localStorage.getItem(LSKEY);
     if(r)return migrate(Object.assign(freshState(),JSON.parse(r)));}catch(e){}
   return freshState();
 })();
+/* 打开页面那一刻本机是否已有存档：之后 rollover 会写盘，必须先取下来。
+   换设备首次打开时它是 false，表示本机没有历史，应当整体采用云端进度。 */
+const LOCAL_HAD=(function(){try{return !!localStorage.getItem(LSKEY);}catch(e){return false;}})();
 function migrate(o){
   Object.keys(o.cards||{}).forEach(k=>{
     const c=o.cards[k];
@@ -502,6 +515,8 @@ function migrate(o){
   if(!Array.isArray(o.newsTags))o.newsTags=[];
   if(!o.music||typeof o.music!=='object')o.music={vol:35,last:'rain',song:'',songName:''};
   if(typeof o.music.vol!=='number')o.music.vol=35;
+  if(!Array.isArray(o.skipToday))o.skipToday=[];
+  if(!o.newDate)o.newDate='';
   if(!o.theme)o.theme='blue';
   if(o.theme==='dark')o.theme='midnight';
   if(!o._t)o._t=0;
@@ -669,11 +684,49 @@ function commitNew(){
       level:0,due:addDays(t,1),wrong:0,right:0,seen:0,added:t,status:'learning'};
   });
 }
-function drawTodayNew(){
+function drawTodayNew(force){
+  if(!force&&S.newDate===todayStr())return;   /* 同一天已抽过就不再重抽：刷新页面 / 换设备登录都不会变 */
   clearUnlearnedNew();
   const r=pickNew(S.perDay);
   S.neww=r.out; S.skippedKnown=r.skipped;
+  S.skipToday=[]; S.newDate=todayStr();
   commitNew();
+}
+/* ── 今日新词的两种处理：早就认识（跳过并补词） / 今天学会了（进复习队列） ── */
+function newSkip(c){
+  const kk=key(c.w);
+  const old=(S.neww||[]).filter(function(o){return key(o.w)===kk;})[0];
+  c.status='mastered'; c.level=GRAD; c.due=addDays(todayStr(),60); c.seen=Math.max(c.seen,1);
+  S.neww=(S.neww||[]).filter(function(o){return key(o.w)!==kk;});
+  let x=null;
+  const r=pickNew(1);
+  if(r.out&&r.out.length){
+    const o=r.out[0]; x=key(o.w);
+    S.neww.push(o); commitNew();          /* 补进来一个全新的词，今天的学习量不缩水 */
+  }
+  S.skipToday.push({k:kk,o:old,w:c.w,x:x});
+  save();
+  return x;
+}
+function newUnskip(k){
+  const arr=S.skipToday||[];
+  let idx=-1;
+  for(let i=0;i<arr.length;i++){ if(arr[i].k===k){idx=i;break;} }
+  if(idx<0)return null;
+  const p=arr.splice(idx,1)[0];
+  if(p.x){                                 /* 当初补进来的替补词还没背 → 退回去 */
+    const c=S.cards[p.x];
+    if(c&&!c.seen&&!c.right&&!c.wrong){
+      delete S.cards[p.x];
+      S.neww=(S.neww||[]).filter(function(o){return key(o.w)!==p.x;});
+    }
+  }
+  if(p.o)S.neww.push(p.o);                 /* 原词回到今日待学 */
+  const c=S.cards[p.k];
+  if(c){c.status='learning';c.level=0;c.due=addDays(todayStr(),1);}
+  commitNew();
+  save();
+  return p;
 }
 function rollover(){
   const t=todayStr();
@@ -800,7 +853,7 @@ function buildBankSelect(){
 }
 $('#selBank').addEventListener('change',function(e){
   S.bank=e.target.value; save();
-  drawTodayNew(); save(); renderHeader();
+  drawTodayNew(true); save(); renderHeader();
   if(curView===3)renderNew(); else goView(3);
   if(curView===4)renderZone();
   toast('已切换到「'+bankName()+'」，今日新词已重抽');
@@ -810,7 +863,7 @@ $('#diffChips').addEventListener('click',function(e){
   const d=+b.dataset.d, i=S.diffs.indexOf(d);
   if(i>=0){if(S.diffs.length===1)return toast('至少保留一个难度');S.diffs.splice(i,1);}
   else S.diffs.push(d);
-  S.diffs.sort(); save(); renderChips(); drawTodayNew(); save();
+  S.diffs.sort(); save(); renderChips(); drawTodayNew(true); save();
   if(curView===3)renderNew();
   if(curView===4)renderZone();
   toast('难度筛选：'+S.diffs.map(function(x){return DIFF_NAME[x];}).join(' / '));
@@ -822,16 +875,16 @@ function renderChips(){
 }
 $('#inpPerDay').addEventListener('change',function(e){
   const n=Math.max(5,Math.min(100,parseInt(e.target.value,10)||35));
-  S.perDay=n; e.target.value=n; save(); drawTodayNew(); save();
+  S.perDay=n; e.target.value=n; save(); drawTodayNew(true); save();
   if(curView===3)renderNew();
 });
 $('#selOrder').addEventListener('change',function(e){
-  S.order=e.target.value; save(); drawTodayNew(); save(); renderHeader();
+  S.order=e.target.value; save(); drawTodayNew(true); save(); renderHeader();
   if(curView===3)renderNew(); else goView(3);
   toast('推送顺序：'+(S.order==='random'?'随机':'正序')+'，今日新词已重抽');
 });
 $('#btnRegen').addEventListener('click',function(){
-  drawTodayNew(); save(); renderNew(); renderHeader();
+  drawTodayNew(true); save(); renderNew(); renderHeader();
   toast('已重抽今日新词 · '+(S.order==='random'?'随机':'正序，换下一批')
     +'（排除 '+S.skippedKnown+' 个已学过的）');
 });
@@ -1195,46 +1248,75 @@ function submit(give){
 
 /* ===================== 今日新词 ===================== */
 let newMovedKey='';   /* 刚被移动的词，重绘时只给它播动画 */
-function newCardHTML(c,done,moved){
-  return '<div class="wcard'+(done?' is-done':'')+(moved?' card-move':'')+'">'+
+function newCardHTML(c,mode,moved){   /* mode: todo / learned / skip */
+  let btn;
+  if(mode==='todo'){
+    btn='<button class="btn sm" data-learn="'+esc(key(c.w))+'" title="算进今天的学习量，之后按遗忘曲线复习">今天学会了</button>'+
+        '<button class="btn ok sm" data-skip="'+esc(key(c.w))+'" title="早就认识：跳过它，并自动补一个新词进来">早就认识</button>';
+  }else if(mode==='learned'){
+    btn='<button class="btn gray sm" data-unlearn="'+esc(key(c.w))+'" title="退回今日单词，重新算作待学">退回</button>';
+  }else{
+    btn='<button class="btn danger sm" data-unskip="'+esc(key(c.w))+'" title="退回今日单词，替补进来的新词也会撤掉">取消掌握</button>';
+  }
+  return '<div class="wcard'+(mode==='skip'?' is-done':'')+(moved?' card-move':'')+'">'+
     '<div><span class="w">'+esc(c.w)+'</span><span class="ph">'+esc(c.ph)+'</span>'+
-    '<span class="badge '+(done?'b-done':'b-new')+'">'+DIFF_NAME[c.diff||2]+'</span></div>'+
+    '<span class="badge '+(mode==='skip'?'b-done':'b-new')+'">'+DIFF_NAME[c.diff||2]+'</span></div>'+
     '<div class="cn">'+esc(c.cn)+'</div><div class="ex">'+esc(c.ex)+'</div>'+
-    '<div class="row" style="margin-top:8px">'+
-    (done
-      ?'<button class="btn danger sm" data-know="'+esc(key(c.w))+'" title="退回今日单词，恢复未掌握">取消掌握</button>'
-      :'<button class="btn ok sm" data-know="'+esc(key(c.w))+'" title="收进下方已掌握区">✓ 已掌握</button>')+
-    '</div></div>';
+    '<div class="row" style="margin-top:8px">'+btn+'</div></div>';
 }
 function renderNew(){
   const all=(S.neww||[]).map(function(o){return cardOf(o.w);}).filter(Boolean);
-  const todo=all.filter(function(c){return zoneOf(c)!=='done';});
-  const done=all.filter(function(c){return zoneOf(c)==='done';});
+  const todo=[],learnt=[];
+  all.forEach(function(c){ if(c.today==='learned')learnt.push(c); else todo.push(c); });
+  const skips=[];
+  (S.skipToday||[]).forEach(function(p){ if(S.cards[p.k])skips.push(S.cards[p.k]); });
   $('#newCount').textContent=todo.length+' 个';
   $('#newList').innerHTML=todo.length
-    ?todo.map(function(c){return newCardHTML(c,false,key(c.w)===newMovedKey);}).join('')
+    ?todo.map(function(c){return newCardHTML(c,'todo',key(c.w)===newMovedKey);}).join('')
     :'<div class="empty">'+(all.length
-      ?'今天的词已经全部收进下方「已掌握」了，真棒。'
+      ?'今天的词都处理完了 —— 学会的在下面，早就认识的在最下面。'
       :'今天没有新词 —— 当前筛选下的词都学过了。换个词库 / 难度，或导入更多单词。')+'</div>';
-  $('#doneCount').textContent=done.length+' 个';
-  $('#doneList').innerHTML=done.length
-    ?done.map(function(c){return newCardHTML(c,true,key(c.w)===newMovedKey);}).join('')
-    :'<div class="empty">点上方单词的绿色「✓ 已掌握」，它就会收进这里。</div>';
-  document.querySelectorAll('#newList [data-know],#doneList [data-know]').forEach(function(b){
-    b.addEventListener('click',function(){
-      const c=S.cards[b.dataset.know]; if(!c)return;
-      newMovedKey=b.dataset.know;
-      if(zoneOf(c)==='done'){
-        c.status='learning';c.level=0;c.due=nextDue(0);
-        toast('「'+c.w+'」已退回今日单词');
-      }else{
-        c.status='mastered';c.level=GRAD;c.due=addDays(todayStr(),60);c.seen=Math.max(c.seen,1);
-        toast('「'+c.w+'」已收进下方已掌握区');
-      }
-      save(); renderNew(); renderHeader();
-    });
-  });
+  $('#learnCount').textContent=learnt.length+' 个';
+  $('#learnList').innerHTML=learnt.length
+    ?learnt.map(function(c){return newCardHTML(c,'learned',key(c.w)===newMovedKey);}).join('')
+    :'<div class="empty">背下来的词点上方蓝色「今天学会了」，会收进这里。</div>';
+  $('#doneCount').textContent=skips.length+' 个';
+  $('#doneList').innerHTML=skips.length
+    ?skips.map(function(c){return newCardHTML(c,'skip',key(c.w)===newMovedKey);}).join('')
+    :'<div class="empty">早就认识的点上方绿色「早就认识」，跳过它并自动补一个新词。</div>';
+  const pr=$('#newProgress');
+  if(pr)pr.innerHTML='今日进度 <b>'+learnt.length+' / '+S.perDay+'</b>'+
+    (skips.length?'　·　已跳过 '+skips.length+' 个（每个都补了新词）':'')+
+    (todo.length?'　·　还剩 '+todo.length+' 个待学':'');
 }
+/* 今日新词页：三区交互统一在这里委托，避免每次重绘重复绑定 */
+$('#view-3').addEventListener('click',function(e){
+  const b=e.target.closest('button[data-skip],button[data-learn],button[data-unlearn],button[data-unskip]');
+  if(!b)return;
+  newMovedKey='';
+  if(b.dataset.skip){
+    const k=b.dataset.skip, c=S.cards[k]; if(!c)return;
+    const x=newSkip(c);
+    newMovedKey=x;
+    toast(x?'「'+c.w+'」已跳过，补了一个新词进来':'「'+c.w+'」已跳过（词库里暂无更多新词可补）');
+  }else if(b.dataset.learn){
+    const k=b.dataset.learn, c=S.cards[k]; if(!c)return;
+    c.today='learned'; c.seen=1;
+    if(!c.due||c.due<=todayStr())c.due=addDays(todayStr(),1);
+    newMovedKey=k;
+    toast('「'+c.w+'」记进今天的学习量，明天起开始复习');
+  }else if(b.dataset.unlearn){
+    const k=b.dataset.unlearn, c=S.cards[k]; if(!c)return;
+    c.today='';
+    newMovedKey=k;
+    toast('「'+c.w+'」已退回今日单词');
+  }else{
+    const p=newUnskip(b.dataset.unskip);
+    newMovedKey=p?p.k:'';
+    toast(p?'「'+p.w+'」已退回今日单词，替补词也撤了':'已经没有可撤销的了');
+  }
+  save(); renderNew(); renderHeader();
+});
 $('#btnCopyWords').addEventListener('click',function(){
   const t=(S.neww||[]).map(function(o){const c=cardOf(o.w);
     return c?[c.w,c.ph,c.cn,c.ex].join('｜'):'';}).filter(Boolean).join('\n');
@@ -1571,7 +1653,7 @@ $('#btnReset').addEventListener('click',function(){
 const API='https://morning-d4g806jmr239b8c5b-1498846442.ap-shanghai.app.tcloudbase.com/morning-api';
 const TOKEN_KEY='morning_token_v1';
 const USER_KEY='morning_user_v1';
-let CBUSER=null,CBTIMER=null,CBBOOTED=false,CBSAVEDAT=0;
+let CBUSER=null,CBTIMER=null,CBBOOTED=false,CBSAVEDAT=0,CBREADY=false;
 let _cbUser='';
 
 function cbToken(){try{return localStorage.getItem(TOKEN_KEY)||'';}catch(e){return '';}}
@@ -1595,7 +1677,7 @@ async function api(body){
   let j=null;
   try{j=await r.json();}catch(e){throw new Error('服务器返回异常（'+r.status+'）');}
   if(r.status===401){
-    cbSetToken('');cbSaveUser(null);CBUSER=null;cbRenderAcct();
+    cbSetToken('');cbSaveUser(null);CBUSER=null;CBREADY=false;cbRenderAcct();
     throw new Error((j&&j.msg)||'登录状态已失效，请重新登录');
   }
   return j||{};
@@ -1626,6 +1708,7 @@ async function cbPull(){
 
 async function cbPush(force){
   if(!cbUid())return false;
+  if(!CBREADY)return false;   /* 登录同步还没跑完：绝不上传，否则本机刚抽的今日词单会顶掉云端的 */
   let learned=0;
   try{
     learned=Object.keys(S.cards||{}).filter(function(k){
@@ -1696,27 +1779,39 @@ function cbRenderAll(){
 
 async function cbAfterLogin(){
   cbSetSync('读取云端进度…');
+  const t=todayStr();
   const row=await cbPull();
-  const localEmpty=!Object.keys(S.cards||{}).length&&!(S.neww||[]).length;
+  const localEmpty=!LOCAL_HAD;   /* 本机原本没有存档 → 一律以云端为准 */
+  let needUp=false;
   if(row){
+    const pl=row.payload||{};
     const ct=row.savedAt?Date.parse(row.savedAt):0;
-    if(localEmpty||ct>(S._t||0)+1000){
-      try{
-        const merged=Object.assign(freshState(),row.payload||{});
-        S=migrate(merged);
-        localStorage.setItem(LSKEY,JSON.stringify(S));
-        cbSetSync('已同步 '+new Date().toTimeString().slice(0,5));
-        toast('已同步云端进度');
-      }catch(e){toast('云端数据异常，已保留本地进度');}
-    }else{
-      const ok=await cbPush(true);
-      if(ok)toast('本机进度更新，已覆盖云端');
-    }
-  }else{
-    const ok=await cbPush(true);
-    if(ok)toast('已在云端创建你的存档');
-  }
+    try{
+      const useLocal=!localEmpty&&!(ct>(S._t||0)+1000);   /* 谁更新用谁 */
+      const body=useLocal?S:pl;
+      /* 当天一旦抽过今日新词就不再换：换设备、重登都取「最早生成」的那份词单 */
+      const cands=[pl,S].filter(function(o){return o&&o.newDate===t;});
+      if(cands.length)cands.sort(function(a,b){return (a._t||0)-(b._t||0);});
+      const src=cands.length?cands[0]:null;
+      const S2=migrate(Object.assign(freshState(),body));
+      if(src&&src!==body){
+        S2.neww=JSON.parse(JSON.stringify(src.neww||[]));
+        S2.skipToday=JSON.parse(JSON.stringify(src.skipToday||[]));
+        S2.newDate=src.newDate; S2.seqFrom=src.seqFrom||'';
+        S2.skippedKnown=src.skippedKnown||0;
+      }
+      S=S2; commitNew(); save();
+      CBSAVEDAT=ct||Date.now(); needUp=useLocal;
+      cbSetSync('已同步 '+new Date().toTimeString().slice(0,5));
+      toast('已同步云端进度');
+    }catch(e){toast('云端数据异常，已保留本地进度');}
+  }else needUp=true;
+  CBREADY=true;
   cbRenderAll();
+  if(needUp){
+    const up=await cbPush(true);
+    cbSetSync(up?'已同步 '+new Date().toTimeString().slice(0,5):'同步失败（进度仍在本地）');
+  }
 }
 
 function cbRenderAcct(){
