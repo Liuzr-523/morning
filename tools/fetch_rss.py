@@ -14,6 +14,8 @@
 实在凑不满就少几条，绝不编造标题或链接。
 """
 import datetime
+import email.utils
+import gzip
 import json
 import os
 import re
@@ -21,6 +23,7 @@ import subprocess
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
@@ -183,6 +186,302 @@ def parse_xml(xml_bytes, source, prefer):
     return out
 
 
+# ==================== AI 标签专用：实验室一手 + 论文 ====================
+# 用户明确要求：ai 只推实验室 / 厂商官方发布 + arXiv 论文，不要"某媒体写 AI 赋能 XX"。
+# 所以 ai 桶完全不走上面的通用新闻源，只用下面三类一手渠道。
+AI_PER_TAG = 15        # ai 标签条数
+OFFICIAL_DAYS = 10     # 官方博文取最近几天（实验室不是日更，太窄会一条都抓不到）
+OFFICIAL_MAX = 7       # 官方最多占几条
+MODEL_MAX = 3          # 新模型最多占几条
+MODEL_DAYS = 21        # Hugging Face 新模型取最近几天
+PAPER_MAX = 8          # 论文最多补几条
+
+# OpenAI RSS 的 category：只保留"发东西/做研究"的，客户故事、公司动态一律不要
+OPENAI_OK_CATS = {"Product", "Research", "Engineering", "Release", "API", "Publication",
+                  "Safety", "Safety & Alignment", "Security", "ChatGPT", "Guides", "Release notes"}
+
+# 官方博客源。kind=rss 走标准 RSS；anthropic 是官网列表页（它没提供 RSS）
+AI_OFFICIAL = [
+    {"name": "OpenAI", "url": "https://openai.com/news/rss.xml", "kind": "rss"},
+    {"name": "Anthropic", "url": "https://www.anthropic.com/news", "kind": "anthropic"},
+    {"name": "Qwen 通义千问", "url": "https://qwenlm.github.io/blog/index.xml", "kind": "rss"},
+    {"name": "Google", "url": "https://blog.google/technology/ai/rss/", "kind": "rss",
+     "ai_only": True},
+    {"name": "微软研究院", "url": "https://www.microsoft.com/en-us/research/feed/",
+     "kind": "rss", "ai_only": True},
+]
+
+# Hugging Face 上各实验室的官方账号，新模型发布的最权威出处（含腾讯、DeepSeek、智谱、Kimi 等）
+HF_ORGS = [
+    ("deepseek-ai", "DeepSeek"), ("Qwen", "阿里通义"), ("openai", "OpenAI"),
+    ("meta-llama", "Meta"), ("google", "Google"), ("zai-org", "智谱"),
+    ("moonshotai", "月之暗面"), ("MiniMaxAI", "MiniMax"), ("tencent", "腾讯"),
+    ("mistralai", "Mistral"), ("microsoft", "微软"), ("baichuan-inc", "百川"),
+    ("01-ai", "零一万物"), ("stepfun-ai", "阶跃星辰"), ("BAAI", "智源"),
+]
+
+# 「赋能 / 落地 / 客户案例」这类一律丢掉（中英文都列）
+BAD_WORDS = [
+    "赋能", "落地", "产业化", "数字化转型", "助力", "签约", "战略合作", "生态伙伴",
+    "白皮书", "市场规模", "应用场景", "智慧", "试点", "示范", "客户成功", "案例",
+    "empower", "digital transformation", "transformation", "partners with", "partnership",
+    "customer story", "case study", "case studies", "put ai to work", "reimagining",
+    "nonprofit", "small business", "webinar", "client experience", "operations",
+    "enterprise", "productivity", "donat", "academy", "policy", "regulation",
+    "election", "philanthrop", "foundation", "coalition", "task force", "initiative to",
+    "frees up", "hours a week", "grow with", "faster with", "with gpt", "with codex",
+    "with chatgpt", "boosts", "saves", "2x faster", "are you a", "watch the", "trailer",
+    "xprize", "scales claude", "accenture", "barclays", "client experience",
+    "customer calls", "of customer", "resolve up to", "with openai", "customer support",
+]
+
+# 技术侧关键词：微软研究院这种综合源靠它筛出 AI 相关
+TECH_WORDS = [
+    "model", "llm", "gpt", "claude", "gemini", "llama", "qwen", "deepseek", "glm", "kimi",
+    "mistral", "sora", "weights", "open-source", "open source", "open weights", "benchmark",
+    "training", "pretraining", "pre-training", "fine-tun", "inference", "reasoning",
+    "agent", "context window", "token", "api", "pricing", "research", "alignment",
+    "interpretability", "distillation", "quantization", "moe", "reinforcement learning",
+    "rlhf", "eval", "evaluation", "checkpoint", "sota", "architecture", "diffusion",
+    "embedding", "gpu", "tpu", "latency", "throughput", "multimodal", "reasoner",
+    "transformer", "attention", "neural", "dataset", "论文", "模型", "大模型", "开源",
+    "训练", "推理", "智能体", "基准", "架构", "多模态", "权重",
+]
+
+
+def http_get(url, timeout=20):
+    """带 gzip 解压的抓取（部分站点强制压缩）"""
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "Mozilla/5.0 (daily-news-bot)", "Accept-Encoding": "gzip"})
+    resp = urllib.request.urlopen(req, timeout=timeout)
+    body = resp.read()
+    if resp.headers.get("Content-Encoding") == "gzip":
+        try:
+            body = gzip.decompress(body)
+        except Exception:
+            pass
+    return body
+
+
+def parse_when(s):
+    """尽力解析各种日期格式为 UTC datetime，失败返回 None"""
+    if not s:
+        return None
+    s = s.strip()
+    try:                                   # RFC 822：Tue, 29 Sep 2026 10:00:00 GMT
+        return datetime.datetime(*email.utils.parsedate(s)[:6])
+    except Exception:
+        pass
+    try:                                   # ISO：2026-09-29T10:00:00+00:00
+        return datetime.datetime.fromisoformat(s.replace("Z", "+00:00")).replace(tzinfo=None)
+    except Exception:
+        pass
+    for fmt in ("%b %d, %Y", "%Y-%m-%d", "%d %b %Y"):   # Oct 1, 2026
+        try:
+            return datetime.datetime.strptime(s, fmt)
+        except Exception:
+            pass
+    return None
+
+
+def ai_clean(s, n=140):
+    t = re.sub(r"<[^>]+>", " ", s or "")
+    t = re.sub(r"&[a-z]+;", " ", t)
+    return re.sub(r"\s+", " ", t).strip()[:n]
+
+
+def ai_is_bad(text):
+    t = (text or "").lower()
+    for w in BAD_WORDS:
+        if w in t:
+            return True
+    return False
+
+
+def ai_is_tech(text):
+    t = (text or "").lower()
+    for w in TECH_WORDS:
+        if w in t:
+            return True
+    return False
+
+
+def ai_from_rss(body, name, ai_only=False):
+    """标准 RSS → 条目。OpenAI 额外按 category 过滤掉客户故事类。"""
+    out = []
+    try:
+        root = ET.fromstring(body)
+    except Exception:
+        return out
+    for item in root.iter("item"):
+        title = ai_clean(item.findtext("title") or "", 80)
+        link = (item.findtext("link") or "").strip()
+        if not title or not link:
+            continue
+        cat = (item.findtext("category") or "").strip()
+        if name == "OpenAI" and cat and cat not in OPENAI_OK_CATS:
+            continue                        # 公司动态 / 客户故事 / 全球事务 → 不要
+        desc = ai_clean(item.findtext("description") or "", 150)
+        when = parse_when(item.findtext("pubDate"))
+        if ai_only and not ai_is_tech(title + " " + desc):
+            continue
+        out.append({"title": title, "sum": desc, "url": link, "source": name,
+                    "tag": "ai", "when": when})
+    return out
+
+
+def ai_from_anthropic(body):
+    """Anthropic 官网没有 RSS，从列表页里抓：<a href="/news/x">…<time>日期</time>…<span class=*title*>标题</span>"""
+    out = []
+    h = body.decode("utf-8", "ignore")
+    for m in re.finditer(r'<a href="(/news/[^"#?]+)"[\s\S]{0,900}?</a>', h):
+        seg = m.group(0)
+        ti = re.search(r'<span class="[^"]*title[^"]*"[^>]*>([^<]+)</span>', seg)
+        if not ti:
+            continue
+        title = ai_clean(ti.group(1), 80)
+        tm = re.search(r'<time[^>]*>([^<]+)</time>', seg)
+        out.append({"title": title, "sum": "", "url": "https://www.anthropic.com" + m.group(1),
+                    "source": "Anthropic", "tag": "ai", "when": parse_when(tm.group(1) if tm else "")})
+    return out
+
+
+def cap_per_source(items, n):
+    """同一家最多 n 条：OpenAI 几乎日更，不限制会把 Anthropic / Qwen 全挤掉"""
+    cnt, out = {}, []
+    for it in items:
+        c = cnt.get(it["source"], 0)
+        if c >= n:
+            continue
+        cnt[it["source"]] = c + 1
+        out.append(it)
+    return out
+
+
+def ai_official_news(days=OFFICIAL_DAYS):
+    """实验室 / 厂商官方博客：并行抓，按时间倒序，过滤赋能类"""
+    cutoff = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) - datetime.timedelta(days=days)
+    out, seen = [], set()
+
+    def one(f):
+        try:
+            body = http_get(f["url"])
+        except Exception as e:
+            print("[!] AI 源抓取失败 %s (%s)" % (f["name"], e))
+            return []
+        if f["kind"] == "anthropic":
+            return ai_from_anthropic(body)
+        return ai_from_rss(body, f["name"], f.get("ai_only", False))
+
+    with ThreadPoolExecutor(max_workers=len(AI_OFFICIAL)) as ex:
+        for items in ex.map(one, AI_OFFICIAL):
+            for it in items:
+                k = it["title"][:40].lower()
+                if k in seen:
+                    continue
+                if ai_is_bad(it["title"] + " " + it["sum"]):
+                    continue
+                if it["when"] and it["when"] < cutoff:
+                    continue               # 只留最近 days 天的一手消息
+                seen.add(k)
+                out.append(it)
+    out.sort(key=lambda x: x["when"] or datetime.datetime.min, reverse=True)
+    return out
+
+
+def ai_model_news(days=MODEL_DAYS):
+    """Hugging Face 官方 API：各实验室最近公开的权重。真正的一手，且能覆盖腾讯/智谱等国内厂商。"""
+    cutoff = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None) - datetime.timedelta(days=days)
+    out = []
+
+    def one(org):
+        try:
+            body = http_get("https://huggingface.co/api/models?author=%s"
+                            "&sort=createdAt&direction=-1&limit=5&full=false" % org[0], timeout=15)
+            rows = json.loads(body)
+        except Exception as e:
+            print("[!] HF 模型接口失败 %s (%s)" % (org[0], e))
+            return []
+        items = []
+        for m in rows:
+            mid = m.get("modelId") or m.get("id") or ""
+            when = parse_when((m.get("createdAt") or "")[:19])
+            if not mid or not when or when < cutoff:
+                continue
+            name = mid.split("/")[-1]
+            kind = m.get("pipeline_tag") or "模型"
+            items.append({
+                "title": "%s：%s 发布新模型（开源权重）" % (org[1], name),
+                "sum": "发布于 %s · %s · %s 下载" % (when.strftime("%Y-%m-%d"), kind,
+                                                 m.get("downloads") or 0),
+                "url": "https://hf-mirror.com/models/" + mid,   # 国内直连镜像
+                "source": org[1], "tag": "ai", "when": when})
+        return items
+
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for items in ex.map(one, HF_ORGS):
+            out += items
+    out.sort(key=lambda x: x["when"] or datetime.datetime.min, reverse=True)
+    return out
+
+
+def ai_paper_news(maxn=PAPER_MAX):
+    """论文：Hugging Face 每日热门（社区投票）优先，抓不到就退回 arXiv 最新。"""
+    today = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None).strftime("%Y-%m-%d")
+    out = []
+    try:
+        rows = json.loads(http_get("https://huggingface.co/api/daily_papers?date=%s" % today, timeout=15))
+        for r in rows[:maxn]:
+            p = r.get("paper") or {}
+            pid = p.get("id") or ""
+            title = ai_clean(p.get("title") or "", 80)
+            if not pid or not title:
+                continue
+            out.append({
+                "title": title,
+                "sum": ai_clean(p.get("ai_summary") or p.get("summary") or "", 150),
+                "url": "https://hf-mirror.com/papers/" + pid,
+                "source": "arXiv · " + pid, "tag": "ai",
+                "when": parse_when((p.get("publishedAt") or today)[:19])})
+        if out:
+            return out
+    except Exception as e:
+        print("[!] HF 每日论文失败 (%s)，改用 arXiv" % e)
+
+    try:                                   # 兜底：arXiv cs.AI/cs.CL/cs.LG 最新
+        url = ("http://export.arxiv.org/api/query?search_query="
+               "cat:cs.AI+OR+cat:cs.CL+OR+cat:cs.LG&sortBy=submittedDate"
+               "&sortOrder=descending&max_results=%d" % maxn)
+        root = ET.fromstring(http_get(url, timeout=25))
+        ns = {"a": "http://www.w3.org/2005/Atom"}
+        for e in root.findall("a:entry", ns):
+            title = ai_clean(e.findtext("a:title", "", ns), 80)
+            aid = (e.findtext("a:id", "", ns) or "").rsplit("/", 1)[-1]
+            if not title or not aid:
+                continue
+            out.append({"title": title, "sum": ai_clean(e.findtext("a:summary", "", ns), 150),
+                        "url": "https://arxiv.org/abs/" + aid, "source": "arXiv · " + aid,
+                        "tag": "ai", "when": parse_when(e.findtext("a:published", "", ns))})
+    except Exception as e:
+        print("[!] arXiv 兜底也失败 (%s)" % e)
+    return out
+
+
+def ai_news():
+    """ai 桶 = 官方发布 → 新模型 → 论文，凑到 AI_PER_TAG 条；按来源轮流，避免被一家包圆。"""
+    official = cap_per_source(ai_official_news(), 3)[:OFFICIAL_MAX]
+    models = ai_model_news()[:MODEL_MAX]
+    news = interleave(official + models)
+    need = AI_PER_TAG - len(news)
+    papers = ai_paper_news(max(PAPER_MAX, need))[:need] if need > 0 else []
+    news = (news + papers)[:AI_PER_TAG]
+    for it in news:
+        it.pop("when", None)
+    print("[i] AI 构成: 官方 %d / 新模型 %d / 论文 %d → 共 %d"
+          % (len(official), len(models), len(papers), len(news)))
+    return news
+
+
 def interleave(items):
     """同一标签内按来源轮流，避免 5 条全来自同一个源"""
     groups, order = {}, []
@@ -202,7 +501,7 @@ def interleave(items):
 
 
 def collect():
-    """按标签各抓 PER_TAG 条，返回 (news, 统计信息)"""
+    """按标签各抓条数：ai 走专用一手源（AI_PER_TAG 条），其余走国内新闻源（PER_TAG 条）"""
     bodies = fetch_all([f["url"] for f in FEEDS])
     buckets, seen = {}, set()
     for f in FEEDS:
@@ -213,12 +512,17 @@ def collect():
             k = it["title"][:40]
             if k in seen:
                 continue
+            if it["tag"] == "ai":
+                continue               # ai 交给实验室一手源，媒体稿一律不进这个桶
             seen.add(k)
             buckets.setdefault(it["tag"], []).append(it)
 
     news, stats = [], {}
     for tag in TAG_ORDER:
-        take = interleave(buckets.get(tag, []))[:PER_TAG]
+        if tag == "ai":
+            take = ai_news()
+        else:
+            take = interleave(buckets.get(tag, []))[:PER_TAG]
         news += take
         stats[tag] = len(take)
     return news, stats

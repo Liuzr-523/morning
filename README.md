@@ -110,11 +110,23 @@
 
 只用**国内可直连**的 RSS 源——链接必须能在手机上点开，否则等于新闻点不动。
 
+**通用新闻**（每个标签 5 条）：只用国内可直连的 RSS 源——链接必须能在手机上点开。
+
 | 源 | 主供标签 |
 |---|---|
 | 中新网 滚动 / 社会 / 国际 / 财经 / 体育 / 文化 / 教育 / 健康 | `cn` / `life` / `intl` / `fin` / `sport` / `cul` / `edu` / `life` |
 | IT之家 | `tech` |
-| 极客公园 | `ai` |
+| 极客公园 | `tech` |
+
+**AI 标签 15 条**：不看媒体稿，只推一手来源（谁发的、发了什么模型、哪篇论文）：
+
+| 渠道 | 说明 |
+|---|---|
+| OpenAI / Anthropic / 通义千问 / Google / 微软研究院 官方博客 | 实验室自己发的公告与研究；Anthropic 没有 RSS，从官网列表页解析 |
+| Hugging Face 官方 API（各实验室账号） | DeepSeek、腾讯、智谱、月之暗面、MiniMax、阿里通义、Meta…的**新模型发布**，链接走 `hf-mirror.com` 镜像，国内可开 |
+| Hugging Face 每日热门论文（arXiv） | 社区投票的当天热榜，抓不到时退回 arXiv `cs.AI/cs.CL/cs.LG` 最新 |
+
+`ai` 桶有两条硬规矩：一是**中文科技媒体一律不进**（用户不要"AI 赋能 XX"这类）；二是命中"赋能/落地/客户案例/合作签约"等词、或 OpenAI 的 `Company`/`Story`/`Global Affairs` 分类的一律丢弃。同一家最多 3 条，避免 OpenAI 日更把别人挤掉。
 
 > ⚠️ 早期版本走 Google News RSS，抓到的链接指向 `news.google.com`，**国内直连 12 秒超时打不开**，摘要也几乎全是空的（88%）。已全面换成上面的国内源，链接实测 0.2 秒内打开、摘要覆盖率 ~93%。
 
@@ -136,7 +148,7 @@
 ```
 
 - `date` 必须是**北京时间**当天；`url` 必须是真实链接（脚本会校验，缺 title 或以非 http 开头会报错）
-- **每天每个标签各 5 条，共约 50 条**（`tools/fetch_rss.py` 的 `PER_TAG`）
+- **除 `ai` 外每个标签 5 条，`ai` 15 条，共约 55 条**（`tools/fetch_rss.py` 的 `PER_TAG` / `AI_PER_TAG`）
 - `tag` 必须是下面 10 个标准值之一，`publish_news.py` 会校验并打印各标签条数，不足 5 条的会列出来
 - 每天同时归档一份到 `data/archive/<date>.json`，前端回退时用
 - `generator` 字段区分来源：`workbuddy-daily-news`（AI 生成）或 `github-actions-rss`（RSS 兜底）
