@@ -1,55 +1,125 @@
 {
   "date": "2026-10-02",
-  "generatedAt": "2026-10-02T09:46:23+08:00",
+  "generatedAt": "2026-10-02T17:28:17+08:00",
   "generator": "github-actions-rss",
   "perTag": 5,
   "news": [
     {
-      "title": "2026全球南方现代化论坛在埃及开罗举行",
-      "sum": "9月30日，2026全球南方现代化论坛在埃及开罗举行，本次论坛主题是“人工智能浪潮：全球南方现代化的机遇与挑战”",
-      "url": "https://www.chinanews.com.cn/gj/2026/10-01/10706605.shtml",
-      "source": "中新网国际",
+      "title": "Disrupting a coordinated model-distillation campaign",
+      "sum": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "source": "OpenAI",
       "tag": "ai"
     },
     {
-      "title": "AI入局，奏响浙江文化“三重奏”",
-      "sum": "深奥的阳明心学变为年轻人爱追的AI(人工智能)漫剧，AIGC(生成式人工智能)平台一键能生成多种龙泉青瓷器型，智慧观鸟系统让游客戴上耳机就能“听懂”鸟鸣……这些看似不相关的场景，正",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-01/10706753.shtml",
-      "source": "中新网财经",
+      "title": "Introducing Quine: An AI research system designed for the complexity of biology",
+      "sum": "Biology doesn't operate in silos, and neither should the AI representation of it. Quine is an early-stage research effort to create a multimodal world",
+      "url": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
+      "source": "微软研究院",
       "tag": "ai"
     },
     {
-      "title": "纪录片《汤寿潜1911》用AI“复活”百年档案致敬先贤",
-      "sum": "浙江广电集团首部AIGC(Artificial Intelligence Generated Content，即人工智能生成内容)剧情式纪录片《汤寿潜1911》，于30日晚在浙江卫",
-      "url": "https://www.chinanews.com.cn/cul/2026/09-30/10706564.shtml",
-      "source": "中新网文化",
+      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "sum": "",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "source": "Anthropic",
       "tag": "ai"
     },
     {
-      "title": "中澳学者在沪共论AI时代设计教育新范式",
-      "sum": "9月30日，2026世界设计之都大会配套活动“匠心与算力”中澳设计教育论坛在上海举办。中国与澳大利亚学界、产业界专家齐聚一堂，围绕匠心传承与人工智能(AI)赋能，探讨AI浪潮下设计",
-      "url": "https://www.chinanews.com.cn/edu/2026/10-01/10706786.shtml",
-      "source": "中新网教育",
+      "title": "智源：AREX-2 发布新模型（开源权重）",
+      "sum": "发布于 2026-09-29 · image-text-to-text · 293 下载",
+      "url": "https://hf-mirror.com/models/BAAI/AREX-2",
+      "source": "智源",
       "tag": "ai"
     },
     {
-      "title": "英伟达黄仁勋将出席：微软预热本月 Surface 发布会，聚焦本地 AI 重塑下一代 PC",
-      "sum": "微软官方开发者账号 @windowsdev 今天（10 月 2 日）在 X 平台发布推文， 宣布将于太平洋时间 10 月 7 日上午 10 点（北京时间 10 月 8 日凌晨 1 ",
-      "url": "https://www.ithome.com/1/009/212.htm",
-      "source": "IT之家",
+      "title": "微软：rho-roboeval 发布新模型（开源权重）",
+      "sum": "发布于 2026-09-21 · 模型 · 0 下载",
+      "url": "https://hf-mirror.com/models/microsoft/rho-roboeval",
+      "source": "微软",
       "tag": "ai"
     },
     {
-      "title": "让机器人“能干活” 具身智能从“中国量产”走向“全球落地”",
-      "sum": "题：让机器人“能干活” 具身智能从“中国量产”走向“全球落地”",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-02/10707009.shtml",
+      "title": "阿里通义：Qwen-Image-2.1-PE-I2I 发布新模型（开源权重）",
+      "sum": "发布于 2026-09-20 · 模型 · 10725 下载",
+      "url": "https://hf-mirror.com/models/Qwen/Qwen-Image-2.1-PE-I2I",
+      "source": "阿里通义",
+      "tag": "ai"
+    },
+    {
+      "title": "Introducing GPT-6.1 Sol",
+      "sum": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token ",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Offloaded inference for real-world physical AI robotics",
+      "sum": "Robots are getting smarter, but how can their hardware match that growth? New Microsoft Research findings show that moving AI inference beyond the rob",
+      "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Introducing dots",
+      "sum": "Dots by OpenAI are proactive assistants that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control whil",
+      "url": "https://openai.com/index/introducing-dots",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Adaptive Reward Routing: Dynamic Multi-Reward Optimization for Joint Audio-Video",
+      "sum": "Multi-reward guided reinforcement learning (i.e., RL) offers a promising way to improve joint audio-video diffusion models along several complementary",
+      "url": "https://hf-mirror.com/papers/2609.37200",
+      "source": "arXiv · 2609.37200",
+      "tag": "ai"
+    },
+    {
+      "title": "Beyond Memory: Harnessing Long-Horizon Agents with Explicit Belief States",
+      "sum": "Large language model (LLM) agents can now undertake increasingly complex tasks, but the way they organize interaction history into memory does not ens",
+      "url": "https://hf-mirror.com/papers/2610.01415",
+      "source": "arXiv · 2610.01415",
+      "tag": "ai"
+    },
+    {
+      "title": "Hierarchical Continuous Diffusion Language Models",
+      "sum": "Discrete diffusion language models offer a compelling alternative to autoregressive generation for tasks demanding bidirectional reasoning and global ",
+      "url": "https://hf-mirror.com/papers/2610.02193",
+      "source": "arXiv · 2610.02193",
+      "tag": "ai"
+    },
+    {
+      "title": "Agent Priors-guided Policy Learning",
+      "sum": "Robots that learn from a few demonstrations often require two forms of generalization. Compositional generalization recombines skills to solve new tas",
+      "url": "https://hf-mirror.com/papers/2609.35690",
+      "source": "arXiv · 2609.35690",
+      "tag": "ai"
+    },
+    {
+      "title": "World Observer: Joint Actor-Observer Generation for Persistent World Modeling",
+      "sum": "How can a world model continuously observe regions beyond the actor's current view? Video world models simulate how an environment evolves from an age",
+      "url": "https://hf-mirror.com/papers/2610.02162",
+      "source": "arXiv · 2610.02162",
+      "tag": "ai"
+    },
+    {
+      "title": "A Missing Piece for Trustworthy AI Reviewers: From Benchmarking Rhetorical Robus",
+      "sum": "AI reviewers can assign different judgments to manuscripts that report the same science in different wording, potentially rewarding rhetorical optimiz",
+      "url": "https://hf-mirror.com/papers/2609.39027",
+      "source": "arXiv · 2609.39027",
+      "tag": "ai"
+    },
+    {
+      "title": "学者谈大众电影：让电影回归大众，让大众不再只扮演观众",
+      "sum": "近日，“中国电影创作高质量发展”学术季第二场活动在中国电影资料馆多功能厅举行。本场讨论以“电影本体论——思想、审美与科技的内在统一”为议题，继续追问“什么是电影”",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-02/10707188.shtml",
       "source": "中新网",
       "tag": "tech"
     },
     {
-      "title": "台青“登陆”创业近二十载 踩准时代节拍转型升级",
-      "sum": "10月1日，虽然进入假期时间，但在浙江杭州钛芯智冷科技有限公司实验室里，台青李卓谕依旧带领团队在进行多组芯片散热模组的稳定性测试",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-01/10706938.shtml",
+      "title": "杭州西湖仿生青鱼下水 守护国庆水域平安",
+      "sum": "国庆期间，杭州西湖水域迎来一位特殊的“巡逻员”，由杭州市公安局西湖景区分局联合中国科学院自动化研究所研发的仿生机器鱼“西湖青鱼”正式下水，投入西湖水域的生态警务实战",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-02/10707154.shtml",
       "source": "中新网社会",
       "tag": "tech"
     },
@@ -61,18 +131,32 @@
       "tag": "tech"
     },
     {
-      "title": "国庆科创集市点亮江西南昌 低空经济与智能穿戴产业蓄势腾飞",
-      "sum": "国庆假期首日，一场别开生面的低空经济与智能穿戴产品集市在位于江西省南昌市红谷滩区的南昌会议中心广场启幕。本次活动以“产业+文旅”的融合模式，将实验室、企业中的前沿科技与新质生产力成",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-01/10706884.shtml",
+      "title": "浙江舟山落地首单码头保税LNG船对船加注业务",
+      "sum": "加注作业现场。浙江海事局供图 中新网杭州10月2日电(记者 王逸飞 通讯员 苗雨洁 许宏达)记者10月2日从浙江海事局获悉，1日15时至2日7时30分，中海油浙江新能源有限公司舟山",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-02/10707093.shtml",
       "source": "中新网财经",
       "tag": "tech"
     },
     {
-      "title": "全国科普月特别节目《2026年“典赞·科普中国”》播出",
-      "sum": "持续一个月的2026年全国科普月9月30日落下帷幕，《2026年“典赞·科普中国”》特别节目当天在科普中国平台播出，延续全国科普月“科技改变生活 创新赢得未来”主题，分为“阵地筑基",
-      "url": "https://www.chinanews.com.cn/cul/2026/09-30/10706527.shtml",
-      "source": "中新网文化",
+      "title": "以赛促能育匠才 全国职教学子重庆比拼机电运维技能",
+      "sum": "30日，2026年世界职业院校技能大赛总决赛争夺赛机电设备安装与运维赛道(高职组、中职组)闭赛式在重庆举行。重庆工业职业技术大学、重庆电力高等专科学校获高职组金奖。重庆市渝北职业教",
+      "url": "https://www.chinanews.com.cn/edu/2026/09-30/10706504.shtml",
+      "source": "中新网教育",
       "tag": "tech"
+    },
+    {
+      "title": "国庆档票房破3亿！“电影+”玩法上新 文化消费升温",
+      "sum": "据网络平台数据",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-02/10707175.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "福建大田：茶旅融合激活国庆假期消费市场",
+      "sum": "国庆假期首日，福建省大田县大仙峰茶美人景区迎来客流高峰。千亩茶园与金黄稻田、古民居相互映衬，吸引众多游客打卡拍照",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-02/10707108.shtml",
+      "source": "中新网社会",
+      "tag": "fin"
     },
     {
       "title": "美国30年期贷款利率升至7.28% 创近3年来最高值",
@@ -82,9 +166,9 @@
       "tag": "fin"
     },
     {
-      "title": "“微醺”经济出圈 安徽休宁酒旅融合“酿”出产业新味",
-      "sum": "“以前米酒论斤卖，现在卖的不只是一杯酒，更是一种生活方式。”安徽省级非物质文化遗产代表性项目五城米酒酿制技艺黄山市级代表性传承人李爱华说",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-01/10706923.shtml",
+      "title": "浙江开通首条直飞尼泊尔航线",
+      "sum": "据杭州机场2日消息，10月1日凌晨1点，杭州机场以民航最高礼遇“水门”迎接喜马拉雅航空加德满都航线首个进港航班H9225。3点18分，出港航班H9226搭载154名旅客起飞前往尼泊",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-02/10707130.shtml",
       "source": "中新网财经",
       "tag": "fin"
     },
@@ -96,24 +180,17 @@
       "tag": "fin"
     },
     {
-      "title": "除了“五金之都”，浙江永康还有什么？",
-      "sum": "“郡县治，天下安。”县域经济从来不只是GDP的竞逐，更是一方水土上文明根脉的延续与重塑。浙江永康，世人皆知其为“五金之都”。“五金工匠走四方，府府县县不离康”，千百年来，永康五金技",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-01/10706918.shtml",
-      "source": "中新网财经",
-      "tag": "fin"
-    },
-    {
-      "title": "长沙口岸开启无人机施封新模式",
-      "sum": "湖南省首个“区港联动”无人机施封项目9月30日在长沙中南集拼中心正式上线，并完成实柜验证，标志着长沙口岸开启无人机施封新模式。该项目将海关施封作业从卡口前移至堆场集装箱箱位现场，进",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-01/10706902.shtml",
-      "source": "中新网财经",
-      "tag": "fin"
-    },
-    {
-      "title": "杭州虎跑公园“仙气”迎客 国风游园邂逅江南泉韵",
-      "sum": "10月1日，国庆假期首日，浙江杭州秋雨微凉，虎跑公园泉声潺潺。细雨中，水杉林雾气缭绕，七位国风NPC撑起油纸伞，沿虎跑径款款而行——这是杭州西湖风景名胜区钱江管理处推出的“泉颂华诞",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-02/10707012.shtml",
+      "title": "国庆假期首日 海南离岛免税购物金额超1亿元",
+      "sum": "据海口海关统计，今年国庆假期首日，海南离岛免税购物金额达1.07亿元，共有1.89万人次参与离岛免税购物，累计购买离岛免税商品8.30万件。离岛免税购物金额、人数、件数同比分别增长",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-02/10707193.shtml",
       "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "黑龙江鸡西边境民警护航边境景区平安",
+      "sum": "国庆假期，黑龙江鸡西虎头5A级边境景区迎来客流高峰。鸡西边境管理支队虎头边境派出所全员在岗，开展秩序维护、便民服务、政策宣讲和安全巡防，保障游客出行顺畅有序",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-02/10707132.shtml",
+      "source": "中新网社会",
       "tag": "cn"
     },
     {
@@ -124,44 +201,30 @@
       "tag": "cn"
     },
     {
-      "title": "山西首单离境退税业务落地 助力“山西游、山西购”",
-      "sum": "记者10月1日从太原海关获悉，太原海关所属太原机场海关近日顺利办结山西首单境外旅客购物离境退税业务，标志着境外旅客购物离境退税政策在山西正式落地实施",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-01/10706687.shtml",
+      "title": "从“保安全”向“提品质”跃升 海南深化改革促医药产业发展",
+      "sum": "药品是治病救人的特殊商品，医药产业是新质生产力的重要引擎。全岛封关后的海南，正深挖自贸港政策潜力，推动全面深化药品监管改革实施方案落地见效和医药产业发展",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-02/10707087.shtml",
       "source": "中新网财经",
       "tag": "cn"
     },
     {
-      "title": "2026年中国电影国庆档首日票房破亿元 已呈 “一超一强”格局",
-      "sum": "据灯塔专业版数据，截至北京时间10月1日16时，2026年中国内地电影国庆档首日票房已达1.24亿元(人民币，下同)，观影人次342.87万，放映场次47.07万场",
-      "url": "https://www.chinanews.com.cn/cul/2026/10-01/10706826.shtml",
-      "source": "中新网文化",
+      "title": "国际赛事“落地”二连浩特：自贸试验区打开跨境旅游新场景",
+      "sum": "国庆黄金周，中蒙边境小城二连浩特很是热闹。23个国家和地区的139名选手来到这里竞技骑射；国内22个省区市的150余名选手也在这里赛马术",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-02/10707156.shtml",
+      "source": "中新网体育",
       "tag": "cn"
     },
     {
-      "title": "广西生育保险政策优化调整 助力生育保障提质增效",
-      "sum": "广西壮族自治区医疗保障局29日介绍，近日，该部门会同广西壮族自治区财政厅、国家税务总局广西壮族自治区税务局联合印发《关于完善广西生育医疗保障有关政策的通知》(以下简称《通知》)，通",
-      "url": "https://www.chinanews.com.cn/jk/2026/09-29/10705930.shtml",
-      "source": "中新网健康",
-      "tag": "cn"
-    },
-    {
-      "title": "贵州湖南广西广东福建等地有较强降水 中东部地区将有大风降温天气",
-      "sum": "据中央气象台网站消息，昨日，贵州、浙江、福建、广东、广西等地出现较强降雨，内蒙古、东北、黄淮及江南等地出现大风或降温天气。预计未来三天，青藏高原东部至南方大部地区多阴雨天气，贵州、",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-02/10706992.shtml",
+      "title": "中国女足队长吴海燕：年轻球员成长需要过程",
+      "sum": "当地时间10月2日在日本静冈进行的爱知·名古屋亚运会女足铜牌赛中，中国女足以0:1不敌韩国队，无缘本届亚运会奖牌，最终位列第四",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-02/10707189.shtml",
       "source": "中新网",
       "tag": "intl"
     },
     {
-      "title": "“光语”点亮苏河湾：百年石库门变身梦幻舞台",
-      "sum": "1日，夜幕降临，上海苏河湾慎余里百年石库门建筑墙面上，国际光影艺术大赛展映灯光亮起。光影遇上建筑，这里成为苏州河畔最梦幻的城市舞台",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-01/10706919.shtml",
-      "source": "中新网社会",
-      "tag": "intl"
-    },
-    {
-      "title": "特朗普：中期选举后可能加大力度打击伊朗",
-      "sum": "据美国方面10月1日消息，美国总统特朗普表示，美国或将在中期选举后加大对伊朗的打击力度",
-      "url": "https://www.chinanews.com.cn/gj/2026/10-02/10706987.shtml",
+      "title": "中国驻日使馆：村田晃大侵闯使馆案不容任何抵赖",
+      "sum": "据中国驻日本大使馆微信公众号10月1日消息，中国驻日本大使馆发言人就村田晃大非法持刀侵闯中国驻日本大使馆案首次开庭答记者问",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-02/10707119.shtml",
       "source": "中新网国际",
       "tag": "intl"
     },
@@ -173,17 +236,31 @@
       "tag": "intl"
     },
     {
-      "title": "贵州“村超”第三届国际足球赛启幕",
-      "sum": "第三届“村超”国际足球赛10月1日在贵州榕江启幕，来自南美洲、欧洲、亚洲、非洲等地区国家的551名球员齐聚中国“村超”发源地榕江县，共赴一场草根足球盛会",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-01/10706956.shtml",
+      "title": "贵州“村超”获赠《金色两仪》作品",
+      "sum": "1日晚，第三届“村超”国际足球赛在贵州榕江启幕，四川省新的社会阶层人士联谊会副会长、四川心悦美术馆创始人魏心田将其创作的主题为“金色两仪”的油画作品，赠送给贵州“村超”",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-02/10707149.shtml",
       "source": "中新网体育",
       "tag": "intl"
     },
     {
-      "title": "“广西龙超”吸引逾190支队伍参赛 留学生体验划桨逐浪",
-      "sum": "9月30日，广西龙超——2026年融安龙舟公开赛、第二十五届长安龙舟大赛暨“秋冬游柳州”系列活动在广西柳州市融安县开幕",
-      "url": "https://www.chinanews.com.cn/ty/2026/09-30/10706560.shtml",
-      "source": "中新网体育",
+      "title": "《欢迎来龙餐馆》扩大海外放映，编剧：“我‘扮演’过片中几乎每个人物”",
+      "sum": "从暑期档、中秋档到国庆档，电影《欢迎来龙餐馆》正持续热映。豆瓣评分在放映期内升至8.7分",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-02/10707120.shtml",
+      "source": "中新网文化",
+      "tag": "intl"
+    },
+    {
+      "title": "中国驻泰使馆：接到有关上海音乐教师失联的求助",
+      "sum": "中国驻泰国大使馆10月2日对总台记者表示，使馆已接到有关上海一名音乐教师上周在泰国曼谷失联的求助，已向泰国警方通报情况。当事人亲属委托人已在泰国报警，使馆已敦促泰国警方尽快查明当事",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-02/10707187.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "苏丹一大学遭无人机袭击 致5死47伤",
+      "sum": "喀土穆消息：当地时间10月1日，苏丹民间机构“苏丹医生网”发布消息称，苏丹准军事组织快速支援部队(RSF)当日对苏丹北科尔多凡州的一所大学发动无人机袭击，造成5人死亡，47人受伤",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-02/10707061.shtml",
+      "source": "中新网国际",
       "tag": "edu"
     },
     {
@@ -194,51 +271,44 @@
       "tag": "edu"
     },
     {
-      "title": "逾130岁韬奋楼修缮归来 钟声再响、历史样貌重现世间",
-      "sum": "每逢整点，苏州河畔华东政法大学内的韬奋楼便会响起悠悠钟声，令人心生厚重感",
-      "url": "https://www.chinanews.com.cn/edu/2026/09-30/10706541.shtml",
+      "title": "阿曼智慧宫中文教育学院正式揭牌 搭建中阿文明互鉴新平台",
+      "sum": "记者2日从宁夏侨联获悉，阿曼智慧宫中文教育学院已结束试运营阶段，完成正式揭牌，迈入规范化、常态化运营新阶段，为中阿人文交流与文明互鉴搭建起全新文教桥梁",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-02/10707151.shtml",
       "source": "中新网教育",
       "tag": "edu"
     },
     {
-      "title": "巡演12年 央华版话剧《如梦之梦》计划2026年底在北京收官",
-      "sum": "央华版话剧《如梦之梦》“谢幕十座”发布会日前在北京师范大学北国剧场举行。该剧谢幕演出于12月26日至29日在北京保利剧院上演，目前已经开票",
-      "url": "https://www.chinanews.com.cn/cul/2026/09-30/10706524.shtml",
-      "source": "中新网文化",
+      "title": "（文化中国行·校馆弦歌）百廿山东大学图书馆为古籍“续命” 让文脉流传",
+      "sum": "题：百廿山东大学图书馆为古籍“续命” 让文脉流传",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-02/10707112.shtml",
+      "source": "中新网教育",
       "tag": "edu"
     },
     {
-      "title": "北京大学生艺术节艺术作品及艺术实践工作坊展览启幕",
-      "sum": "2026年北京大学生艺术节艺术作品及艺术实践工作坊展览29日在中国人民大学美术馆启幕。作为本届大学生艺术节重要板块，展览集中展现了首都高校落实学校美育浸润行动的生动实践，同时也是北",
-      "url": "https://www.chinanews.com.cn/edu/2026/09-30/10706387.shtml",
-      "source": "中新网教育",
-      "tag": "edu"
+      "title": "国庆假期：成都杜甫草堂引游人",
+      "sum": "10月2日，国庆假期第二天，众多游客在成都杜甫草堂博物馆参观游览，乐享国庆假期。图为游客在杜甫草堂拍照留念。中新社记者 安源 摄 10月2日，当日是国庆假期第二天，众多游客在成都杜",
+      "url": "https://www.chinanews.com.cn/tp/2026/10-02/10707180.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "宁夏银川：拼豆手作带来假日新体验 在地文化邂逅青年潮流",
+      "sum": "国庆假期，不少游客的休闲选择更加多元，不再将奔波打卡景点当作出游的首选。10月2日，在宁夏银川阅彩城举办的“举杯贺兰山”2026银川文旅拼豆嘉年华，将这股流行的手作热潮引入城市文旅",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-02/10707152.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
     },
     {
       "title": "菲律宾举办“乱世中的勇气”图片展 呼吁铭记“慰安妇”历史",
       "sum": "《乱世中的勇气：女性与战争——向菲律宾战争幸存者致敬》图片展1日在马尼拉市政厅开幕，展出反映二战期间菲律宾女性悲惨遭遇的图片及艺术作品，呼吁铭记历史、反对战争暴行、珍视和平",
       "url": "https://www.chinanews.com.cn/gj/2026/10-02/10706995.shtml",
-      "source": "中新网",
-      "tag": "cul"
-    },
-    {
-      "title": "侗族多耶节启幕 广西侗乡上演民俗文化盛宴",
-      "sum": "第二十三届(柳州·三江)侗族多耶节10月1日晚在广西柳州市三江侗族自治县启幕，当地民众及海内外游客欢聚一堂，共同领略多姿多彩的侗族文化盛宴",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-01/10706958.shtml",
-      "source": "中新网社会",
-      "tag": "cul"
-    },
-    {
-      "title": "首届亚信媒体论坛在巴库举行 聚焦加强媒体合作",
-      "sum": "巴库消息：首届亚洲相互协作与信任措施会议(亚信)媒体论坛1日在阿塞拜疆首都巴库举行。与会代表围绕媒体在增进互信、促进跨文化交流中的作用展开讨论，呼吁加强媒体合作，共同应对虚假信息传",
-      "url": "https://www.chinanews.com.cn/gj/2026/10-02/10706981.shtml",
       "source": "中新网国际",
       "tag": "cul"
     },
     {
-      "title": "尼泊尔多迪市代表团参访云南福贡 冀深化户外文旅合作",
-      "sum": "“尼泊尔多迪市与云南省福贡县在地形地貌、民族文化、户外资源等方面非常相似，合作前景广阔。”近日，尼泊尔甘达基省拉姆琼县多迪市市政主席尤巴·拉吉·阿迪卡里接受中新网采访时表示，他将把",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-01/10706678.shtml",
+      "title": "全域文旅融合释自贸港活力 海南国庆假日旅游“开门红”",
+      "sum": "国庆假期首日，海南以山海为幕、文化为魂，端出全域文旅“大餐”：从滨海景区到黎村苗寨，从城市街区到乡野稻田，自然生态、非遗民俗、运动休闲、文博研学等活动轮番上演",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-02/10707148.shtml",
       "source": "中新网财经",
       "tag": "cul"
     },
@@ -250,59 +320,66 @@
       "tag": "cul"
     },
     {
-      "title": "（爱知·名古屋亚运会）储守宏摘攀岩男子速度金牌",
+      "title": "（爱知·名古屋亚运会）中国选手吴愉夺得拳击女子51公斤级金牌",
       "sum": "",
-      "url": "https://www.chinanews.com.cn/tp/hd2011/2026/10-02/1206739.shtml",
+      "url": "https://www.chinanews.com.cn/tp/hd2011/2026/10-02/1206777.shtml",
       "source": "中新网",
       "tag": "sport"
     },
     {
-      "title": "（爱知·名古屋亚运会）综合消息：中国射击队16金收官 网球女单中国队提前包揽金银牌",
-      "sum": "当地时间1日，爱知·名古屋亚运会共决出29枚金牌。中国体育健儿在网球、攀岩、场地自行车、射击等赛场收获亮眼战绩",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-02/10706979.shtml",
+      "title": "中国队包揽亚运会网球女子单打决赛金银牌",
+      "sum": "10月2日，名古屋亚运会网球女子单打决赛，中国队包揽金银牌！王曦雨2-0战胜张帅夺得金牌。张帅获得银牌",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-02/10707144.shtml",
       "source": "中新网体育",
       "tag": "sport"
     },
     {
-      "title": "WTT中国大满贯赛首日：八位中国选手过关",
-      "sum": "2026年世界乒乓球职业大联盟(WTT)中国大满贯赛1日在北京石景山首钢园区正式打响。在首日进行的男、女单打资格赛第一轮中，共有八位中国选手过关",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-01/10706978.shtml",
+      "title": "（爱知·名古屋亚运会）虚拟跆拳道：男女选手同场竞技",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/tp/hd2011/2026/10-02/1206769.shtml",
+      "source": "中新网",
+      "tag": "sport"
+    },
+    {
+      "title": "陈琳夺得亚运会皮划艇激流回旋女子极限皮艇金牌",
+      "sum": "10月2日，名古屋亚运会皮划艇激流回旋女子极限皮艇决赛，中国选手陈琳夺得金牌！",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-02/10707143.shtml",
       "source": "中新网体育",
       "tag": "sport"
     },
     {
-      "title": "中网综合：郑钦文、朱琳、孙心然、高馨妤晋级女单次轮",
-      "sum": "2026中国网球公开赛1日在国家网球中心继续进行。中国选手郑钦文、朱琳、孙心然和高馨妤携手晋级女单次轮",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-01/10706977.shtml",
-      "source": "中新网体育",
+      "title": "直播海报：陪你看亚运会：国足vs乌兹别克斯坦 盼带奖牌回家！",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-02/10707194.shtml",
+      "source": "中新网",
       "tag": "sport"
     },
     {
-      "title": "王楚钦/孙颖莎等三对国乒组合退出WTT中国大满贯赛",
-      "sum": "世界乒乓球职业大联盟(WTT)10月1日宣布，中国组合王楚钦/孙颖莎、林诗栋/蒯曼和林诗栋/黄友政退出2026年WTT中国大满贯赛",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-01/10706955.shtml",
-      "source": "中新网体育",
-      "tag": "sport"
-    },
-    {
-      "title": "国庆首日车流涌动 浙江高速温情护航平安畅行",
-      "sum": "国庆假期首日，出行大军集中启程，浙江高速公路迎来车流高峰。据统计，截至1日16时，浙江交通集团所辖高速公路出口流量达189.5万辆次。大流量路段主要集中在杭长、杭徽、申苏浙皖、杭金",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-02/10707001.shtml",
+      "title": "古街迎客 昆明老街国庆假期人气攀升",
+      "sum": "10月2日，游客在“酒杯楼”前拍照。国庆假期，云南省昆明市历史街区昆明老街成热门旅游“打卡地”，游客在街巷间沉浸式体验春城历史风情。中新社记者 李嘉娴 摄 10月2日，游客漫步在昆",
+      "url": "https://www.chinanews.com.cn/tp/2026/10-02/10707173.shtml",
       "source": "中新网",
       "tag": "life"
     },
     {
-      "title": "冷空气袭扰长三角 雨水降温伴随国庆假期",
-      "sum": "10月1日是国庆假期首日。受冷空气影响，长三角地区普遍出现降温降水天气。其中，浙江杭州迎六年来最早入秋；上海市区徐家汇站最低气温在下半年以来首次降至20℃以下",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-01/10706957.shtml",
+      "title": "浙江铁道一线国庆守归途：愿每一场团圆都不负期许",
+      "sum": "金秋送爽，一年一度的国庆长假如期而至，万家奔赴团圆、畅游山海，浙江交通集团金温铁道公司临海南站也迎来客流高峰。熙熙攘攘的候车大厅、往来不息的行人、穿梭驰骋的列车，勾勒出假期最热闹的",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-02/10707147.shtml",
       "source": "中新网社会",
       "tag": "life"
     },
     {
-      "title": "国庆假期首日中国跨区域人员流动量预计超3.3亿人次",
-      "sum": "记者从中国交通运输部获悉，10月1日(国庆假期第1日)预计全社会跨区域人员流动量33410万人次，环比增长52.3%，比2025年同期(10月1日，中秋国庆假期第1日，下同)下降0",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-01/10706825.shtml",
+      "title": "京津城际铁路亦庄站开通运营两周年 中秋国庆假期运输预计到发旅客10.2万人次",
+      "sum": "2024年9月29日，京津城际铁路亦庄站试运营，10月1日正式开通运营，北京南站到亦庄站最快10分钟，亦庄站到天津站最快25分钟，客流以通勤流和旅游流为主，为京津两地旅客出行带来极",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-02/10707088.shtml",
       "source": "中新网财经",
+      "tag": "life"
+    },
+    {
+      "title": "古都西安旅游业态焕新 唐风户外沉浸式长街国庆假期首日亮相",
+      "sum": "10月1日晚，陕西西安的长安十二时辰主题街区举办了“盛世华章·耀长安”国庆主题活动，全新打造的唐风户外沉浸式长街“天街”也同步亮相",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-02/10707083.shtml",
+      "source": "中新网文化",
       "tag": "life"
     },
     {
@@ -311,48 +388,6 @@
       "url": "https://www.chinanews.com.cn/jk/2026/10-01/10706601.shtml",
       "source": "中新网健康",
       "tag": "life"
-    },
-    {
-      "title": "交通运输部：9 月 30 日全社会跨区域人员流动量 21935.5 万人次，同比下降 6.8%",
-      "sum": "我国交通运输部今日发文称，2026 年 9 月 30 日（国庆假期前 1 日）， 全社会跨区域人员流动量 21935.5 万人次 ，环比增长 29.3%， 同比下降 6.8% 。 ",
-      "url": "https://www.ithome.com/1/009/141.htm",
-      "source": "IT之家",
-      "tag": "life"
-    },
-    {
-      "title": "虞书欣账号空降代拍直播间事件真相浮现",
-      "sum": "网传录屏被指可利用平台机制漏洞伪造，涉事主播否认与艺人本人有关，艺人方尚未正式回应",
-      "url": "https://ent.sina.cn/2026-10-02/detail-inittzpx6359670.d.html?vt=4",
-      "source": "新浪娱乐",
-      "tag": "other"
-    },
-    {
-      "title": "情侣遇巨石从十几米高空落下砸穿天窗",
-      "sum": "重庆一对情侣放假回家上车前临时去割草，巨石从高空坠落砸穿车辆天窗，两人躲过一劫",
-      "url": "https://news.qq.com/rain/a/20261002A02B8J00",
-      "source": "荔枝新闻",
-      "tag": "other"
-    },
-    {
-      "title": "广州长隆野生动物世界国庆上新，三只考拉宝宝亮相",
-      "sum": "刚出袋的考拉宝宝Pop、Paste、Pink正式与游客见面，藏马熊双胞胎同期亮相",
-      "url": "https://www.toutiao.com/article/7691738000719364627",
-      "source": "南方都市报",
-      "tag": "other"
-    },
-    {
-      "title": "“夜师傅”大型“人设翻车”现场",
-      "sum": "湿地高冷捕鱼高手夜鹭套上人偶后画风突变，反差萌走红网络并上线线下打卡乐园",
-      "url": "https://finance.sina.com.cn/jjxw/2026-10-01/doc-inittqxx1031061.shtml",
-      "source": "上观新闻",
-      "tag": "other"
-    },
-    {
-      "title": "韩国釜山运河现被困鲨鱼 超56万民众围观",
-      "sum": "一条3.5米长鲨鱼误入釜山北港亲水公园运河被困，十天吸引近60万人次围观致周边大拥堵",
-      "url": "https://news.qq.com/rain/a/20261001A08N7S00",
-      "source": "腾讯新闻",
-      "tag": "other"
     }
   ]
 }
