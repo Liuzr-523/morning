@@ -12,6 +12,12 @@ print(d.get('date'), len(n), dict(Counter(x.get('tag') for x in n)))"
 ```
 再 `git status -sb` 确认 main 与 origin/main 是否同步（无 ahead 即已推送）。
 
+## 2026-10-03
+- 前置未命中（本地 date=2026-10-02）；先 `git fetch` 确认与 origin/main 无分叉（10-02 那版已推送）。
+- fetch_rss.py --force：55 条，ai=15（官方 7 / HF 新模型 3 / 论文 5）+ 其余 9 标签各 5，**other=0**（脚本不打兜底标签，常态）。全部源正常，无抓取报错。
+- publish_news.py --no-push：校验通过、归档、提交 `e1198c1`，退出码 0。本地 ahead 1，待用户在 GitHub Desktop 点 Push。
+- 经验：先 `git fetch` 再动手这条有效，本次没出现 10-02 那种与 Actions 分叉的情况（06:30 跑在 Actions 之前，未发现远端新提交）。
+
 ## 2026-10-02
 - 未命中前置条件（本地 date 仍为 2026-10-01）→ 正常执行全流程。
 - fetch_rss.py --force 抓到 45 条（9 个标签各 5 条，**other 恒为 0**：脚本不会主动打兜底标签，这是常态，需靠搜索补）。
