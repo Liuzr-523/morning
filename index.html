@@ -47,7 +47,7 @@
 [data-mode="dark"] header.top{background:var(--card);color:var(--text);border:1px solid var(--line)}
 [data-mode="dark"] .theme-btn{background:var(--soft);border-color:var(--line);color:var(--text)}
 [data-mode="dark"] .tb-dot{box-shadow:0 0 0 2px var(--card)}
-[data-mode="dark"] .q-blank,[data-mode="dark"] .wcard .w{color:var(--accent)}
+[data-mode="dark"] .wcard .w{color:var(--accent)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);
   font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6;
@@ -87,7 +87,9 @@ header.top .meta b{font-size:15px}
 .sec-btn:hover{border-color:var(--bar)}
 .sec-btn.on{border-color:var(--accent);background:var(--accent-soft)}
 .sec-btn .s-ico{flex:0 0 42px;height:42px;border-radius:12px;display:flex;align-items:center;
-  justify-content:center;background:var(--accent);color:#fff;font-size:11.5px;font-weight:800;letter-spacing:.5px}
+  justify-content:center;background:var(--accent);color:#fff;font-size:11.5px;font-weight:800;
+  letter-spacing:.5px;white-space:nowrap;overflow:hidden}
+.sec-btn .s-ico.ico-emoji{font-size:20px}
 .sec-btn .s-txt{display:flex;flex-direction:column;line-height:1.35;flex:1;min-width:0}
 .sec-btn .s-txt b{font-size:16px;color:var(--text)}
 .sec-btn .s-txt i{font-style:normal;font-size:12px;color:var(--muted)}
@@ -148,8 +150,21 @@ textarea:focus{outline:2px solid #bfd3ff}
 .progress i{display:block;height:100%;background:var(--accent);width:0;transition:.3s}
 .qnum{font-size:13px;color:var(--muted)}
 .q-cn{font-size:21px;font-weight:700;margin:11px 0 5px;text-align:center}
-.q-blank{font-size:19px;letter-spacing:5px;color:var(--accent);font-family:ui-monospace,Menlo,monospace;text-align:center}
-.q-input{max-width:320px;margin:12px auto 0;font-size:16.5px;text-align:center}
+.q-cells{position:relative;display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:12px 0 4px}
+.q-cell{width:38px;height:46px;border:2px solid var(--bar);border-radius:9px;background:var(--card);
+  display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;
+  font-family:ui-monospace,Menlo,monospace;color:var(--accent);position:relative}
+.q-cell.fixed{background:var(--soft);color:var(--muted);border-style:dashed;font-weight:600}
+.q-cell.cur{border-color:var(--accent)}
+.q-cell.cur::after{content:'';position:absolute;width:2px;height:24px;border-radius:1px;
+  background:var(--accent);animation:qblink 1.05s steps(1) infinite}
+@keyframes qblink{50%{opacity:0}}
+.q-cell.hit{border-color:#16a34a;background:#f0fdf4;color:#15803d}
+.q-cell.miss{border-color:#dc2626;background:#fef2f2;color:#dc2626}
+[data-mode="dark"] .q-cell.hit{border-color:#4ade80;background:#14532d;color:#bbf7d0}
+[data-mode="dark"] .q-cell.miss{border-color:#f87171;background:#7f1d1d;color:#fecaca}
+.q-ghost{position:absolute;inset:0;width:100%;height:100%;opacity:0;border:0;padding:0;
+  font-size:16px;background:transparent;color:transparent;caret-color:transparent}
 .result{margin-top:12px;border-radius:12px;padding:13px;text-align:left;font-size:14px}
 .result.ok{background:var(--ok-soft);border:1px solid #bfe3cd}
 .result.bad{background:var(--bad-soft);border:1px solid #f5c2c2}
@@ -294,7 +309,7 @@ button.btn.danger{background:var(--bad-soft);color:var(--bad);border:1px solid #
 <div class="wrap">
 
   <header class="top">
-    <div><h1>晨间学习台</h1><div class="sub">新闻与英语学习 · 分开管理</div></div>
+    <div><h1>晨间学习台</h1></div>
     <div class="meta"><span id="dateTxt"></span><br>连续 <b id="streakTxt">0</b> 天 ｜ 已学 <b id="learnedTxt">0</b> 词
       <span style="margin-left:8px"><button class="btn gray sm" id="acctBtn">登录 / 注册</button>
         <span class="hint" id="syncTxt" style="margin-left:6px"></span></span>
@@ -310,7 +325,7 @@ button.btn.danger{background:var(--bad-soft);color:var(--bad);border:1px solid #
   <section id="view-1" data-sec="news">
     <div class="card">
       <h2>今日新闻 <span class="badge b-new" id="newsCount">0 条</span></h2>
-      <div id="newsStatus" class="news-status">正在获取今日新闻…</div>
+      <div id="newsStatus" class="news-status">获取中…</div>
       <div id="newsTagBar" class="tag-bar"></div>
       <div id="newsMix" class="news-mixbar"></div>
       <div id="newsList"></div>
@@ -348,20 +363,20 @@ button.btn.danger{background:var(--bad-soft);color:var(--bad);border:1px solid #
   <section id="view-3" data-sec="en" style="display:none">
     <div class="card">
       <h2>今日单词 <span class="badge b-new" id="newCount">0 个</span></h2>
-      <div class="hint">通读完一遍后：这个词今天背下来了 —— 点蓝色「今天学会了」；早就认识的词 —— 点绿色「早就认识」，它会被跳过并自动补一个新词进来，今天的定额不缩水。</div>
+      <div class="hint">背下来点「今天学会了」，早就会点「早就认识」，会自动补新词。</div>
       <div class="hint" id="newProgress" style="margin-top:5px"></div>
       <div class="grid" id="newList" style="margin-top:11px"></div>
       <div class="learn-dock" id="learnDock">
         <div class="dock-head">
           <h2>今天学会了 <span class="badge b-learn" id="learnCount">0 个</span></h2>
-          <span class="hint">这些算今天真正学到的，会按遗忘曲线排进后面的复习。点错了可以退回上面。</span>
+          <span class="hint">点错了可以退回。</span>
         </div>
         <div class="grid" id="learnList"></div>
       </div>
       <div class="done-dock" id="doneDock">
         <div class="dock-head">
           <h2>早就认识 <span class="badge b-done" id="doneCount">0 个</span></h2>
-          <span class="hint">已跳过、不再复习；每跳过一个都会自动补一个新词。点错了用红字退回去。</span>
+          <span class="hint">不再复习；点错了退回。</span>
         </div>
         <div class="grid" id="doneList"></div>
       </div>
@@ -409,13 +424,13 @@ button.btn.danger{background:var(--bad-soft);color:var(--bad);border:1px solid #
       <div class="chart" id="chart"></div><div class="chart-x" id="chartX"></div>
     </div>
     <div class="card">
-      <h2>错词本 <span class="hint" style="font-weight:400">错误次数多的会优先出现在复习队列</span></h2>
+      <h2>错词本</h2>
       <div id="wrongList"></div>
     </div>
     <div class="card">
       <h2>词库 / 数据</h2>
-      <div class="hint">当前词库 <b id="bankSize">0</b> 词。内置词库之外，可导入自己的词表或 WorkBuddy 生成的 daily json。</div>
-      <textarea id="importWords" style="margin-top:9px" placeholder="每行一个单词，用 ｜ 分隔：&#10;zeal｜/ziːl/｜n. 热忱｜He worked with great zeal."></textarea>
+      <div class="hint"><b id="bankSize">0</b> 词，导入后进「我的词库」。</div>
+      <textarea id="importWords" style="margin-top:9px" placeholder="每行一条：zeal｜/ziːl/｜n. 热忱｜例句"></textarea>
       <div class="row" style="margin-top:9px">
         <button class="btn" id="btnImportWords">导入词表到「我的词库」</button>
         <button class="btn ghost" id="btnExport">导出备份</button>
@@ -426,15 +441,14 @@ button.btn.danger{background:var(--bad-soft);color:var(--bad);border:1px solid #
     </div>
     <div class="card">
       <h2>回传给 WorkBuddy</h2>
-      <div class="hint">复制后粘给 WorkBuddy，让它存进持久记忆，明天继续出题。</div>
+      <div class="hint">粘给 WorkBuddy 存档。</div>
       <div class="row" style="margin-top:9px"><button class="btn" id="btnCopyMemory">复制「今日学习记忆」</button></div>
     </div>
   </section>
 
   <section id="view-6" data-sec="music" style="display:none">
     <div class="card">
-      <h2>环境音 <span class="hint" style="font-weight:400">浏览器实时合成 · 无版权 · 离线可用</span></h2>
-      <div class="hint">背单词、读论文属于言语记忆任务，对歌词最敏感 —— 这两个阶段请保持安静，或者用下面这些无歌词的低刺激背景音。</div>
+      <h2>环境音</h2>
       <div class="mus-grid" id="musGrid"></div>
       <div class="mus-ctrl">
         <button class="btn" id="musPlay">播放</button>
@@ -442,10 +456,10 @@ button.btn.danger{background:var(--bad-soft);color:var(--bad);border:1px solid #
         <input type="range" id="musVol" class="mus-vol" min="0" max="100" step="1" value="35">
         <span class="hint" id="musVolTxt">35%</span>
       </div>
-      <div class="mus-note">音量调到「刚好能听见」最合适 —— 音量比音色更关键。同一种听久了会习惯化、唤醒作用衰减，隔几天换一种或干脆静音。</div>
+      
     </div>
     <div class="card">
-      <h2>番茄计时 <span class="hint" style="font-weight:400">专注 25 分钟 · 休息 5 分钟</span></h2>
+      <h2>番茄计时</h2>
       <div class="row" style="align-items:center;gap:16px">
         <div class="mus-time" id="musClock">25:00</div>
         <div class="row" style="gap:7px">
@@ -461,8 +475,8 @@ button.btn.danger{background:var(--bad-soft);color:var(--bad);border:1px solid #
       </div>
     </div>
     <div class="card">
-      <h2>开场曲 <span class="hint" style="font-weight:400">仪式锚点 · 只在开始学习前用</span></h2>
-      <div class="hint">固定同一首，听到它就知道「要开始了」。填一个 B 站或网易云的单曲链接，点一下在新标签页播放，3 分钟后提醒你切回安静或环境音。</div>
+      <h2>开场曲</h2>
+      <div class="hint">填 B 站或网易云单曲链接，3 分钟后提醒切回来。</div>
       <div class="row" style="margin-top:10px;gap:8px">
         <input type="text" id="musSongName" placeholder="曲名（可留空）" style="flex:0 1 150px">
         <input type="text" id="musSongUrl" placeholder="https://… 单曲链接" style="flex:1;min-width:200px">
@@ -566,7 +580,7 @@ function buildThemePanel(){
                '" title="'+t.n+'"></button>';
       }).join('')+'</div></div>';
   }).join('')+'<div class="tdot-nm" id="tdotNm">'+themeOf(S.theme).n+'</div>'+
-    '<div class="theme-note">选择会记在本地，下次打开自动沿用</div>';
+    '<div class="theme-note">下次打开沿用</div>';
   panel.addEventListener('click',function(e){
     const b=e.target.closest('.tdot'); if(!b)return;
     S.theme=b.dataset.t; save(); applyTheme();
@@ -761,7 +775,7 @@ const SECTIONS=[
           {v:4,name:'单词分区',on:'renderZone'},{v:5,name:'统计 / 数据',on:'renderStats'}],
    badge:function(){return (S.queue||[]).length?(S.queue.length+' 待复习')
      :('今日 '+((S.neww||[]).length)+' 新词');}},
-  {id:'music',tag:'AUD',name:'音乐台',desc:'环境音 · 计时 · 开场曲',
+  {id:'music',tag:'🎵',name:'音乐台',desc:'环境音 · 计时',
    views:[{v:6,name:'音乐台'}],
    badge:function(){
      if(POMO.on)return musFmt(POMO.left)+(POMO.rest?' 休息':'');
@@ -781,7 +795,7 @@ function buildSections(){
   if(!tabs||!wrap)return;
   tabs.innerHTML=SECTIONS.map(function(s){
     return '<button class="sec-btn" data-sec="'+s.id+'">'+
-      '<span class="s-ico">'+s.tag+'</span>'+
+      '<span class="s-ico'+(/[^\x00-\x7f]/.test(s.tag)?' ico-emoji':'')+'">'+s.tag+'</span>'+
       '<span class="s-txt"><b>'+s.name+'</b><i>'+s.desc+'</i></span>'+
       '<span class="s-badge" data-badge="'+s.id+'"></span></button>';
   }).join('');
@@ -975,7 +989,7 @@ function newsMixSeed(){return (NEWS.date||todayStr())+'|'+NEWS_SEED;}
 function renderNewsMix(isMix,total){
   const el=$('#newsMix'); if(!el)return;
   if(!isMix){el.innerHTML='';return;}
-  el.innerHTML='<span class="dot"></span><span>混合随机排序 · 共 '+total+' 条，来自 '+esc(newsTagCount()+' 个领域')+'</span>'+
+  el.innerHTML='<span class="dot"></span><span>共 '+total+' 条 · '+esc(newsTagCount()+' 个领域')+'</span>'+
     '<button data-shuffle>换一批顺序</button>';
   const b=el.querySelector('[data-shuffle]');
   if(b)b.addEventListener('click',function(){NEWS_SEED++;renderNewsList();});
@@ -1020,18 +1034,14 @@ function renderNewsStatus(){
   const el=$('#newsStatus'); if(!el)return;
   const M={
     loading:['pill',''],
-    ok:['pill ok','由定时任务自动生成'],
-    stale:['pill warn','今日尚未更新，正在显示 '+NEWS.date+' 的数据'],
-    cache:['pill warn','读取失败，显示上次成功获取的 '+NEWS.date+' 数据'],
-    manual:['pill','自动数据源不可用，当前为自己添加的新闻'],
-    error:['pill bad',NEWS.err||'无法读取 data/latest.json']
+    stale:['pill warn','今日未更新，显示 '+NEWS.date+' 的'],
+    cache:['pill warn','网络异常，显示缓存'],
+    manual:['pill warn','暂用自加新闻'],
+    error:['pill bad',NEWS.err||'获取失败']
   };
+  if(NEWS.state==='ok'||NEWS.state==='loading'&&!NEWS.err){el.innerHTML=NEWS.state==='ok'?'':'<span class="pill">获取中…</span>';return;}
   const m=M[NEWS.state]||M.error;
-  el.innerHTML='<span class="'+m[0]+'">'+
-    (NEWS.state==='loading'?'获取中':(NEWS.state==='ok'?'今日已更新':(NEWS.state==='stale'?'非今日':
-     (NEWS.state==='cache'?'离线缓存':(NEWS.state==='manual'?'手动':'获取失败')))))+'</span>'+
-    '<span>'+esc(m[1])+'</span>'+
-    (NEWS.genAt?'<span class="news-src">生成于 '+esc(String(NEWS.genAt).slice(0,16).replace('T',' '))+'</span>':'');
+  el.innerHTML='<span class="'+m[0]+'">'+esc(m[1])+'</span>';
 }
 /* 标签筛选栏：只显示今天数据里出现过的标签（+ 已勾选但今天没出现的） */
 function renderNewsTags(){
@@ -1078,13 +1088,11 @@ function renderNewsList(){
     ? (all.length+' 条'+(isMix?' · 随机':''))
     : (vis.length+' / '+all.length+' 条');
   if(!all.length){
-    box.innerHTML='<div class="empty">今天还没有新闻。数据由每天 06:30 的定时任务自动生成；'+
-      '可以点上面的「重新获取」再拉一次。</div>';
+    box.innerHTML='<div class="empty">今天的新闻还没到，点「重新获取」试试。</div>';
     return;
   }
   if(!vis.length){
-    box.innerHTML='<div class="empty">今天没有「'+esc(sel.map(tagName).join('、'))+'」类的新闻（共 '+all.length+' 条）。'+
-      '<br>点上方「全部」查看全部，或换一个标签。</div>';
+    box.innerHTML='<div class="empty">这个标签今天没有新闻。</div>';
     return;
   }
   const one=function(n){
@@ -1110,7 +1118,7 @@ function loadNews(){
   NEWS={state:'loading',date:'',items:[],source:'',genAt:'',from:'',err:''};
   renderNews();
   if(typeof fetch!=='function'){
-    NEWS.state='manual'; NEWS.err='本地文件方式打开，浏览器禁止读取同目录文件';
+    NEWS.state='manual'; NEWS.err='本地打开读不了新闻文件';
     renderNews(); return Promise.resolve();
   }
   const t=todayStr();
@@ -1137,7 +1145,7 @@ function loadNews(){
       if(c&&c.items&&c.items.length)NEWS=Object.assign(c,{state:'cache',from:'cache'});
       else{
         NEWS.state=(S.news||[]).some(function(n){return n.date===t;})?'manual':'error';
-        NEWS.err='未读到 data/latest.json（定时任务可能尚未执行）';
+        NEWS.err='今日数据还没生成';
       }
     }
     renderNews();
@@ -1153,14 +1161,13 @@ $('#btnToQuiz').addEventListener('click',function(){
 
 /* ===================== 自测 ===================== */
 let hintLevel=0;
-function blanks(n){return Array(Math.max(0,n)).fill('_').join(' ');}
 function renderQuiz(){
   hintLevel=0;
   const total=S.queue.length;
   $('#qProg').style.width=(total?S.qi/total*100:100)+'%';
   const area=$('#qArea');
   if(!total){
-    area.innerHTML='<div class="empty">今天没有到期要复习的单词。<br>第一天使用，或暂时没有到期的词 —— 直接去看今日新词。</div>'+
+    area.innerHTML='<div class="empty">没有到期复习的词。</div>'+
       '<div class="row" style="justify-content:center"><button class="btn" id="qSkip">去看今日新词</button></div>';
     $('#qSkip').addEventListener('click',function(){
       if(S.stage<3)S.stage=3;save();goView(3);renderNew();});
@@ -1176,27 +1183,97 @@ function renderQuiz(){
   }
   const c=cardOf(S.queue[S.qi]);
   if(!c){S.qi++;save();return renderQuiz();}
+  const cells=c.w.split('').map(function(ch){
+    const fixed=/[^a-zA-Z]/.test(ch);
+    return '<span class="q-cell'+(fixed?' fixed':'')+'">'+(fixed?esc(ch):'')+'</span>';
+  }).join('');
   area.innerHTML=
     '<div class="qnum">第 '+(S.qi+1)+' / '+total+' 题　·　写出对应的英文单词'+
       '<span class="badge b-learn">'+DIFF_NAME[c.diff||2]+'</span></div>'+
     '<div class="q-cn">'+esc(c.cn)+'</div>'+
-    '<div class="q-blank" id="qBlank">'+blanks(c.w.length)+'</div>'+
-    '<div class="hint" id="qHint" style="min-height:18px"></div>'+
-    '<input type="text" class="q-input" id="qInput" placeholder="输入英文单词后回车" autocomplete="off" autocapitalize="off" spellcheck="false">'+
+    '<div class="q-cells" id="qCells">'+cells+'<input type="text" class="q-ghost" id="qInput"'+
+      ' autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="输入字母"></div>'+
+    '<div class="hint" id="qHint" style="min-height:18px;text-align:center">直接打字填格</div>'+
     '<div class="row" style="justify-content:center;margin-top:11px">'+
       '<button class="btn" id="qSubmit">提交</button>'+
       '<button class="btn ghost sm" id="qTip">提示</button>'+
       '<button class="btn gray sm" id="qGive">不会，看答案</button></div>'+
     '<div id="qResult"></div>';
-  const inp=$('#qInput'); inp.focus();
-  inp.addEventListener('keydown',function(e){if(e.key==='Enter')submit(false);});
+  quizCells={w:c.w,pos:0};
+  quizCursor();
+  const inp=$('#qInput');
+  setTimeout(function(){inp.focus();},60);
+  $('#qCells').addEventListener('click',function(){inp.focus();});
+  inp.addEventListener('input',function(e){
+    if(e&&e.inputType&&e.inputType.indexOf('delete')===0){quizBack();quizCursor();return;}
+    const v=inp.value; inp.value='';
+    for(const ch of v){
+      if(!/[a-zA-Z]/.test(ch))continue;
+      if(!quizSet(ch.toLowerCase()))break;   /* 已经填满了 */
+    }
+    quizCursor(); $('#qHint').textContent=quizFull()?'按回车提交':'';
+  });
+  inp.addEventListener('keydown',function(e){
+    if(e.key==='Enter'){e.preventDefault();if(quizFull())submit(false);return;}
+    if(e.key==='Backspace'){e.preventDefault();quizBack();quizCursor();}
+  });
   $('#qSubmit').addEventListener('click',function(){submit(false);});
   $('#qTip').addEventListener('click',function(){
-    hintLevel=Math.min(hintLevel+1,Math.max(1,c.w.length-1));
-    $('#qBlank').textContent=c.w.slice(0,hintLevel)+' '+blanks(c.w.length-hintLevel);
-    $('#qHint').textContent='首字母提示：'+c.w.slice(0,hintLevel).toUpperCase()+' …　共 '+c.w.length+' 个字母';
+    const eds=quizEditable(), els=quizEls();
+    let n=0; while(n<eds.length&&els[eds[n]].textContent)n++;   /* 第一个还空着的格子 */
+    if(n>=eds.length)return;
+    hintLevel++;
+    quizFillAnswer(n,n+1);
+    quizCells.pos=Math.min(n+1,eds.length);
+    quizCursor();
+    $('#qHint').textContent='已提示 '+hintLevel+' 个字母';
+    inp.focus();
   });
   $('#qGive').addEventListener('click',function(){submit(true);});
+}
+/* ---- 字母格状态：pos = 第几个待填格（0 起），不是字符串下标 ---- */
+let quizCells={w:'',pos:0};
+function quizEditable(){return quizCells.w.split('').map(function(ch,i){return /[a-zA-Z]/.test(ch)?i:-1;})
+  .filter(function(i){return i>=0;});}
+function quizEls(){const b=$('#qCells');return b?b.querySelectorAll('.q-cell'):[];}
+function quizCursor(){
+  const eds=quizEditable(), els=quizEls();
+  if(quizCells.pos<0)quizCells.pos=0;
+  if(quizCells.pos>eds.length)quizCells.pos=eds.length;
+  els.forEach(function(el){el.classList.remove('cur');});
+  const i=quizCells.pos<eds.length?eds[quizCells.pos]:eds[eds.length-1];
+  if(i!==undefined&&els[i])els[i].classList.add('cur');
+}
+function quizSet(ch){                 /* 在当前格填入一个字母，光标右移一格 */
+  const eds=quizEditable(), els=quizEls();
+  if(quizCells.pos>=eds.length)return false;
+  const i=eds[quizCells.pos];
+  if(els[i])els[i].textContent=ch;
+  quizCells.pos++;
+  return true;
+}
+function quizBack(){                  /* 退格：清掉左边一格 */
+  if(quizCells.pos<=0)return;
+  const eds=quizEditable(), els=quizEls();
+  quizCells.pos--;
+  const i=eds[quizCells.pos];
+  if(els[i])els[i].textContent='';
+}
+function quizRead(){                  /* 连固定字符（连字符/空格）一起读出来比对 */
+  const els=quizEls();
+  return Array.prototype.map.call(els,function(el){return el.textContent||'';}).join('');
+}
+function quizFull(){
+  const eds=quizEditable(), els=quizEls();
+  return eds.length>0&&eds.every(function(i){return !!(els[i]&&els[i].textContent);});
+}
+function quizFillAnswer(from,to){     /* 填入答案第 [from,to) 个待填格；返回是否已填满 */
+  const eds=quizEditable(), els=quizEls(), map=quizCells.w.split('');
+  for(let n=from;n<to&&n<eds.length;n++){
+    const i=eds[n]; if(els[i])els[i].textContent=map[i];
+  }
+  if(to>quizCells.pos)quizCells.pos=Math.min(to,eds.length);
+  return quizFull();
 }
 function norm(s){return String(s||'').trim().toLowerCase().replace(/[.!?。！？\s]+$/g,'');}
 function nextDue(level){
@@ -1205,7 +1282,7 @@ function nextDue(level){
 }
 function submit(give){
   const c=cardOf(S.queue[S.qi]); if(!c)return;
-  const ans = give===true ? '__giveup__' : $('#qInput').value;
+  const ans = give===true ? '__giveup__' : quizRead();
   const ok = (ans!=='__giveup__') && norm(ans)===norm(c.w);
   c.seen=(c.seen||0)+1;
   if(ok){
@@ -1220,6 +1297,18 @@ function submit(give){
   }
   S.sess.res.push({w:c.w,ok:ok,ans:ans==='__giveup__'?'(放弃)':ans});
   save();
+  const gi=$('#qInput'); if(gi)gi.disabled=true;
+  /* 格子判分染色：对的绿、错的标出正确字母 */
+  const els=$('#qCells').querySelectorAll('.q-cell');
+  quizCells.w.split('').forEach(function(ch,i){
+    if(!els[i])return;
+    const typed=els[i].textContent||'';
+    els[i].classList.remove('cur');
+    if(give){els[i].textContent=ch;els[i].classList.add('miss');return;}
+    if(!/[a-zA-Z]/.test(ch))return;
+    if(typed.toLowerCase()===ch.toLowerCase())els[i].classList.add('hit');
+    else{els[i].classList.add('miss');els[i].textContent=ch;}
+  });
   $('#qResult').innerHTML=
     '<div class="result '+(ok?'ok':'bad')+'">'+
       '<div><span class="w">'+(ok?'对':'错')+'　'+esc(c.w)+'</span><span class="ph">'+esc(c.ph)+'</span></div>'+
@@ -1229,8 +1318,14 @@ function submit(give){
       '<div class="row" style="justify-content:flex-end;margin-top:9px">'+
       '<button class="btn" id="qNext">下一题</button></div>'+
     '</div>';
-  $('#qInput').disabled=true;$('#qSubmit').disabled=true;
-  const nx=$('#qNext'); nx.focus();
+  $('#qSubmit').disabled=true;
+  /* 结果卡片一定滚进视野（之前被键盘挡住像“没显示”） */
+  setTimeout(function(){
+    const r=$('#qResult');
+    if(r&&r.scrollIntoView)r.scrollIntoView({behavior:'smooth',block:'nearest'});
+    const nx=$('#qNext'); if(nx)nx.focus();
+  },60);
+  const nx=$('#qNext');
   nx.addEventListener('click',function(){S.qi++;save();renderQuiz();});
   nx.addEventListener('keydown',function(e){if(e.key==='Enter'){S.qi++;save();renderQuiz();}});
   const qm=$('#qMis');
@@ -1274,16 +1369,16 @@ function renderNew(){
   $('#newList').innerHTML=todo.length
     ?todo.map(function(c){return newCardHTML(c,'todo',key(c.w)===newMovedKey);}).join('')
     :'<div class="empty">'+(all.length
-      ?'今天的词都处理完了 —— 学会的在下面，早就认识的在最下面。'
-      :'今天没有新词 —— 当前筛选下的词都学过了。换个词库 / 难度，或导入更多单词。')+'</div>';
+      ?'今天的词都处理完了。'
+      :'当前词库都学完了，换个词库 / 难度，或导入更多。')+'</div>';
   $('#learnCount').textContent=learnt.length+' 个';
   $('#learnList').innerHTML=learnt.length
     ?learnt.map(function(c){return newCardHTML(c,'learned',key(c.w)===newMovedKey);}).join('')
-    :'<div class="empty">背下来的词点上方蓝色「今天学会了」，会收进这里。</div>';
+    :'<div class="empty">点上方「今天学会了」收进来。</div>';
   $('#doneCount').textContent=skips.length+' 个';
   $('#doneList').innerHTML=skips.length
     ?skips.map(function(c){return newCardHTML(c,'skip',key(c.w)===newMovedKey);}).join('')
-    :'<div class="empty">早就认识的点上方绿色「早就认识」，跳过它并自动补一个新词。</div>';
+    :'<div class="empty">点上方「早就认识」，会自动补新词。</div>';
   const pr=$('#newProgress');
   if(pr)pr.innerHTML='今日进度 <b>'+learnt.length+' / '+S.perDay+'</b>'+
     (skips.length?'　·　已跳过 '+skips.length+' 个（每个都补了新词）':'')+
@@ -1333,10 +1428,10 @@ $('#btnFinish').addEventListener('click',function(){
       '<div><div class="big">'+S.sess.right+'</div><div class="hint">答对</div></div>'+
       '<div><div class="big">'+S.sess.wrong+'</div><div class="hint">答错</div></div>'+
       '<div><div class="big">'+(S.neww||[]).length+'</div><div class="hint">今日新词</div></div></div>'+
-    (S.skippedKnown?'<div class="hint">本次排除了 '+S.skippedKnown+' 个已学过的词。</div>':'')+
+    (S.skippedKnown?'<div class="hint">跳过 '+S.skippedKnown+' 个已学过的词</div>':'')+
     (wrongs.length?'<b>错题</b><div style="margin:5px 0 10px">'+wrongs.map(function(r){return esc(r.w);}).join('、')+'</div>'
       :'<div class="hint">没有错题，很稳。</div>')+
-    '<div class="hint">错题已自动排进明天的复习队列。</div>'+
+    '<div class="hint">错题明天排进复习。</div>'+
     '<div class="row" style="justify-content:flex-end;margin-top:14px">'+
     '<button class="btn ghost" id="rCopy">复制记忆回传</button>'+
     '<button class="btn" onclick="closeModal()">完成</button></div>');
@@ -1478,7 +1573,7 @@ function renderBulkBar(rows,pageKeys){
     if(zMoveTo===curZone&&zMoveTo!=='new')return toast('它们已经在「'+ZN[zMoveTo]+'」了');
     if(zMoveTo==='new'){
       show('<h3>清空 '+keys.length+' 个词的学习记录？</h3>'+
-        '<div class="hint">会恢复成「完全没学过」：进度清零，之后会重新被抽到。<b>此操作不可撤销</b>。</div>'+
+        '<div class="hint">进度清零，不可撤销。</div>'+
         '<div class="row" style="justify-content:flex-end;margin-top:14px">'+
         '<button class="btn gray" onclick="closeModal()">取消</button>'+
         '<button class="btn" id="mYes">确定清空</button></div>');
@@ -1499,10 +1594,10 @@ function renderBulkBar(rows,pageKeys){
   });
 }
 function zMoveHint(z){
-  return z==='learn'?'之后会按第 1 档间隔排进复习（明天）：适合确实背过、但进度被弄乱了。'
-    :z==='due'?'今天就会在自测里考到：适合现在就想背它们。'
-    :z==='done'?'标记为已掌握，不再进入复习队列：适合早就认识的词。'
-    :'恢复成完全没学过的状态。';
+  return z==='learn'?'恢复到第 1 档，明天复习。'
+    :z==='due'?'今天就会考到。'
+    :z==='done'?'不再进入复习。'
+    :'恢复成没学过。';
 }
 /* 把一组词搬到目标分区：分区是派生状态，改的就是 level / status / due */
 function moveWords(keys,target){
@@ -1531,7 +1626,7 @@ function cleanTaint(){
     .map(function(x){return key(x.w);});
   if(!keys.length)return toast('这个分区没有残留记录');
   show('<h3>清空 '+keys.length+' 个「抽到过但没背」的记录？</h3>'+
-    '<div class="hint">这些词被标记成学过、占着名额，但你其实没背过。清掉后会重新出现在新词里。</div>'+
+    '<div class="hint">没背过却占着记录，清掉后回到新词。</div>'+
     '<div class="row" style="justify-content:flex-end;margin-top:14px">'+
     '<button class="btn gray" onclick="closeModal()">取消</button>'+
     '<button class="btn" id="mYes">确定清空</button></div>');
@@ -1637,7 +1732,7 @@ $('#fileBackup').addEventListener('change',function(e){
   r.readAsText(f);
 });
 $('#btnReset').addEventListener('click',function(){
-  show('<h3>确认清空？</h3><div class="warnbox">所有学习记录、分区状态、错词本都会被删除且无法恢复。建议先导出备份。</div>'+
+  show('<h3>确认清空？</h3><div class="warnbox">删除全部记录，无法恢复。先导出备份？</div>'+
     '<div class="row" style="justify-content:flex-end;margin-top:14px">'+
     '<button class="btn gray" onclick="closeModal()">取消</button>'+
     '<button class="btn" style="background:#dc2626" id="doReset">确认清空</button></div>');
@@ -1747,7 +1842,7 @@ function cbConflict(server){
   cbSetSync('云端和本机不一致');
   const st=server.savedAt?new Date(server.savedAt).toLocaleString('zh-CN'):'未知时间';
   show('<h3>进度冲突了</h3>'+
-    '<div class="warnbox">云端存档更新于 '+esc(st)+'，和这台设备上的不一样。选一个保留，另一个会被覆盖。</div>'+
+    '<div class="warnbox">云端（'+esc(st)+'）和本机都有进度，选一个保留。</div>'+
     '<div class="row" style="justify-content:flex-end;margin-top:14px">'+
     '<button class="btn gray" id="cfUseLocal">用本机的覆盖云端</button> '+
     '<button class="btn" id="cfUseCloud">用云端的覆盖本机</button></div>');
@@ -1886,7 +1981,7 @@ function cbOpen(mode,msg){
     '<div class="auth-foot">'+(isReg
         ? '已经有账号了？<a href="javascript:void(0)" id="cbGoPwd">直接登录</a>'
         : '还没有账号？<a href="javascript:void(0)" id="cbGoReg">注册一个</a>')+'</div>'+
-    '<div class="auth-note">不登录也能正常使用，只是进度只存在这台设备的浏览器里。</div>'+
+    '<div class="auth-note">不登录也能用，进度只存本机。</div>'+
   '</div>';
   show(h);
   /* 明文 / 密文切换 */
@@ -1989,7 +2084,7 @@ async function cbBoot(){
   const b=$('#acctBtn');
   if(b)b.addEventListener('click',function(){
     if(CBUSER){
-      show('<h3>退出登录</h3><div class="hint">退出后进度仍留在这台设备上，下次登录会再和云端合并。</div>'+
+      show('<h3>退出登录</h3><div class="hint">进度会留在本机。</div>'+
         '<div class="row" style="justify-content:flex-end;margin-top:14px">'+
         '<button class="btn gray" onclick="closeModal()">取消</button>'+
         '<button class="btn" id="cbOut">退出</button></div>');
@@ -2221,7 +2316,7 @@ function musSongPlay(){
   if(u!==(S.music.song||'')){S.music.song=u;S.music.songName=nm;save();}
   if(MUS.playing){musStop();musRender();try{updateSecBadges();}catch(e){}}
   const w=window.open(u,'_blank');
-  if(!w)toast('浏览器拦截了新窗口，请允许本页弹出窗口');
+  if(!w)toast('弹窗被浏览器拦截了');
   SONG.left=180;
   if(SONG.timer)clearInterval(SONG.timer);
   SONG.timer=setInterval(function(){
