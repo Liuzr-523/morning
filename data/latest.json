@@ -1,9 +1,16 @@
 {
-  "date": "2026-10-14",
-  "generatedAt": "2026-10-14T09:20:51+08:00",
+  "date": "2026-10-15",
+  "generatedAt": "2026-10-15T08:45:03+08:00",
   "generator": "github-actions-rss",
   "perTag": 5,
   "news": [
+    {
+      "title": "Preparing for the 2026 US midterms",
+      "sum": "",
+      "url": "https://www.anthropic.com/news/2026-us-midterms",
+      "source": "Anthropic",
+      "tag": "ai"
+    },
     {
       "title": "Simulating student learning for better AI tutoring",
       "sum": "StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may eng",
@@ -19,31 +26,31 @@
       "tag": "ai"
     },
     {
-      "title": "Building on our commitment to American scientific discovery",
-      "sum": "",
-      "url": "https://www.anthropic.com/news/genesis-mission-commitment",
-      "source": "Anthropic",
+      "title": "微软：UserRepGen-4B 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-14 · text-generation · 0 下载",
+      "url": "https://hf-mirror.com/models/microsoft/UserRepGen-4B",
+      "source": "微软",
       "tag": "ai"
     },
     {
       "title": "腾讯：Youtu-Parsing-Omni 发布新模型（开源权重）",
-      "sum": "发布于 2026-10-09 · image-text-to-text · 966 下载",
+      "sum": "发布于 2026-10-09 · image-text-to-text · 1180 下载",
       "url": "https://hf-mirror.com/models/tencent/Youtu-Parsing-Omni",
       "source": "腾讯",
       "tag": "ai"
     },
     {
       "title": "阿里通义：Qwen-Image-2.1-Turbo 发布新模型（开源权重）",
-      "sum": "发布于 2026-10-09 · text-to-image · 9665 下载",
+      "sum": "发布于 2026-10-09 · text-to-image · 12704 下载",
       "url": "https://hf-mirror.com/models/Qwen/Qwen-Image-2.1-Turbo",
       "source": "阿里通义",
       "tag": "ai"
     },
     {
-      "title": "Mistral：LIDstral-Arabic 发布新模型（开源权重）",
-      "sum": "发布于 2026-10-08 · text-classification · 60 下载",
-      "url": "https://hf-mirror.com/models/mistralai/LIDstral-Arabic",
-      "source": "Mistral",
+      "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+      "sum": "",
+      "url": "https://www.anthropic.com/news/singapore-office-opening",
+      "source": "Anthropic",
       "tag": "ai"
     },
     {
@@ -61,114 +68,107 @@
       "tag": "ai"
     },
     {
-      "title": "Introducing the Anthropic Cyber Mission",
+      "title": "Building on our commitment to American scientific discovery",
       "sum": "",
-      "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "url": "https://www.anthropic.com/news/genesis-mission-commitment",
       "source": "Anthropic",
       "tag": "ai"
     },
     {
-      "title": "GPT-6 and Intelligent UI for everyone",
-      "sum": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and",
-      "url": "https://openai.com/index/gpt-6-for-everyone",
-      "source": "OpenAI",
+      "title": "ChunkAct: Action Chunking for Agentic Robotics",
+      "sum": "Agentic robotics places a large language model (LLM) agent in the robot control loop, where it composes perception, motion, and vision-language-action",
+      "url": "https://arxiv.org/abs/2610.18874v1",
+      "source": "arXiv · 2610.18874v1",
       "tag": "ai"
     },
     {
-      "title": "Can Language Models Play the Wikipedia Game?",
-      "sum": "Language models increasingly support or automate information retrieval from document collections too large to index. This task is difficult when it re",
-      "url": "https://arxiv.org/abs/2610.13948v1",
-      "source": "arXiv · 2610.13948v1",
+      "title": "Cepheid: Decoupling Scale from Structure for Cross-Family Motion Completion",
+      "sum": "Sparse-to-dense motion completion recovers dense mesh motion from sparse vertex displacements. Residual priors trained on one geometry family frequent",
+      "url": "https://arxiv.org/abs/2610.18871v1",
+      "source": "arXiv · 2610.18871v1",
       "tag": "ai"
     },
     {
-      "title": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
-      "sum": "Interpreting machine learning model predictions is a central challenge, particularly for black-box vision models. Concept-based attribution methods in",
-      "url": "https://arxiv.org/abs/2610.13935v1",
-      "source": "arXiv · 2610.13935v1",
+      "title": "What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study",
+      "sum": "How should demonstration quality be used during vision-language-action (VLA) pretraining to improve performance after target-task fine-tuning? We comp",
+      "url": "https://arxiv.org/abs/2610.18869v1",
+      "source": "arXiv · 2610.18869v1",
       "tag": "ai"
     },
     {
-      "title": "Constructive Bounds for the Topological Expressivity of Neural Networks",
-      "sum": "The expressivity of a neural network $Φ$ describes the class of functions that a network can express. The term topological expressivity refers to a fa",
-      "url": "https://arxiv.org/abs/2610.13931v1",
-      "source": "arXiv · 2610.13931v1",
+      "title": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+      "sum": "Long-horizon agents have drawn growing attention for their ability to work autonomously -- from hours to days -- on economically valuable tasks, a cap",
+      "url": "https://arxiv.org/abs/2610.18868v1",
+      "source": "arXiv · 2610.18868v1",
       "tag": "ai"
     },
     {
-      "title": "AI Models Can Provably Hide Arbitrary Capabilities",
-      "sum": "Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabil",
-      "url": "https://arxiv.org/abs/2610.13928v1",
-      "source": "arXiv · 2610.13928v1",
+      "title": "Data Free Training of Diffusion Models for Lattice Field Theories",
+      "sum": "Sampling equilibrium field configurations remains a major computational bottleneck in lattice field theory, motivating the development of generative s",
+      "url": "https://arxiv.org/abs/2610.18863v1",
+      "source": "arXiv · 2610.18863v1",
       "tag": "ai"
     },
     {
-      "title": "KL Before and After Mixing: A Round-Complexity Separation in Parallel Sampling",
-      "sum": "A parallel sampler can choose at random which coordinates to generate together. For a target $p$ and the output law $q_U$ of a schedule $U$ drawn afre",
-      "url": "https://arxiv.org/abs/2610.13924v1",
-      "source": "arXiv · 2610.13924v1",
-      "tag": "ai"
-    },
-    {
-      "title": "天气转冷，如何科学控制血压？这些要点请注意",
-      "sum": "如何科学控制血压？这些要点请注意｜健康大家谈",
-      "url": "https://www.chinanews.com.cn/jk/2026/10-14/10714141.shtml",
+      "title": "职场“软监控”引担忧：“隐形监控”之下，隐私安全何在？",
+      "sum": "花350元即可购买软件监控员工办公电脑，实时截屏、查看聊天记录，职场“软监控”引担忧",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-15/10714755.shtml",
       "source": "中新网",
       "tag": "tech"
     },
     {
-      "title": "中国科技企业华为：未来10年逻辑折叠技术具备持续演进空间",
-      "sum": "中国科技企业华为13日表示，目前实践证明，未来10年，逻辑折叠技术具备持续演进的空间，并透露麒麟2027的芯片已经在样片测试中，更长远的芯片也已进入规划和设计阶段",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-13/10714086.shtml",
+      "title": "浙江大学数学高等研究院与之江实验室联合发起“未来数学计划”",
+      "sum": "10月14日，在Science/AAAS与之江实验室共同举办的第六届智能计算创新论坛上，中国科学院院士、浙江大学数学高等研究院院长励建书，中国工程院院士、之江实验室主任王坚共同启动",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-14/10714694.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "南非中非研究中心在比勒陀利亚正式揭牌",
+      "sum": "当地时间10月13日，中国非洲研究院—南非中非研究中心揭牌仪式暨“全球南方国家携手推进人类命运共同体建设”学术研讨会在南非国家行政学院举行。中国社会科学院副院长、党组副书记彭金辉，",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-14/10714472.shtml",
+      "source": "中新网国际",
+      "tag": "tech"
+    },
+    {
+      "title": "黑龙江部署“十五五”科创任务 以科技创新引领产业全面振兴",
+      "sum": "14日，黑龙江省人民政府新闻办公室举行“开局起步‘十五五’”系列主题新闻发布会科技厅专场，介绍黑龙江省推动发展方式从资源驱动为主向创新引领为主转变的进展成效。黑龙江省科学技术厅党组",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-14/10714718.shtml",
       "source": "中新网财经",
       "tag": "tech"
     },
     {
-      "title": "国家体育总局与中国星网签署战略合作框架协议",
-      "sum": "10月13日，国家体育总局与中国卫星网络集团有限公司(简称中国星网)在雄安新区签署战略合作框架协议",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-13/10713871.shtml",
+      "title": "体教卫协同 “奔跑吧·少年”主题健身活动走进北京密云",
+      "sum": "“奔跑吧·少年”2026北京市青少年科学健身指导暨体质促进趣味运动会第二场活动13日在密云区滨河学校举行",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-14/10714488.shtml",
       "source": "中新网体育",
       "tag": "tech"
     },
     {
-      "title": "中国工厂，海外游客新目的地",
-      "sum": "不少高科技企业把实验室变成体验馆、把生产线打造成观光线——",
-      "url": "https://www.chinanews.com.cn/cul/2026/10-13/10713517.shtml",
-      "source": "中新网文化",
-      "tag": "tech"
-    },
-    {
-      "title": "校馆弦歌丨图书馆与钱学森",
-      "sum": "一座以钱学森命名的图书馆，珍藏着一位科学家的手稿、书信和赠书，也把他的求知方法带进今天青年的学习与科研。三十年前，钱学森为这座图书馆的命名仪式写下《图书馆与钱学森》。三十年后，这座",
-      "url": "https://www.chinanews.com.cn/edu/2026/10-13/10713522.shtml",
-      "source": "中新网教育",
-      "tag": "tech"
-    },
-    {
-      "title": "美国9月成屋销售量同比下降2.2% 房价连续39个月上涨",
-      "sum": "美国全国房地产经纪商协会(National Association of Realtors)当地时间13日公布数据显示，今年9月美国成屋销售量按年率计算为399万套，环比增长1.5",
-      "url": "https://www.chinanews.com.cn/gj/2026/10-14/10714122.shtml",
+      "title": "美国9月CPI同比上涨3.7%",
+      "sum": "美国劳工部14日发布数据显示，美国9月消费者价格指数(CPI)同比上涨3.7%，环比上涨0.6%",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-15/10714762.shtml",
       "source": "中新网",
       "tag": "fin"
     },
     {
-      "title": "聚焦“急难愁盼” 广西织密医保民生保障网",
-      "sum": "广西壮族自治区医疗保障局局长张奕13日介绍，广西医保部门紧扣“保基本、惠民生、防风险、促改革、优服务”主线，织密医保民生保障网，着力服务经济社会发展大局，让民众看病更有依靠、健康更",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-13/10714089.shtml",
+      "title": "上海初步形成现代职业教育发展格局",
+      "sum": "上海市教委职业教育处方面14日对记者介绍，上海已初步形成中高本纵向贯通、职普横向融通、产教融合持续深化的现代职业教育发展格局，人才培养规模和质量不断提升，为城市建设和经济社会发展提",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-14/10714654.shtml",
       "source": "中新网社会",
       "tag": "fin"
     },
     {
-      "title": "日本叶菜价格大幅上涨 白菜成“高价菜”",
-      "sum": "据日本媒体13日报道，日本近期叶类蔬菜价格持续走高，白菜、生菜、圆白菜等价格较往年大幅上涨，一棵白菜零售价普遍超过1000日元(约合42.3元人民币)，不少消费者直呼“太贵”",
-      "url": "https://www.chinanews.com.cn/gj/2026/10-14/10714097.shtml",
+      "title": "美国9月消费者价格指数涨幅超预期",
+      "sum": "美国劳工部14日发布的数据显示，受能源价格上涨等因素推动，美国9月消费者价格指数(CPI)环比上涨0.6%，同比上涨3.7%，涨幅超出市场预期。(央视记者 吴汉婴)",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-14/10714662.shtml",
       "source": "中新网国际",
       "tag": "fin"
     },
     {
-      "title": "碳水节、烧烤节席卷各地，“舌尖上”的节日如何越做越红火？",
-      "sum": "碳水节、烧烤节、啤酒节席卷各地，“策展型”运营为消费注入新动力",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-14/10714107.shtml",
+      "title": "中国首批绿证跨境集中交易达成 联通香港国际绿色金融市场",
+      "sum": "中国首批绿证跨境集中交易(香港)发布活动14日在广州举行。本次集中交易共成交绿证约10万个，对应可再生能源电量近1亿千瓦时，标志着中国可再生能源绿色电力证书(GEC)规模化落地香港",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-14/10714731.shtml",
       "source": "中新网财经",
       "tag": "fin"
     },
@@ -180,213 +180,213 @@
       "tag": "fin"
     },
     {
-      "title": "红星照耀中国｜长征出发地，一根纱线串起千亿产业",
-      "sum": "江西于都，中央红军长征出发纪念馆里，一台手摇缝纫机的机身黑漆早已斑驳",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-14/10714133.shtml",
+      "title": "第140届广交会今日开展 展期持续至11月4日",
+      "sum": "今天(10月15日)，第140届广交会在广州开展。今年恰逢广交会创办70周年，本届广交会展览规模达155万平方米，分3期举办，展期将持续到11月4日",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-15/10714775.shtml",
       "source": "中新网",
       "tag": "cn"
     },
     {
-      "title": "丝路高铁直通京沪 “如意甘肃”流动文旅专列兰州首发",
-      "sum": "10月13日，G1406次、G1980次列车分别从兰州西站驶出，开往北京西站、上海虹桥站，标志着甘肃“铁路+旅游”融合发展再迈重要一步，助力甘肃打造国内外知名旅游目的地",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-13/10713915.shtml",
+      "title": "海南推广地质灾害一键报灾小程序 隐患即拍即报",
+      "sum": "近期，海南省地质灾害风险隐患排查复核“村村走到”专项行动正在推进。海南省自然资源和规划厅14日介绍，该省同步推广“海南地灾一键报灾”微信小程序，构建全民参与、全域覆盖、快速响应的地",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-14/10714730.shtml",
       "source": "中新网社会",
       "tag": "cn"
     },
     {
-      "title": "柬埔寨亡人节三天假期吸引国内外游客逾216万人次",
-      "sum": "柬埔寨旅游部13日发布的统计报告显示，本月10日至12日亡人节三天假期，该国各地旅游景区共接待国内国际游客216万余人次，同比增长0.8%",
-      "url": "https://www.chinanews.com.cn/gj/2026/10-13/10714092.shtml",
+      "title": "2026国际自盟场地自行车世锦赛首次在中国内地举行",
+      "sum": "2026天梭国际自行车联盟场地自行车世界锦标赛14日晚间在上海自行车馆(崇明)开幕，这是该赛事首次来到中国内地。本届世锦赛共吸引45支参赛队的399名车手参赛，其中不乏多位奥运冠军",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-14/10714696.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "教育部：已遴选出220所职业院校，打造技能型高校“国家队”",
+      "sum": "记者从教育部今天召开的新闻发布会获悉，落实分类推进高校改革部署，着眼“办学能力高水平、产教融合高质量”的“新双高”理念，教育部已启动实施第二期“双高建设计划”，遴选出220所职业院",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-12/10712056.shtml",
+      "source": "中新网教育",
+      "tag": "cn"
+    },
+    {
+      "title": "全国卫生与健康大会，释放哪些新信号？",
+      "sum": "2026年10月12日至13日，全国卫生与健康大会在北京召开，距离上一次大会已经过去了十年。十年之后，我们对健康中国的建设，又有了哪些新要求和新部署？健康中国，需要具备怎样的能力和",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-14/10714454.shtml",
+      "source": "中新网健康",
+      "tag": "cn"
+    },
+    {
+      "title": "33年后，F1回非洲了！一场32亿美元的“豪赌”，卢旺达总统：今天属于非洲",
+      "sum": "“豪赌”，卢旺达总统：今天属于非洲 | 国际早察",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-15/10714767.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "韩国博主在延边“破大防”？",
+      "sum": "最近，一位韩国博主的延边旅行视频在网络走红",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-14/10714611.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "倒计时击沉美舰：伊朗在海峡摆下非对称口袋，沙特阿美总部14日再度起火",
+      "sum": "“我们正在倒计时，等待美国军舰靠近霍尔木兹海峡入口的那一天。”",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-14/10714734.shtml",
       "source": "中新网国际",
-      "tag": "cn"
-    },
-    {
-      "title": "广西推进一体化电视安装部署 破解电视 “双遥控器”难题",
-      "sum": "广西广播电视局13日介绍，当地积极推进一体化电视安装部署，一台电视机、一个遥控器，开机即看直播——曾让广大群众头疼的“两个遥控器”烦恼，正在加速化解",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-13/10714026.shtml",
-      "source": "中新网财经",
-      "tag": "cn"
-    },
-    {
-      "title": "2026世界网球大师赛MT100上海站开赛 中外民间网球高手同场竞技",
-      "sum": "在2026上海网球大师赛激战正酣之际，一项云集国内外民间网球高手的大师赛也在上海精彩上演",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-13/10713976.shtml",
-      "source": "中新网体育",
-      "tag": "cn"
-    },
-    {
-      "title": "俄联邦安全局：一名涉嫌从事间谍活动的日本记者被捕",
-      "sum": "俄罗斯联邦安全局13日通报称，一名涉嫌为日本情报机构从事间谍活动的日本公民在俄罗斯被捕",
-      "url": "https://www.chinanews.com.cn/gj/2026/10-14/10714117.shtml",
-      "source": "中新网",
       "tag": "intl"
     },
     {
-      "title": "平陆运河荣膺绿色设计界“奥斯卡” 生态优先理念获国际肯定",
-      "sum": "2026年世界运河大会13日在广西桂林开幕。开幕式上，世界绿色设计组织向平陆运河项目颁发绿色设计国际大奖、绿色设计国际贡献奖，平陆运河首次在绿色生态领域获得国际大奖",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-13/10714087.shtml",
-      "source": "中新网社会",
-      "tag": "intl"
-    },
-    {
-      "title": "俄外交部：日本利用驻俄记者搜集情报 呼吁日方放弃敌对行动",
-      "sum": "据俄罗斯外交部网站消息，当地时间13日，俄罗斯外交部发言人扎哈罗娃就俄联邦安全局逮捕一名涉嫌从事间谍活动的日本人发表评论说，日方企图利用其驻俄记者收集旨在破坏俄安全的情报，这种做法",
-      "url": "https://www.chinanews.com.cn/gj/2026/10-14/10714105.shtml",
-      "source": "中新网国际",
-      "tag": "intl"
-    },
-    {
-      "title": "韩国KOSPI指数收跌超5% 两大半导体股延续跌势",
-      "sum": "韩国综合股价指数(KOSPI)13日收盘跌幅逾5%，创下自2026年8月19日以来单日最大跌幅",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-13/10714095.shtml",
+      "title": "进口增速快于出口，中国大市场澎湃全球新机遇",
+      "sum": "10月14日，中国外贸前三季度成绩单出炉，有一个变化，引人注目",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-14/10714713.shtml",
       "source": "中新网财经",
       "tag": "intl"
     },
     {
-      "title": "吉诺·提提库、殷若宁领衔挥杆 2026LPGA锦标赛将开赛",
-      "sum": "2026别克LPGA(美国女子职业高尔夫巡回赛)锦标赛13日在上海佘山国际高尔夫俱乐部举行赛事发布会。本届赛事将于10月15日至18日展开四轮角逐，共吸引来自17个国家和地区的81",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-13/10714033.shtml",
+      "title": "武网赛后张帅袒露心声：为坚持的自己骄傲",
+      "sum": "2026东风·岚图汽车武汉网球公开赛(以下简称“武网”)13日女单较量中，中国选手张帅以3：6、0：6不敌美国选手克鲁格，止步首轮。赛后新闻发布会上，她坦言这是一场充满情怀却也受困",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-14/10714324.shtml",
       "source": "中新网体育",
       "tag": "intl"
     },
     {
-      "title": "第33届世界大学生冬季运动会火种欢迎仪式在长春举行",
-      "sum": "14日上午，第33届世界大学生冬季运动会(简称“大冬会”)火种欢迎仪式在长春举行",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-14/10714131.shtml",
-      "source": "中新网",
-      "tag": "edu"
-    },
-    {
-      "title": "广州天河边检开展第140届广交会大学生志愿者专项培训",
-      "sum": "据广州出入境边防检查总站天河边检站13日消息，第140届中国进出口商品交易会(下称“广交会”)启幕在即，该站近日组织大学生志愿者开展服务保障专题培训，夯实证件核验与涉外服务基础，全",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-13/10714053.shtml",
+      "title": "山西晋城邀青年学子赴太行之约 文旅推介高校行系列活动启动",
+      "sum": "10月14日，“晋城好风光·青春向太行”晋城市文旅推介高校行暨校地合作系列活动在太原理工大学启动。晋城市委书记薛明耀，共青团山西省委书记吴兴，太原理工大学党委书记沈兴全，太原理工大",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-14/10714599.shtml",
       "source": "中新网社会",
       "tag": "edu"
     },
     {
-      "title": "广西壮族自治区第一届“千里杯”青少年校园足球联赛开幕",
-      "sum": "10月11日，广西壮族自治区第一届“千里杯”青少年校园足球联赛在广西民族大学思源湖校区开幕，并举行揭幕战",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-12/10712273.shtml",
+      "title": "社保服务进万家 湖南多措保障新就业劳动者权益",
+      "sum": "2026年湖南省“社保服务进万家”活动14日在湖南安化县启动。据悉，活动在该省14个市州同步开展，聚焦灵活就业人员、农民工、新就业形态人员、高校毕业生等重点群体，推进精准扩面和高质",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-14/10714719.shtml",
+      "source": "中新网财经",
+      "tag": "edu"
+    },
+    {
+      "title": "长春大冬会报名人数超3700人 创历届之最",
+      "sum": "记者14日从长春2027第33届世界大学生冬季运动会(“长春大冬会”)组委会获悉，赛事正处于参赛报名阶段，截至10月12日，共有63个国家和地区的3716名运动员、教练员、官员完成",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-14/10714618.shtml",
       "source": "中新网体育",
       "tag": "edu"
     },
     {
-      "title": "（文化中国行·校馆弦歌）北京大学图书馆里，有一间古籍修复“急诊室”",
-      "sum": "题：北京大学图书馆里，有一间古籍修复“急诊室”",
-      "url": "https://www.chinanews.com.cn/cul/2026/10-13/10713736.shtml",
+      "title": "《雷雨》内容外再讲繁漪 万方新作《繁漪女士》发布",
+      "sum": "“人生在爱而不得中爆发或虚度——《繁漪女士》新书发布会”日前在北京举办，作家万方携新书《繁漪女士》与主持人张越，北京师范大学教授田卉群，知名演员、导演孔维展开对谈，共同解读繁漪的爱",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-14/10714674.shtml",
       "source": "中新网文化",
       "tag": "edu"
     },
     {
-      "title": "（乡村行·看振兴）青年蹲点“浙中蜜蜂村”：大山里的“青春必修课”",
-      "sum": "题：青年蹲点“浙中蜜蜂村”：大山里的“青春必修课”",
-      "url": "https://www.chinanews.com.cn/edu/2026/10-13/10713644.shtml",
+      "title": "用年轻人喜欢的方式，打开宝藏图书馆",
+      "sum": "江苏多所高校图书馆利用馆藏资源，激发学生阅读兴趣",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-14/10714182.shtml",
       "source": "中新网教育",
       "tag": "edu"
     },
     {
-      "title": "“循傅山足迹 赴霜红之约” 太原尖草坪区启动“崛围红叶”文旅系列活动",
-      "sum": "10月13日，2026年尖草坪区“崛围红叶”文旅系列活动暨职工健步行在太原市尖草坪区启动。活动以“循傅山足迹 赴霜红之约”为主题，现场发布3条精品一日游线路，20家旅行社结为“红叶",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-13/10714002.shtml",
+      "title": "外媒记者走进南京云锦博物馆 感受“寸锦寸金”里的文明互鉴",
+      "sum": "10月14日，参加2026年“一带一路”记者组织论坛暨主题采风活动的中外记者走进南京云锦博物馆，了解非物质文化遗产南京云锦织造技艺",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-14/10714623.shtml",
       "source": "中新网社会",
       "tag": "cul"
     },
     {
-      "title": "中国广东省围棋协会与哈萨克斯坦围棋协会建立常态化双边合作机制",
-      "sum": "记者13日从中国广东省围棋协会获悉，中国广东省围棋协会与哈萨克斯坦围棋协会《合作谅解备忘录》签约仪式12日在广东省围棋协会沙面街道围棋文化基地举行",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-13/10713932.shtml",
+      "title": "“让世界了解都江堰”—走进法国文旅经贸推介交流会在巴黎举行",
+      "sum": "“让世界了解都江堰”—走进法国文旅经贸推介交流会当地时间13日在法国巴黎举行。都江堰市市长王二勇率团赴法开展城市推介，中国驻巴黎旅游办事处、法国旅行商、商协会企业及媒体代表共约40",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-14/10714416.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "平台聚合力 奥林匹斯共建实验区助力县域足球打开发展空间",
+      "sum": "“把国家级赛事IP下沉到县域，是奥林匹斯共建实验区非常核心的价值。”北京奥林匹克文化促进会相关负责人13日在一场活动上说",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-14/10714469.shtml",
       "source": "中新网体育",
       "tag": "cul"
     },
     {
-      "title": "大型原创历史舞台剧《大儒张载》升级版亮相第十一届陕西省艺术节",
-      "sum": "千年之前，北宋大儒张载在关中大地发出了“为天地立心，为生民立命，为往圣继绝学，为万世开太平”的千秋宏愿。千年之后，在张载思想的诞生之地，一群青年学子正以戏剧的方式，回应着这位先贤跨",
-      "url": "https://www.chinanews.com.cn/cul/2026/10-13/10714082.shtml",
+      "title": "从静态保护到活化利用 大遗址走进民众生活融入城乡发展",
+      "sum": "大遗址如何保如何用，如何走进民众生活，融入城乡发展？10月13日至14日，国家文物局在河南郑州举行全国大遗址工作会，相关文物行政部门负责人、国家考古遗址公园负责人及文博单位、科研机",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-14/10714673.shtml",
       "source": "中新网文化",
       "tag": "cul"
     },
     {
-      "title": "海南屯昌猪养殖系统为何能入选国家级名单？",
-      "sum": "近日，农业农村部公布第八批中国重要农业文化遗产名单，海南屯昌猪养殖系统上榜，实现海南省畜牧养殖类中国重要农业文化遗产零的突破",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-13/10713955.shtml",
-      "source": "中新网社会",
+      "title": "游改真人电影《生化危机：爆发夜》上映 10 天，票房累计破 3.04 亿",
+      "sum": "电影《生化危机：爆发夜》官方微博今日宣布， 本片上映第 10 天，票房累计破 3.04 亿 。 IT之家附该电影官方简介如下： 嘘，别出声。 黑暗中的生化怪物正在凝视，楼顶上的嗜血",
+      "url": "https://www.ithome.com/1/013/128.htm",
+      "source": "IT之家",
       "tag": "cul"
     },
     {
-      "title": "环燕羽山越野挑战赛在京举办 400余名选手体验乡土风情",
-      "sum": "环燕羽山越野挑战赛暨北京山地越野探索系列赛11日在北京市延庆区井庄镇举办。来自全国二十余个省市的400余名选手齐聚燕羽山麓，开启一场集越野竞技、乡土风情、文化体验、乡村休闲于一体的",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-12/10711982.shtml",
-      "source": "中新网体育",
-      "tag": "cul"
-    },
-    {
-      "title": "报告称英格兰足球联赛体系面临严峻财务风险",
-      "sum": "英国独立足球监管机构13日发布最新行业报告警示，英格兰足球联赛体系整体面临严峻财务风险，行业财务结构脆弱，绝大多数俱乐部长期亏损运营、生存高度依赖股东持续注资",
-      "url": "https://www.chinanews.com.cn/gj/2026/10-14/10714119.shtml",
-      "source": "中新网",
-      "tag": "sport"
-    },
-    {
-      "title": "2026年全国中南区射击锦标赛（步手枪项目）在广州收官",
-      "sum": "记者13日从广东省黄村体育训练中心获悉，2026年全国中南区射击锦标赛(步手枪项目)(简称“赛事”)13日在广东省黄村体育训练中心收官",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-13/10714067.shtml",
+      "title": "浙江省第十八届运动会将在衢州开幕 参赛规模创历史新高",
+      "sum": "10月14日，2026年浙江省第十八届运动会新闻通气会在杭州举行。记者从会上获悉，浙江省运会将于10月18日在衢州市体育中心开幕，并于10月30日闭幕。作为浙江省规格最高、规模最大",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-14/10714693.shtml",
       "source": "中新网体育",
       "tag": "sport"
     },
     {
-      "title": "2026环广西公路自行车世界巡回赛开赛",
-      "sum": "2026环广西公路自行车世界巡回赛(“环广西世巡赛”)13日在位于中越边境的崇左市开赛。22支世界顶级车队集结，创造该项赛事参赛车队最多的纪录",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-13/10713984.shtml",
+      "title": "2026环广西世巡赛完成崇左—靖西赛段",
+      "sum": "10月14日，2026环广西公路自行车世界巡回赛(以下简称“环广西世巡赛”)迎来第二赛段崇左—靖西赛段的激烈争夺。来自皮克尼克—荷兰邮政车队的弗里茨·比斯特博斯率先冲线，获得本赛段",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-14/10714685.shtml",
       "source": "中新网体育",
       "tag": "sport"
     },
     {
-      "title": "2026环广西公路自行车世界巡回赛启程",
-      "sum": "2026环广西公路自行车世界巡回赛(以下简称“环广西世巡赛”)13日在位于中越边境的崇左市开赛。22支世界顶级车队集结，创造该项赛事参赛车队最多的纪录",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-13/10713889.shtml",
+      "title": "北京将承办2027年苏迪曼杯决赛",
+      "sum": "世界羽联14日宣布，2027年苏迪曼杯世界羽毛球混合团体锦标赛决赛阶段比赛将于2027年4月21日至5月2日在北京举办",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-14/10714584.shtml",
       "source": "中新网体育",
       "tag": "sport"
     },
     {
-      "title": "广西第十六届少数民族传统体育运动会开幕 上演“最炫民族风”",
-      "sum": "10月12日晚，广西壮族自治区第十六届少数民族传统体育运动会开幕式在柳州市举行。全区2100多名运动员共赴这场民族体育盛会，上演“最炫民族风”",
-      "url": "https://www.chinanews.com.cn/ty/2026/10-13/10713689.shtml",
+      "title": "2026年广东省青少年武术套路锦标赛在佛山举行",
+      "sum": "记者14日从广东省武术协会获悉，“奔跑吧·少年”中国体育彩票2026年广东省青少年武术套路锦标赛(简称“赛事”)近日在佛山市高明区广东华体高明体育馆举行。赛事汇聚了广东省17个地级",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-14/10714366.shtml",
       "source": "中新网体育",
       "tag": "sport"
     },
     {
-      "title": "贵州湖北湖南江西等地降雨较强 新一轮冷空气即将影响我国",
-      "sum": "据中央气象台网站消息，昨日，全国大部地区天气较好，降水较弱，仅在云南东部等地出现大雨或暴雨，局地大暴雨。今明两天，西南地区东部、江汉南部、江南北部等地将迎来一次较强降水过程，上述部",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-14/10714136.shtml",
+      "title": "山西男篮出征新赛季：外教主导、三援落定，目标“更上一层楼”",
+      "sum": "山西汾酒男篮14日在山西太原举行2026-2027赛季中国男子职业篮球联赛(CBA)新闻发布会暨出征仪式。山西汾酒职业篮球俱乐部总经理王建武用一组清晰的调整动作，勾勒出新赛季的目标",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-14/10714374.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "贵州湖南江西等地有较强降水 新一轮冷空气将自西向东影响我国大部地区",
+      "sum": "据中央气象台网站消息，昨日，湖南等地出现较强降雨，内蒙古中部等地有大风。预计15日，江南北部等地有较强降雨过程，部分地区累计雨量较大，需加强次生灾害防御，做好交通、旅游、城市运行等",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-15/10714766.shtml",
       "source": "中新网",
       "tag": "life"
     },
     {
-      "title": "在吉林市“护好一湖清水 守好一片青山”",
-      "sum": "题：在吉林市“护好一湖清水 守好一片青山”",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-13/10714090.shtml",
+      "title": "中国发现侏罗纪不会飞鸟类杨源𬸚𬸦 颠覆鸟类早期演化传统认知",
+      "sum": "“鸟类的起源和早期演化始终以适应飞行为主”这一传统认知，最近被中国的化石新发现和中国科研团队的研究成果所打破",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-14/10714740.shtml",
       "source": "中新网社会",
       "tag": "life"
     },
     {
-      "title": "巴厘岛燃油供应紧张",
-      "sum": "印度尼西亚旅游胜地巴厘岛近日燃油供应紧张，多地加油站车辆排队时间长达数小时，一度造成交通拥堵。巴厘省省长科斯特13日呼吁民众保持冷静，按实际需求购买燃油，避免恐慌性抢购。他表示，燃",
-      "url": "https://www.chinanews.com.cn/gj/2026/10-13/10714058.shtml",
-      "source": "中新网国际",
+      "title": "广西里高糯香米饼：老手艺“揉”出乡村新产业",
+      "sum": "里高糯香米饼是广西柳州市柳江区里高镇家喻户晓的传统美食。一方小小的米饼，揉进了一代代里高人的节庆记忆，也包裹着浓浓乡土情怀",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-14/10714736.shtml",
+      "source": "中新网财经",
       "tag": "life"
     },
     {
-      "title": "中新健康｜脑机接口告别“讲故事”？",
-      "sum": "“想象左手握拳……想象右手握拳……”",
-      "url": "https://www.chinanews.com.cn/jk/2026/10-13/10714018.shtml",
+      "title": "擅自把止痛药从每日2片加到10片，“药物依赖”要注意",
+      "sum": "擅自把止痛药从每日2片加到10片",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-14/10714381.shtml",
       "source": "中新网健康",
       "tag": "life"
     },
     {
-      "title": "苹果 iOS 27.2 Beta 4 更新汇总：移除新版健康 App，升级 Apple Music 品牌视觉",
-      "sum": "苹果公司今天（10 月 14 日）推送 iOS / iPadOS 27.2 Beta 4 开发者预览版（内部版本号：24B5110a）， 暂时移除新版健康 App 外，还更新 Ap",
-      "url": "https://www.ithome.com/1/012/634.htm",
-      "source": "IT之家",
+      "title": "广东发布总林长令加强森林防灭火与鸟类保护工作",
+      "sum": "据广东省林业局14日消息，广东省近日发布2026年第3号总林长令——《关于加强森林防灭火与鸟类保护工作的令》，强调10月起该省将进入森林特别防护期，也是候鸟迁徙过境、越冬栖息的关键",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-14/10714733.shtml",
+      "source": "中新网社会",
       "tag": "life"
     }
   ]
