@@ -1,0 +1,393 @@
+{
+  "date": "2026-10-17",
+  "generatedAt": "2026-10-17T08:41:51+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "sum": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "An update on independent evaluators",
+      "sum": "",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "source": "Anthropic",
+      "tag": "ai"
+    },
+    {
+      "title": "Simulating student learning for better AI tutoring",
+      "sum": "StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may eng",
+      "url": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Qwen3-8B-DSpine-b16 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-16 · 模型 · 0 下载",
+      "url": "https://hf-mirror.com/models/tencent/Qwen3-8B-DSpine-b16",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：scFM-dataselection 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-16 · 模型 · 0 下载",
+      "url": "https://hf-mirror.com/models/microsoft/scFM-dataselection",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "sum": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Preparing for the 2026 US midterms",
+      "sum": "",
+      "url": "https://www.anthropic.com/news/2026-us-midterms",
+      "source": "Anthropic",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Hy-Memory-30B-A3B 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-15 · text-generation · 0 下载",
+      "url": "https://hf-mirror.com/models/tencent/Hy-Memory-30B-A3B",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "sum": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strat",
+      "url": "https://openai.com/index/legalon-halves-codex-costs",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+      "sum": "",
+      "url": "https://www.anthropic.com/news/singapore-office-opening",
+      "source": "Anthropic",
+      "tag": "ai"
+    },
+    {
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "sum": "Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic",
+      "url": "https://arxiv.org/abs/2610.22372v1",
+      "source": "arXiv · 2610.22372v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "sum": "Significant efforts are currently being directed toward the implementation of large-scale quantum information processors, but realizing useful quantum",
+      "url": "https://arxiv.org/abs/2610.22367v1",
+      "source": "arXiv · 2610.22367v1",
+      "tag": "ai"
+    },
+    {
+      "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+      "sum": "Predicting how the world responds to an action requires more than what can be seen: robots must account for environmental factors that are neither dir",
+      "url": "https://arxiv.org/abs/2610.22364v1",
+      "source": "arXiv · 2610.22364v1",
+      "tag": "ai"
+    },
+    {
+      "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+      "sum": "Generative simulation can automate robot environment construction, but physically valid environments are not necessarily useful for training. The chal",
+      "url": "https://arxiv.org/abs/2610.22362v1",
+      "source": "arXiv · 2610.22362v1",
+      "tag": "ai"
+    },
+    {
+      "title": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
+      "sum": "Time series foundation models are becoming increasingly popular for general-purpose forecasting. However, most leading models predict marginal quantil",
+      "url": "https://arxiv.org/abs/2610.22358v1",
+      "source": "arXiv · 2610.22358v1",
+      "tag": "ai"
+    },
+    {
+      "title": "甘肃文物数字化创新创意设计大赛：直面行业共性难题",
+      "sum": "第二届“甘博杯”文物数字化创新创意设计大赛启动仪式暨2026年馆校企协同文博数智化高质量发展座谈16日在甘肃省博物馆举行，吸引省内外文博单位、高校院所及文化科技企业代表100余人出",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-16/10715999.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "马来西亚推出六款本土研发芯片及相关成果",
+      "sum": "马来西亚16日发布六款本土研发的半导体芯片及相关技术创新成果，预计合计销售潜力约3亿林吉特(约合4.9亿元人民币)，旨在推动本国半导体产业在封装、测试等传统优势基础上，加强本土芯片",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-16/10715965.shtml",
+      "source": "中新网国际",
+      "tag": "tech"
+    },
+    {
+      "title": "专家：我国研发经费投入稳步增长 夯实科技创新根基",
+      "sum": "国家统计局、科技部、财政部16日联合发布《2025年全国科技经费投入统计公报》。公报显示，2025年全国研究与试验发展(Ramp;D)经费投入比上年增长8.2%；投入强度2.80%",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-16/10715948.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "业界人士西安共议新能源汽车赛事产业发展 探索体育文旅融合新路径",
+      "sum": "2026中国新能源汽车赛事产业高质量发展高峰研讨会15日在西安举行，来自主管部门、行业协会、赛车界、技术界、车企及沿黄九省区汽摩协会的业内嘉宾齐聚，围绕新能源汽车赛事升级、产业价值",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-15/10715338.shtml",
+      "source": "中新网体育",
+      "tag": "tech"
+    },
+    {
+      "title": "董新林解读中国科技考古：历经五期发展未来要成为“考古特种部队”",
+      "sum": "作为考古学的重要组成部分，如何利用先进科技助力考古发掘研究的科技考古，长期以来广受关注",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-16/10715636.shtml",
+      "source": "中新网文化",
+      "tag": "tech"
+    },
+    {
+      "title": "习言道｜一定要把我们的母亲河保护好",
+      "sum": "“确保一江清水绵延后世、惠泽人民”。长江是中华民族的母亲河，长江经济带事关全国发展大局。长江的保护和发展，是习近平总书记长久的牵挂",
+      "url": "https://www.chinanews.com.cn/gn/shipin/2026/10-17/news1072060.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "2026年中国百强城市排行榜：京沪稳居前两位，吉安、孝感首次入围",
+      "sum": "2026年中国百强城市排行榜发布会16日在上海举办。这是华顿经济研究院自2015年以来连续第12年编制年度“中国百强城市排行榜”。榜单显示，北京、上海依旧稳居前两位，吉安、孝感首次",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-16/10715958.shtml",
+      "source": "中新网社会",
+      "tag": "fin"
+    },
+    {
+      "title": "五年15条新线建成投产 国铁广州局加快推进路网建设",
+      "sum": "金秋时节，国铁广州局铁路建设工地捷报频传，9月25日广南联络线2标首段无砟道床板开始浇筑，9月30日深江铁路洪奇沥水道公铁大桥合龙，10月1日合湛铁路广东段卖皂河特大桥完成首个连续",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-17/10716012.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "打破专科“天花板”！职业教育专业基本涵盖国民经济各领域",
+      "sum": "记者12日从教育部举行的新闻发布会上了解到，截至2025年底，全国有职业学校10792所，在校生3355.96万人，我国已建成世界上规模最大且有质量的现代职业教育体系，职业教育专业",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-13/10712360.shtml",
+      "source": "中新网教育",
+      "tag": "fin"
+    },
+    {
+      "title": "古尔曼称苹果调整法律团队：从 Meta 挖来诉讼主管，出任全球诉讼与金融服务副总裁",
+      "sum": "彭博社的马克 · 古尔曼（Mark Gurman）今日发文，据知情人士透露，苹果公司聘请了斯科特 · 塔克（Scott Tucker），他是 Meta 的副总法律顾问兼诉讼主管。 ",
+      "url": "https://www.ithome.com/1/014/215.htm",
+      "source": "IT之家",
+      "tag": "fin"
+    },
+    {
+      "title": "10月17日新闻早报",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/iframe/2026/10-17/10716051.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "青海：“十五五”农牧区劳动力转移就业500万人次",
+      "sum": "16日，青海省人力资源和社会保障厅对外发布《青海省实施就业优先战略“十五五”规划》(简称“规划”)。根据规划，未来五年该省城镇新增就业30万人，农牧区劳动力转移就业500万人次，城",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-16/10715987.shtml",
+      "source": "中新网社会",
+      "tag": "cn"
+    },
+    {
+      "title": "日本有识之士警示：谨防日本重回“战前状态”",
+      "sum": "日本有识之士15日晚在东京举行主题为“不要让日本走向新的战前状态”系列研讨会。与会人士分析高市早苗政府一系列扩军备武政策的危险性，呼吁不要让日本重蹈战争覆辙",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-16/10715475.shtml",
+      "source": "中新网国际",
+      "tag": "cn"
+    },
+    {
+      "title": "五部门发布警惕“央国企内推”等骗局风险提示",
+      "sum": "人力资源社会保障部、中央网信办、教育部、公安部、国务院国资委10月16日联合发布警惕“央国企内推”等骗局风险提示，提醒广大求职者特别是高校毕业生提高风险防范意识，谨防上当受骗",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-16/10715927.shtml",
+      "source": "中新网财经",
+      "tag": "cn"
+    },
+    {
+      "title": "2026国际自盟场地自行车世锦赛首次在中国内地举行",
+      "sum": "2026天梭国际自行车联盟场地自行车世界锦标赛14日晚间在上海自行车馆(崇明)开幕，这是该赛事首次来到中国内地。本届世锦赛共吸引45支参赛队的399名车手参赛，其中不乏多位奥运冠军",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-14/10714696.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "日媒：高市早苗向靖国神社献祭品",
+      "sum": "据日本共同社报道，日本首相高市早苗17日以“内阁总理大臣”名义，向靖国神社供奉名为“真榊”的祭品",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-17/10716054.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "梵净山保护区被认定为全球生物多样性关键区",
+      "sum": "记者16日从贵州梵净山国家级自然保护区管理局了解到，贵州梵净山国家级自然保护区已被世界自然保护联盟认定为全球生物多样性关键区",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-16/10715943.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "印尼多地出现燃油供应紧张",
+      "sum": "印度尼西亚多个地区近期出现燃油供应紧张情况，巴厘岛及周边地区尤为突出。印尼能源与矿产资源部长巴赫利尔16日要求国家石油公司增加燃油运输船，以加快向东爪哇、巴厘岛等地区配送燃油",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-16/10715919.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "中国商务部回应欧盟峰会提出对华“双轨”思路",
+      "sum": "针对欧盟峰会提出对华“双轨”思路，中国商务部新闻发言人16日表示，欧方不能幻想以施压换取好处，更不要低估中方维护自身利益的决心和能力",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-16/10716004.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "第九届“一带一路”锦江杯成都全球象棋双人赛开幕",
+      "sum": "2026年第九届“一带一路”锦江杯成都全球象棋双人赛16日晚在成都锦江畔开幕，18个国家和地区的32名一流棋手齐聚蓉城，于楚河汉界间展开跨越国界的智慧对话",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-16/10715952.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "中央音乐学院举行“10·15”艺术节开幕音乐会",
+      "sum": "10月15日晚，2026中俄教育年·中央音乐学院“10·15”艺术节开幕式交响音乐会在中央音乐学院歌剧音乐厅上演。圣彼得堡国立音乐学院院长、俄罗斯功勋艺术家阿列克谢·瓦西里耶夫执棒",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-17/10716036.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "湖南沅江孤岛之上 一位乡村教师40年的“摆渡人生”",
+      "sum": "在洞庭湖的浩渺烟波里，湖南沅江市净下洲静卧水中，汛期洪水围城时，轮渡是连通外界唯一的通道。四十余年光阴流转，有一位老师守着这座湖洲孤岛，做一代又一代孩子的“摆渡人”，他就是退休教师",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-16/10715972.shtml",
+      "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "2026年世界乒乓球健康嘉年华将首次登陆亚洲",
+      "sum": "2026年世界乒乓球健康嘉年华(上海)新闻发布会15日在上海交通大学霍英东体育中心举行。本届世界乒乓球健康嘉年华以“乒乓聚世界，健康向未来”为主题，将于10月20日至25日举行，这",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-15/10715243.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "让民歌“活”起来 2026北京传统音乐节开幕",
+      "sum": "由北京市教育委员会主办，中国音乐学院、北京音乐家协会承办的2026北京传统音乐节日前在京启幕，来自全国各地的民歌传承人、代表性歌手、优秀青年歌者和知名声乐艺术家共聚开幕式音乐会《大",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-16/10715933.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "撤稿论文，浪费数千万经费",
+      "sum": "中国新闻周刊记者：孙厚铭",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-16/10715643.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "哈尔滨芭蕾舞团原创芭蕾舞剧《我们的北大荒》建组启动",
+      "sum": "16日，原创芭蕾舞剧《我们的北大荒》建组启动仪式在位于哈尔滨的北大荒博物馆举行。该剧呈现了拓荒者把荒芜沼泽建设成中华大粮仓的峥嵘岁月，填补了哈尔滨垦荒题材原创芭蕾舞剧的创作空白",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-17/10716031.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "广西贺州办会兴城 聚力打造康养长寿胜地",
+      "sum": "广西贺州市市长韦凤云16日在南宁表示，贺州将以承办2026年广西文化旅游发展大会为新起点，持续丰富产品供给、拓展客源市场、提升服务品质，不断擦亮“长寿贺州·康养胜地”金字招牌",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-16/10715969.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "浙江金华面向非洲38国展播中国优秀影视作品",
+      "sum": "2026中非影视交流合作活动新闻通气会16日在浙江金华举行。会上透露，北京时间10月15日起，金华官方面向非洲38个国家展播《流浪地球》《唐人街探案》等中国优秀影视作品，以影视为媒",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-16/10715984.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "新疆优化文旅产业格局 南疆旅游目的地加快形成",
+      "sum": "新疆维吾尔自治区人民政府新闻办公室16日举行新闻发布会，对外介绍近年来新疆文旅产业发展成效。新疆文旅厅党组副书记、厅长古丽·阿不力木表示，文化和旅游产业成为激活南疆“棋眼”的重要支",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-16/10715959.shtml",
+      "source": "中新网财经",
+      "tag": "cul"
+    },
+    {
+      "title": "宝鸡马拉松吉祥物、奖牌发布 “逨盘”“泥塑”等元素彰显文脉",
+      "sum": "2026宝鸡马拉松赛前媒体见面会15日在宝鸡举行。见面会上，主办方介绍了赛事筹备进展情况，并对本届赛事吉祥物、完赛奖牌、参赛服饰等文化IP进行了发布",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-15/10715234.shtml",
+      "source": "中新网体育",
+      "tag": "cul"
+    },
+    {
+      "title": "青海“青BA”群众篮球联赛总决赛打响",
+      "sum": "16日晚，2026年青海省“青BA”群众篮球联赛总决赛在西宁打响。8支代表队、130余名群众球员，将在为期5天的比赛里进行20场角逐，争夺总冠军",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-17/10716024.shtml",
+      "source": "中新网",
+      "tag": "sport"
+    },
+    {
+      "title": "截至2025年底 我国户外运动参与人数超5亿",
+      "sum": "国家体育总局今天发布《中国户外运动产业发展报告》(2025—2026年)，截至2025年底，我国户外运动参与人数超过5亿，户外运动相关产业总规模约3.17万亿元",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-16/10715936.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "宁波网球公开赛将开赛 亚历山德洛娃在古村邂逅江南魅力",
+      "sum": "2026宁波网球公开赛将于10月17日至25日在宁波(鄞州)网球中心举行。16日，网球名将叶卡捷琳娜·亚历山德洛娃走进位于宁波市鄞州区的西江古村，试穿旗袍、动手制作面塑，在古村街巷",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-16/10715898.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "2026环三峡自行车赛巫山站开赛 中外选手在“云端天路”上竞速",
+      "sum": "16日，2026环三峡自行车赛首站赛事在重庆巫山鸣枪开赛。来自中国、俄罗斯、澳大利亚、爱尔兰、泰国等15个国家和地区的320余名选手齐聚巫峡之畔，在“云端天路”上展开一场速度与耐力",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-16/10715852.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "福建省第十八届运动会将于今年11月在三明举行 打造“如画三明 绿动省运”全民体育盛会",
+      "sum": "记者16日从福建省第十八届运动会新闻通气会上获悉，福建省第十八届运动会将于2026年11月13日在三明市开幕、11月20日闭幕；福建省第十二届老年人体育健身大会将于2026年11月",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-16/10715777.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "中新健康｜老人大量囤积废品被儿女“举报”，医生紧急提醒！",
+      "sum": "近日，有媒体报道，江西抚州一男子向消防救援部门求助，其母亲长期在家中、楼道大量堆积废品，父亲因此肺部感染住院，母亲之前也同样因感染住过院。该男子多次劝阻无效，无奈选择“举报”母亲",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-17/10716041.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "七旬大爷大明湖畔演奏萨克斯火爆全网，网友从全国各地赶来捧场，称其“法拉利老了，依旧是法拉利”",
+      "sum": "“爷爷，再来一遍！”",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-17/10716042.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "价格改革推动普惠养老服务提质扩面",
+      "sum": "养老迎来新变化，关系大家钱包。",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-16/10716039.shtml",
+      "source": "中新网财经",
+      "tag": "life"
+    },
+    {
+      "title": "第140届广交会音乐美食节在广州启幕",
+      "sum": "第140届广交会音乐美食节“食在广州”嘉年华15日在广交会堂西侧中心广场启幕。正值广交会创办70周年，本次活动以“品岭南风味，赏广交世界”为主题，分三个时段举办，与广交会同期，累计",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-15/10715239.shtml",
+      "source": "中新网文化",
+      "tag": "life"
+    },
+    {
+      "title": "“不开心就想吃”？真不是你自制力差",
+      "sum": "央广网北京10月16日消息(记者 张萌 实习记者 沈榆洁)加班到深夜，忍不住点了一杯全糖奶茶；面试前肚子突然绞痛，跑了三趟厕所；减肥减到一半情绪崩溃，抱着蛋糕哭着吃完……",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-16/10715526.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    }
+  ]
+}
