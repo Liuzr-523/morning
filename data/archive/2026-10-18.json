@@ -1,0 +1,393 @@
+{
+  "date": "2026-10-18",
+  "generatedAt": "2026-10-18T08:11:31+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "sum": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "An update on independent evaluators",
+      "sum": "",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "source": "Anthropic",
+      "tag": "ai"
+    },
+    {
+      "title": "Simulating student learning for better AI tutoring",
+      "sum": "StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may eng",
+      "url": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "DeepSeek：DeepSeek-V4.1-Flash-1017 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-17 · image-text-to-text · 0 下载",
+      "url": "https://hf-mirror.com/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "source": "DeepSeek",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Qwen3-8B-DSpine-b16 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-16 · 模型 · 151 下载",
+      "url": "https://hf-mirror.com/models/tencent/Qwen3-8B-DSpine-b16",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：scFM-dataselection 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-16 · 模型 · 0 下载",
+      "url": "https://hf-mirror.com/models/microsoft/scFM-dataselection",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "sum": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Preparing for the 2026 US midterms",
+      "sum": "",
+      "url": "https://www.anthropic.com/news/2026-us-midterms",
+      "source": "Anthropic",
+      "tag": "ai"
+    },
+    {
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "sum": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strat",
+      "url": "https://openai.com/index/legalon-halves-codex-costs",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+      "sum": "",
+      "url": "https://www.anthropic.com/news/singapore-office-opening",
+      "source": "Anthropic",
+      "tag": "ai"
+    },
+    {
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "sum": "Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic",
+      "url": "https://arxiv.org/abs/2610.22372v1",
+      "source": "arXiv · 2610.22372v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "sum": "Significant efforts are currently being directed toward the implementation of large-scale quantum information processors, but realizing useful quantum",
+      "url": "https://arxiv.org/abs/2610.22367v1",
+      "source": "arXiv · 2610.22367v1",
+      "tag": "ai"
+    },
+    {
+      "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+      "sum": "Predicting how the world responds to an action requires more than what can be seen: robots must account for environmental factors that are neither dir",
+      "url": "https://arxiv.org/abs/2610.22364v1",
+      "source": "arXiv · 2610.22364v1",
+      "tag": "ai"
+    },
+    {
+      "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+      "sum": "Generative simulation can automate robot environment construction, but physically valid environments are not necessarily useful for training. The chal",
+      "url": "https://arxiv.org/abs/2610.22362v1",
+      "source": "arXiv · 2610.22362v1",
+      "tag": "ai"
+    },
+    {
+      "title": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
+      "sum": "Time series foundation models are becoming increasingly popular for general-purpose forecasting. However, most leading models predict marginal quantil",
+      "url": "https://arxiv.org/abs/2610.22358v1",
+      "source": "arXiv · 2610.22358v1",
+      "tag": "ai"
+    },
+    {
+      "title": "从“长江大咖”到本土小鱼 “寻鱼沪上”主题展在上海开幕",
+      "sum": "上海自然博物馆(上海科技馆分馆)“趣玩｜自然博物馆之夜”主题活动于17日晚举办。作为活动重要内容之一，“寻鱼沪上”上海淡水鱼类多样性主题展当晚开幕",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-17/10716431.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "从看风景到看工厂：海外游客热衷来华“科技游”",
+      "sum": "【中国那些事儿】从看风景到看工厂：海外游客热衷来华“科技游”",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-17/10716137.shtml",
+      "source": "中新网国际",
+      "tag": "tech"
+    },
+    {
+      "title": "2026大湾区绿能大会在广东阳江举行",
+      "sum": "2026大湾区科学论坛绿能产业科技创新分论坛暨大湾区绿能大会16日至17日在阳江举行，本次活动汇聚诺贝尔化学奖得主、中国科学院院士等国内外专家学者，共商绿能产业科技创新与国际化发展",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-17/10716452.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "桂林理工大学举行参加南极科学考察队员出征仪式",
+      "sum": "10月15日，桂林理工大学参加中国第43次南极科学考察队员出征仪式在该校雁山校区举行",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-16/10715628.shtml",
+      "source": "中新网教育",
+      "tag": "tech"
+    },
+    {
+      "title": "中新健康｜刷手机、熬夜会伤前额叶？告诉你关于前额叶的4个真相",
+      "sum": "记性变差、注意力不集中、情绪容易失控……很多人把这些归咎于“前额叶受损”，说它是大脑的总指挥，管着自控力、情绪和决策，但多数人对前额叶的认知只停留在网络热词层面",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-15/10714847.shtml",
+      "source": "中新网健康",
+      "tag": "tech"
+    },
+    {
+      "title": "（友城故事）福建拓国际友城务实合作 达成系列合作成果",
+      "sum": "“马普托是南部非洲重要滨海港口城市，与福建在海洋产业、临港经济合作潜力巨大。”莫桑比克马普托市市长拉萨克·马尼克17日在福州表示，希望深化与福建友好城市交往，拓展海洋经济务实合作",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-17/10716471.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "马来西亚原则批准凯里岛港口经济特区发展计划",
+      "sum": "马来西亚住房和地方政府部长倪可敏17日宣布，由总理安瓦尔主持的国家物理规划理事会，已于本月12日在布城举行的会议上，原则批准凯里岛(Pulau Carey)发展计划，重点建设国家海",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-17/10716415.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "中国首家白俄罗斯产品馆落户黑河 推动中白合作从“握手”走向“携手”",
+      "sum": "17日，由白俄罗斯驻华大使馆授权的中国首家白俄罗斯产品馆在黑河大岛国贸城俄品多启幕。场馆定位展示窗口、经贸平台、对外名片三重功能，依托黑河自贸片区的区位优势，打造白俄罗斯商品进入中",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-17/10716441.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "打破专科“天花板”！职业教育专业基本涵盖国民经济各领域",
+      "sum": "记者12日从教育部举行的新闻发布会上了解到，截至2025年底，全国有职业学校10792所，在校生3355.96万人，我国已建成世界上规模最大且有质量的现代职业教育体系，职业教育专业",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-13/10712360.shtml",
+      "source": "中新网教育",
+      "tag": "fin"
+    },
+    {
+      "title": "台积电在日合资企业 JASM 第二晶圆厂转产 3nm 获日本经产省批准",
+      "sum": "据日本经济产业省官网公示，台积电控股的在日合资子公司 JASM 第二晶圆厂转产 3nm 的计划已得到批准。 JASM 第二晶圆厂原本规划的是 40nm、12nm、6nm，总月产能 ",
+      "url": "https://www.ithome.com/1/014/423.htm",
+      "source": "IT之家",
+      "tag": "fin"
+    },
+    {
+      "title": "10月18日新闻早报",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/iframe/2026/10-18/10716483.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "普京视察俄联合部队集群一处辅助指挥所",
+      "sum": "俄罗斯总统普京16日视察俄联合部队集群的一处辅助指挥所，并与俄军总参谋部负责人和部队指挥人员举行会议，讨论当前战况和近期任务",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-17/10716071.shtml",
+      "source": "中新网国际",
+      "tag": "cn"
+    },
+    {
+      "title": "“十五五”专项规划里的文化力量",
+      "sum": "题：新华社文化随笔：“十五五”专项规划里的文化力量",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-17/10716111.shtml",
+      "source": "中新网文化",
+      "tag": "cn"
+    },
+    {
+      "title": "陕西高校教师教学创新成果巡讲启动",
+      "sum": "陕西高校教学全要素优化提升工作部署会暨教师教学创新成果分享启动会14日在西安举行",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-15/10714956.shtml",
+      "source": "中新网教育",
+      "tag": "cn"
+    },
+    {
+      "title": "美国医学专家：西方医学可借鉴传统医药“以人为本”",
+      "sum": "“传统医学更关注患者个人的体验。”2026世界传统医药大会期间，来华参会的美国国家医学院院士、美国达特茅斯学院卫生政策与管理教授阿尔伯特·穆利(Albert Mulley)在北京如",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-17/10716444.shtml",
+      "source": "中新网健康",
+      "tag": "cn"
+    },
+    {
+      "title": "纽约曼哈顿地铁站发生枪击事件致一人死亡",
+      "sum": "据当地警方消息，美国纽约曼哈顿一地铁站17日发生枪击事件，造成一名男子死亡",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-18/10716481.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "百余位海内外学者齐聚浙江宁波 共探千年古城保护与更新",
+      "sum": "一座千年古城，如何在保护历史文脉的同时焕发新活力？10月17日，第三届月湖国际学术会议在浙江宁波举行，百余位海内外学者围绕历史文化名城保护、城市更新与文明交流互鉴等议题展开研讨",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-17/10716436.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "中美绿色海事服务合作研讨会在福州举行 共推航运低碳转型",
+      "sum": "中美绿色海事服务合作研讨会17日在福州举行。与会者围绕绿色海事服务、产业协作、人才培养等议题展开交流，期待加强合作，推动全球航运绿色转型",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-17/10716455.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "覆盖112个国家或地区 广交会全球合作伙伴达238家",
+      "sum": "据广交会新闻中心17日消息，截至目前，广交会全球合作伙伴网络已覆盖112个国家或地区，累计签约238家境外工商机构、行业协会及头部采购企业等",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-17/10716375.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "24个国家和地区选手竞技环贵州国际公路自行车赛",
+      "sum": "第二届环贵州公园省国际公路自行车赛17日在贵州省贵阳市观山湖区民族大联欢广场鸣枪开赛。本届赛事为期11天，竞赛总里程1205公里，吸引24个国家和地区的参赛选手同台竞技",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-17/10716279.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "广东中华职业教育社养老护理员初级公益培训班落地阳春",
+      "sum": "广东中华职业教育社举办的养老护理员初级职业技能公益培训班17日在广东阳江市阳春市举行开班仪式。培训班由广东省委统战部指导、广东机电职业技术学院承办。42名来自当地的农村转移劳动力、",
+      "url": "https://www.chinanews.com.cn/txy/2026/10-17/10716435.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "哈工程兴海论坛启幕 聚海内外青年英才共赴兴海之约",
+      "sum": "10月17日，哈尔滨工程大学第十一届海内外青年学者兴海论坛正式启幕。200余名海内外优秀青年学者、国家级人才代表、博士后及各学院代表齐聚一堂，依托学术盛会搭建交流桥梁，共赴北疆兴海",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-17/10716394.shtml",
+      "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "马拉松“破2”第一人萨维到访北大 寄语年轻跑者保持热爱、耐心和自律",
+      "sum": "31岁的肯尼亚运动员、马拉松“破2”第一人塞巴斯蒂安·萨维近期开启首次中国行。他在16日走进北京大学，为北大学子和马拉松跑者带来一堂世界级的跑步“大师课”，并寄语起步阶段的年轻跑者",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-17/10716321.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "探寻诗歌的更多可能 臧棣诗集《部落玫瑰》研讨会在京举行",
+      "sum": "由北京市文联、北京师范大学主办的“文学京彩季——北京作家2026精品研推工程第六期”暨臧棣诗集《部落玫瑰》研讨会日前在北京市文联艺术工坊举行",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-17/10716290.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "活力中国调研行｜广西职教“出海” 老挝兄弟求学",
+      "sum": "视频：活力中国调研行｜广西职教“出海” 老挝兄弟求学来源：新华社",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-17/10716113.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "宁波网球公开赛：网球名将探访甬城 感知城市魅力",
+      "sum": "2026宁波银行·宁波网球公开赛正赛开赛在即，近日参赛球员走出赛场，探访城市展馆与山野艺文空间，沉浸式感受宁波历史底蕴与非遗手作魅力，在赛前开启别样的城市文化之旅",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-17/10716405.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "近30位艺术家走进林间共绘绿美广东生态画卷",
+      "sum": "第七届广东省森林文化周——“森”罗万象文化创作活动17日在广州云溪植物园举办。近30位老、中、青三代艺术家走进林间开展自然采风与多元艺术创作，以笔墨丹青、琴韵诗情共绘绿美广东生态画",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-17/10716456.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "从碧海到古寺：普吉岛旅游体验融入多元文化",
+      "sum": "蓝天、碧海、沙滩，是许多游客对泰国普吉岛的初印象。如今，随着旅游体验不断丰富，来到这座安达曼海上的旅游胜地，游客不仅可以亲近海洋、欣赏美景，还可以品尝地方美食、走进历史古寺，在自然",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-17/10716288.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "中西舞韵交融 芭蕾舞剧《敦煌：溯光行》在港首演",
+      "sum": "香港芭蕾舞团原创芭蕾新作《敦煌：溯光行》于10月16日至18日在香港文化中心大剧院进行世界首演，共上演5场演出",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-17/10716449.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "河南三门峡百年考古纪念园开园 考古圣地致敬考古人",
+      "sum": "百年考古，始于仰韶。10月17日，2026年仰韶文化系列活动启动暨百年考古纪念园开园仪式在河南省三门峡市渑池县举行",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-17/10716385.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "云南民族传统体育逾300项 美美与共促团结",
+      "sum": "题：云南民族传统体育逾300项 美美与共促团结",
+      "url": "https://www.chinanews.com.cn/mz/2026/10-17/10716442.shtml",
+      "source": "中新网",
+      "tag": "sport"
+    },
+    {
+      "title": "第七届中国城市少儿足球联赛在北京开赛",
+      "sum": "第七届“中国足球发展基金会杯”中国城市少儿足球联赛17日在北京开赛",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-17/10716447.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "2026年全国武术散打冠军赛在河南漯河开赛",
+      "sum": "10月17日，2026年全国武术散打冠军赛在河南漯河开赛，来自全国各地及行业体协、有关体育院校的40支代表队、372名运动员齐聚沙澧河畔，展开为期7天的巅峰对决",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-17/10716392.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "2026年全国青少年户外运动大赛总决赛开赛 800余名青少年开启户外挑战",
+      "sum": "17日，“奔跑吧·少年”2026年全国青少年户外运动大赛总决赛在重庆市梁平区双桂湖国家湿地公园鸣枪开赛。来自全国各地的800余名青少年在越野闯关、技能挑战中挥洒汗水，沉浸式感受户外",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-17/10716416.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "2026环三峡自行车赛云阳站收官 中外选手在长江之滨追风竞速",
+      "sum": "17日，2026环三峡自行车赛云阳站在重庆市云阳县环湖绿道鸣枪开赛，来自15个国家和地区的近1500名选手在长江之滨追风竞速",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-17/10716376.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "上海市侨联“为侨服务 康养资讯”平台上线",
+      "sum": "上海市侨联16日举办“侨暖重阳 桑榆相守”——为侨康养服务交流对接活动。活动安排了老年健康讲座、上海优质康养资源介绍，并上线“为侨服务 康养资讯”平台",
+      "url": "https://www.chinanews.com.cn/hr/2026/10-17/10716453.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "“救援先锋”王晓成：洪水中驾动力舟桥转移广西贵港被困师生",
+      "sum": "题：“救援先锋”王晓成：洪水中驾动力舟桥转移广西贵港被困师生",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-17/10716398.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "陈晓卿：真正的美食向导，是懂你的本地朋友",
+      "sum": "时隔三年，陈晓卿的“美食探店之旅”终于回归了。近日，“陈晓卿的风味探索之旅”美食纪录片《我的美食向导2》开播，继续以陈晓卿的第一人称视角，带观众们开启一场天南地北、上山下海的风味旅",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-17/10716139.shtml",
+      "source": "中新网文化",
+      "tag": "life"
+    },
+    {
+      "title": "中新健康｜秋季儿童传染病高发，家长最关心的几个问题一次说清",
+      "sum": "一场秋雨一场寒。进入十月中旬，天气日渐转凉，昼夜温差加大。儿童免疫系统尚在发育，抵抗力相对较弱，容易受到各种病原体侵袭；校园内人员密集、接触密切，又会增加感染和传播风险，稍不注意就",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-17/10716388.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "多地代表齐聚云南曲靖 追寻长征故事赓续红色血脉",
+      "sum": "17日，曲靖市“红色沃土·薪火乌蒙”纪念中国工农红军长征胜利90周年群众性主题活动在云南省曲靖市会泽县举行。来自云贵川多地的各界代表齐聚一堂，以向革命先烈敬献花篮、文艺汇演、参观主",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-17/10716407.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    }
+  ]
+}
