@@ -1,0 +1,393 @@
+{
+  "date": "2026-10-22",
+  "generatedAt": "2026-10-22T08:50:02+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Broad access through consistent standards",
+      "sum": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policie",
+      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Solving a 31-year-old grand challenge in mathematics – the KLS conjecture",
+      "sum": "For decades, a fundamental question about the difficulty of computing in high-dimensional spaces has resisted proof. New research resolves this questi",
+      "url": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Hy-Memory-30B-A3B-GGUF 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-19 · text-generation · 3241 下载",
+      "url": "https://hf-mirror.com/models/tencent/Hy-Memory-30B-A3B-GGUF",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "DeepSeek：DeepSeek-V4.1-Flash-1017 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-17 · image-text-to-text · 42122 下载",
+      "url": "https://hf-mirror.com/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "source": "DeepSeek",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：Sentiment-Analysis-7B 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-17 · text-generation · 123 下载",
+      "url": "https://hf-mirror.com/models/microsoft/Sentiment-Analysis-7B",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used th",
+      "sum": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Called to serve: Tech, research, and positive impact",
+      "sum": "Lab Director Chris White has worked on research challenges with real-world implications—from new approaches to wartime data analysis to tools for comb",
+      "url": "https://www.microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Patch the Planet: global response coordination as agents uncover critical vulner",
+      "sum": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Simulating student learning for better AI tutoring",
+      "sum": "StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may eng",
+      "url": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs",
+      "sum": "Video generation models can now depict remarkably realistic motion. Yet it is unclear how to use this motion beyond pixels: to animate a specific 3D a",
+      "url": "https://arxiv.org/abs/2610.28632v1",
+      "source": "arXiv · 2610.28632v1",
+      "tag": "ai"
+    },
+    {
+      "title": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechan",
+      "sum": "Agentic artificial intelligence (AI) systems hold immense potential for automating complex workflows in materials discovery and design, but extending ",
+      "url": "https://arxiv.org/abs/2610.28629v1",
+      "source": "arXiv · 2610.28629v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
+      "sum": "Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-",
+      "url": "https://arxiv.org/abs/2610.28628v1",
+      "source": "arXiv · 2610.28628v1",
+      "tag": "ai"
+    },
+    {
+      "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+      "sum": "Motivated by the human ability to integrate experience across language, perception, and action, we introduce UniWALM, a unified world-action-language ",
+      "url": "https://arxiv.org/abs/2610.28626v1",
+      "source": "arXiv · 2610.28626v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Industrial ReMEmbR: Scaling Spatiotemporal Memory to Robot Fleets",
+      "sum": "Warehouse robot fleets continuously observe operational conditions, but preserving these observations as reusable semantic memory incurs substantial c",
+      "url": "https://arxiv.org/abs/2610.28624v1",
+      "source": "arXiv · 2610.28624v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Planning under Noise with Neural Operators",
+      "sum": "Planning under uncertain control execution noise requires reliable feedback policies across diverse environments. We introduce Planning Under Noise (P",
+      "url": "https://arxiv.org/abs/2610.28623v1",
+      "source": "arXiv · 2610.28623v1",
+      "tag": "ai"
+    },
+    {
+      "title": "深化陕台科创协同 政企学者西安共探具身智能产业发展新路径",
+      "sum": "21日，由陕西省海外联谊会指导，民革陕西省委会、陕西省海峡两岸交流合作促进会主办的第四届“革创谷”民革助力秦创原科技创新暨新质生产力发展交流活动在西安举行",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-21/10718802.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "2026金融街论坛年会金融科技大会在京举办",
+      "sum": "2026金融街论坛年会正在北京举行。20日，以“智能驱动 融合共生——智能经济新形态下的金融科技”为主题的2026金融街论坛年会金融科技大会在京开幕",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-21/10718797.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "神秘丹尼索瓦人有何共性特征？中国科学家最新研究许家窑人揭秘",
+      "sum": "生活年代距今约30万年至4.5万年的丹尼索瓦人，近年来的分子证据不断扩展其分布版图，其相对尼安德特人、现代人等古人类有何共性特征？一直以来备受关注",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-21/10718809.shtml",
+      "source": "中新网文化",
+      "tag": "tech"
+    },
+    {
+      "title": "“境外媒体对话大学书记/校长”活动启动 首场亮相南京大学",
+      "sum": "20日，中华全国新闻工作者协会(下称“中国记协”)与南京大学共同举办首场“境外媒体对话大学书记/校长”活动，南京大学党委书记、中国科学院院士谭铁牛与来自26个国家的60多名媒体记者",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-21/10718607.shtml",
+      "source": "中新网教育",
+      "tag": "tech"
+    },
+    {
+      "title": "安徽青阳举办九华黄精产业发展大会 以科技赋能产业升级",
+      "sum": "“经九蒸九晒的九华黄精，多糖含量可达17%以上，这是我们选择落户青阳的核心原因。”台湾客商、青阳龙衔生物科技有限公司董事长黄慧华19日接受采访时表示",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-20/10717660.shtml",
+      "source": "中新网健康",
+      "tag": "tech"
+    },
+    {
+      "title": "差价数十倍 概念“乱如麻” 网红钛制品真有那么神奇吗？",
+      "sum": "从保温杯、汤锅到餐盘餐具，钛制日用消费品正在走红。同样打着“钛”标签的产品，价格却相差数十倍。有的号称纯钛，有的只是表面镀上一层钛膜，这些商品往往宣称具有抑菌、保鲜、活化食材等作用",
+      "url": "https://www.chinanews.com.cn/life/2026/10-22/10718831.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "印尼央行维持基准利率5.75%不变 上调存款便利利率",
+      "sum": "印度尼西亚央行21日宣布，将基准利率维持在5.75%，同时将存款便利利率上调25个基点至5%，贷款便利利率维持在6.5%",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-21/10718609.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "桂台经贸融合发展与玉林产业发展对接会在广西玉林举行",
+      "sum": "10月21日，桂台经贸融合发展与玉林产业发展对接会在广西玉林举行，大陆各省份台协和台商台企代表齐聚一堂，叙亲情、谈发展",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-21/10718800.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "一赛举办百业兴旺 “滇BA”激活体文旅融合新动能",
+      "sum": "2026年云南省城市篮球联赛总决赛新闻通气会19日在昆明举行。会上透露，云南省城市篮球联赛(以下简称“滇BA”)是该省自主培育的城市篮球品牌赛事，也是把赛事流量转化为经济增量的重要",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-19/10717507.shtml",
+      "source": "中新网体育",
+      "tag": "fin"
+    },
+    {
+      "title": "首都经济贸易大学建校70周年高质量发展大会举行",
+      "sum": "七秩峥嵘，风鹏正举。首都经济贸易大学建校70周年高质量发展大会18日在校本部体育馆举行。各界嘉宾与广大校友、师生齐聚一堂，共忆七十载兴学报国初心路，共商首经贸高质量发展新蓝图",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-19/10716943.shtml",
+      "source": "中新网教育",
+      "tag": "fin"
+    },
+    {
+      "title": "中国体操队时隔20年再夺世锦赛女团金牌",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/tp/hd2011/2026/10-22/1208489.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "朝鲜多名高官视察朝韩边境要塞化工程",
+      "sum": "平壤消息：据朝中社报道，当地时间20日，朝鲜国防省顾问朴正天元帅视察了南部朝韩边境正在进行要塞化的重要地点。朝鲜劳动党中央书记李日焕、中央委员会部长金与正和朝鲜人民军总参谋部主要指",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-21/10718712.shtml",
+      "source": "中新网国际",
+      "tag": "cn"
+    },
+    {
+      "title": "周杰伦转发点赞“中国歌手”身份介绍 国台办回应",
+      "sum": "10月21日，国务院台办举行例行新闻发布会。有记者问，近日，周杰伦参加活动时主持人称其“中国歌手”，周本人在社交平台转发并点赞相关视频，受到两岸网友好评，认为其多年创作大量中国风音",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-21/10718315.shtml",
+      "source": "中新网文化",
+      "tag": "cn"
+    },
+    {
+      "title": "打破“唯论文”标尺！5个专业推行用实践成果申请硕博学位",
+      "sum": "部分专业学位研究生申请学位，将不再“唯论文”。国务院学位委员会办公室近日印发《关于做好专业学位研究生以实践成果申请学位工作的意见》，在前期工程硕博士用实践成果申请学位基础上，推动翻",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-20/10717568.shtml",
+      "source": "中新网教育",
+      "tag": "cn"
+    },
+    {
+      "title": "新版乡镇卫生院和社区卫生服务中心服务能力标准发布",
+      "sum": "据国家卫健委网站消息，国家卫生健康委、国家中医药局、国家疾控局近日发布《关于印发乡镇卫生院和社区卫生服务中心服务能力标准(2026版)的通知》。通知表示，新版标准自印发之日起施行。",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-20/10717948.shtml",
+      "source": "中新网健康",
+      "tag": "cn"
+    },
+    {
+      "title": "泽连斯基：支持尽快举行美乌俄三方谈判",
+      "sum": "据路透社报道，乌克兰总统泽连斯基21日表示，俄罗斯支持美国提出的举行新一轮美乌俄三方谈判的提议。谈判将在谈判代表层面进行，乌方希望尽快举行，最好不晚于11月初",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-22/10718836.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "联合国旅游组织/亚太旅游协会旅游趋势与展望大会在桂林闭幕",
+      "sum": "10月21日，第二十届联合国旅游组织/亚太旅游协会旅游趋势与展望大会在广西桂林闭幕。桂林市委常委、统战部部长朱鹃屏致辞时表示，本届大会形成了重要共识——让技术更好地服务于人、让数据",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-21/10718806.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "美副总统万斯：乌克兰不是北约成员，也不应加入北约",
+      "sum": "综合外媒20日报道，美国副总统万斯表示，美国与乌克兰没有正式结盟，乌克兰不是北约成员，也不应加入北约，但他同时表示，美国会在某些方面继续与乌克兰合作",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-22/10718847.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "四川搭建欧资企业政企沟通平台 以对话回应关切",
+      "sum": "四川省服务外资企业政企对话会(欧盟专场)21日在成都举行",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-21/10718798.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "2026年名古屋亚残运会：吴晴夺得女子F33级铅球金牌",
+      "sum": "黑龙江省残疾人联合会20日发布消息称，2026年第五届爱知·名古屋亚洲残疾人运动会(以下简称“亚残运会”)20日在日本举行，黑龙江省齐齐哈尔市运动员吴晴在女子F33级铅球项目中以7",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-20/10718122.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "长春大冬会吉林市分赛区雪上项目赛道基础施工收官",
+      "sum": "长春2027第33届世界大学生冬季运动会(下称“长春大冬会”)吉林市分赛区委员会相关负责人21日介绍，吉林市分赛区筹备工作总体进展符合预期，赛道基础施工与赛道平整工程已全面完工",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-21/10718794.shtml",
+      "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "探寻从“运动员”到“职场人”的转型密码 上海市优秀运动员职业发展大讲堂开讲",
+      "sum": "“新赛场·新起点——上海市优秀运动员职业发展大讲堂”20日在华东理工大学开讲。本次大讲堂旨在打造一堂务实鲜活的运动员“职业转型第一课”，通过行业专家专业赋能、标杆人物转型历程与跨界",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-20/10718183.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "话剧《仰望者》上演 再现哈工大“八百壮士”报国路",
+      "sum": "20日晚，大型全景式话剧《仰望者》在哈尔滨大剧院上演，舞台之上，哈尔滨工业大学“八百壮士”扎根北疆、以身许国的故事，让现场观众动容",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-21/10718784.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "第二届“美美与共”全国民族学田野研究论坛在京举行——在田野中发现“中华民族共同体”",
+      "sum": "由中央民族大学民族学与社会学学院主办的第二届“美美与共”全国民族学田野研究论坛近日在京举行。论坛以“在田野中发现中华民族共同体”为主题，设置五个学生分论坛和“民族学研究方法创新圆桌",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-21/10718534.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "“空中ICU”护航长春大冬会雪上赛事 直升机搭建极速生命通道",
+      "sum": "吉林市卫健委21日介绍，两架空客H135医疗救援直升机将分别常驻北大湖、松花湖赛场备勤，承担长春2027第33届世界大学生冬季运动会(下称“长春大冬会”)吉林市赛区航空医疗救援任务",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-21/10718467.shtml",
+      "source": "中新网健康",
+      "tag": "edu"
+    },
+    {
+      "title": "400多件长征文物将在国博开展 这些藏品到底有多珍贵？",
+      "sum": "由中国国家博物馆、退役军人事务部烈士纪念设施保护中心联合主办的“英名永存 薪火长歌——纪念中国工农红军长征胜利90周年文物联展”，将于10月30日在国博开幕，31日起正式对公众展出",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-22/10718834.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "2026年中国桨板精英联赛（江西万安站）开赛",
+      "sum": "2026年中国桨板精英联赛(江西万安站)近日在江西省吉安市万安县百嘉龙舟文化广场赣江水域开赛。来自江西、福建、湖北、湖南、广东、广西、四川、浙江等省市的桨板精英齐聚心安湖，展开劈波",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-19/10717519.shtml",
+      "source": "中新网体育",
+      "tag": "cul"
+    },
+    {
+      "title": "舞剧《长联·大观》昆明首演 180字“天下第一长联”跃然舞台",
+      "sum": "“五百里滇池奔来眼底，数千年往事注到心头。”21日，云南省大剧院内水声潺潺、海菜腔悠扬，大型原创舞剧《长联·大观》在此首演。清代名士孙髯翁所作的180字“天下第一长联”——大观楼长",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-21/10718803.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "中国团队创新突破分子筛催化 推动羰基化反应“百年老树发新枝”",
+      "sum": "有现代化学工业“基本功”之誉的羰基化反应，发展至今已有百余年历史，但工业上主流方法依然依赖铑、铱等贵金属及有机配体修饰，存在体系复杂、流程繁琐、成本高昂以及催化剂与产物分离困难等挑",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-21/10718810.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "文化观察：400多年后，我们为什么要纪念沈光文？",
+      "sum": "10月21日，“潮起两岸·欢喜宁波”沈光文人文交流系列活动在浙江省宁波市海曙区启幕。甬(宁波简称)台两地轮流举办系列人文交流活动，已形成了多层次、宽领域、高频率的交流新局面",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-21/10718740.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "2026中国业余高尔夫球队际公开赛西部大区赛圆满收官",
+      "sum": "2026一龄·中国业余高尔夫球队际公开赛(以下简称“中国队际赛”)西部大区赛21日在武汉收官。经过两轮激烈角逐，团队得分冠军由重庆南山队义字堂球队获得，团队净杆冠军由现代天外天高尔",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-21/10718724.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "我用 iPhone Duo 刷小红书、淘宝、飞书，发现作用不只是装「阔」",
+      "sum": "头图图片来源：极客公园 我在 iPhone Duo 上，把淘宝、高德、小红书、腾讯视频、飞书、WPS、XMind，还有篮球游戏 NBA 巅峰对决，这 8 个为它做过适配的 App ",
+      "url": "https://www.geekpark.net/news/372710",
+      "source": "极客公园",
+      "tag": "sport"
+    },
+    {
+      "title": "川妹子组合夺得亚残运会女子复合弓双人团体公开级冠军",
+      "sum": "记者21日从四川省残联获悉，川妹子组合许雪晴、赵静当日在2026年第五届爱知·名古屋亚洲残疾人运动会(亚残运会)上，夺得女子复合弓双人团体公开级金牌",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-21/10718586.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "2026世界网联世界网球巡回赛青少年年终总决赛在成都开拍",
+      "sum": "21日，2026世界网联世界网球巡回赛青少年年终总决赛在成都开赛。备受关注的中国小将孙心然在比赛中，以7：6(1)、6：2击败塞尔维亚选手阿纳斯塔西娅·茨维特科维奇",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-21/10718569.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "2026世界沙滩冲刺总决赛在山东青岛落幕 中国队收获4金",
+      "sum": "2026世界沙滩冲刺总决赛21日在山东青岛西海岸新区落下帷幕，参加9个项目比拼的中国队收获4金3银1铜",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-21/10718494.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "中俄界湖秋色“出圈” 兴凯湖五彩林海成千里打卡“目的地”",
+      "sum": "10月21日，中俄界湖兴凯湖秋色铺展，湖岗上的“网红树洞”迎来观赏旺季。辽阔湖水与五彩林海相映，吸引各地游客不远千里前来打卡",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-21/10718799.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "2026年前三季度医保统筹基金支出超1.7万亿元",
+      "sum": "国家医保局10月21日发布数据，2026年1月至9月，我国基本医疗保险(含生育保险)统筹基金总收入23028.33亿元，基本医疗保险(含生育保险)统筹基金总支出17515.19亿元",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-21/10718639.shtml",
+      "source": "中新网财经",
+      "tag": "life"
+    },
+    {
+      "title": "中新健康｜医生被豆包们逼得坐不住了？",
+      "sum": "豆包们正闯入诊室，成为医生与患者之间的“第三人”。但多数时候，它不是来抢医生饭碗的，而是来替患者提问的",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-21/10718618.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "河北怀安：“一只羊”到“一条链”的产业致富经",
+      "sum": "题：河北怀安：“一只羊”到“一条链”的产业致富经",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-21/10718807.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "重庆“千里轻舟”航线累计货运量突破1100万吨",
+      "sum": "重庆市交通运输委员会21日举行“千里轻舟”航线一口价、“千里轻舟保”产品发布活动。中新网从活动现场获悉，截至目前，“千里轻舟”航线累计货运量突破1100万吨，货值超200亿元",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-21/10718626.shtml",
+      "source": "中新网财经",
+      "tag": "life"
+    }
+  ]
+}
