@@ -1,0 +1,393 @@
+{
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T08:35:59+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "sum": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Flint-interactive: A language for creating interactive data visualizations",
+      "sum": "Flint-interactive gives AI agents a language for creating interactive visualizations. Click a chart, filter data, highlight related content, and explo",
+      "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "智源：MS-Human-700 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-25 · reinforcement-learning · 0 下载",
+      "url": "https://hf-mirror.com/models/BAAI/MS-Human-700",
+      "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Hy-Nomas-Diffusers 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-24 · 模型 · 49 下载",
+      "url": "https://hf-mirror.com/models/tencent/Hy-Nomas-Diffusers",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "Securing our frontier model training environment",
+      "sum": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teamin",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Solving a 31-year-old grand challenge in mathematics – the KLS conjecture",
+      "sum": "For decades, a fundamental question about the difficulty of computing in high-dimensional spaces has resisted proof. New research resolves this questi",
+      "url": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：WeVisOne-VL-4B 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-22 · image-text-to-text · 1052 下载",
+      "url": "https://hf-mirror.com/models/tencent/WeVisOne-VL-4B",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "Build more responsive apps with the Decisions API",
+      "sum": "Fast, focused, low-cost decisions for any application.",
+      "url": "https://openai.com/index/decisions-api",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Called to serve: Tech, research, and positive impact",
+      "sum": "Lab Director Chris White has worked on research challenges with real-world implications—from new approaches to wartime data analysis to tools for comb",
+      "url": "https://www.microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+      "sum": "Robotic foundation models are typically evaluated through costly closed-loop rollouts, which motivates cheap offline proxies for model capability. The",
+      "url": "https://arxiv.org/abs/2610.31670v1",
+      "source": "arXiv · 2610.31670v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversit",
+      "sum": "Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the h",
+      "url": "https://arxiv.org/abs/2610.31667v1",
+      "source": "arXiv · 2610.31667v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Phase Transition from Random Features to Fully Trainable Networks",
+      "sum": "Constructing accurate and computationally tractable approximation spaces is a fundamental task in scientific computing. Partially trainable neural net",
+      "url": "https://arxiv.org/abs/2610.31663v1",
+      "source": "arXiv · 2610.31663v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Reliable AI-Assisted Decisions via Selective Auditing",
+      "sum": "We consider online monitoring of an AI system that produces a sequence of decisions. At each round, the system outputs a proposed decision together wi",
+      "url": "https://arxiv.org/abs/2610.31662v1",
+      "source": "arXiv · 2610.31662v1",
+      "tag": "ai"
+    },
+    {
+      "title": "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use A",
+      "sum": "Auditing whether a text-to-image (T2I) model was fine-tuned on a particular image collection is difficult: a model can absorb collection-level visual ",
+      "url": "https://arxiv.org/abs/2610.31659v1",
+      "source": "arXiv · 2610.31659v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
+      "sum": "Wrong automatic routing of an IT support ticket can cost more than human triage. We evaluate cost-aware abstention as an offline, cost-conditional rea",
+      "url": "https://arxiv.org/abs/2610.31657v1",
+      "source": "arXiv · 2610.31657v1",
+      "tag": "ai"
+    },
+    {
+      "title": "日本民众集会抗议：“不要导弹”“反对战争”",
+      "sum": "据日本《朝日新闻》报道，当地时间10月24日，日本市民团体在静冈县举行抗议集会，反对美军27日将在日本陆上自卫队东富士演习场开展火箭炮射击训练",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-26/10720895.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "范稳《青云梯》：从百年铁路到时代与人",
+      "sum": "“一百年前的铁路就像今天的互联网，谁先拥有铁路谁就先拥有话语权，铁路开到哪里，工业、商业和一连串社会变化便跟到哪里。从中可以看到时代的发展与变迁。”谈及长篇新作《青云梯》，作家范稳",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-25/10720803.shtml",
+      "source": "中新网文化",
+      "tag": "tech"
+    },
+    {
+      "title": "首批学生运动能力国标实施试点进入“经验收获期”",
+      "sum": "记者从中国教育科学研究院获悉，贯彻落实“健康第一”教育理念、深入推进学生运动能力国家标准实施试点经验交流会近日在湖南长沙举行",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-25/10720797.shtml",
+      "source": "中新网教育",
+      "tag": "tech"
+    },
+    {
+      "title": "2026青科会大健康论坛：瓯江实验室发布联合攻关计划",
+      "sum": "“我们要让科研选题来自临床真问题，让成果回到临床真场景。”24日，2026世界青年科学家峰会大健康论坛在浙江温州启幕，瓯江实验室主任宋伟宏在现场如是说",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-25/10720731.shtml",
+      "source": "中新网健康",
+      "tag": "tech"
+    },
+    {
+      "title": "消息称蔚来大圆柱电池将由亿纬锂能与国轩高科代工生产",
+      "sum": "据极片 Lab 消息，蔚来自主设计的大圆柱电池， 将由亿纬锂能与国轩高科代工生产 ，年末将有极小批量的电芯下线。 知情人士透露， 短期内蔚来的大圆柱电池很难批量生产 。同时，蔚来也",
+      "url": "https://www.ithome.com/1/017/738.htm",
+      "source": "IT之家",
+      "tag": "tech"
+    },
+    {
+      "title": "“仅靠道歉无法了事” 蒙古国考虑就草原火灾向日企索赔",
+      "sum": "据《日本经济新闻》报道，日本电信运营商凯迪迪爱公司子公司高管在蒙古国自然保护区活动引发大规模草原火灾后，蒙古国政府近日表示，将通过调查明确相关责任方，并考虑提出赔偿要求",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-26/10720875.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "探索外交话语的“区域国别转向” 专家学者在沪研讨对外话语体系建设",
+      "sum": "23日至24日，全国首届外交话语与区域国别研讨会在上海财经大学举办。会上，中国翻译研究院与上海财经大学签署共建“大国经济外交话语翻译传播工程项目”合作协议。该项目将依托上海财经大学",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-25/10720735.shtml",
+      "source": "中新网教育",
+      "tag": "fin"
+    },
+    {
+      "title": "适老化医疗器械产业生态交流会在福州举行 共探“银发浪潮”医老赋能新路径",
+      "sum": "第二届海峡养老产业博览会适老化医疗器械产业生态交流会24日在福州举行，汇聚来自基层医疗机构、康复机构、医养机构、产业园区、金融机构等代表，共议“银发浪潮”下适老化医疗器械产业发展新",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-24/10720438.shtml",
+      "source": "中新网健康",
+      "tag": "fin"
+    },
+    {
+      "title": "力积电 2026Q3 净利润环比几乎翻倍，新产能将与客户共同投资",
+      "sum": "中国台湾地区半导体企业力积电 (PSMC) 本月 21 日公布了企业 2026Q3 财报数据： 营业收入 ：213.42 亿新台币 （现汇率约合 43.75 亿元人民币） ，环比 ",
+      "url": "https://www.ithome.com/1/017/690.htm",
+      "source": "IT之家",
+      "tag": "fin"
+    },
+    {
+      "title": "硅谷爆火的两万块智能床，是智商税吗？我睡了 100 天",
+      "sum": "两万元，一个床套。 这可能是极客公园史上体验过单价最高的消费级产品之一。 我终于也睡上了马斯克、扎克伯格同款的床。Eight Sleep，这个曾被一众硅谷大佬点赞过的品牌，在今年 ",
+      "url": "https://www.geekpark.net/news/372805",
+      "source": "极客公园",
+      "tag": "fin"
+    },
+    {
+      "title": "外媒：巴西总统卢拉赢得连任",
+      "sum": "据法新社最新报道，根据巴西高等选举法院公布的计票结果，劳工党总统候选人、现任总统卢拉在2026年巴西总统选举第二轮投票中获胜，赢得连任",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-26/10720902.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "京西国际山地户外季收官之战打响 泵道车手“骑”聚门头沟",
+      "sum": "（记者 吕少威）京能集团北京康养2026中国泵道自行车联赛北京门头沟站暨总决赛24日在门头沟区小轮车全民运动基地鸣枪开赛。本次赛事作为本年度国内泵道自行车项目规格最高、覆盖范围最广",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-24/10720474.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "比亚迪腾势 N7 计划于 2027 年推出降低能耗版本的哨兵模式",
+      "sum": "比亚迪旗下腾势汽车昨日发布腾势问答，就腾势 N7 OTA 规划等问题进行解答。 IT之家获悉，目前，腾势 N7 适配全新 UI 系统的相关开发工作正在紧锣密鼓地推进中，预计于 20",
+      "url": "https://www.ithome.com/1/017/735.htm",
+      "source": "IT之家",
+      "tag": "cn"
+    },
+    {
+      "title": "巴西总统选举开启第二轮投票",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/tp/hd2011/2026/10-26/1208871.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "再添新色？全新 smart 精灵 2 号蓝色版实车曝光",
+      "sum": "小红书博主 @ 王大王于 10 月 23 日分享了一组全新 smart 精灵 2 号蓝色版实车照片，目前尚不清楚是否会在国内市场推出。 据此前报道，全新 smart 精灵 2 号将",
+      "url": "https://www.ithome.com/1/017/706.htm",
+      "source": "IT之家",
+      "tag": "cn"
+    },
+    {
+      "title": "日本小笠原群岛附近海域发生5.6级地震 震源深度500千米",
+      "sum": "据日本TBS电视台报道，当地时间26日7时15分左右，日本小笠原群岛附近海域发生5.6级地震，震源深度500千米",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-26/10720878.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "陈熠3-0战胜张本美和 夺得亚锦赛女单冠军",
+      "sum": "北京时间10月25日，2026乒乓球亚锦赛女单决赛，中国选手陈熠3-0战胜日本选手张本美和，夺得冠军",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-25/10720817.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "专访美国大都会艺术博物馆专家：创新合作模式、共同保护文物",
+      "sum": "在北京中国工艺美术馆看到《药师佛佛会图》临摹作品第一眼，美国大都会艺术博物馆亚洲艺术部中国艺术主任孙志新的感受是“震撼”。25日，在“中国古代壁画艺术学术研讨会”间隙，孙志新接受了",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-25/10720806.shtml",
+      "source": "中新网文化",
+      "tag": "intl"
+    },
+    {
+      "title": "云南大学与孟加拉国南北大学签署备忘录 迈入校际合作新阶段",
+      "sum": "24日，第二届中国-南亚文明互鉴国际学术研讨会在云南昆明启幕，云南大学与孟加拉国南北大学签署校际合作备忘录，正式启动两校民族学“2+1+1”本科联合培养项目，标志着双方在学者互访、",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-24/10720482.shtml",
+      "source": "中新网教育",
+      "tag": "intl"
+    },
+    {
+      "title": "专家献策医疗“出海”：沪港澳台携手打造国际医疗平台",
+      "sum": "如何让中国优质的医疗资源造福更多海外民众？如何在中国医疗国际化进程中打造“四地阵型”？来自香港、澳门、台湾的医学专家24日接受记者采访时表达了各自的看法",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-25/10720696.shtml",
+      "source": "中新网健康",
+      "tag": "intl"
+    },
+    {
+      "title": "从“有人带”到“托得好” 优质托育服务正在走进更多家庭",
+      "sum": "从“有人带”到“托得好” 有效降低家庭生育养育教育成本",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-26/10720881.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "陕西：气排球赋能群众体育 全民健身绘就运动画卷",
+      "sum": "25日，经过三天紧张激烈的角逐，2026年陕西省群众体育五级联赛暨社区运动会气排球总决赛在西安石油大学雁塔校区体育馆顺利完赛",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-25/10720726.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "专家学者共聚重庆探讨非物质文化遗产学科定位与专业建设",
+      "sum": "“从‘进校园’到‘在校园’——第二届非物质文化遗产学科定位与专业建设研讨会”日前在重庆举办。来自全国已开设非物质文化遗产保护本科专业的高校、相关职业院校、开展“非遗进校园”的中小学",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-25/10720794.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "新疆昌吉学院签署新一轮校际合作协议",
+      "sum": "新疆昌吉学院24日召开高质量发展论坛暨对口支援、合作高校工作会议，全面总结教育援疆、校际协作取得的建设成效，签署新一轮校际合作协议，围绕地方产业需求深化校际协同创新，共商学校“十五",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-25/10720689.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "黑龙江探索心律失常介入治疗“零射线” 省内首家心内科绿色导管室落户哈医大二院",
+      "sum": "10月24日，哈尔滨医科大学附属第二医院心内科绿色导管室正式启用。中国生物医学工程学会心律分会向该院颁发“无射线电生理中心”牌匾。作为黑龙江省首家获此资质的医疗机构，哈医大二院已有",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-25/10720697.shtml",
+      "source": "中新网健康",
+      "tag": "edu"
+    },
+    {
+      "title": "私有产权文物建筑，坏了谁来修",
+      "sum": "年过七旬的邵继录站在下邵151号民居门前，抬头看了一眼门楼，新修的，但老砖上保留了青苔的痕迹，就像他小时候抬头望见的那样；前段时间几次台风影响，下大雨，“屋里一点没漏”。他告诉中青",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-26/10720880.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "守千年技艺 绘傣陶新章：一位西双版纳女陶艺师的“新纹样”",
+      "sum": "题：守千年技艺 绘傣陶新章：一位西双版纳女陶艺师的“新纹样”",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-25/10720844.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "岐黄进万家 广西举办中医药文化服务周活动",
+      "sum": "记者25日从广西壮族自治区中医药管理局获悉，2026年广西中医药养生嘉年华暨中医药文化服务周活动近日启动。活动以“岐黄进万家 养生嘉年华”为主题，推动中医药(壮瑶医药)知识普及与健",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-25/10720718.shtml",
+      "source": "中新网健康",
+      "tag": "cul"
+    },
+    {
+      "title": "《流浪地球 3（上）》电影全新物料即将发布，2027 年春节档上映",
+      "sum": "据中国电影报道今日消息，第三十届全国影片推介会上，《流浪地球 3（上）》正式亮相，定档 2027 年春节档。影片延续前两部的世界观，在原班人马回归的基础上，沈腾、杨紫琼、“瓦叔”克",
+      "url": "https://www.ithome.com/1/017/693.htm",
+      "source": "IT之家",
+      "tag": "cul"
+    },
+    {
+      "title": "解锁八桂鱼鲜密码 《在广西吃鱼》新书南宁首发",
+      "sum": "10月25日，由广西壮族自治区水产技术推广站组织编写，吴伟峰、李坚明编著，广西民族出版社出版的《在广西吃鱼》新书首发仪式在南宁举行。该书甄选88种鱼类、收录33项特色鱼食俗，全景解",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-25/10720827.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "CBA一周综述：北京、辽宁四连胜 卫冕冠军遇挑战",
+      "sum": "2026-2027赛季中国男子篮球职业联赛(CBA)在本周展开第二轮至第四轮的较量。加上首轮战绩，北京队和辽宁队以四战全胜强势领跑积分榜。卫冕冠军上海队则在客场不敌山西队，遭遇常规",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-26/10720867.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "我用 iPhone Duo 刷小红书、淘宝、飞书，发现作用不只是装「阔」",
+      "sum": "头图图片来源：极客公园 我在 iPhone Duo 上，把淘宝、高德、小红书、腾讯视频、飞书、WPS、XMind，还有篮球游戏 NBA 巅峰对决，这 8 个为它做过适配的 App ",
+      "url": "https://www.geekpark.net/news/372710",
+      "source": "极客公园",
+      "tag": "sport"
+    },
+    {
+      "title": "CBA：山西主场101:79战胜江苏 迎新赛季三连胜",
+      "sum": "2026-2027赛季中国男子篮球职业联赛(CBA)常规赛第4轮，山西汾酒男篮25日在太原主场101:79战胜江苏肯帝亚男篮，迎来新赛季三连胜",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-25/10720865.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "乒乓球亚锦赛：中国队4金4银收官",
+      "sum": "当地时间25日，2026年亚洲乒乓球锦标赛在乌兹别克斯坦塔什干落幕，中国队以4金4银收官",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-25/10720866.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "全国短池游泳锦标赛：潘展乐赢百米“飞鱼大战”",
+      "sum": "在北京举行的2026年全国游泳锦标赛(25米)中，代表浙江寿仙谷队参赛的潘展乐25日夺得男子100米自由泳冠军，收获开赛以来个人首金。张展硕、于子迪和李冰洁等名将再次夺金",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-25/10720863.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "中央气象台：北方地区将有大风降温 东部海区有大风天气",
+      "sum": "据中央气象台网站消息，昨日，内蒙古、河北等地部分地区出现雨雪天气。预计今明两天，北方地区将有大风降温天气，黑龙江、内蒙古等地有雨雪天气，关注对交通、城市运行及农牧业等的影响。渤海、",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-26/10720890.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "广西探索“民族文艺+健康科普”创新传播路径",
+      "sum": "2026年广西健康科普沙龙近日在南宁举行。活动以壮乡传统山歌、采茶曲艺为载体，把专业医学知识转化为文艺作品，探索“民族文艺+健康科普”创新传播路径，助力健康中国、健康广西建设",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-25/10720653.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "响应式运营、接驳提质、适老化升级 多地探索公交新模式",
+      "sum": "央视网消息：城市公交是一座城市流动的名片，但近年来，轨道交通成网、私家车普及带来的客流分流，还有刚性成本上涨、财政补贴收紧的双重挤压，都让城市公交发展感受到了不小的压力",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-26/10720887.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "“FetoNeX胎儿医学协作网”在沪成立 让优质医疗资源更快触达患者",
+      "sum": "24日，在2026亚洲及太平洋地区胎儿治疗大会(APCFT)上，“FetoNeX胎儿医学协作网”成立并授牌，把疑难胎儿疾病的会诊、转诊和围产管理“连成一张网”，让优质胎儿医学资源更",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-24/10720481.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "巴西总统选举第二轮投票结束",
+      "sum": "25日举行的巴西总统选举第二轮投票于当天巴西利亚时间19时(北京时间26日6时)结束。之前因交通及天气原因，巴西联邦最高法院法官作出裁定，将当天第二轮投票结束时间延后两小时",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-26/10720873.shtml",
+      "source": "中新网",
+      "tag": "life"
+    }
+  ]
+}
