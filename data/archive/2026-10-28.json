@@ -1,0 +1,393 @@
+{
+  "date": "2026-10-28",
+  "generatedAt": "2026-10-28T09:33:32+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "sum": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+      "url": "https://openai.com/index/retell-ai",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Flint-interactive: A language for creating interactive data visualizations",
+      "sum": "Flint-interactive gives AI agents a language for creating interactive visualizations. Click a chart, filter data, highlight related content, and explo",
+      "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：CogACT-v2-RoboDojo 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-25 · 模型 · 12 下载",
+      "url": "https://hf-mirror.com/models/microsoft/CogACT-v2-RoboDojo",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "智源：MS-Human-700 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-25 · reinforcement-learning · 0 下载",
+      "url": "https://hf-mirror.com/models/BAAI/MS-Human-700",
+      "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Hy-Nomas-Diffusers 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-24 · 模型 · 89 下载",
+      "url": "https://hf-mirror.com/models/tencent/Hy-Nomas-Diffusers",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "Working with academic communities to build scientific understanding",
+      "sum": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Solving a 31-year-old grand challenge in mathematics – the KLS conjecture",
+      "sum": "For decades, a fundamental question about the difficulty of computing in high-dimensional spaces has resisted proof. New research resolves this questi",
+      "url": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "sum": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed f",
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Called to serve: Tech, research, and positive impact",
+      "sum": "Lab Director Chris White has worked on research challenges with real-world implications—from new approaches to wartime data analysis to tools for comb",
+      "url": "https://www.microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Dense Representation Learning and Differentiable Shape Modeling for Spine Landma",
+      "sum": "Spine landmark detection from spinal X-ray is a key step for estimating spine deformation severity, for building biomechanical models, and for pre-ope",
+      "url": "https://arxiv.org/abs/2610.36951v1",
+      "source": "arXiv · 2610.36951v1",
+      "tag": "ai"
+    },
+    {
+      "title": "DCKV: Learned Transform Coding of the Prompt KV Cache in Hybrid Language Models",
+      "sum": "Hybrid language models keep a key-value (KV) cache only in their few full-attention layers, but this cache is still the part of a prompt's state that ",
+      "url": "https://arxiv.org/abs/2610.36950v1",
+      "source": "arXiv · 2610.36950v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Self-Keyed In-Parameter Memorization for External Memory-Free Dialogue Recall in",
+      "sum": "A large language model maintains conversational content in an external storage that is outside the model and grows as the dialogue continues. This wor",
+      "url": "https://arxiv.org/abs/2610.36948v1",
+      "source": "arXiv · 2610.36948v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Beyond QASecClaw: Agent Scaling, Verifier Feedback, and Evidence Reliability in ",
+      "sum": "Can additional specialist language-model contexts improve software assurance when deterministic tool evidence is already available? We study this ques",
+      "url": "https://arxiv.org/abs/2610.36947v1",
+      "source": "arXiv · 2610.36947v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Algorithmic Monoculture in Machine Learning-based Site-Specific Fertilizer Recom",
+      "sum": "Machine learning recommendations are often evaluated one model at a time, despite deployment across interconnected decision makers. For continuous NPK",
+      "url": "https://arxiv.org/abs/2610.36941v1",
+      "source": "arXiv · 2610.36941v1",
+      "tag": "ai"
+    },
+    {
+      "title": "TDLM: Adaptive Temporal Integration for Diffusion Language Models",
+      "sum": "Masked diffusion language models repeatedly compute representations for unresolved tokens, but conventional denoisers do not explicitly retain these r",
+      "url": "https://arxiv.org/abs/2610.36940v1",
+      "source": "arXiv · 2610.36940v1",
+      "tag": "ai"
+    },
+    {
+      "title": "“随身提大水”的年轻人，不只是在玩梗",
+      "sum": "“弱者才喝饮料，强者都是直接喝大水。”最近，“大水理论”横空出世，成为互联网热梗",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-28/10721993.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "从挖掘机穿针到人形机器人训练 欧洲华媒感受湖南智造硬核实力",
+      "sum": "10月27日，参加湘江“对话”塞纳河——2026欧洲华文媒体长沙行的华媒代表走进中联重科智慧产业城，观摩智能制造产线和人形机器人训练，实地感受湖南智能制造的硬核实力",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-27/10721934.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "供销合作社科技成果在山东集中推介 促科研成果与产业需求精准对接",
+      "sum": "供销合作社科技成果对接活动27日在山东科技大市场启幕。此次活动以“供销合作社科技成果高效转化赋能农业高质量发展”为主题，旨在发挥供销合作社系统科研所、社有企业科技创新优势，依托山东",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-27/10721926.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "第十三届广州塔国际登高赛启动报名",
+      "sum": "2026第十三届广州塔国际登高赛新闻发布会27日在广州塔举行。大赛将于11月29日开跑，其中阿尔法凌空探险赛道于11月21日率先开赛。同时，第二届广州塔机器人登高挑战赛作为大赛重点",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-27/10721822.shtml",
+      "source": "中新网体育",
+      "tag": "tech"
+    },
+    {
+      "title": "首批学生运动能力国标实施试点进入“经验收获期”",
+      "sum": "记者从中国教育科学研究院获悉，贯彻落实“健康第一”教育理念、深入推进学生运动能力国家标准实施试点经验交流会近日在湖南长沙举行",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-25/10720797.shtml",
+      "source": "中新网教育",
+      "tag": "tech"
+    },
+    {
+      "title": "美国10月消费者信心指数回升至91.7 好于市场预期",
+      "sum": "世界大型企业联合会(Conference Board)当地时间27日公布数据显示，美国10月消费者信心指数为91.7，较9月数据有所好转，好于市场预期",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-28/10721975.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "从化橘红到沉香手串 广东各地山林物产集中亮相",
+      "sum": "庆祝2026年中国农民丰收节广东省第四届经济林金秋消费季活动27日在江门台山启幕。来自全省21个地市的60余家林业经营主体携经济林产品参展",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-27/10721941.shtml",
+      "source": "中新网社会",
+      "tag": "fin"
+    },
+    {
+      "title": "矿产资源“户口簿”30年来首次大修订 174个矿种为何要重新登记",
+      "sum": "矿产资源“户口簿”30年来首次大修订",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-28/10721962.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "探索外交话语的“区域国别转向” 专家学者在沪研讨对外话语体系建设",
+      "sum": "23日至24日，全国首届外交话语与区域国别研讨会在上海财经大学举办。会上，中国翻译研究院与上海财经大学签署共建“大国经济外交话语翻译传播工程项目”合作协议。该项目将依托上海财经大学",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-25/10720735.shtml",
+      "source": "中新网教育",
+      "tag": "fin"
+    },
+    {
+      "title": "报告：中国家庭养老正从“财富积累”进入“养老韧性”的新阶段",
+      "sum": "我国家庭养老准备整体水平正稳步提升。日前由清华大学五道口金融学院《清华金融评论》与中美联泰大都会人寿保险有限公司联合发布的《2026中国家庭养老金融健康指数调研报告》(下称，报告)",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-27/10721633.shtml",
+      "source": "中新网健康",
+      "tag": "fin"
+    },
+    {
+      "title": "别让“义工旅行”成廉价用工的马甲",
+      "sum": "只有划清公益志愿服务与商业用工的边界，让公益的归公益、商业的归商业，“义工”两个字才不会变成廉价用工的遮羞布",
+      "url": "https://www.chinanews.com.cn/fz/2026/10-28/10722011.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "云南新修订安全生产条例11月起施行 重特大事故责任追究加码",
+      "sum": "新修订的《云南省安全生产条例》(以下简称《条例》)将于11月1日起施行。《条例》大幅提高违法惩戒力度，明确对重大、特别重大生产安全事故负有责任的企业主要负责人，终身不得担任本行业生",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-27/10721937.shtml",
+      "source": "中新网社会",
+      "tag": "cn"
+    },
+    {
+      "title": "电影《四渡》票房超过3亿元 观影人次超920万",
+      "sum": "据猫眼专业版数据统计，10月27日10时20分许，由贵州省委宣传部紧扣红军长征胜利90周年重要节点精心策划打造的红军长征题材电影《四渡》中国内地院线票房超过3亿元，观影人次超922",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-27/10721572.shtml",
+      "source": "中新网文化",
+      "tag": "cn"
+    },
+    {
+      "title": "【这个城市有点潮】河南安阳：三千年文明，如何“潮”出圈？",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/tp/hd2011/2026/10-28/1209046.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "中国古代壁画艺术学术研讨会在京举办 中美学术机构互促互信",
+      "sum": "“中国古代壁画艺术学术研讨会”10月24日至26日在京举行，国内外专家学者百余人围绕中国古代壁画艺术展开一次集中的学术对话",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-26/10721311.shtml",
+      "source": "中新网文化",
+      "tag": "cn"
+    },
+    {
+      "title": "来中国“取经”后，他们交出这样的兴乡答卷",
+      "sum": "“全球南方青年兴乡培育计划”2025级5国48名学员顺利结业",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722000.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "天然气出口国论坛第八次峰会发表《莫斯科宣言》",
+      "sum": "天然气出口国论坛第八次峰会27日在莫斯科国际贸易中心举行。峰会于当天闭幕并发表《莫斯科宣言》，重申天然气出口国对本国自然资源拥有绝对、不可动摇的主权权利",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-28/10721961.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "梅拉尼娅：俄乌阿列什基停火提前生效 范围已扩大",
+      "sum": "美国总统特朗普的夫人梅拉尼娅27日在社交媒体发文说，俄罗斯与乌克兰在赫尔松地区阿列什基的停火协议于当天提前生效，停火范围已扩大到阿列什基以外区域",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-28/10721965.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "成都启动“跨境电商+产业带”系列活动",
+      "sum": "“蓉品出海·数通全球”2026成都“跨境电商+产业带”系列活动27日在成都启动",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-27/10721861.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "成都ITF青网女单冠军孙心然亮相广网 期待主场出战",
+      "sum": "16岁的深圳女孩孙心然25日在成都ITF世界青少年网球年终总决赛女单决赛中夺冠。26日，她出席2026年广州国际女子网球公开赛赛前发布会，直言“比较疲惫”，但却非常期待主场出战",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-27/10721662.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "塞尔维亚议会选举初步结果公布",
+      "sum": "贝尔格莱德消息：当地时间26日晚，塞尔维亚选举委员会公布提前举行的议会选举初步结果。学生团体推动的“学生名单－学生获胜”以52.71%的得票率领先，预计取得140个席位，在国民议会",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-27/10721696.shtml",
+      "source": "中新网国际",
+      "tag": "edu"
+    },
+    {
+      "title": "湖南省这家“不卖商品”的超市：用真实场景为新技术“找婆家”",
+      "sum": "在湖南省发改委门户网站上有一家特殊的“超市”：货架上没有商品，摆的是一张张“场景机会卡”和一份份“技术能力清单”。一边是园区、国企、民企把真实需求开放出来，一边是科创企业、高校团队",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-27/10721869.shtml",
+      "source": "中新网财经",
+      "tag": "edu"
+    },
+    {
+      "title": "2026年全国中学生（青少年）网球精英赛在内蒙古开幕",
+      "sum": "2026年全国中学生(青少年)网球精英赛27日在内蒙古呼和浩特市扎达盖网球馆开幕。来自全国各地的46支队伍，将在为期四天的比赛中展开角逐",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-27/10721768.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "香港浸大举办电影节表彰青年电影人 章子怡获荣誉教授衔",
+      "sum": "香港浸会大学(简称“浸大”)27日在香港举行“Future Film Fest 2026”开幕暨颁奖典礼，现场颁发八项大奖表彰青年电影人，同时向知名演员章子怡颁授创意艺术学院荣誉教",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-27/10721938.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "非洲首个数智孔子学院在赞比亚揭牌",
+      "sum": "当地时间10月26日，赞比亚穆隆古希大学数智孔子学院在该国中部省卡布韦的穆隆古希大学揭牌。中国驻赞比亚大使韩镜、赞比亚教育部常务秘书凯尔文·曼布韦等中赞双方代表出席活动",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-27/10721764.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "多地侨乡创新实践，助力文化“新三样”出海",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-28/10721977.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "从佛塔到酒香：泰国东北部传统文化焕发新活力",
+      "sum": "从湄公河畔的古老佛塔，到融入现代设计的本土烈酒；从礼佛祈福的传统习俗，到以农业产品发展创意产业，10月27日，记者在泰国国家旅游局官员的带领下走进泰国东北部那空帕侬府，感受当地传统",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-27/10721953.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "（寻味中华丨艺林）安徽花鼓灯踏出泥地 经典“闪身步”走红网络",
+      "sum": "题：安徽花鼓灯踏出泥地 经典“闪身步”走红网络",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-28/10721996.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "岐黄进万家 广西举办中医药文化服务周活动",
+      "sum": "记者25日从广西壮族自治区中医药管理局获悉，2026年广西中医药养生嘉年华暨中医药文化服务周活动近日启动。活动以“岐黄进万家 养生嘉年华”为主题，推动中医药(壮瑶医药)知识普及与健",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-25/10720718.shtml",
+      "source": "中新网健康",
+      "tag": "cul"
+    },
+    {
+      "title": "“紫云承晖——李俊花鸟画作品展”举办",
+      "sum": "“紫云承晖——李俊花鸟画作品展”日前在北京举办",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-27/10721884.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "江西南康“村超”开赛 绿茵“小”场激活家具产业“大”文章",
+      "sum": "27日晚，2026年“贵州村超走进南康家具”足球之夜交流赛打响。来自贵州榕江的“村超”代表队与由江西省赣州市南康区家具从业者、足球爱好者组成的南康家具队齐聚绿茵场，以足球为纽带，上",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-27/10721924.shtml",
+      "source": "中新网社会",
+      "tag": "sport"
+    },
+    {
+      "title": "全国短池游泳锦标赛：张雨霏、张展硕创新纪录 徐嘉余率队破纪录",
+      "sum": "2026年全国游泳锦标赛(25米)27日在北京国家游泳中心“水立方”继续进行。张雨霏、张展硕分别斩获女子100米蝶泳、男子800米自由泳冠军，并刷新短池亚洲纪录；在男女4×100米",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-27/10721959.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "我用 iPhone Duo 刷小红书、淘宝、飞书，发现作用不只是装「阔」",
+      "sum": "头图图片来源：极客公园 我在 iPhone Duo 上，把淘宝、高德、小红书、腾讯视频、飞书、WPS、XMind，还有篮球游戏 NBA 巅峰对决，这 8 个为它做过适配的 App ",
+      "url": "https://www.geekpark.net/news/372710",
+      "source": "极客公园",
+      "tag": "sport"
+    },
+    {
+      "title": "杭州马拉松即将开跑 报名人数首次突破30万",
+      "sum": "27日，2026杭州马拉松新闻发布会在杭州举行。记者从会上了解到，本届赛事报名总人数首次突破30万，较去年增长51.6%，创下历史新高",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-27/10721928.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "2026中国业余高尔夫球队际公开赛南部大区赛落幕",
+      "sum": "2026一龄·中国业余高尔夫球队际公开赛(以下简称“中国队际赛”)南部大区赛27日在广东清远狮子湖高尔夫俱乐部圆满落幕。作为本年度大区赛阶段的压轴之战，南部大区赛不仅完成了南部赛区",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-27/10721907.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "秋色染金！全国银杏观赏地图出炉 多种玩法带你探索银杏之美",
+      "sum": "中国天气网讯 凉风渐起，秋色染金。随着气温逐渐下降，各地银杏陆续进入观赏期，满树金黄，将秋色渲染到极致。赏银杏，不只有一种方式，漫步长街、登高赏景、骑行穿越、打卡村落……不同场景各",
+      "url": "https://www.chinanews.com.cn/life/2026/10-28/10721984.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "九旬老兵大别山守墓58年：“他们没有亲人，我就做他们的亲人”",
+      "sum": "10月底，大别山北麓的风带着凉意。从山下到9座红军烈士墓碑前，一共97级台阶，89岁的王茂贵一步步往上走，尽量使气息平稳些，“年龄大了！”",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-27/10721947.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "宁夏援外医疗队成功救治危重感染婴儿",
+      "sum": "记者27日从中国(宁夏)第28批援贝宁医疗队获悉，近日，该医疗队耳鼻喉科医生邓斌，在医疗条件有限、病情极其凶险的情况下，历经一个月，成功救治一名出生仅45天的危重坏死性筋膜炎患儿",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-27/10721830.shtml",
+      "source": "中新网国际",
+      "tag": "life"
+    },
+    {
+      "title": "大医生来了｜郭人花：让肺癌患者活得长，也活得好",
+      "sum": "周四早晨7点30分，江苏省人民医院三楼多学科联合会诊(MDT)会议室的灯箱已经亮着",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-27/10721737.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "Apple Watch 立功，苹果连发 2 个用户健康故事",
+      "sum": "苹果公司今天（10 月 28 日）更新“Apple Watch 真实故事”系列视频， 新增两位用户案例，称其借助 Apple Watch 的健康监测与运动激励功能改善了健康状况。 ",
+      "url": "https://www.ithome.com/1/018/725.htm",
+      "source": "IT之家",
+      "tag": "life"
+    }
+  ]
+}
