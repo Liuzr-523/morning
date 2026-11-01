@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-01",
+  "generatedAt": "2026-11-01T09:23:19+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Community safety report and new protections for teens",
+      "sum": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reportin",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Microsoft Research Focus – Edition #97",
+      "sum": "Host Sowbhagya Suresh shares some of the latest news and cutting-edge research from across Microsoft—from understanding the challenges facing coding a",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：Mage-VL-Cowork 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-30 · image-text-to-text · 233 下载",
+      "url": "https://hf-mirror.com/models/microsoft/Mage-VL-Cowork",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "智源：MS-Human-700 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-25 · reinforcement-learning · 0 下载",
+      "url": "https://hf-mirror.com/models/BAAI/MS-Human-700",
+      "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "An updated Model Spec for more capable and beneficial AI",
+      "sum": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
+      "url": "https://openai.com/index/updated-model-spec",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Flint-interactive: A language for creating interactive data visualizations",
+      "sum": "Flint-interactive gives AI agents a language for creating interactive visualizations. Click a chart, filter data, highlight related content, and explo",
+      "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：CogACT-v2-RoboDojo 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-25 · 模型 · 43 下载",
+      "url": "https://hf-mirror.com/models/microsoft/CogACT-v2-RoboDojo",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "How we detect frontier model misalignment",
+      "sum": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents esca",
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Elucidating the Design Space of LM Data Attribution",
+      "sum": "Data attribution methods for Language Models (LMs) are typically evaluated using downstream tasks like fact retrieval. However, existing evaluations v",
+      "url": "https://arxiv.org/abs/2610.40655v1",
+      "source": "arXiv · 2610.40655v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filteri",
+      "sum": "An estimator can be accurate and stable on typical data, yet sensitive to a few possible records. Differentially private mechanisms commonly scale the",
+      "url": "https://arxiv.org/abs/2610.40654v1",
+      "source": "arXiv · 2610.40654v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Rethinking Neural Thickets Without Weight Perturbations",
+      "sum": "The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which rando",
+      "url": "https://arxiv.org/abs/2610.40649v1",
+      "source": "arXiv · 2610.40649v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Tran",
+      "sum": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention",
+      "url": "https://arxiv.org/abs/2610.40647v1",
+      "source": "arXiv · 2610.40647v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
+      "sum": "Distributionally robust optimization (DRO) hedges data-driven two-stage stochastic programs against error in the distribution estimated from a finite ",
+      "url": "https://arxiv.org/abs/2610.40644v1",
+      "source": "arXiv · 2610.40644v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Luggage re-identification: A study of strategies towards a real-world applicatio",
+      "sum": "Luggage re-identification (ReID) is a critical task in video surveillance for forensics, security or border management (suspicious or abandoned luggag",
+      "url": "https://arxiv.org/abs/2610.40643v1",
+      "source": "arXiv · 2610.40643v1",
+      "tag": "ai"
+    },
+    {
+      "title": "From extreme weather to agricultural consequences with agentic AI",
+      "sum": "Extreme weather is forecast days ahead, yet its consequences for agriculture remain hard to predict: a forecast says where a storm will strike, not wh",
+      "url": "https://arxiv.org/abs/2610.40641v1",
+      "source": "arXiv · 2610.40641v1",
+      "tag": "ai"
+    },
+    {
+      "title": "2026视觉健康创新发展国际秋季会议在温州举行",
+      "sum": "“科技变革、产业革命、医学发展的深入交流，共同推动智慧眼科迈入高质量发展快车道。”10月30日，2026视觉健康创新发展国际会议(Vision China秋季·温州)在浙江省温州市",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-01/10724140.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "聚焦“影像环保” 高校环境课程交流会在北京大学举行",
+      "sum": "10月31日，由北京大学环境科学与工程学院、环境教育杂志社共同主办的高校环境课程交流会在北京大学举行。多位相关领域专家聚焦“影像环保”，对中国高校的环境教育课程的创新实践以及人工智",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-31/10724026.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "民调显示多数韩国受访者支持加强对华合作",
+      "sum": "中国驻韩国大使馆30日发布的一项民意调查结果显示，大多数韩国受访者支持韩中关系发展，希望两国加强经贸、科技等领域合作，近半数民众考虑赴华旅游",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-31/10724076.shtml",
+      "source": "中新网国际",
+      "tag": "tech"
+    },
+    {
+      "title": "绿色航运加快发展（政策解读）",
+      "sum": "近日，交通运输部等3部门联合印发的《内河新能源船舶推广应用行动方案(2026—2030年)》(以下简称《方案》)提出，加快全场景应用、加强全链条支撑，到2028年，内河新能源船舶保",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-31/10724070.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "女篮训练赛发生肢体冲突 中国篮协通报",
+      "sum": "据中国篮球协会网站消息，中国篮球协会29日晚发布情况通报称，2026年10月13日，武汉盛帆职业篮球俱乐部有限责任公司女子篮球队(以下简称“武汉盛帆队”)与华中科技大学女子篮球队(",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-30/10723116.shtml",
+      "source": "中新网体育",
+      "tag": "tech"
+    },
+    {
+      "title": "二十国集团外长会未就地缘和经济安全问题达成共识",
+      "sum": "为期两天的二十国集团(G20)外长会10月31日在美国南部佐治亚州首府亚特兰大结束。会议笼罩在乌克兰危机和美伊冲突的阴影下，未能就重要全球地缘和经济安全问题达成共识",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-01/10724125.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "消息人士：日本修订“安保三文件” 欲将国防与经济增长挂钩",
+      "sum": "据日本方面31日消息，围绕计划在今年年底修订“安保三文件”，日本政府预计将设立法人，通过加强国防装备生产能力及推进技术转让等工作，谋求经济增长",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-31/10724080.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "湖南株洲以“市+集+秀”激活时尚消费新生态",
+      "sum": "10月31日，湖南株洲“芦淞服饰·疯狂星期六”活动正式启动。这场覆盖每周六的主题消费活动，通过“市场延时营业+敢时髦集市+文体活动”三大板块深度联动，打造集购物、打卡、看秀、休闲于",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-31/10724087.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "2026中国气排球公开赛（长沙站）开打 商体融合激活体育消费",
+      "sum": "31日，2026中国气排球公开赛(长沙站)在贺龙体育馆开幕。赛事探索商体融合办赛新模式，以气排球运动为纽带，把专业群众赛事融入城市商业场景，激活体育消费新动能，展现长沙群众体育蓬勃",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-31/10724067.shtml",
+      "source": "中新网体育",
+      "tag": "fin"
+    },
+    {
+      "title": "日本首家大疆、哈苏概念旗舰店开业，主打融合体验",
+      "sum": "日本首家大疆、哈苏概念旗舰店昨天在东京开业。该店铺主打融合式体验，消费者可以在此同时选购大疆和哈苏产品。 IT之家从官方新闻稿获悉，该店铺位于东京著名时尚购物街区表参道， 1 楼专",
+      "url": "https://www.ithome.com/1/020/646.htm",
+      "source": "IT之家",
+      "tag": "fin"
+    },
+    {
+      "title": "流感高发季来临 专家提醒：儿童防护莫松懈 尽早接种疫苗",
+      "sum": "随着秋冬季流行性感冒(简称“流感”)高发期来临，儿童流感防护成为家长关注的重点。广西南宁市第二妇幼保健院儿科副主任医师黄毅毅10月31日接受记者采访介绍，部分儿童感染流感后可能出现",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-01/10724155.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "农业农村部黄土高原蔬菜种质创新重点实验室在山西新绛揭牌",
+      "sum": "10月31日，农业农村部黄土高原蔬菜种质创新重点实验室在山西新绛县瑞恒农业蔬菜大棚基地揭牌，实验室首届学术委员会会议同步召开。中国工程院院士、国内蔬菜育种领域40名专家共同见证这一",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-31/10724102.shtml",
+      "source": "中新网社会",
+      "tag": "cn"
+    },
+    {
+      "title": "累计进出口35.53万亿元！黄河流域外贸五年“成绩单”亮眼",
+      "sum": "2021年10月，《黄河流域生态保护和高质量发展规划纲要》印发，到目前已有五年。据济南海关统计，2021年到今年9月底，黄河流域已累计进出口35.53万亿元，对外开放能级不断提升",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-31/10724069.shtml",
+      "source": "中新网财经",
+      "tag": "cn"
+    },
+    {
+      "title": "“十五五”中国将培育5到10个中外联合考古示范项目",
+      "sum": "记者10月31日从中国国家文物局获悉，该局近日印发的《考古工作“十五五”规划》(简称“规划”)提出培育5到10个中外联合考古示范项目",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-31/10723996.shtml",
+      "source": "中新网文化",
+      "tag": "cn"
+    },
+    {
+      "title": "华为鲲鹏 920 上跑出超越同代主流硬件的性能：北大团队完成 ABACUS 原子算筹软件深度优化，优化 19 类材料核心算子",
+      "sum": "密度泛函理论（Density Functional Theory，DFT）是研究半导体、金属等关键材料性质的主流第一性原理方法。ABACUS（原子算筹）是国内自主研发的密度泛函开源",
+      "url": "https://www.ithome.com/1/020/650.htm",
+      "source": "IT之家",
+      "tag": "cn"
+    },
+    {
+      "title": "中国发明创新成果亮相纽伦堡国际发明展",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/tp/hd2011/2026/11-01/1209347.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "中国“世界美食之都”知识产权协同保护机制在泉州启动",
+      "sum": "为助力美食产业规范化提质、品牌化运营、国际化出海，中国“世界美食之都”知识产权协同保护机制启动仪式暨“刺桐烟火”——知识产权赋能中华美食文化传承与特色产业高质量发展研讨会31日在福",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-31/10724090.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "伊朗外长：目前没有与美国官员会面的计划",
+      "sum": "当地时间31日，伊朗外长阿拉格齐表示，美国副总统万斯的来信已在伊方高级别会议上经过仔细审阅和讨论",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-31/10724122.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "广交会观察：彰显时尚价值 中国非遗潮品走俏海外市场",
+      "sum": "“批量采购一个多少钱？能单买吗？”10月31日在广州举行的第140届广交会第三期上，乌兹别克斯坦采购商蒂娜看中一款造型精美的“中国风”女包，当场询问价格",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-31/10724109.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "八百余名青少年角逐赛场 陕西构建击剑一体化青训体系",
+      "sum": "陕西2026长安剑客国际击剑比赛10月31日至11月1日在陕西省体育馆举办。在首日率先进行的英才组比赛中，陕西省内134名小剑手与来自省外700余名参加C级认证赛事的选手同场竞技",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-31/10724053.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "2026粤港澳大湾区青少年欢乐跑在穗举行",
+      "sum": "今年适逢暨南大学建校120周年，2026粤港澳大湾区青少年欢乐跑活动10月31日在广州番禺举行，吸引近600名粤港澳青少年及其家庭参与",
+      "url": "https://www.chinanews.com.cn/dwq/2026/11-01/10724136.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "首都师范大学原校长齐世荣百年诞辰学术研讨会召开",
+      "sum": "2026年10月29日是著名历史学家、教育家、首都师范大学原校长齐世荣百年诞辰。29日，首师大举办“齐世荣先生与中国历史学自主知识体系构建”学术研讨会，全国数十家高校和科研机构的专",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-31/10723880.shtml",
+      "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "西湖世界模型研究中心成立 聚焦物理智能前沿布局",
+      "sum": "10月31日，西湖世界模型研究中心在西湖大学云谷校区成立。该中心为西湖大学面向物理智能领域设立的校级交叉科研平台，由西湖大学助理教授于开丞担任主任、西湖大学讲席教授金耀初担任首席科",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-31/10724015.shtml",
+      "source": "中新网财经",
+      "tag": "edu"
+    },
+    {
+      "title": "全国大学生乒乓球锦标赛第四站冰城挥拍 14所高校运动员齐聚冰城",
+      "sum": "31日，学体联2026年全国大学生乒乓球锦标赛(甲组)第四站比赛在哈尔滨市挥拍开赛，来自全国14所高校的218名大学生运动员齐聚冰城",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-31/10724092.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "禁毒曲剧《林则徐在北京》全国公益巡演活动在京启动",
+      "sum": "为大力传承、弘扬林则徐禁毒和爱国主义精神，由国家禁毒办指导、中国禁毒基金会主办的禁毒曲剧《林则徐在北京》全国公益巡演活动30日在北京市林则徐禁毒教育基地正式启动，并于10月31日至",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-31/10724042.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "专家跨省到黑龙江授艺 助力珍贵织绣文物重焕光彩",
+      "sum": "10月31日，由黑龙江省文化和旅游厅主办、黑龙江省博物馆承办的2026年黑龙江省文物藏品修复技能培训班(纺织品方向)结业，16家文博单位的一线从业人员齐聚哈尔滨，完成了从理论到实操",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-01/10724142.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "《大道同行——孙中山诞辰160周年纪念图片展》在马来西亚开幕",
+      "sum": "10月31日，《大道同行——孙中山诞辰160周年纪念图片展》在位于雪兰莪的马来西亚华人博物馆特展展厅开幕。这项展览由中国侨联指导，马来西亚中华大会堂总会统筹，马来西亚华人博物馆与中",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-31/10724084.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "海派原创IP讲述上海故事 城市脉动文创展在沪展出",
+      "sum": "城市脉动文创展29日至31日在上海世博展览馆举办，一批地域特色鲜明的文创作品吸引不少观众驻足",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-31/10724105.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "健康观察：文化搭台名医下乡 基层正确健康观何以树立？",
+      "sum": "越剧婉转，唱的不是才子佳人，而是起居养生；灯光之下，省级专家围坐问诊，血压测量、超声筛查、中医咨询有序铺开……29日晚，“健康浙里行——走基层 惠民生”活动在浙江绍兴新昌举行，这场",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-31/10723743.shtml",
+      "source": "中新网健康",
+      "tag": "cul"
+    },
+    {
+      "title": "京津冀考古合作迈入“平台共建” 着力构建学术共同体",
+      "sum": "第四届京津冀考古学术交流活动暨2026北京公众考古季闭幕式31日在北京延庆举办。活动发布多个最新考古发现，北京市考古研究院京北考古工作站正式启用",
+      "url": "https://www.chinanews.com.cn/cul/2026/10-31/10724085.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "亚运冠军高晓彬与青少年分享武术经历",
+      "sum": "记者10月31日从广东省社会体育和训练竞赛中心获悉，2026年粤港澳大湾区青少年武术套路比赛期间，“立德树人——青少年体育第一课”在深圳举行，100余名青少年运动员、教练员、裁判员",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-01/10724150.shtml",
+      "source": "中新网",
+      "tag": "sport"
+    },
+    {
+      "title": "北控队主场力克新疆队 取得CBA常规赛两连胜",
+      "sum": "10月31日晚在北京国家奥林匹克体育中心体育馆举行的2026-2027赛季中国男子篮球职业联赛(CBA)常规赛第七轮较量中，主场作战的北京控股队(简称“北控队”)以106:84力克",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-01/10724124.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "事关孩子健康 4项新规11月起将正式实施",
+      "sum": "11月1日起，四项与孩子健康息息相关的新规将正式实施——教室照明更讲究，护眼标准从“看得清”升级为“看得健康”；体育培训有规矩，师资、场地、人数、安全都要守底线；儿童用品有了首个全",
+      "url": "https://www.chinanews.com.cn/edu/2026/10-28/10722228.shtml",
+      "source": "中新网教育",
+      "tag": "sport"
+    },
+    {
+      "title": "“巅峰湖南·2026”收官赛落户桑植 助力老区“体育+”融合发展",
+      "sum": "“巅峰湖南·2026”登山赛收官站——桑植站10月31日在张家界市桑植县南滩国家草原自然公园鸣枪开跑，这也是“巅峰湖南”2026赛季的收官之战",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-01/10724149.shtml",
+      "source": "中新网",
+      "tag": "sport"
+    },
+    {
+      "title": "深圳新世纪篮球俱乐部发布关于外援特奎维恩·史密斯兴奋剂相关事件的声明",
+      "sum": "10月31日，深圳新世纪篮球俱乐部(以下简称“俱乐部”)在“深圳新世纪烈豹”公众号发布关于外援特奎维恩·史密斯兴奋剂相关事件的声明(以下简称“声明”)",
+      "url": "https://www.chinanews.com.cn/ty/2026/10-31/10724043.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "聚焦医险协同 2026全生命周期健康创新发展论坛在穗举行",
+      "sum": "2026全生命周期健康创新发展论坛10月31日在广州南沙举行。论坛以“全生命周期·全场景守护·高质量发展”为主题，吸引政产学研各界约200位嘉宾，围绕医险协同、全流程健康管理和多元",
+      "url": "https://www.chinanews.com.cn/dwq/2026/11-01/10724148.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "突尼斯人樊白云的西安十年：安心打拼事业，用心感受生活",
+      "sum": "题：突尼斯人樊白云的西安十年：安心打拼事业，用心感受生活",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-31/10724104.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "泰国着手制定第四个国家旅游发展计划",
+      "sum": "泰国总理府副发言人拉丽达31日表示，泰国政府着手制定第四个国家旅游发展计划(2028—2032年)，目标是将旅游业总收入提高至至少4万亿泰铢",
+      "url": "https://www.chinanews.com.cn/gj/2026/10-31/10724123.shtml",
+      "source": "中新网国际",
+      "tag": "life"
+    },
+    {
+      "title": "中新健康｜14岁突发脑卒中，家长称其把饮料、奶茶当水喝！医生提醒",
+      "sum": "近日，中国科大附一院(安徽省立医院)神经内科接诊了一例年仅14岁的急性脑卒中患者。在医生追问病史时，家属提到孩子长期把饮料、奶茶当水喝，几乎不喝白开水，经常吃外卖，烧烤、油炸食物，",
+      "url": "https://www.chinanews.com.cn/jk/2026/10-31/10724097.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "1499 → 773 元国补直降：小米米家净水器 2 破冰新低，1200G 大通量 + 7 年 RO 滤芯",
+      "sum": "【京东活动可能随时变更，需以实付款为准】 小米 · 米家净水器 2（1200G）开售于 2026 年 3 月，该产品主打 7 年长效 RO、母婴级健康水，厂商建议零售价为 1999",
+      "url": "https://www.ithome.com/1/020/336.htm",
+      "source": "IT之家",
+      "tag": "life"
+    }
+  ]
+}
