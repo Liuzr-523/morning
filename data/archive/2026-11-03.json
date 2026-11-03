@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-03",
+  "generatedAt": "2026-11-03T11:38:44+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Rewarding defenders with bigger bug bounties",
+      "sum": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security research",
+      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Microsoft Research Focus – Edition #97",
+      "sum": "Host Sowbhagya Suresh shares some of the latest news and cutting-edge research from across Microsoft—from understanding the challenges facing coding a",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：Mage-VL-Cowork 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-30 · image-text-to-text · 1152 下载",
+      "url": "https://hf-mirror.com/models/microsoft/Mage-VL-Cowork",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "智源：MS-Human-700 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-25 · reinforcement-learning · 0 下载",
+      "url": "https://hf-mirror.com/models/BAAI/MS-Human-700",
+      "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "sum": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：CogACT-v2-RoboDojo 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-25 · 模型 · 48 下载",
+      "url": "https://hf-mirror.com/models/microsoft/CogACT-v2-RoboDojo",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "Scaling Git at OpenAI",
+      "sum": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+      "url": "https://openai.com/index/scaling-git-at-openai",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Mo",
+      "sum": "Agent harnesses integrate video generation and world models to enable planning, tool use, and recursive self-improvement for autonomous multi-shot vid",
+      "url": "https://hf-mirror.com/papers/2610.40191",
+      "source": "arXiv · 2610.40191",
+      "tag": "ai"
+    },
+    {
+      "title": "Diagnosing the Reference Gap: What Visual Scaffolds Can and Cannot Fix in Multim",
+      "sum": "Multimodal language models fail at multi-step visual reasoning due to a reference gap rather than perception, and task-matched external references lik",
+      "url": "https://hf-mirror.com/papers/2610.39419",
+      "source": "arXiv · 2610.39419",
+      "tag": "ai"
+    },
+    {
+      "title": "From Fragmentation to Fusion: A Survey and Roadmap for Omnimodal Embeddings",
+      "sum": "Embedding research across modalities is converging toward shared principles via contrastive learning and Transformers, and a framework of coverage, co",
+      "url": "https://hf-mirror.com/papers/2611.00172",
+      "source": "arXiv · 2611.00172",
+      "tag": "ai"
+    },
+    {
+      "title": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
+      "sum": "DecisionRank uses item-space on-policy distillation to transfer ranking knowledge from generative teachers to efficient decision models, achieving sta",
+      "url": "https://hf-mirror.com/papers/2610.42128",
+      "source": "arXiv · 2610.42128",
+      "tag": "ai"
+    },
+    {
+      "title": "MAServeBench: Benchmarking Multi-Agent LLM Serving Systems with Hierarchical Col",
+      "sum": "MAServeBench evaluates LLM serving and hardware by modeling multi-agent collaboration as a configurable workload dimension with reproducible dependenc",
+      "url": "https://hf-mirror.com/papers/2610.40293",
+      "source": "arXiv · 2610.40293",
+      "tag": "ai"
+    },
+    {
+      "title": "Self-Improvement with Auxiliary Rewards: Learning from Verified Traces and Evalu",
+      "sum": "Auxiliary trajectory preferences based on entropy and confidence metrics improve small language model self-improvement and transfer by distinguishing ",
+      "url": "https://hf-mirror.com/papers/2610.41296",
+      "source": "arXiv · 2610.41296",
+      "tag": "ai"
+    },
+    {
+      "title": "DeFT-RAG: Decomposing Multi-Hop Questions into Self-Contained Sub-Questions with",
+      "sum": "DeFT-RAG improves multi-hop question answering by generating self-contained sub-questions sequentially, offloading reasoning to rule-based updates and",
+      "url": "https://hf-mirror.com/papers/2610.37826",
+      "source": "arXiv · 2610.37826",
+      "tag": "ai"
+    },
+    {
+      "title": "TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation",
+      "sum": "TinyAstral improves robot agent harnesses via recursive self-improvement and distills compact students that retain performance gains with lower comput",
+      "url": "https://hf-mirror.com/papers/2610.41216",
+      "source": "arXiv · 2610.41216",
+      "tag": "ai"
+    },
+    {
+      "title": "力箭二号运载火箭首次执行卫星互联网大规模组网任务",
+      "sum": "据中国民营火箭公司中科宇航消息，11月3日8时15分，力箭二号遥二运载火箭在东风商业航天创新试验区点火升空，将搭载的千帆极轨21组共18颗卫星顺利送入预定轨道，飞行试验任务取得圆满",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-03/10725208.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "非方青年西安行：既见“中国科技”亦感“文化底蕴”",
+      "sum": "第十届中非青年大联欢活动的60余名非方青年2日对比亚迪汽车有限公司西安展厅、西安建筑科技大学、秦始皇帝陵博物院等地进行了探访。“这是我第二次参加该活动，通过此次参观交流，让我更加了",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725185.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "2026年世界互联网大会乌镇峰会今天开幕",
+      "sum": "2026年世界互联网大会乌镇峰会今天(11月3日)在浙江乌镇开幕。本次峰会以“开源开放 共建共享——携手构建网络空间命运共同体”为主题，全球多国政府、国际组织、企业、专家学者代表汇",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-03/10725151.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "千名青少年绳跃第二届全国全民健身大赛（华南区）",
+      "sum": "11月1日，第二届全国全民健身大赛(华南区)·2026第一届广西青少年跳绳锦标赛在广西体育高等专科学校(相思湖校区)体育馆落幕。赛事为期两天，1200多名青少年运动员以绳会友、同台",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-02/10724943.shtml",
+      "source": "中新网体育",
+      "tag": "tech"
+    },
+    {
+      "title": "上海自然博物馆70周年展启幕",
+      "sum": "“古稀·少年——上海自然博物馆70周年展”11月1日晚在该馆启幕，向公众讲述70年来的珍藏记忆与科学故事",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-02/10724709.shtml",
+      "source": "中新网文化",
+      "tag": "tech"
+    },
+    {
+      "title": "新疆：乳业“智造”工厂助力经济高质量发展",
+      "sum": "",
+      "url": "https://www.chinanews.com.cnhttps://www.chinanews.com.cn/tp/hd2011/2026/11-03/1209606.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "印尼制造业PMI创31个月新高 出口订单增长强劲",
+      "sum": "东南亚最大经济体印度尼西亚制造业呈现回暖势头。标普全球2日公布的数据显示，2026年10月，印尼制造业采购经理指数(PMI)升至54.0，创2024年3月以来最高水平，制造业扩张势",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-02/10725053.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "2026年全国“优化消费环境月”启动",
+      "sum": "据“市说新语”微信公众号消息，11月3日，2026年全国“优化消费环境月”启动仪式在福建省泉州市举行",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-03/10725194.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "特努斯：全球内存涨价“前所未有”，苹果已竭尽所能消化成本",
+      "sum": "在最新财报电话会议上，苹果首席执行官约翰 · 特努斯（John Ternus）当前内存价格上涨“前所未有”， 且预计 12 月季度成本还会更高，后续采购价格恐将继续上升。 IT之家",
+      "url": "https://www.ithome.com/1/021/482.htm",
+      "source": "IT之家",
+      "tag": "fin"
+    },
+    {
+      "title": "苹果发触屏笔记本，最高 11 万元；DeepSeek V5 模型代码现身；宇树首发财报，净利增 270%",
+      "sum": "苹果发布首款触屏 MacBook Pro，顶配超 11 万 元 北京时间 10 月 29 日，苹果发布全新 MacBook Pro，首次为 Mac 引入屏幕触控和灵动岛，并采用双层",
+      "url": "https://www.geekpark.net/news/373085",
+      "source": "极客公园",
+      "tag": "fin"
+    },
+    {
+      "title": "贵州省贵阳市政府原党组成员、副市长高杨被“双开”",
+      "sum": "据贵州省纪委监委消息，经贵州省委批准，贵州省纪委监委对贵州省贵阳市政府原党组成员、副市长高杨严重违纪违法问题进行了立案审查调查",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-03/10725218.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "英国内政部在重点街区启动反持刀犯罪行动",
+      "sum": "英国内政部2日正式启动“刀具无处遁形”专项整治行动，重点覆盖伦敦威斯敏斯特、克罗伊登等持刀犯罪高发区域，并在伯明翰同步落地，成为英国政府维护社区安全的重要举措",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-02/10724918.shtml",
+      "source": "中新网国际",
+      "tag": "cn"
+    },
+    {
+      "title": "WTA250香港公开赛：王欣瑜女单首轮晋级",
+      "sum": "WTA(女子网球协会)250香港公开赛2日在香港维多利亚公园举行。中国内地选手王欣瑜首轮以两个6:1击败中国香港选手李芬，顺利晋级女单16强",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-03/10725157.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "英飞凌携手高通，整合 MCU 子系统与骁龙 Ride / Ride Flex 汽车平台",
+      "sum": "Infineon（英飞凌）德国当地时间 2 日宣布将与 Qualcomm（高通）合作加速 SDV（软件定义车辆）中央车载计算机的开发和部署。 根据双方签署的协议， 高通骁龙 Rid",
+      "url": "https://www.ithome.com/1/021/350.htm",
+      "source": "IT之家",
+      "tag": "cn"
+    },
+    {
+      "title": "中国气象局：11月气候趋势预测建议重点关注四个方面",
+      "sum": "11月3日，中国气象局召开新闻发布会，国家气候中心副主任高荣在会上发布11月气候趋势预测",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725217.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "中国气象局发布今冬明春气候预测 最强厄尔尼诺事件影响明显",
+      "sum": "11月3日，中国气象局召开新闻发布会，国家气候中心副主任高荣指出，2026年9月，赤道中东太平洋形成一次超强厄尔尼诺事件，10月已发展为有监测记录以来最强的厄尔尼诺事件，预计秋末冬",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725225.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "国际研究：到2050年全球宫颈癌病例数和死亡人数或将上升",
+      "sum": "施普林格·自然旗下专业学术期刊《自然-医学》最新发表一篇健康研究论文称，一项建模研究显示，到2050年，全球宫颈癌病例数和死亡人数可能分别增加20.2%和39.3%。研究结果表明，",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725187.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "美国中期选举今日投票；伊朗此前提出“两天方案”",
+      "sum": "方案”丨国际早察",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-03/10725166.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "全球好物奔赴“四叶草” 便利举措铺就畅通路",
+      "sum": "第九届进博会筹备进入冲刺阶段，各国的参展商正紧锣密鼓筹备参展事宜，一批特色首发展品也将集中亮相。“进博直通车”等一系列便利化保障举措提速落地，压缩物流时长、降低参展成本，让全球特色",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-03/10725135.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "陕西：击剑冠军走进校园 小剑手近距离感受击剑魅力",
+      "sum": "陕西2026长安剑客国际击剑精英赛配套活动“剑耀少年时”击剑冠军校园行2日在西安开展，国家击剑队运动员走进中小学校园，与学生面对面交流，传授击剑技艺",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-03/10725186.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "捐赠178.5万元！广东侨心基金会助力阳江医教提质",
+      "sum": "10月29日下午，侨助“百千万工程”行动——广东省侨心慈善基金会阳江医教提质公益捐赠仪式在阳江市卫生学校举行。广东省侨心慈善基金会向阳江市卫生学校和阳江市中西医结合医院共捐赠178",
+      "url": "https://www.chinanews.com.cn/txy/2026/11-03/10725205.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "中国留学生遇害案嫌疑人郑某当庭认罪",
+      "sum": "据韩联社报道，中国留学生在韩遇害案嫌疑人郑某(31岁)2日承认检方提出的所有指控",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-02/10724884.shtml",
+      "source": "中新网国际",
+      "tag": "edu"
+    },
+    {
+      "title": "全国国防体育运动锦标赛勇士定向专项赛在京落幕",
+      "sum": "2026年全国国防体育运动锦标赛勇士定向专项赛日前在北京南宫世界地热博览园举行，来自机关、企事业单位、学校和社会团体的500余名国防体育爱好者参加了比赛",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-02/10724585.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "高校学术讲坛，如何“叫好又叫座”",
+      "sum": "论坛汇智，文化润心。在高校校园里，学术讲座与论坛不仅是知识交流的平台，更是精神滋养的空间。记者注意到，近年来各地高校优化内容供给、创新传播形式，推动校园讲座论坛的开展从“有”向“优",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-03/10725082.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "超清影像——浙东首台光子计数探测器CT在宁大一院投用",
+      "sum": "“我院此次更新CT设备，有点类似‘黑白电视’直接飞跃到‘8K超高清彩色电视’。”1日，在宁波大学附属第一医院(下称：宁大一院)举行的光子CT启用仪式暨学术活动上，宁大一院影像科主任",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-01/10724244.shtml",
+      "source": "中新网健康",
+      "tag": "edu"
+    },
+    {
+      "title": "“China Haul”频频刷屏 中国购火起来",
+      "sum": "好商品 好环境 好文化",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725196.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "黎族爱情传说经久不衰 境外媒体人探寻“爱”在三亚“鹿回头”",
+      "sum": "“我知道海南有深厚的黎族文化，但尚未了解过鹿回头的故事，今天踏足这里，看到了山海相映的风光，景区里处处有‘爱’，瞬间就感受到了三亚的浪漫气息。”站在三亚“鹿回头”雕塑下，墨西哥籍博",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725183.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "舞蹈诗《大合之舞》澳大利亚悉尼上演",
+      "sum": "由悉尼华星艺术团旗下紫藤舞苑原创的大型舞蹈诗《大合之舞》11月1日晚在澳大利亚悉尼上演",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-02/10724992.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "全国各地3000名跑友角逐2026图木舒克马拉松",
+      "sum": "2026图木舒克马拉松1日在新疆生产建设兵团第三师图木舒克市永安湖生态旅游景区唐王城千年屯垦文化体验中心广场鸣枪开赛，来自全国各地的3000名跑友参与角逐，用速度点燃城市活力",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-02/10724760.shtml",
+      "source": "中新网体育",
+      "tag": "cul"
+    },
+    {
+      "title": "艺苑撷英——2026年全国优秀青年舞蹈人才展演在京举行",
+      "sum": "艺苑撷英——2026年全国优秀青年舞蹈人才展演日前在北京中央民族歌舞团民族剧院举行",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-02/10725000.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "泰国前十个月接待外国游客2546万人次 同比下降4.59%",
+      "sum": "泰国旅游与体育部2日公布的统计数据显示，2026年1月至10月，泰国累计接待外国游客2546.43万人次，较去年同期减少4.59%。其中，中国游客累计达424.44万人次，同比增长",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-02/10724976.shtml",
+      "source": "中新网国际",
+      "tag": "sport"
+    },
+    {
+      "title": "78个颠覆性健康项目在沪展开角逐 展示最新原创成果",
+      "sum": "第十五届中国创新创业大赛颠覆性技术创新大赛(未来健康)(下称：赛事)2日在沪开幕。火炬(上海)未来健康颠覆性技术孵化基地与全欧华人专业协会联合会签署战略合作协议。双方将聚焦颠覆性技",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-02/10724995.shtml",
+      "source": "中新网财经",
+      "tag": "sport"
+    },
+    {
+      "title": "李宁：体育是普通人奔赴热爱的舞台",
+      "sum": "2026李宁李永波杯3V3羽毛球赛全国总决赛1日在北京收官。上海熹瑷体育队以2:0击败浙江新胜大队，拿下年度总冠军。世界冠军傅海峰、徐晨、杜玥等名将现身赛场助阵",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-02/10725072.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "苏俊涛/刘莉莉海岸赛艇摘金 夺得中国代表团达喀尔青奥会首金",
+      "sum": "在刚刚结束的2026年达喀尔青奥会海岸赛艇沙滩冲刺混合双人双桨比赛中，中国组合苏俊涛/刘莉莉摘金，赢得中国体育代表团本届青奥会首枚金牌，同时也是该项目的青奥会历史首金",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-02/10725009.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "中国时尚体育季(珠海站)两大核心赛事落幕",
+      "sum": "据国家体育总局社会体育指导中心消息，10月30日至11月1日，2026中国时尚体育季(珠海站)暨大湾区桨板嘉年华(珠海金湾站)、2026年中国匹克球巡回赛珠海精英赛先后在珠海金湾落",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-02/10724923.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "雨连连！今明天南方降雨将增多增强 6日至8日新一轮降雨发展",
+      "sum": "中国天气网讯 今明天(11月3日至4日)，南方降雨将增多、增强，局地有暴雨。6日至8日，新一轮降雨过程将至，长江中下游一带或现成片的暴雨，需防范连续降雨可能引发的次生灾害",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725222.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "宁夏盐碱水养鲈新模式入选全国农业典型案例 实现错季上市增收",
+      "sum": "11月2日，记者从宁夏回族自治区水产技术推广站获悉，宁夏“盐碱水大口黑鲈棚塘接力养殖”入选2026年中国农业重大新技术新产品新场景典型案例，跻身全国20个新场景典型案例之列",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725143.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "1010亿元，惠及3355万人次！“数”说生育保障更有温度、更有品质",
+      "sum": "央视网消息：记者11月2日从国家医保局获悉，2026年前9个月，生育保险基金支出1010亿元，惠及3355万人次。其中，生育津贴支出781.61亿元，全面实现直发个人",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-03/10725128.shtml",
+      "source": "中新网财经",
+      "tag": "life"
+    },
+    {
+      "title": "60岁阿姨天天补钙，个子却变矮了？医生提醒：强健骨骼需要系统干预",
+      "sum": "60岁阿姨天天补钙，个子却变矮了",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-03/10725180.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "明确房东不得加收水电费、违者最高罚 5 倍金额，广州新规表决通过",
+      "sum": "据广州日报 11 月 2 日报道，日前，广州市十六届人大常委会第五十四次会议表决通过《广州市租赁房屋居民生活用水用电费用代收管理规定》（以下简称《规定》），待省人大常委会批准后实施",
+      "url": "https://www.ithome.com/1/021/483.htm",
+      "source": "IT之家",
+      "tag": "life"
+    }
+  ]
+}
