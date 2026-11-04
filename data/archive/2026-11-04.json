@@ -1,0 +1,351 @@
+{
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04T10:35:42+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Learn the rules: The hacker mindset",
+      "sum": "Research Manager Mike Walker reflects on a career spanning hacker culture, cybersecurity, and AI, sharing lessons about trust, teamwork, leadership, a",
+      "url": "https://www.microsoft.com/en-us/research/podcast/learn-the-rules-the-hacker-mindset/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Accelerating engineering for the physical world",
+      "sum": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "智源：PingPongRealWorldRL 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-03 · 模型 · 0 下载",
+      "url": "https://hf-mirror.com/models/BAAI/PingPongRealWorldRL",
+      "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：Mage-VL-Cowork 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-30 · image-text-to-text · 1541 下载",
+      "url": "https://hf-mirror.com/models/microsoft/Mage-VL-Cowork",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "Microsoft Research Focus – Edition #97",
+      "sum": "Host Sowbhagya Suresh shares some of the latest news and cutting-edge research from across Microsoft—from understanding the challenges facing coding a",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Rewarding defenders with bigger bug bounties",
+      "sum": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security research",
+      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：CogACT-v2-RoboDojo 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-25 · 模型 · 51 下载",
+      "url": "https://hf-mirror.com/models/microsoft/CogACT-v2-RoboDojo",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "sum": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild",
+      "sum": "RoboColosseum evaluates general robot policies across diverse embodiments and environments, revealing weak cross-embodiment agreement, limited open-wo",
+      "url": "https://hf-mirror.com/papers/2611.02497",
+      "source": "arXiv · 2611.02497",
+      "tag": "ai"
+    },
+    {
+      "title": "新阶层·新经济｜“80后”干品钦：用新思维把老手艺做活",
+      "sum": "“酒香也怕巷子深，好工艺、好皮料，必须借助互联网讲好背后的故事，用新思维把老手艺做活。”在中国水貂皮服装产业基地——浙江余姚，“80后”干品钦接受中新网专访时如是说",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-04/10725801.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "数字科技激活苗乡文化 湖南城步拓展文旅融合新场景",
+      "sum": "“您好，请喝一碗迎客油茶！”每当暮色渐浓，湖南城步苗族自治县巫水河两岸灯光次第亮起，身着苗族盛装的宋梦瑶端着热气腾腾的油茶，笑着迎接登船游客。待游船驶出码头，全国首个水上苗乡数字幻",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725664.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "叶玉如获得联合国教科文组织国际生命科学研究奖",
+      "sum": "总部位于法国巴黎的联合国教科文组织当地时间3日公布2026年度联合国教科文组织-赤道几内亚国际生命科学研究奖获奖名单，共3人获奖，其中包括香港科技大学校长叶玉如",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-04/10725697.shtml",
+      "source": "中新网国际",
+      "tag": "tech"
+    },
+    {
+      "title": "乌镇峰会第三天 2026年世界互联网大会蓝皮书将发布",
+      "sum": "今天(4日)，2026年世界互联网大会乌镇峰会进入第三天。峰会蓝皮书新闻发布会将举行。中国网络空间研究院将现场发布《中国互联网发展报告2026》《世界互联网发展报告2026》蓝皮书",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-04/10725747.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "千名青少年绳跃第二届全国全民健身大赛（华南区）",
+      "sum": "11月1日，第二届全国全民健身大赛(华南区)·2026第一届广西青少年跳绳锦标赛在广西体育高等专科学校(相思湖校区)体育馆落幕。赛事为期两天，1200多名青少年运动员以绳会友、同台",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-02/10724943.shtml",
+      "source": "中新网体育",
+      "tag": "tech"
+    },
+    {
+      "title": "2026伦敦世界旅游交易会中国展区开幕",
+      "sum": "当地时间11月3日，2026伦敦世界旅游交易会(World Travel Market，WTM)在伦敦埃克赛尔(ExCeL)国际会展中心拉开帷幕",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-04/10725802.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "美国举行2026年中期选举 经济议题备受选民关注",
+      "sum": "美国2026年中期选举11月3日举行。在此次选举中，国会众议院全部435个议席、参议院35个议席将改选，宾夕法尼亚州、佛罗里达州、马里兰州等36个州将举行州长选举",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-04/10725722.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "兜兜转转回到中国，跨国企业用行动投票",
+      "sum": "几年前喊着把产能搬出中国的PC巨头们，如今正在把产线往回搬",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-04/10725770.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "消息称三星电子计划在美国泰勒第二晶圆厂为 AMD 等客户生产 HBM 基础裸片",
+      "sum": "韩媒《每日经济》当地时间昨日报道称，三星电子晶圆代工业务计划在其美国得克萨斯州泰勒市集群的第二晶圆厂 为 AMD 等客户生产 HBM 基础裸片 (Base Die)。 IT之家注意",
+      "url": "https://www.ithome.com/1/021/954.htm",
+      "source": "IT之家",
+      "tag": "fin"
+    },
+    {
+      "title": "制造业基本盘更加稳固——中国经济三季报亮点解析",
+      "sum": "智能工厂加快建设，绿色制造加速推进，个性化定制、全生命周期服务等新模式不断拓展，先进制造业与现代服务业融合更深……前三季度，我国先进制造业发展持续走深走实。专家认为，先进制造业提质",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-04/10725794.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "巴基斯坦成功试射首枚国产空对空导弹",
+      "sum": "伊斯兰堡消息：巴基斯坦三军新闻局当地时间3日发表声明说，巴基斯坦当天成功试射首枚国产空对空导弹",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-04/10725798.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "天津加快构建三级养老服务网络 推动养老服务向基层延伸",
+      "sum": "天津市政府新闻办3日举行新闻发布会，介绍《天津市老龄事业发展和养老服务体系建设“十五五”规划》(下称“规划”)有关情况。天津市民政局局长朱峰表示，天津将加快构建“区级一平台、乡镇(",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725657.shtml",
+      "source": "中新网社会",
+      "tag": "cn"
+    },
+    {
+      "title": "金正恩视察南浦造船厂",
+      "sum": "据朝中社4日报道，朝鲜劳动党总书记、国务委员长金正恩2日视察南浦造船厂",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-04/10725728.shtml",
+      "source": "中新网国际",
+      "tag": "cn"
+    },
+    {
+      "title": "WTA250香港公开赛：王欣瑜女单首轮晋级",
+      "sum": "WTA(女子网球协会)250香港公开赛2日在香港维多利亚公园举行。中国内地选手王欣瑜首轮以两个6:1击败中国香港选手李芬，顺利晋级女单16强",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-03/10725157.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "严密组织体系是党的优势所在力量所在——论学习贯彻党的二十届五中全会精神",
+      "sum": "党的各级组织是全面从严治党的主体。党的二十届五中全会审议通过的《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》，对持之以恒推进全面从严治党作出系统部署，把“建设上下贯通、",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-04/10725819.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "三方会谈前俄乌各亮议题：乌提能源停火，俄谈安全保障",
+      "sum": "综合消息：阿布扎比俄美乌三方会谈举行在即，俄乌双方3日分别亮明各自议题。乌克兰总统泽连斯基称，乌方希望推动能源和关键基础设施停火；俄罗斯总统新闻秘书佩斯科夫则指出，安全保障问题将被",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-04/10725797.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "全球旅行商走进广西贺州 冀开展客源互送与联合推广",
+      "sum": "“广西贺州的温泉康养、古镇文化与生态山水资源得天独厚，极具吸引力，后续将把贺州文旅产品纳入出境游线路体系，开展客源互送与联合推广。”来自英国的旅行商宗寂萌3日在贺州考察时说",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725546.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "预计耗费约120亿美元，美媒：本次中期选举成史上最“烧钱”一届",
+      "sum": "据美国广播公司当地时间3日报道，金钱政治监督机构OpenSecrets对美国联邦选举委员会(FEC)数据进行分析后预测，2025年至2026年选举周期的竞选支出将达到约120亿美元",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-04/10725760.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "进博会新品剧透来了，这些生活好物你见过吗？",
+      "sum": "11月5日至10日，第九届中国国际进口博览会将在上海举办。本届进博会全球首发、亚洲首展、中国首秀的代表性展品超过480件，其中代表性的全球首发首秀展品超过200件",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-04/10725733.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "七国入围！2036年奥运会将花落谁家？",
+      "sum": "据国际奥委会2日消息，2036年夏季奥运会申办意向名单最终确定，德国、匈牙利、印度、卡塔尔、韩国、南非和土耳其七国入围。申办意向提交窗口期已截止，未有新的国家表达申办意愿",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-03/10725513.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "外籍患者在渝突发急症就医 医生提醒极限运动警惕“内伤”",
+      "sum": "中新网3日从重庆医科大学附属第一医院(下称“重医附一院”)获悉，来自新西兰的极限运动爱好者卢卡(化名)近期来重庆参加一项比赛时，突发咯血、呼吸困难等急症，被紧急送往某区县医院诊治。",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725572.shtml",
+      "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "柬埔寨将在全国200所公立中小学校试行全日制教学",
+      "sum": "柬埔寨首相洪玛奈当地时间11月3日表示，柬埔寨计划在200所具备条件的公立中小学校试行全日制教学，将每日教学时间从4小时延长至6小时，并分阶段向全国推广，以全面提升该国基础教育质量",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-04/10725706.shtml",
+      "source": "中新网国际",
+      "tag": "edu"
+    },
+    {
+      "title": "全国国防体育运动锦标赛勇士定向专项赛在京落幕",
+      "sum": "2026年全国国防体育运动锦标赛勇士定向专项赛日前在北京南宫世界地热博览园举行，来自机关、企事业单位、学校和社会团体的500余名国防体育爱好者参加了比赛",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-02/10724585.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "2026金鸡未来影像在沪开幕",
+      "sum": "作为2026年中国金鸡百花电影节新的亮点之一，2026金鸡未来影像3日在沪开幕。全国AIGC高校联盟同期揭牌成立",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-03/10725600.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "湖南农业生物合成研究院成立",
+      "sum": "校院地室企共建、院士领衔。11月3日，湖南农业生物合成研究院在湖南农业大学揭牌成立。中国工程院院士、湖南农业大学教授单杨受聘担任院长",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-03/10725586.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "云南省妇女儿童活动中心建成开放 拓展公益服务新空间",
+      "sum": "3日，云南省妇女儿童活动中心(下称“活动中心”)在昆明市建成开放。活动中心集妇女发展、儿童成长、家庭服务、文化交流等功能于一体，将进一步完善该省妇女儿童公共服务体系",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-04/10725771.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "2026澳大利亚群舞大赛在悉尼拉开帷幕",
+      "sum": "2026澳大利亚群舞大赛首场比赛日前在悉尼举行，吸引悉尼及周边地区多支艺术团队参赛",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-03/10725439.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "陕西省青少年艺术体操冠军赛落幕 百余选手同台演绎“毯上芭蕾”",
+      "sum": "2026年陕西省青少年艺术体操冠军赛1日在铜川体育馆落幕，本次赛事共有来自陕西省内14支代表队的150余名运动员参赛",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-03/10725233.shtml",
+      "source": "中新网体育",
+      "tag": "cul"
+    },
+    {
+      "title": "亚洲演出娱乐行业峰会2026春城启幕 400余名嘉宾共探演艺新局",
+      "sum": "3日，“声动亚太·春城花语”亚洲演出娱乐行业峰会2026在昆明启幕。两天时间，来自亚太地区演出行业、文旅产业、品牌方与投资机构的400余名嘉宾齐聚滇池畔，共话行业趋势，链接优质资源",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-03/10725684.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "2026安徽摄影季收官 光影架桥联通多元文化",
+      "sum": "以“皖美如画 影像安徽”为主题的2026安徽摄影季(第三季)3日在安徽宣城收官",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-04/10725774.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "WTT法兰克福冠军赛：王楚钦复出迎来“开门红”",
+      "sum": "当地时间11月3日，2026年世界乒乓球职业大联盟(WTT)法兰克福冠军赛在德国开赛。中国选手王楚钦以3:0横扫丹麦选手林德，在复出后的首场比赛中取得“开门红”，顺利晋级男单16强",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-04/10725779.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "CBA常规赛：辽宁队险胜广州队 赢下第一阶段收官战",
+      "sum": "2026-2027赛季中国男子篮球职业联赛(CBA)常规赛第8轮，辽宁队3日晚主场迎战广州队，最终以100比93战胜对手，以三连胜结束常规赛第一阶段",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-04/10725704.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "北京队主场大胜宁波队 豪取CBA常规赛八连胜",
+      "sum": "（记者 国璇）11月3日晚在北京首钢冰球馆举行的2026-2027赛季中国男子篮球职业联赛（CBA）常规赛第8轮较量中，北京首钢队（简称“北京队”）主场以120:88大胜宁波町渥队",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-04/10725703.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "CBA常规赛：山西队险胜新疆队取得三连胜",
+      "sum": "2026-2027赛季中国男子篮球职业联赛(CBA)常规赛第8轮3日继续进行，山西汾酒队主场以87:84战胜新疆广汇能源队，取得三连胜",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-03/10725691.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "广东省足球青训中心揭牌成立",
+      "sum": "记者3日获悉，广东省体育局与广州体育学院共建广东省足球青训中心(简称“青训中心”)签约暨揭牌仪式(简称“活动”)2日在清远举行",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-03/10725517.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "湖南常德精准开展就业援藏 助力31名西藏山南青年跨省逐梦",
+      "sum": "近日，在湖南省第十一批援藏工作队常德组的统筹推进下，来自西藏山南市隆子县、浪卡子县的31名高原青年顺利抵达湖南常德，完成企业考察与劳动合同签订，正式开启跨省就业新生活，为就业援藏工",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-04/10725809.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "云南江城：亚洲象家族添新丁",
+      "sum": "记者3日从云南省普洱市政府新闻办公室获悉，普洱市江城哈尼族彝族自治县亚洲象监测队近日观察发现，在该县活动的亚洲象家族添新丁，种群数量增长明显",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-04/10725772.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "幽门螺杆菌没症状≠不用治！查出阳性应及时找医生评估",
+      "sum": "提起胃癌，大家并不陌生，很多胃癌早期都没有典型不适，而是悄悄潜伏在身体里",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-03/10725663.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "#iPhone 天气下周五温差#冲上热搜：苹果自带天气 App 多地显示 13 日最低气温零下 32 度，网友调侃“极寒末日守好庇护所”",
+      "sum": "多名网友今天（11 月 4 日）社交平台上反馈，苹果 iPhone 自带的天气 App 出现明显异常， 杭州、南京等地 11 月 13 日的最低气温被显示为 -32℃，上海则显示 ",
+      "url": "https://www.ithome.com/1/021/895.htm",
+      "source": "IT之家",
+      "tag": "life"
+    },
+    {
+      "title": "不签纸质劳动合同只签电子劳动合同可以吗？",
+      "sum": "可以，电子劳动合同同样有法律效力！",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-04/10725743.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    }
+  ]
+}
