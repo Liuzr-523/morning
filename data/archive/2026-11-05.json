@@ -1,0 +1,351 @@
+{
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T10:41:35+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "A thousand fewer paths to root",
+      "sum": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kerne",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Learn the rules: The hacker mindset",
+      "sum": "Research Manager Mike Walker reflects on a career spanning hacker culture, cybersecurity, and AI, sharing lessons about trust, teamwork, leadership, a",
+      "url": "https://www.microsoft.com/en-us/research/podcast/learn-the-rules-the-hacker-mindset/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "智源：PingPongRealWorldRL 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-03 · 模型 · 0 下载",
+      "url": "https://hf-mirror.com/models/BAAI/PingPongRealWorldRL",
+      "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "月之暗面：Kimi-K3.1-Pro 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-02 · image-text-to-text · 797 下载",
+      "url": "https://hf-mirror.com/models/moonshotai/Kimi-K3.1-Pro",
+      "source": "月之暗面",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：Mage-VL-Cowork 发布新模型（开源权重）",
+      "sum": "发布于 2026-10-30 · image-text-to-text · 1973 下载",
+      "url": "https://hf-mirror.com/models/microsoft/Mage-VL-Cowork",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "sum": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
+      "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Microsoft Research Focus – Edition #97",
+      "sum": "Host Sowbhagya Suresh shares some of the latest news and cutting-edge research from across Microsoft—from understanding the challenges facing coding a",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Introducing Images 2.6",
+      "sum": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+      "url": "https://openai.com/index/introducing-images-2-6",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Mo",
+      "sum": "GameVerse is a large-scale gameplay dataset with minute-long sequences and event-aligned annotations that improves long-horizon interactive world mode",
+      "url": "https://hf-mirror.com/papers/2610.37257",
+      "source": "arXiv · 2610.37257",
+      "tag": "ai"
+    },
+    {
+      "title": "以开源之钥 启互联新篇——世界互联网大会乌镇峰会凝聚全球数字治理共识",
+      "sum": "题：以开源之钥 启互联新篇——世界互联网大会乌镇峰会凝聚全球数字治理共识",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-05/10726445.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "千名青少年绳跃第二届全国全民健身大赛（华南区）",
+      "sum": "11月1日，第二届全国全民健身大赛(华南区)·2026第一届广西青少年跳绳锦标赛在广西体育高等专科学校(相思湖校区)体育馆落幕。赛事为期两天，1200多名青少年运动员以绳会友、同台",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-02/10724943.shtml",
+      "source": "中新网体育",
+      "tag": "tech"
+    },
+    {
+      "title": "竖屏里的中国故事：从“中国热播”到“全球通刷”",
+      "sum": "打开任何一个海外短视频平台，用户很容易刷到一种竖屏、单集一两分钟、动辄几十集的剧集：反转密集、节奏快到“停不下来”。在英文互联网上，这类内容已经拥有了一个专门的词——duanju(",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-04/10726129.shtml",
+      "source": "中新网文化",
+      "tag": "tech"
+    },
+    {
+      "title": "大洋板块俯冲如何转为大陆板块碰撞？我国科学家揭秘",
+      "sum": "大洋板块俯冲，慢慢变成大陆板块碰撞，地下深处会发生什么变化？这一直是地球科学里很难解开的谜题。想要看清这个转变过程，位于伊朗东南部的扎格罗斯—莫克兰一带是绝佳的天然观测场。近日，中",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-04/10726128.shtml",
+      "source": "中新网教育",
+      "tag": "tech"
+    },
+    {
+      "title": "糖尿病防控关键在“早” 专家支招避开误区科学控糖",
+      "sum": "普通人怎么做才能远离糖尿病？糖尿病患者如何在规范用药的基础上科学管理血糖？中南大学湘雅二医院副院长、代谢内分泌科主任医师肖扬4日表示，糖尿病可防可控的关键在一个“早”字，而诸如“食",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-04/10726154.shtml",
+      "source": "中新网健康",
+      "tag": "tech"
+    },
+    {
+      "title": "从两大经贸展会读懂“顺差在中国，利益在各方”",
+      "sum": "新华社经济随笔丨从两大经贸展会读懂“顺差在中国，利益在各方”",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726424.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "泰国总理提出“重塑泰国”构想 强调增强经济自主能力",
+      "sum": "泰国总理阿努廷4日在曼谷举行的2026年泰国标准经济论坛上发表主旨演讲，提出“重塑泰国”构想，强调泰国应立足现有产业和发展基础，通过调整经济结构、提升产业竞争力，增强应对全球经济、",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-05/10726337.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "河北出台一揽子措施支持OPC创新发展",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726400.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "五部门：加强废钢铁、报废机动车、废弃电器电子产品等“城市矿产”回收利用",
+      "sum": "为推进各类资源节约集约利用，维护国家资源安全，加快经济社会发展全面绿色转型，11 月 4 日，国家发展改革委、工业和信息化部、自然资源部、水利部、国管局发布《实施全面节约战略行动方",
+      "url": "https://www.ithome.com/1/022/531.htm",
+      "source": "IT之家",
+      "tag": "fin"
+    },
+    {
+      "title": "苹果发触屏笔记本，最高 11 万元；DeepSeek V5 模型代码现身；宇树首发财报，净利增 270%",
+      "sum": "苹果发布首款触屏 MacBook Pro，顶配超 11 万 元 北京时间 10 月 29 日，苹果发布全新 MacBook Pro，首次为 Mac 引入屏幕触控和灵动岛，并采用双层",
+      "url": "https://www.geekpark.net/news/373085",
+      "source": "极客公园",
+      "tag": "fin"
+    },
+    {
+      "title": "贵州银行股份有限公司原监事长肖慈发接受审查调查",
+      "sum": "据贵州省纪委监委消息：贵州银行股份有限公司原党委委员、监事长肖慈发涉嫌严重违纪违法，目前正接受贵州省纪委监委纪律审查和监察调查",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-05/10726435.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "中国首部火腿产业地方性法规在浙“亮相”",
+      "sum": "11月4日，《金华市火腿产业发展促进条例》解读新闻发布会在浙江金华召开。会上，金华市副市长于佳木介绍，《金华市火腿产业发展促进条例》(下称《条例》)于今年9月获浙江省人大常委会审议",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-04/10726244.shtml",
+      "source": "中新网社会",
+      "tag": "cn"
+    },
+    {
+      "title": "江苏将加强青少年足球训练中心建设 推进“一条龙”升学保障体系",
+      "sum": "经江苏省人民政府批准，江苏省体育局联合省发展和改革委员会日前印发了《江苏省“十五五”体育发展规划》(下称《规划》)，江苏省体育局4日在南京召开新闻发布会对《规划》进行解读。其间公布",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-04/10726025.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "华为宣布昇腾 0 Day 支持 Kimi K3.1 Pro 推理部署，2.8 万亿级 MoE 模型能力再进阶",
+      "sum": "据华为计算公众号，2026 年 11 月 4 日，月之暗面正式公布 Kimi K3.1 Pro 完整模型权重。昇腾基于 vLLM Ascend、SGLang 同步实现 0 Day ",
+      "url": "https://www.ithome.com/1/022/502.htm",
+      "source": "IT之家",
+      "tag": "cn"
+    },
+    {
+      "title": "“China Haul”背后，藏着怎样的中国？",
+      "sum": "零时差丨“China Haul”背后，藏着怎样的中国？",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726442.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "广交会采购商创新高 中国制造为全球产供链稳定注入确定性",
+      "sum": "11月3日，境外采购商在广交会童车玩具展区洽谈。新华社记者 邓华 摄 新华社广州11月4日电(记者詹奕嘉、丁乐)第140届中国进出口商品交易会(广交会)4日闭幕。截至3日，来自21",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726443.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "我国中东部将现大范围降水 气温大面积创新低",
+      "sum": "中国天气网讯 今明天(11月5日至6日)，我国中东部地区降水范围有所缩减，江南部分地区雨势较强，东北降雪频繁。后天中东部降水范围将明显扩展，部分地区降水强度大，需防范雨雪天气对交通",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-05/10726393.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "白宫发帖提示：特朗普仍是美国总统",
+      "sum": "美国白宫官方账号当地时间11月4日在社交媒体发布一张美国总统特朗普的照片，并在照片上提示：“特朗普依然是你们的总统。”",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-05/10726395.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "各项筹备工作就绪 一组数据带你提前了解进博会亮点",
+      "sum": "第九届中国国际进口博览会将于5日在上海开幕。目前，布展工作已经全部完成，各项筹备工作就绪。一组新鲜数据带你提前了解今年进博会的亮点",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726342.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "WTT法兰克福冠军赛：国乒小将温瑞博挺进男单16强",
+      "sum": "当地时间11月4日，2026年世界乒乓球职业大联盟(WTT)法兰克福冠军赛在德国继续进行。国乒小将温瑞博以3:0横扫韩国选手安宰贤，晋级男单16强。中国女单选手王艺迪以0:3不敌德",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-05/10726399.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "葡语国家“洋中医”江西学艺",
+      "sum": "在位于南昌市的江西中医药大学附属医院西湖院区，针灸治疗室内艾草香弥漫。来自巴西的克里斯蒂娜·卡鲁索(Cristina Caruso)4日在带教医生的指导下，练习推拿",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-04/10726263.shtml",
+      "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "韩淼雨以拼搏故事激励少年：“抬起头，做自己人生的主角”",
+      "sum": "11月3日，由双鸭山市委宣传部主办的“凝心铸魂育人”工程系列校园宣讲活动举行。举重运动员韩淼雨走进双鸭山市实验学校，为师生们作宣讲报告",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-04/10725948.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "浙江金华：《英士大学在金华》新书发布",
+      "sum": "“英士大学诞生于抗战烽火中，是浙江省为解决青年学生就学问题创办的省立战时大学。英士大学在金华留下了独特的历史印记。我们希望通过对这段办学历史的挖掘与梳理，以历史叙事唤起地方记忆，同",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-04/10726300.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "陕西省教育厅通报“延安大学教师白某某离世”：已成立联合调查组",
+      "sum": "据“陕西省教育厅”微信公众号消息，11月4日晚，陕西省教育厅发布情况通报：",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-05/10726385.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "超清影像——浙东首台光子计数探测器CT在宁大一院投用",
+      "sum": "“我院此次更新CT设备，有点类似‘黑白电视’直接飞跃到‘8K超高清彩色电视’。”1日，在宁波大学附属第一医院(下称：宁大一院)举行的光子CT启用仪式暨学术活动上，宁大一院影像科主任",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-01/10724244.shtml",
+      "source": "中新网健康",
+      "tag": "edu"
+    },
+    {
+      "title": "音乐杂技剧《寻找阿凡提》在乌鲁木齐上演",
+      "sum": "图为演出现场。金奇 摄 图为演出现场。金奇 摄 图为演出现场。金奇 摄 图为演出现场。金奇 摄 图为演出现场。金奇 摄 图为演出现场。金奇 摄 图为演出现场。金奇 摄 图为演出现场",
+      "url": "https://www.chinanews.com.cn/tp/2026/11-05/10726407.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "文创“进化”，路在何方？（金台随笔）",
+      "sum": "深耕文创这么些年，不难发觉一条清晰的博物馆文创“进化论”。从在柜台售卖等比缩小的馆藏文物“复制品”，到把文物图案或博物馆标识印制于日常用品之上，再到运用3D技术精准还原器物，融合珐",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-05/10726397.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "海南（伦敦）旅游文化交流推广活动举行",
+      "sum": "（记者 欧阳开宇）当地时间11月3日晚，海南（伦敦）旅游文化交流推广活动在英国伦敦举行。活动通过旅游资源推介、合作签约及互动交流，向英国旅游业界展示海南特色文旅资源与自贸港发展机遇",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-04/10726296.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "陕西省青少年艺术体操冠军赛落幕 百余选手同台演绎“毯上芭蕾”",
+      "sum": "2026年陕西省青少年艺术体操冠军赛1日在铜川体育馆落幕，本次赛事共有来自陕西省内14支代表队的150余名运动员参赛",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-03/10725233.shtml",
+      "source": "中新网体育",
+      "tag": "cul"
+    },
+    {
+      "title": "中国电视剧制作产业协会传播工作委员会正式揭牌",
+      "sum": "11月4日，由国家广播电视总局、北京市人民政府主办的2026中国广播电视精品创作大会在北京会议中心开幕。当天下午举行的电视剧(网络剧)论坛上，中国电视剧制作产业协会传播工作委员会(",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-04/10726312.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "青岛西海岸足球俱乐部辟谣：暂无变更队名、更换主场计划",
+      "sum": "青岛西海岸足球俱乐部4日发表声明称，针对近期网络上部分自媒体账号发布的俱乐部将被收购、球队更名及更换主场等相关信息，均未经官方确认。截至目前，该俱乐部暂无变更队名、更换主场的相关计",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-04/10726249.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "迈从 V9 Turbo+ 头戴耳机新增“烟紫”配色，11 月 6 日开启预订",
+      "sum": "迈从今日官宣 V9 Turbo+ 赛事级电竞头戴耳机新色「烟紫」即将上市，11 月 6 日 10:00 开启预订。 迈从 V9 Turbo+ 耳机于今年 1 月发布，首发价 339",
+      "url": "https://www.ithome.com/1/022/540.htm",
+      "source": "IT之家",
+      "tag": "sport"
+    },
+    {
+      "title": "碧波竞逐金溪河 福建省运会青少年部赛艇2000米决赛将乐开桨",
+      "sum": "福建省第十八届运动会青少年部赛艇比赛2000米决赛3日在将乐县常口村金溪河段开赛。经过前一日预赛角逐，各组别选手齐聚这条天然赛道，向着冠军发起冲刺",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-04/10725962.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "规模创历届之最 四川省第十七届少数民族传统体育运动会将在攀枝花举办",
+      "sum": "四川省人民政府新闻办公室4日举办四川省第十七届少数民族传统体育运动会(下称运动会)新闻发布会。据悉，运动会定于11月12日至19日在攀枝花市举办。本届运动会是《中华人民共和国民族团",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-04/10725949.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "四川男篮74比82不敌福建男篮",
+      "sum": "2026-2027赛季CBA常规赛11月3日晚继续上演精彩比拼，四川男篮坐镇主场迎战福建男篮。深陷连败泥潭的四川男篮渴望一场胜利结束当前颓势。经过四节鏖战，最终四川男篮以74比82",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-04/10725804.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "近日多地接连发生路口交通事故 公安部交管局发布提示",
+      "sum": "据“公安部交通管理局”微信公众号消息，近日，安徽、河南、辽宁、河北等地接连发生路口多人死伤交通事故，需引起警醒警示",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-05/10726433.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "普速旅客列车和旅游列车车次变更将于11月25日0时实施 货物列车车次变更将于11月24日18时实施",
+      "sum": "全国铁路列车车次编排改革顺利推进，第一批车次变更即将实施，11月25日0时起始发开行的普速旅客列车、11月24日18时起始发开行的货物列车将正式启用新车次，按照2026版《列车车次",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-05/10726447.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "年内上市银行已收编超40家村行",
+      "sum": "上市银行批量收编村镇银行的改革浪潮持续升温。从交通银行旗下村镇银行实现“清零”，到民生银行、浦发银行对多家“直系”村镇银行实施合并，再到贵州银行一口气抛出10家村镇银行“承接+退出",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726378.shtml",
+      "source": "中新网财经",
+      "tag": "life"
+    },
+    {
+      "title": "立冬气温骤降寒湿交加 湖南医护送上防病提醒",
+      "sum": "立冬期间，受季节转换影响，人体在气温骤降和寒湿交加中，心脑血管、呼吸道、脾胃和骨关节等健康风险进入高发时段，如何平稳度过秋冬转换关键期？湖南省卫生健康委员会4日举行“时令节气与健康",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-04/10726250.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "鸿蒙智行问界新 M8 更多规格公布：升级三零重力座椅、-18℃ 超低温速冷车载冷暖箱，11 月 13 日上市",
+      "sum": "AITO 汽车昨日公布问界新 M8 更多配置信息，新车搭载三零重力座椅，全车健康照明，升级-18℃ 超低温速冷车载冷暖箱。据悉，新车将于 11 月 13 日正式上市。 据介绍， 问",
+      "url": "https://www.ithome.com/1/022/544.htm",
+      "source": "IT之家",
+      "tag": "life"
+    }
+  ]
+}
