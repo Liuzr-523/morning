@@ -1,9 +1,16 @@
 {
-  "date": "2026-11-06",
-  "generatedAt": "2026-11-06T10:44:29+08:00",
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-07T10:13:52+08:00",
   "generator": "github-actions-rss",
   "perTag": 5,
   "news": [
+    {
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "sum": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
     {
       "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
       "sum": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
@@ -19,31 +26,31 @@
       "tag": "ai"
     },
     {
-      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-      "sum": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized ",
-      "url": "https://openai.com/index/introducing-gpt-6-cyber",
-      "source": "OpenAI",
-      "tag": "ai"
-    },
-    {
       "title": "智源：PingPongRealWorldRL 发布新模型（开源权重）",
-      "sum": "发布于 2026-11-03 · reinforcement-learning · 0 下载",
+      "sum": "发布于 2026-11-03 · reinforcement-learning · 13 下载",
       "url": "https://hf-mirror.com/models/BAAI/PingPongRealWorldRL",
       "source": "智源",
       "tag": "ai"
     },
     {
       "title": "月之暗面：Kimi-K3.1-Pro 发布新模型（开源权重）",
-      "sum": "发布于 2026-11-02 · image-text-to-text · 11658 下载",
+      "sum": "发布于 2026-11-02 · image-text-to-text · 18432 下载",
       "url": "https://hf-mirror.com/models/moonshotai/Kimi-K3.1-Pro",
       "source": "月之暗面",
       "tag": "ai"
     },
     {
       "title": "微软：Mage-VL-Cowork 发布新模型（开源权重）",
-      "sum": "发布于 2026-10-30 · image-text-to-text · 2555 下载",
+      "sum": "发布于 2026-10-30 · image-text-to-text · 2826 下载",
       "url": "https://hf-mirror.com/models/microsoft/Mage-VL-Cowork",
       "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "sum": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab scienc",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "source": "OpenAI",
       "tag": "ai"
     },
     {
@@ -54,9 +61,9 @@
       "tag": "ai"
     },
     {
-      "title": "Flipsnack grows product signups with conversion optimization",
-      "sum": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
-      "url": "https://openai.com/ads/customers/flipsnack",
+      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "sum": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized ",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
       "source": "OpenAI",
       "tag": "ai"
     },
@@ -68,192 +75,185 @@
       "tag": "ai"
     },
     {
-      "title": "Franklin Templeton uses OpenAI to support investment research",
-      "sum": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment ",
-      "url": "https://openai.com/index/franklin-templeton",
-      "source": "OpenAI",
+      "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
+      "sum": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compact",
+      "url": "https://arxiv.org/abs/2611.08487v1",
+      "source": "arXiv · 2611.08487v1",
       "tag": "ai"
     },
     {
-      "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
-      "sum": "Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended",
-      "url": "https://arxiv.org/abs/2611.06914v1",
-      "source": "arXiv · 2611.06914v1",
+      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "sum": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and co",
+      "url": "https://arxiv.org/abs/2611.08483v1",
+      "source": "arXiv · 2611.08483v1",
       "tag": "ai"
     },
     {
-      "title": "FlowReconBench: Accuracy, calibration and cost of learned and classical flow rec",
-      "sum": "Reconstructing full flow fields from sparse sensors requires prior assumptions about unmeasured regions and physical variables. Yet it remains unclear",
-      "url": "https://arxiv.org/abs/2611.06912v1",
-      "source": "arXiv · 2611.06912v1",
+      "title": "Scientist World: Grow a Research World for AI-Scientists",
+      "sum": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ide",
+      "url": "https://arxiv.org/abs/2611.08478v1",
+      "source": "arXiv · 2611.08478v1",
       "tag": "ai"
     },
     {
-      "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical",
-      "sum": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory sce",
-      "url": "https://arxiv.org/abs/2611.06911v1",
-      "source": "arXiv · 2611.06911v1",
+      "title": "XStack: A Benchmark for ML Repo Migration",
+      "sum": "ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on N",
+      "url": "https://arxiv.org/abs/2611.08472v1",
+      "source": "arXiv · 2611.08472v1",
       "tag": "ai"
     },
     {
-      "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
-      "sum": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated",
-      "url": "https://arxiv.org/abs/2611.06910v1",
-      "source": "arXiv · 2611.06910v1",
+      "title": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About In",
+      "sum": "Interpretability, AI auditing and assessments of machine consciousness increasingly rest on mechanism-level quantities: functionals of a system's caus",
+      "url": "https://arxiv.org/abs/2611.08469v1",
+      "source": "arXiv · 2611.08469v1",
       "tag": "ai"
     },
     {
-      "title": "Perceptive Humanoid Motion from Simulation",
-      "sum": "Humanoid robots have the potential to automate a wide range of physical tasks. Progress toward generalist humanoid autonomy, however, remains constrai",
-      "url": "https://arxiv.org/abs/2611.06908v1",
-      "source": "arXiv · 2611.06908v1",
-      "tag": "ai"
-    },
-    {
-      "title": "吉前总理：全面从严治党是中国高水平治理的关键",
-      "sum": "吉尔吉斯斯坦前总理卓奥玛尔特·奥托尔巴耶夫11月3日在《中国日报》撰文称，中国的实力不仅体现在经济增长、产业转型或科技成就上，还体现在应对任何薄弱环节的能力上",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-06/10727099.shtml",
+      "title": "中国空间站将迎来首位外籍航天员",
+      "sum": "据中国载人航天工程办公室7日消息，神舟二十四号载人飞行任务将有1名巴基斯坦航天员以载荷专家身份参加，在完成短期在轨飞行后，随神舟二十三号载人飞船返回。这是中国载人航天工程历史上首次",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-07/10727783.shtml",
       "source": "中新网",
       "tag": "tech"
     },
     {
-      "title": "弘扬科学家精神·大家小事丨于敏：纸带上揪出的故障",
-      "sum": "科技日报记者 王迎霞",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727052.shtml",
+      "title": "（乡村行·看振兴）贵州：山上油茶丰收科技赋能搬运",
+      "sum": "时下，走进贵州省铜仁市思南县兴隆乡天山村的油茶林，随处可见村民穿梭于林间，手指翻飞，油茶果就落进了袋中，装得满满当当的袋子沿着山路码放，不时传来村民几句劳作时的闲谈笑声",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727658.shtml",
       "source": "中新网社会",
       "tag": "tech"
     },
     {
-      "title": "中智专家共话发展权保障与全球南方共同发展",
-      "sum": "由中国人权发展基金会、中国社会科学院拉丁美洲研究所和智利大学共同主办的“2026·中国—智利人权研讨会”4日在智利首都圣地亚哥举行。60余名中智专家学者等围绕“中智交流互鉴与共同发",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-06/10726980.shtml",
-      "source": "中新网国际",
-      "tag": "tech"
-    },
-    {
-      "title": "价格不再是壁垒，只是入场券？万元级人形机器人迎来“真交付”新竞赛",
-      "sum": "每经记者｜温梦华 温沐夏",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-06/10727016.shtml",
+      "title": "白皮书：2030年中国汽车消费服务业市场规模或破10万亿元",
+      "sum": "中国汽车流通协会、中汽信息科技(天津)有限公司、懂车帝6日联合发布《2026中国汽车消费服务业白皮书》。白皮书显示，2025年中国汽车消费服务业市场规模约7.2万亿元(人民币，下同",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-06/10727633.shtml",
       "source": "中新网财经",
       "tag": "tech"
     },
     {
-      "title": "红果短剧，正成为一种大众新文艺",
-      "sum": "通勤的地铁上、午休的间隙、睡前的那十分钟，打开手机刷会手机，已成为不少人的习惯",
-      "url": "https://www.chinanews.com.cn/cul/2026/11-05/10726619.shtml",
-      "source": "中新网文化",
+      "title": "中新网评：电话手表进校园，别一禁了之",
+      "sum": "在手机之外，多地正在加强对中小学生携带电话手表的管理",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-06/10727227.shtml",
+      "source": "中新网教育",
       "tag": "tech"
     },
     {
-      "title": "进博手记｜在全球创新中看见中国印记",
-      "sum": "全球品牌的创新灵感，正在从中国消费者的日常生活中生长出来",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-06/10727092.shtml",
+      "title": "孕产期妈妈应该如何科学喝奶 专家一起来支招",
+      "sum": "孕产期妈妈的膳食供给，不仅维系自身生理运转，更会通过胎盘、母乳，深刻影响孩子体格、骨骼乃至代谢模式的长远塑造",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-05/10726601.shtml",
+      "source": "中新网健康",
+      "tag": "tech"
+    },
+    {
+      "title": "从“十五五”专项规划看以金融服务发展大局",
+      "sum": "题：不断提升服务实体经济质效——从“十五五”专项规划看以金融服务发展大局",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-07/10727779.shtml",
       "source": "中新网",
       "tag": "fin"
     },
     {
-      "title": "武汉以城市更新带动文化出新 老空间育出文旅新场景",
-      "sum": "沉寂多年的知音殿、龟山电视塔焕新开放，长江二桥、鹦鹉洲大桥等桥下空间变成露天影院、潮玩运动场，斗级营历史街区“天台经济”持续升温……近年，武汉以城市更新留住历史厚度、带动文化出新，",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727040.shtml",
+      "title": "第三届“长高赛”方案在专交会发布 助力专利从“赛场”走向“市场”",
+      "sum": "第十五届中国国际专利技术与产品交易会(专交会)11月6日在江苏无锡开幕，作为本届专交会开场活动之一，第三届长江经济带高价值专利转化运用大赛(“长高赛”)方案当天发布，助力专利从“赛",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727690.shtml",
       "source": "中新网社会",
       "tag": "fin"
     },
     {
-      "title": "美国30年期贷款利率降至7.18% 连续三周下降",
-      "sum": "美国住房金融机构房地美(Freddie Mac)当地时间5日公布数据显示，美国30年期固定抵押贷款平均利率降至7.18%，该数据已连续三周下降",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-06/10726993.shtml",
+      "title": "泰国10月通胀率升至3.9%",
+      "sum": "泰国商务部贸易政策与战略办公室6日公布的数据显示，泰国10月消费者价格指数(CPI)同比上涨3.9%，高于9月的2.82%；核心通胀率为1.58%。当月消费者价格指数为103.9，",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-06/10727542.shtml",
       "source": "中新网国际",
       "tag": "fin"
     },
     {
-      "title": "11月6日人民币对美元中间价报6.7168 下调12个基点",
-      "sum": "据中国外汇交易中心网站消息，中国人民银行授权中国外汇交易中心公布，2026年11月6日银行间外汇市场人民币汇率中间价为1美元对人民币6.7168元，下调12个基点",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-06/10727038.shtml",
+      "title": "中国证监会同意葵花籽油、氢氧化锂期货和期权注册",
+      "sum": "记者昨天从中国证监会获悉，近日，中国证监会同意郑州商品交易所葵花籽油期货和期权注册。中国证监会将督促郑州商品交易所做好各项准备工作，确保葵花籽油期货和期权的平稳推出和稳健运行",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-07/10727741.shtml",
       "source": "中新网财经",
       "tag": "fin"
     },
     {
-      "title": "无印良品：中国消费者信息确认安全，与日本总部 App 泄露事件无关",
-      "sum": "无印良品今日发布情况说明称，近日，MUJI 無印良品日本总部官方应用程序遭遇非法网络访问，导致部分用户信息存在泄露风险。经核查，MUJI 無印良品中国消费者信息确认安全， 与此次日",
-      "url": "https://www.ithome.com/1/023/114.htm",
+      "title": "环比增约 70%：马斯克预估 SpaceX 第四季度营收逼近 250 亿美元，股价涨超 8%",
+      "sum": "金融媒体 Barron's 今天（11 月 7 日）发布博文，报道称当地时间周五在纽约市林肯中心举行第 33 届巴伦投资大会上， 全球首富埃隆 · 马斯克（Elon Musk）预估",
+      "url": "https://www.ithome.com/1/023/626.htm",
       "source": "IT之家",
       "tag": "fin"
     },
     {
-      "title": "《世界开放报告2026》发布，这些看点值得关注",
-      "sum": "第九届进博会｜《世界开放报告2026》发布，这些看点值得关注",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-06/10727104.shtml",
+      "title": "夏季“超长待机”、冷空气“一步到位”，如何“跟上”季节变化节奏？ | 梳理↓",
+      "sum": "央视网消息：11月7日将迎来立冬节气。立冬是节气意义上冬季的开始，但气象学上的入冬有着一定的气温判定指标。眼下，多轮冷空气接连影响，北方大部地区气温快速下滑，不少地方已有了冬的气息",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-07/10727785.shtml",
       "source": "中新网",
       "tag": "cn"
     },
     {
-      "title": "各地推动公积金政策精准落地见效 “沉睡”钱包变安居红利",
-      "sum": "各地推动公积金政策精准落地见效",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-06/10727034.shtml",
-      "source": "中新网财经",
+      "title": "浙江开展长期照护师培训和技能竞赛 充实专业人才队伍",
+      "sum": "5日至6日，浙江省长期照护师政策业务系列培训班在浙江湖州举行，其间同步举办第二届长期护理保险职业技能竞赛，并开展管理服务体系建设培训。这是浙江首次将长期护理保险职业的师资培训、技能",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727703.shtml",
+      "source": "中新网社会",
       "tag": "cn"
     },
     {
-      "title": "江苏将加强青少年足球训练中心建设 推进“一条龙”升学保障体系",
-      "sum": "经江苏省人民政府批准，江苏省体育局联合省发展和改革委员会日前印发了《江苏省“十五五”体育发展规划》(下称《规划》)，江苏省体育局4日在南京召开新闻发布会对《规划》进行解读。其间公布",
-      "url": "https://www.chinanews.com.cn/ty/2026/11-04/10726025.shtml",
+      "title": "欧盟向缅甸和孟加拉国追加1600万欧元人道主义援助",
+      "sum": "欧盟6日宣布向缅甸和孟加拉国追加1600万欧元援助，应对缅甸国内和缅甸罗兴亚难民的人道主义需求",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-07/10727738.shtml",
+      "source": "中新网国际",
+      "tag": "cn"
+    },
+    {
+      "title": "WTA250香港公开赛：王欣瑜不敌鲁季奇 无缘八强",
+      "sum": "WTA(女子网球选手协会)250香港公开赛女单八分之一决赛5日于香港维多利亚公园结束，中国内地选手王欣瑜以总比分1:2不敌克罗地亚选手安东尼娅·鲁季奇(Antonia Ru#382",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-06/10727155.shtml",
       "source": "中新网体育",
       "tag": "cn"
     },
     {
-      "title": "微软 Office 365 A1 退役：2028 年起取消 100TB 教育版基础存储，免费 A0 学生版不含 Teams 与邮箱",
-      "sum": "微软宣布调整 Microsoft 365 Education 教育版授权政策，将逐步停用免费 Office 365 A1、Student Use Benefit（学生使用权益）等项",
-      "url": "https://www.ithome.com/1/023/042.htm",
-      "source": "IT之家",
+      "title": "云南 “十五五” 布局边境卫生 打造跨境健康服务通道",
+      "sum": "近日，云南省人民政府办公厅印发《云南省国民健康“十五五”规划》(下称《规划》)，将推动卫生健康领域扩大开放，持续开展“光明行”“爱心行”等“小而美”项目，加强和创新卫生援外工作，深",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-06/10727061.shtml",
+      "source": "中新网健康",
       "tag": "cn"
     },
     {
-      "title": "云岭动态第三十五期",
-      "sum": "1.11月5日，云南省丽江市统战系统召开会议，传达学习党的二十届五中全会精神，依托“丽美同心”品牌建设，从严锻造统战干部队伍，推动全市统战工作高质量发展",
-      "url": "https://www.chinanews.com.cn/txy/2026/11-06/10727085.shtml",
-      "source": "中新网",
-      "tag": "cn"
-    },
-    {
-      "title": "特朗普回应美股大跌：是民主党人造成的",
-      "sum": "综合报道，美国总统特朗普当地时间5日在社交媒体发布多条帖文回应美股大跌",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-06/10727100.shtml",
+      "title": "“粮安天下 智链未来” 中国国际粮油博览会在厦门开幕",
+      "sum": "第二十二届中国国际粮油产品及设备技术展示交易会(中国国际粮油博览会)6日在厦门国际会展中心开幕",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-07/10727771.shtml",
       "source": "中新网",
       "tag": "intl"
     },
     {
-      "title": "猫山王榴莲苦从何来？云南农业大学最新研究揭示原因",
-      "sum": "备受食客喜爱的猫山王榴莲通常以苦甜平衡、苦后回甘为上品。近日，云南农业大学敖平星博士团队在国际权威期刊《Food Chemistry》发表研究论文，系统分析猫山王榴莲成熟过程中苦味",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727045.shtml",
+      "title": "直播海报：谁是舞王？国际街舞联赛全球总决赛热血开跳",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-07/10727735.shtml",
       "source": "中新网社会",
       "tag": "intl"
     },
     {
-      "title": "伊朗官员与普京会面，转达伊朗最高领袖讯息",
-      "sum": "综合外媒报道，俄罗斯总统普京5日在克里姆林宫会见伊朗最高国家安全委员会秘书穆赫辛·雷扎伊",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-06/10727001.shtml",
+      "title": "美国10月非农就业新增16.5万 失业率4.1%",
+      "sum": "美国劳工部6日发布数据显示，美国10月非农就业岗位增加16.5万个，失业率为4.1%",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-07/10727739.shtml",
       "source": "中新网国际",
       "tag": "intl"
     },
     {
-      "title": "（第九届进博会）从“展示窗口”到“创新加速器”：进博会医疗创新孵化专区强力链接全球双循环",
-      "sum": "第九届中国国际进口博览会(下称：进博会)5日启幕，医疗创新孵化专区(下称：专区)因大量“全球首发”与“中国首展”的硬核产品亮相而备受关注",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726967.shtml",
+      "title": "（第九届进博会）拓展合作、深耕中国 跨国企业进博会上签约忙",
+      "sum": "跨国医药公司赛诺菲与上药控股有限公司6日在第九届进博会现场举行深化战略合作签约仪式，双方将在长期合作基础上，进一步发挥各自在全球创新与本土产业资源方面的优势，携手提升药品可及性，推",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-06/10727712.shtml",
       "source": "中新网财经",
       "tag": "intl"
     },
     {
-      "title": "2026CFA中国之队·银川五人制足球国际邀请赛开赛",
-      "sum": "2026CFA中国之队·银川五人制足球国际邀请赛5日在银川体育馆开赛。中国队、中国香港队、韩国选拔队等7支五人制足球队齐聚宁夏，开启为期6天的国际足球交流赛事。在当晚的“焦点战”中",
-      "url": "https://www.chinanews.com.cn/ty/2026/11-06/10727042.shtml",
+      "title": "北京短池游泳世锦赛12月开赛 多位奥运冠军领衔",
+      "sum": "2026年北京世界短池游泳锦标赛将于12月1日至6日在北京国家游泳中心“水立方”举办，将有来自全球200多个国家和地区的千余名顶尖运动员参赛，多位奥运冠军领衔出战",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-06/10727219.shtml",
       "source": "中新网体育",
       "tag": "intl"
     },
     {
-      "title": "河南平顶山市“五进”推动民族团结进步促进法宣传教育走深走实",
-      "sum": "民族团结进步促进法实施以来，河南平顶山市紧扣铸牢中华民族共同体意识主线，广泛开展宣传教育，构建“五进”宣传矩阵，推动法治宣传广覆盖、深嵌入，持续夯实民族团结进步法治根基",
-      "url": "https://www.chinanews.com.cn/txy/2026/11-06/10727088.shtml",
-      "source": "中新网",
+      "title": "从酒店到校园，从偷拍到交易：谁在把女性隐私明码标价？",
+      "sum": "从酒店房间到大学城民宿，从公共厕所到校园卫生间，偷拍摄像头正以越来越隐蔽的方式侵入公共空间和私人生活",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727717.shtml",
+      "source": "中新网社会",
       "tag": "edu"
     },
     {
@@ -264,52 +264,45 @@
       "tag": "edu"
     },
     {
-      "title": "浙江金华：《英士大学在金华》新书发布",
-      "sum": "“英士大学诞生于抗战烽火中，是浙江省为解决青年学生就学问题创办的省立战时大学。英士大学在金华留下了独特的历史印记。我们希望通过对这段办学历史的挖掘与梳理，以历史叙事唤起地方记忆，同",
-      "url": "https://www.chinanews.com.cn/cul/2026/11-04/10726300.shtml",
-      "source": "中新网文化",
-      "tag": "edu"
-    },
-    {
-      "title": "微短剧热潮中大学生如何“入戏”与“出戏”",
-      "sum": "中青报·中青网记者 王军利 毕若旭 卞心怡",
-      "url": "https://www.chinanews.com.cn/edu/2026/11-06/10727002.shtml",
+      "title": "江西省第十二届大学生艺术展演活动省级展演在景德镇开幕",
+      "sum": "11月6日，江西省第十二届大学生艺术展演活动省级展演开幕式在景德镇举行。本次活动由江西省教育厅主办，江西陶瓷工艺美术职业技术学院、江西省学校美育教学指导委员会承办",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-06/10727657.shtml",
       "source": "中新网教育",
       "tag": "edu"
     },
     {
-      "title": "让癌细胞“忙中出错”自我引爆 浙大团队成果登《自然》",
-      "sum": "癌细胞为增殖而高速运转，也会“忙中出错”。浙江大学医学院、良渚实验室研究员毛圆辉团队抓住这一破绽，设计出一种人工基因回路，让癌细胞亲手合成杀死自己的“炸弹”。相关成果于11月4日晚",
-      "url": "https://www.chinanews.com.cn/jk/2026/11-05/10726966.shtml",
+      "title": "宁夏、澳门推进医疗健康领域合作",
+      "sum": "11月6日，澳门镜湖医院与宁夏医科大学总医院、宁夏回族自治区人民医院合作签约仪式在银川举行。三方正式签署合作协议，标志着宁夏、澳门医疗健康领域交流合作从前期考察调研迈入实质性协作阶",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-06/10727642.shtml",
       "source": "中新网健康",
       "tag": "edu"
     },
     {
-      "title": "何以中国｜红山曙光映照朝阳烟火日常",
-      "sum": "11月2日，由中央网信办网络传播局指导、辽宁省委网信办主办的“何以中国·对话红山”网上重大主题宣传引导活动在辽宁省朝阳市启动。在这几天的走访中，记者感受到，红山文化不仅陈列在博物馆",
-      "url": "https://www.chinanews.com.cn/cul/2026/11-06/10727054.shtml",
-      "source": "中新网",
-      "tag": "cul"
-    },
-    {
-      "title": "免费、半价！多地官宣→",
-      "sum": "11月起，全国百余城市中小学陆续开启秋假，秋冬文旅市场火热起来",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10726995.shtml",
+      "title": "8060个岗位“职”达黑龙江 全国360余家企业“觅人才”",
+      "sum": "6日，哈尔滨师范大学招聘大厅人头攒动，求职者手持简历穿梭于展位之间，企业招聘专员主动起身招呼、递上宣传页……“民企聚力促就业职引未来在龙江”2026年民营企业服务月暨“职引未来”秋",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727674.shtml",
       "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "“全民共享 运动健康”全民健身主题文化展在青岛开幕",
+      "sum": "据国家体育总局体育文化发展中心消息，11月5日，“全民共享 运动健康”——全民健身主题文化展在青岛市博物馆正式启幕。本次展览是第二届全国全民健身大赛的重要配套文化活动，以展览为载体",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-06/10727361.shtml",
+      "source": "中新网体育",
       "tag": "cul"
     },
     {
-      "title": "第十四届慕尼黑华语电影节开幕",
-      "sum": "慕尼黑消息：当地时间5日晚，由慕尼黑孔子学院主办的第十四届慕尼黑华语电影节在慕尼黑市立图书馆开幕",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-06/10726991.shtml",
-      "source": "中新网国际",
-      "tag": "cul"
-    },
-    {
-      "title": "从三亚崖州古城阅千年文脉",
-      "sum": "中新网三亚11月5日电 题：从三亚崖州古城阅千年文脉",
-      "url": "https://www.chinanews.com.cn/cul/2026/11-05/10726952.shtml",
+      "title": "探讨当代亲密关系话剧《今宵酒·醒何处》首演",
+      "sum": "作为中国国家话剧院青年导演创作扶持计划第四季原创剧目，中国国家话剧院演员刘端端执导的话剧处女作《今宵酒·醒何处》5日在北京国话先锋智慧剧场首演",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-06/10727710.shtml",
       "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "2026 年中国金鸡百花电影节开幕短片《完美婚礼》首播，使用华为 Mate 90 系列拍摄",
+      "sum": "华为终端今日放出了 2026 年中国金鸡百花电影节宣传片暨开幕短片《完美婚礼》及幕后特辑。 据介绍，短片《完美婚礼》由黄建新监制、章笛沙执导，吴磊、庄达菲等全明星阵容参演， 并使用",
+      "url": "https://www.ithome.com/1/023/559.htm",
+      "source": "IT之家",
       "tag": "cul"
     },
     {
@@ -320,17 +313,31 @@
       "tag": "cul"
     },
     {
-      "title": "C罗宣布从葡萄牙国家足球队退役：“葡萄牙，永在我心”",
-      "sum": "据路透社报道，当地时间5日，葡萄牙球星克里斯蒂亚诺·罗纳尔多通过社交媒体宣布，他正式从葡萄牙国家足球队退役，结束多年的国家队生涯",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-05/10726787.shtml",
-      "source": "中新网国际",
+      "title": "从“可看”到“可交互” 杭州文博会的第二十年",
+      "sum": "题：从“可看”到“可交互” 杭州文博会的第二十年",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-06/10727697.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "哈尔滨亚布力雪中开板 增加亲子滑雪等新业态",
+      "sum": "6日的哈尔滨雪花纷飞，2026—2027哈尔滨冰雪季启幕暨亚布力滑雪开板仪式在亚布力阳光度假村滑雪场举行，标志着全新一季哈尔滨冰雪盛宴拉开帷幕。今年，世界滑雪胜地亚布力焕新迎客，增",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-06/10727534.shtml",
+      "source": "中新网体育",
       "tag": "sport"
     },
     {
-      "title": "第四届广西农民工创业大赛收官 创业成果集中亮相",
-      "sum": "第四届广西农民工创业大赛巅峰对决暨颁奖仪式近日在南宁举行。赛事以“创业新天地 携手赢未来”为主题，旨在激发广西农民工创业创新活力，发挥创业带动就业的倍增效应，促进高质量充分就业",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726963.shtml",
-      "source": "中新网财经",
+      "title": "IEM北京站赛事物流保障就绪 DHL电竞雇主品牌活动首次落地中国",
+      "sum": "2026年11月6日，英特尔极限大师赛(IEM)在北京举行，据DHL方面介绍，作为ESL FACEIT Group(EFG)官方物流合作伙伴，DHL为英特尔极限大师赛(IEM)北京",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-06/10727459.shtml",
+      "source": "中新网文化",
+      "tag": "sport"
+    },
+    {
+      "title": "一破纪录、二揽金银，中国“00后”双姝闪耀举重世锦赛",
+      "sum": "11月5日，2026年世界举重锦标赛女子77公斤级比赛在宁波奥体中心举行。两名中国女将发挥出色，杨秋霞以挺举145公斤和总成绩265公斤，收获两枚金牌；彭翠婷以126公斤刷新抓举世",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-06/10727248.shtml",
+      "source": "中新网体育",
       "tag": "sport"
     },
     {
@@ -341,13 +348,6 @@
       "tag": "sport"
     },
     {
-      "title": "迈从 V9 Turbo+ 头戴耳机“橙光”“烟紫”预售：标配 RGB 磁吸无线充电底座，349 元",
-      "sum": "迈从 V9 Turbo+ 赛事级电竞头戴耳机新色「烟紫」、「橙光」今日 10:00 开启预订，京东平台预售价 349 元，11 月 13 日 20:00 全平台开售。 迈从 V9 ",
-      "url": "https://www.ithome.com/1/023/084.htm",
-      "source": "IT之家",
-      "tag": "sport"
-    },
-    {
       "title": "中国青年展示风采 通过青奥会增进理解",
       "sum": "题：中国青年展示风采 通过青奥会增进理解",
       "url": "https://www.chinanews.com.cn/ty/2026/11-05/10726949.shtml",
@@ -355,38 +355,38 @@
       "tag": "sport"
     },
     {
-      "title": "周末出行请注意！今夜起我国将有一轮大范围雨雪天气",
-      "sum": "这两天网上都在热议“立冬雪”，很多网友都在关心，周六，包括北京在内，华北多地会迎来明显的雨雪天气，立冬下雪是否常见呢？",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727079.shtml",
+      "title": "寒气徐徐至 温食补冬安！解锁全国南北冬补美食地图",
+      "sum": "中国天气网讯 “细雨生寒未有霜，庭前木叶半青黄。”今天我们迎来了立冬节气。作为冬季的起始，天地阳气闭蓄，万物休养敛藏。民间讲究立冬“补冬”，中国天气推出南北冬补美食地图，一起解锁大",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-07/10727769.shtml",
       "source": "中新网",
       "tag": "life"
     },
     {
-      "title": "黑龙江省气象台发布大风预报 局地阵风可达8至9级",
-      "sum": "黑龙江省气象台6日8时20分发布大风预报，6日和7日，该省多地有大风天气，局地阵风可达8至9级",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727050.shtml",
+      "title": "节气物候图鉴：立冬寒意渐深 全国水始冰分布地图看哪里薄冰初现",
+      "sum": "中国天气网讯 时光流转，岁月更迭，跟着物候图鉴，读懂二十四节气。今天(11月7日)，我们迎来冬季第一个节气——立冬。此时冷空气愈发频繁，冬季版图加速扩张，草木收敛生机，大地逐渐进入",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-07/10727752.shtml",
       "source": "中新网社会",
       "tag": "life"
     },
     {
-      "title": "中新健康｜医保钱包2.0版上线！个人账户资金如何跨省供亲属使用？一文看懂",
-      "sum": "11月5日，国家医保局举办医保钱包2.0版媒体解读会。记者从会上获悉，医保钱包已升级至2.0版；目前，全国已全面实现职工医保个人账户省内共济，依托医保钱包，个人账户跨省共济正加快落",
-      "url": "https://www.chinanews.com.cn/jk/2026/11-05/10726904.shtml",
+      "title": "海南自贸港前三季度境外航空货邮吞吐量增长83.7%",
+      "sum": "海南自贸港全岛封关运作以来，依托开放第五、第七航权优势，航空物流跑出“加速度”。记者6日从海南省交通运输厅获悉，今年前三季度，海南省航空货邮吞吐量26.6万吨，同比增长5.3%；其",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-06/10727600.shtml",
+      "source": "中新网财经",
+      "tag": "life"
+    },
+    {
+      "title": "秋冬降温，为什么老年人更容易感冒、咳嗽？",
+      "sum": "天气转凉，老年人就该“娇气”些",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-07/10727733.shtml",
       "source": "中新网健康",
       "tag": "life"
     },
     {
-      "title": "国家中医药管理局原党组书记、局长余艳红接受审查调查",
-      "sum": "据中央纪委国家监委网站消息，国家卫生健康委员会原党组成员，国家中医药管理局原党组书记、局长余艳红涉嫌严重违纪违法，主动投案，目前正接受中央纪委国家监委纪律审查和监察调查",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-06/10727056.shtml",
+      "title": "两个月内“流产”8次？伪造病历骗生育金被判刑",
+      "sum": "生育保险基金是国家为保障女职工在生育期间的基本生活和医疗需求而设立的社会保险基金，申领须以真实的生育、流产事实为前提。这是国家为了保障职工生育权益而设立的托底钱，但是有人却对此动起",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-07/10727766.shtml",
       "source": "中新网",
-      "tag": "life"
-    },
-    {
-      "title": "我国秋粮丰收成定局",
-      "sum": "央视新闻客户端消息(新闻联播)：秋粮产量约占全年粮食产量的四分之三，农业农村部最新农情调度显示，全国秋粮收获已过九成，丰收已成定局",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727049.shtml",
-      "source": "中新网社会",
       "tag": "life"
     }
   ]
