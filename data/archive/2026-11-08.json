@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-08",
+  "generatedAt": "2026-11-08T09:43:26+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "sum": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "sum": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "Formally verifying agent-written full-stack web apps with PDD Kit",
+      "sum": "AI agents can generate code at a scale that’s hard for humans to review line-by-line. PDD Kit helps ensure the code is doing what the developer intend",
+      "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Qwen3.8-27B-DSpine-b16 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-07 · text-generation · 0 下载",
+      "url": "https://hf-mirror.com/models/tencent/Qwen3.8-27B-DSpine-b16",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "智源：PingPongRealWorldRL 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-03 · reinforcement-learning · 16 下载",
+      "url": "https://hf-mirror.com/models/BAAI/PingPongRealWorldRL",
+      "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "月之暗面：Kimi-K3.1-Pro 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-02 · image-text-to-text · 22571 下载",
+      "url": "https://hf-mirror.com/models/moonshotai/Kimi-K3.1-Pro",
+      "source": "月之暗面",
+      "tag": "ai"
+    },
+    {
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "sum": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab scienc",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Learn the rules: The hacker mindset",
+      "sum": "Research Manager Mike Walker reflects on a career spanning hacker culture, cybersecurity, and AI, sharing lessons about trust, teamwork, leadership, a",
+      "url": "https://www.microsoft.com/en-us/research/podcast/learn-the-rules-the-hacker-mindset/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "sum": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized ",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Microsoft Research Focus – Edition #97",
+      "sum": "Host Sowbhagya Suresh shares some of the latest news and cutting-edge research from across Microsoft—from understanding the challenges facing coding a",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
+      "sum": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compact",
+      "url": "https://arxiv.org/abs/2611.08487v1",
+      "source": "arXiv · 2611.08487v1",
+      "tag": "ai"
+    },
+    {
+      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "sum": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and co",
+      "url": "https://arxiv.org/abs/2611.08483v1",
+      "source": "arXiv · 2611.08483v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Scientist World: Grow a Research World for AI-Scientists",
+      "sum": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ide",
+      "url": "https://arxiv.org/abs/2611.08478v1",
+      "source": "arXiv · 2611.08478v1",
+      "tag": "ai"
+    },
+    {
+      "title": "XStack: A Benchmark for ML Repo Migration",
+      "sum": "ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on N",
+      "url": "https://arxiv.org/abs/2611.08472v1",
+      "source": "arXiv · 2611.08472v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About In",
+      "sum": "Interpretability, AI auditing and assessments of machine consciousness increasingly rest on mechanism-level quantities: functionals of a system's caus",
+      "url": "https://arxiv.org/abs/2611.08469v1",
+      "source": "arXiv · 2611.08469v1",
+      "tag": "ai"
+    },
+    {
+      "title": "第二十三届北京论坛开幕",
+      "sum": "11月6日，第二十三届北京论坛在北京开幕。本届论坛以“科技变革与多元文明”为主题，来自29个国家和地区的近400位嘉宾学者参加论坛，共话科技变革时代多元文明的交流互鉴之道",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-08/10728220.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "沪武高速潜山段发生多车追尾事故",
+      "sum": "记者从消防、公安等多部门了解到，11月7日下午，沪武高速安徽潜山段发生一起多车追尾事故。沪武高速岳西往桐城南方向，一辆载有电池的货车发生自燃，后方多车追尾。目前事故伤亡情况还在了解",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-07/10728190.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "第10届联合国教科文组织国际生命科学研究奖颁奖仪式举行",
+      "sum": "第10届联合国教科文组织—赤道几内亚国际生命科学研究奖颁奖仪式当地时间6日在联合国教科文组织巴黎总部举行。香港科技大学校长、中国科学院院士叶玉如教授获奖",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-07/10727775.shtml",
+      "source": "中新网国际",
+      "tag": "tech"
+    },
+    {
+      "title": "（第九届进博会）不只用新药说话 跨国药企推动科学创新更好转化为患者获益",
+      "sum": "第九届中国国际进口博览会7日正在上海举行。除了新产品的首展首秀，诸多跨国企业把目光放在关注疾病的全程管理领域，希望将全球科学创新与中国临床需求进一步连接，让科学创新更好地转化为患者",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-07/10728154.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "中国社会科学院大学冷门绝学学院成立暨全国冷门绝学联盟启动",
+      "sum": "11月6日，中国社会科学院大学冷门绝学学院成立仪式暨全国冷门绝学联盟启动大会在京举办。中国社会科学院副院长、党组成员赵芮，中国藏学研究中心总干事郑堆，全国哲学社会科学工作办公室负责",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-07/10727884.shtml",
+      "source": "中新网文化",
+      "tag": "tech"
+    },
+    {
+      "title": "日本学者：日政府强化军事能力或加剧地区紧张局势",
+      "sum": "日本政府计划在今年年内修订“安保三文件”。与此同时，日本政府正推动军事研究与经济产业深度融合，相关动向引发日本国内对日本政府军事扩张及地区安全局势的担忧。有日本学者表示，日本政府一",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-07/10728158.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "（第九届进博会）中欧商界寻找合作共振点",
+      "sum": "第九届中国国际进口博览会正在上海举行。作为进博会和虹桥国际经济论坛的延伸和补充，2026进博会上海会议活动于6日至9日在上海举办。在“中欧合作发展交流会——高水平开放下的中欧投资与",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-08/10728205.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "2026北京冰雪消费季推介会举行 推出17条冰雪旅游线路",
+      "sum": "“冰雪聚燃冬 京彩中国年”2026北京冰雪消费季推介会暨第十三届北京市民快乐冰雪季系列活动启动仪式，11月6日下午在国家速滑馆“冰丝带”·熊猫眼举行",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-07/10727948.shtml",
+      "source": "中新网体育",
+      "tag": "fin"
+    },
+    {
+      "title": "Claude Max 订阅套餐使用额度被指“虚标”，Anthropic 辩词未获法官采纳",
+      "sum": "美国联邦治安法官谢文辉（Alex Tse）裁定，Anthropic 必须继续应对 Claude Max 套餐使用额度涉嫌误导消费者的主要指控。据 Courthouse News 报",
+      "url": "https://www.ithome.com/1/023/824.htm",
+      "source": "IT之家",
+      "tag": "fin"
+    },
+    {
+      "title": "苹果发触屏笔记本，最高 11 万元；DeepSeek V5 模型代码现身；宇树首发财报，净利增 270%",
+      "sum": "苹果发布首款触屏 MacBook Pro，顶配超 11 万 元 北京时间 10 月 29 日，苹果发布全新 MacBook Pro，首次为 Mac 引入屏幕触控和灵动岛，并采用双层",
+      "url": "https://www.geekpark.net/news/373085",
+      "source": "极客公园",
+      "tag": "fin"
+    },
+    {
+      "title": "“航母五件套”未来还可能升级！专家解读“5+X”新模式",
+      "sum": "10月下旬，我军首型舰载察打一体隐身无人机“攻击-21”首次在076型两栖攻击舰四川舰上成功起降。这是我国两栖攻击舰发展历程上取得的又一次突破，标志着人民海军具备固定翼隐身无人机在",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-08/10728237.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "第四届重庆三峡人才节启幕 渝东北10区县广发“英雄帖”",
+      "sum": "重庆国际人才交流大会·第四届重庆三峡人才节7日在重庆万州开幕。本次活动汇聚海内外院士专家、外国驻华领事机构代表、国内外高校及企业代表，集中完成一批科创平台揭牌、人才项目签约，发布渝",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-07/10728102.shtml",
+      "source": "中新网社会",
+      "tag": "cn"
+    },
+    {
+      "title": "俄外交部：欧洲多国军演挑动局势升级 在乌部署外国军事力量不可接受",
+      "sum": "俄罗斯外交部发言人扎哈罗娃7日表示，欧洲多国部队举行演习将挑动局势升级，在乌克兰部署任何外国军事力量都是不可接受的，并将成为俄方合法打击目标",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-08/10728193.shtml",
+      "source": "中新网国际",
+      "tag": "cn"
+    },
+    {
+      "title": "WTA250香港公开赛：王欣瑜不敌鲁季奇 无缘八强",
+      "sum": "WTA(女子网球选手协会)250香港公开赛女单八分之一决赛5日于香港维多利亚公园结束，中国内地选手王欣瑜以总比分1:2不敌克罗地亚选手安东尼娅·鲁季奇(Antonia Ru#382",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-06/10727155.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "云南 “十五五” 布局边境卫生 打造跨境健康服务通道",
+      "sum": "近日，云南省人民政府办公厅印发《云南省国民健康“十五五”规划》(下称《规划》)，将推动卫生健康领域扩大开放，持续开展“光明行”“爱心行”等“小而美”项目，加强和创新卫生援外工作，深",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-06/10727061.shtml",
+      "source": "中新网健康",
+      "tag": "cn"
+    },
+    {
+      "title": "光“星巴扎”就破防？那我告诉你，国际酒店也成群去新疆了",
+      "sum": "如果你只听到某些西方政客和媒体所谓#8204;“强迫劳动”“人权迫害”的说法，那么新疆大概是一个不适合正常商业活动的地方",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-08/10728236.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "贵州入境游持续升温 欧美旅行商组团踩线",
+      "sum": "来自英国、美国、澳大利亚、新西兰等国的旅行商7日走进多彩贵州城，开启贵州旅游踩线考察活动。当天活动中，他们体验拦门酒、竹竿舞，并在非遗体验中心近距离感受贵州多彩的民族文化",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-07/10728170.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "胡塞武装称沙特空袭萨那周边 已致27人死亡",
+      "sum": "也门胡塞武装卫生部门7日晚间发布消息称，沙特主导的联军当天针对也门萨那省巴尼哈希什地区的空袭已造成27人死亡、36人受伤。伤亡者中包括妇女儿童和民防救援人员",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-08/10728199.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "（第九届进博会）华商侨企接入进博“引力场”：从商品贸易到生态共生",
+      "sum": "恰逢周末，第九届中国国际进口博览会7日迎来大客流，不少华商身影穿梭在展区之中。进博会已成为华商侨企联通中外、共享中国机遇的桥梁",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-07/10728124.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "PWA职业水翼帆板上海国际邀请赛开赛",
+      "sum": "2026年PWA(世界职业帆板协会)职业水翼帆板上海国际邀请赛暨第八届上海帆板大师赛(青浦站)7日在上海市青浦区元荡湖正式开赛，这是该项职业赛事首次登陆中国",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-07/10728069.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "香港举办中小学生历史文化知识竞赛 超8万名学生参与",
+      "sum": "第九届“紫荆杯”全港中小学生“中国历史文化”知识竞赛总决赛暨颁奖典礼7日在香港举行。本次赛事吸引香港超400所学校、8万余名学生参与，参赛规模创历史新高",
+      "url": "https://www.chinanews.com.cn/dwq/2026/11-08/10728212.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "“光影聚智·两岸共生”影视文化沙龙分享会在厦门举办",
+      "sum": "11月7日，“光影聚智·两岸共生”影视文化沙龙分享会在厦门举办，汇聚两岸影视行业大咖、高校学者与青年创作者，聚焦闽台影视题材融合、AIGC影视创新等议题展开对话交流",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-08/10728213.shtml",
+      "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "中文赋能职业发展 印尼高校学子走近中国企业",
+      "sum": "印度尼西亚玛琅国立大学孔子学院主办的“学中文，拓职路——企业宣讲与人才对接会”11月6日在玛琅国立大学举行。玛琅国立大学副校长穆金、玛中大学副校长万旺，以及当地多所高校中文专业负责",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-07/10728141.shtml",
+      "source": "中新网国际",
+      "tag": "edu"
+    },
+    {
+      "title": "2026百队杯青少年篮球赛在北京落幕",
+      "sum": "2026北京晚报百队杯青少年篮球赛11月7日在首都体育学院北京大学生体育馆落幕。从10月18日开赛以来，本届百队杯篮球赛共设U10男子组及女子组、U12男子组及女子组、U14及U1",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-07/10728144.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "青春影展搭台 两岸影视从业者厦门畅叙光影",
+      "sum": "以“执影逐梦 同心同行”为主题的第四届海峡两岸青春影展颁奖仪式7日在厦门集美举行，约400名两岸影视界专家、行业代表、青年影人、高校师生共赴光影之约",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-07/10728174.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "浙江杭州：市民游客打卡杭州ADM展 解锁多元生活方式",
+      "sum": "11月7日，一位参展者体验机器按摩仪。近日，2026ADM展在浙江省杭州市举行。展会沿着“过去—现在—未来”的时间脉络，汇聚全国多个省（区、市）的非遗手作、乡土风物，在老工业遗存空",
+      "url": "https://www.chinanews.com.cn/tp/2026/11-08/10728228.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "巴渝地名“活”起来 在渝外籍师生同台读懂重庆",
+      "sum": "“朝天门”中的“朝天”是什么意思、重庆的“背篓专线”是几号线……7日，“留学重庆·感知巴渝”地名大会迎来决赛，24名外籍师生同台竞技，循着地名知识，开启跨越国界的巴渝文化探寻之旅",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-07/10728131.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "湖北巴东：寒江逐浪横渡三峡 冬泳赋能体文旅融合",
+      "sum": "11月7日，湖北省巴东县第六届“横渡大三峡·畅游神农溪”冬泳邀请赛在县城镇江阁亲水广场开赛。来自全国各地的600余名冬泳爱好者齐聚峡江之畔，在约1300米的江面上演速度与激情",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-07/10727964.shtml",
+      "source": "中新网体育",
+      "tag": "cul"
+    },
+    {
+      "title": "年轻人为何爱看“古人开演唱会”",
+      "sum": "当杜甫“亲口”唱起为租房搬家奔波的中年困境、苏轼唱起43岁被贬黄州的经历、刘邦唱出自己起步晚却不服输的精神……一场跨越千年的共情正在年轻群体中发生",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-08/10728202.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "极客公园创新大会 2027 首批嘉宾揭晓！",
+      "sum": "今年 12 月 5 日&mdash;6 日，北京 798艺术区，还是老地方。 极客公园创新大会（GEEKPARK IF），我们又要见面了。 IF 将进入第 17 年。它像一本记录中",
+      "url": "https://www.geekpark.net/news/373553",
+      "source": "极客公园",
+      "tag": "cul"
+    },
+    {
+      "title": "东南亚警察组队赴“村超”踢球",
+      "sum": "2026年澜湄警察足球赛在“村超”发源地贵州省榕江县举行。柬埔寨、中国、老挝、缅甸、泰国、越南六国执法机构组成的澜湄警察足球联队与榕江“村超”足球队同场竞技、以球会友，依托“村超”",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-08/10728218.shtml",
+      "source": "中新网",
+      "tag": "sport"
+    },
+    {
+      "title": "中国女排超级联赛开赛 天津队胜北京队迎“开门红”",
+      "sum": "2026-2027赛季中国女子排球超级联赛7日在北京揭幕。客场作战的天津渤海银行女排在A级常规赛首轮以大比分3:1战胜北京北冰洋女排，收获新赛季“开门红”",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-07/10728122.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "IEM北京站赛事物流保障就绪 DHL电竞雇主品牌活动首次落地中国",
+      "sum": "2026年11月6日，英特尔极限大师赛(IEM)在北京举行，据DHL方面介绍，作为ESL FACEIT Group(EFG)官方物流合作伙伴，DHL为英特尔极限大师赛(IEM)北京",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-06/10727459.shtml",
+      "source": "中新网文化",
+      "tag": "sport"
+    },
+    {
+      "title": "浙江省第十二届残疾人运动会在衢州开幕",
+      "sum": "11月7日晚，浙江省第十二届残疾人运动会在衢州开幕。据悉，赛事共设34个大项，预设1029个小项，参赛运动员2325人，比赛项目和参赛人数均创历届新高。图为现场展示的四足仿生导盲机",
+      "url": "https://www.chinanews.com.cn/tp/2026/11-08/10728227.shtml",
+      "source": "中新网",
+      "tag": "sport"
+    },
+    {
+      "title": "首届云台“醉雕杯”海峡两岸慢投垒球交流赛昆明开赛",
+      "sum": "首届云台“醉雕杯”海峡两岸慢投垒球交流赛7日在云南省昆明市挥棒开赛。为期两天的比赛吸引两岸7支队伍、150余名选手参加，以球为媒、以赛会友，共叙同胞情谊",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-07/10728149.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "广西开行首趟“八桂嗦粉”主题旅游列车 列车上设有米粉展示区",
+      "sum": "11月7日8时，广西首趟Y878次“八桂嗦粉”主题旅游列车从南宁站驶向桂林北站，载着近百名旅客开启了“吃粉赏景游八桂”的旅途",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-08/10728219.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "中国新闻社7件作品获中国新闻奖，2件作品一等奖！",
+      "sum": "由中华全国新闻工作者协会主办的第36届中国新闻奖评选结果今天揭晓。中国新闻社7件作品获奖，其中，一等奖2个，二等奖4个，三等奖1个",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-08/10728238.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "菲律宾9月失业人数升至286万 就业市场承压",
+      "sum": "菲律宾统计局6日公布的数据显示，菲律宾9月失业人数升至286万，高于8月的277万和去年同期的196万。当月失业率为5.4%，高于8月的5.3%和去年同期的3.8%",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-07/10728178.shtml",
+      "source": "中新网国际",
+      "tag": "life"
+    },
+    {
+      "title": "中外花滑选手在深圳感受“暖冬”与热情",
+      "sum": "“我们在加拿大的蒙特利尔训练，那里已经入冬，越来越冷。当我们要来深圳参赛的时候就查了一下这边的天气，我心想：‘噢！太棒了！’这里还非常暖和，我又可以穿裙子了，心情特别棒。”英国选手",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-07/10727973.shtml",
+      "source": "中新网体育",
+      "tag": "life"
+    },
+    {
+      "title": "从食物里读懂中国 陈晓卿推出新书《我的美食向导》",
+      "sum": "从一部纪录片火遍大江南北，到尽尝烟火再度出发，美食纪录片导演陈晓卿对美食始终充满探索与思考。近日，陈晓卿推出历时三年打磨的全新力作《我的美食向导》，由长江新世纪正式出版发行",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-07/10728111.shtml",
+      "source": "中新网文化",
+      "tag": "life"
+    }
+  ]
+}
