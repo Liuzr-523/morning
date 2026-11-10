@@ -1,0 +1,379 @@
+{
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T12:15:53+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Control Room: A central system to track and stop model workloads across our rese",
+      "sum": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns a",
+      "url": "https://openai.com/index/control-room",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "sum": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "Formally verifying agent-written full-stack web apps with PDD Kit",
+      "sum": "AI agents can generate code at a scale that’s hard for humans to review line-by-line. PDD Kit helps ensure the code is doing what the developer intend",
+      "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Qwen3.8-27B-DSpine-b16 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-07 · text-generation · 1464 下载",
+      "url": "https://hf-mirror.com/models/tencent/Qwen3.8-27B-DSpine-b16",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "智源：PingPongRealWorldRL 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-03 · reinforcement-learning · 20 下载",
+      "url": "https://hf-mirror.com/models/BAAI/PingPongRealWorldRL",
+      "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "月之暗面：Kimi-K3.1-Pro 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-02 · image-text-to-text · 27926 下载",
+      "url": "https://hf-mirror.com/models/moonshotai/Kimi-K3.1-Pro",
+      "source": "月之暗面",
+      "tag": "ai"
+    },
+    {
+      "title": "Kuken Industries searches 70 years of drawings in minutes",
+      "sum": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down fr",
+      "url": "https://openai.com/index/kuken",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Learn the rules: The hacker mindset",
+      "sum": "Research Manager Mike Walker reflects on a career spanning hacker culture, cybersecurity, and AI, sharing lessons about trust, teamwork, leadership, a",
+      "url": "https://www.microsoft.com/en-us/research/podcast/learn-the-rules-the-hacker-mindset/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "sum": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
+      "sum": "WorldFoundry offers open-source infrastructure for reproducible inference and evaluation of generative world models across video, 3D/4D, embodied acti",
+      "url": "https://hf-mirror.com/papers/2611.10771",
+      "source": "arXiv · 2611.10771",
+      "tag": "ai"
+    },
+    {
+      "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+      "sum": "Flide is an exact inference engine that accelerates decision-model LLM agents by decoupling logical request trees from physical execution and using Fo",
+      "url": "https://hf-mirror.com/papers/2610.42148",
+      "source": "arXiv · 2610.42148",
+      "tag": "ai"
+    },
+    {
+      "title": "JoVox: Joint Hierarchical Flow Matching for Lightweight Voxel Generation",
+      "sum": "Generating high-fidelity voxels while keeping their lightweight nature remains an open problem in computer vision. Current generators are either high-",
+      "url": "https://hf-mirror.com/papers/2611.10690",
+      "source": "arXiv · 2611.10690",
+      "tag": "ai"
+    },
+    {
+      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+      "sum": "Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting ar",
+      "url": "https://hf-mirror.com/papers/2611.08452",
+      "source": "arXiv · 2611.08452",
+      "tag": "ai"
+    },
+    {
+      "title": "人民论坛网评 | 于细处深耕 向实处发力",
+      "sum": "天下难事，必作于易；天下大事，必作于细。干事创业，贵在落实，成败关键在于落细。对青年干部而言，抓细，是“致广大而尽精微”的科学方法，是破除落实梗阻、厚植为民根基的必修课。以细为要、",
+      "url": "https://www.chinanews.com.cn/ll/2026/11-10/10729339.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "机器人登泰山“中暑”暴露哪些短板",
+      "sum": "【热点回应】",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729317.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "2026年湖北省城市足球联赛落幕 宜昌队夺冠",
+      "sum": "2026年湖北省城市足球联赛(以下简称楚超)决赛8日下午在宜昌奥体中心体育场打响，宜昌东阳光队在主场力克武汉华工科技队，夺得楚超冠军，也标志着这场历时近八个月、覆盖湖北17个市州的",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10728666.shtml",
+      "source": "中新网体育",
+      "tag": "tech"
+    },
+    {
+      "title": "2026文化科技产业发展论坛在长沙举行",
+      "sum": "11月9日，2026文化科技产业发展论坛开幕式暨主论坛在长沙举行。论坛以“科技致远 文化向新”为主题，聚焦前沿技术、创新成果与产业实践，探讨文化科技产业发展的新场景、新机遇、新路径",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-09/10729086.shtml",
+      "source": "中新网文化",
+      "tag": "tech"
+    },
+    {
+      "title": "第二十二届全国科技翻译研讨会在天津举行",
+      "sum": "第二十二届全国科技翻译研讨会6日至8日在天津外国语大学举行。会议以“智能时代科技翻译转型发展与创新实践”为主题，来自全国高校、科研机构、语言服务企业及出版单位的百余位专家学者、翻译",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-09/10729032.shtml",
+      "source": "中新网教育",
+      "tag": "tech"
+    },
+    {
+      "title": "（第九届进博会）从进博会看亚太经贸合作“你中有我”",
+      "sum": "“亚太经贸合作你中有我”，第九届中国国际进口博览会上，多家亚太经合组织(APEC)经济体参展企业分享的发展故事，折射出这一日益紧密的联系",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729338.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "成品油零售加油站全面推广“交易即开票” 消费者加油有何新变化",
+      "sum": "成品油零售加油站全面推广“交易即开票”",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729229.shtml",
+      "source": "中新网社会",
+      "tag": "fin"
+    },
+    {
+      "title": "今年“双11”，你“囤词元”了吗？",
+      "sum": "作为独立品类上架电商平台，像“充话费”“买会员”一样买词元——",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729314.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "两湾联动足球元老邀请赛在广西梧州收官",
+      "sum": "11月8日，2026“梦想成真·星耀梧州”两湾(粤港澳大湾区与北部湾经济区)联动足球元老邀请赛在广西梧州落下帷幕。来自海内外的35支队伍、约500名元老球员参赛，经三天角逐，共决出",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10728661.shtml",
+      "source": "中新网体育",
+      "tag": "fin"
+    },
+    {
+      "title": "山东青岛秋假撬动文旅消费 “研学”“追秋”带动市场升温",
+      "sum": "11月5日至9日，山东青岛中小学迎来首个秋假，当地文旅市场同步进入“秋假时间”。滨海休闲与集中研学需求叠加，带动文博场馆、亲子景区、赏秋目的地全线热度攀升",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-09/10729078.shtml",
+      "source": "中新网教育",
+      "tag": "fin"
+    },
+    {
+      "title": "中美两军举行“驼峰航线”美军援华抗日飞行员遗骸移交仪式",
+      "sum": "据中国国防部网站消息，11月10日，中美两军在四川成都举行美军遗骸移交仪式，中方向美方移交一批在“驼峰航线”沿线区域发掘的美军援华抗日飞行员遗骸",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-10/10729337.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "八部门联合印发通知支持实体书店服务全民阅读",
+      "sum": "为贯彻《全民阅读促进条例》，落实2026年政府工作报告任务，近日，中央宣传部、中央社会工作部、教育部、财政部、住房城乡建设部、商务部、文化和旅游部、国家文物局联合印发《中共中央宣传",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729185.shtml",
+      "source": "中新网社会",
+      "tag": "cn"
+    },
+    {
+      "title": "2026中国网球匹克球双拍赛暨首届“国金杯”上海站收官",
+      "sum": "2026中国网球匹克球双拍赛暨第一届中国网球协会匹克球社区运动会“国金杯”上海站8日在上海市普陀网球中心落下帷幕。作为国内首创的“一人双拍、分场竞技”全国性赛事IP，双拍赛最鲜明的",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729308.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "服务乡村振兴高校招生专项计划来了！2030年将正式落地实施",
+      "sum": "据教育部网站消息，近日，教育部、公安部、农业农村部联合印发《关于实施服务乡村振兴高校招生专项计划的通知》(以下简称《通知》)，对实施服务乡村振兴高校招生专项计划作出部署",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-10/10729219.shtml",
+      "source": "中新网教育",
+      "tag": "cn"
+    },
+    {
+      "title": "云南 “十五五” 布局边境卫生 打造跨境健康服务通道",
+      "sum": "近日，云南省人民政府办公厅印发《云南省国民健康“十五五”规划》(下称《规划》)，将推动卫生健康领域扩大开放，持续开展“光明行”“爱心行”等“小而美”项目，加强和创新卫生援外工作，深",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-06/10727061.shtml",
+      "source": "中新网健康",
+      "tag": "cn"
+    },
+    {
+      "title": "国际最新研究：预计2026年全球二氧化碳排放量将暂时性下降0.4%",
+      "sum": "施普林格·自然旗下专业学术期刊《自然-气候变化》11月10日在线发表一篇论文称，一项研究显示，在全球化石燃料二氧化碳排放量于2019年至2025年间以年均0.8%的速度增长后，预计",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729301.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "寒潮影响已近尾声 云南贵州新疆等地多降水",
+      "sum": "据中央气象台网站消息，今天，影响中东部地区的寒潮天气过程将接近尾声，云南降雨强度也将明显减弱。未来三天，云南、贵州、新疆等地多降水",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729214.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "特朗普称伊朗战事已“事实上结束”",
+      "sum": "据美联社报道，美国总统特朗普当地时间9日表示，伊朗战事在军事层面已“事实上结束”，美国目前只是维持现状",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729249.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "翱亚集团CEO郑志雄：依托新加坡区域枢纽，陪伴中国企业扎根东盟市场",
+      "sum": "在第九届中国国际进口博览会这个平台上，开放合作的风向持续助推中国与东盟的产业联动。其间，新加坡翱亚集团(OA Group)首席执行官郑志雄亮相多场进博会配套活动。身为新加坡中小企业",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729245.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "中国乒协公布混团世界杯国乒参赛名单",
+      "sum": "2026年国际乒联混合团体世界杯将于11月29日至12月6日在四川成都举办。今天，中国乒协公布混团世界杯国乒参赛名单：",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729293.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "万菊争妍姹紫嫣红 南京农业大学菊花基地绘就斑斓世界",
+      "sum": "11月9日，南京农业大学湖熟菊花基地内展示的菊花色彩缤纷。中新社记者 泱波 摄 11月9日，南京农业大学湖熟菊花基地内展示的菊花色彩缤纷。中新社记者 泱波 摄 11月9日，南京农业",
+      "url": "https://www.chinanews.com.cn/tp/2026/11-10/10729321.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "西藏日喀则：消防宣传进校园 3000余名师生同上“安全课”",
+      "sum": "11月9日，日喀则消防救援机动大队走进日喀则市职业技术学校，启动2026年“119”消防宣传月活动。围绕“全民消防、生命至上”主题，消防员把疏散演练、灭火实操、急救教学和装备展示搬",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729275.shtml",
+      "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "埃及列车相撞死伤超百人 调查显示多方存在玩忽职守",
+      "sum": "当地时间9日，埃及总检察院下令成立一个由开罗大学工程学院教授组成的委员会，负责审查埃及国家铁路的运营系统以及设备、人员监控和信号系统的安全与运营状况。同时，由总检察院人员组成的事故",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729162.shtml",
+      "source": "中新网国际",
+      "tag": "edu"
+    },
+    {
+      "title": "三秦少年塞上争锋 陕西省青少年排球冠军赛启幕",
+      "sum": "2026年陕西省青少年排球冠军赛9日在延安市安塞区鸣哨开赛。来自陕西全省各地市及学校的28支代表队、318名青少年排球运动员齐聚塞上，开启为期7天的激烈角逐",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729306.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "湖北唐崖土司城遗址考古报告首次公开",
+      "sum": "由湖北省文物考古研究院、湖北大学文化遗产学院、中国人民大学历史学院、湖北恩施唐崖土司城遗址管理处编著的《咸丰唐崖》(上、下册)近日正式出版，系湖北唐崖土司城遗址考古报告首次公开",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-09/10729113.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "“你好！中国”水韵江苏文旅推介会在巴黎举办",
+      "sum": "由中国驻巴黎旅游办事处和江苏省文化和旅游厅主办、江苏英法推广中心承办的“你好！中国”水韵江苏(巴黎)文旅推介会当地时间9日在法国巴黎举办",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729313.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "宁夏永宁：冬季文旅不闭园 一铺热炕招“烧炕员”",
+      "sum": "11月9日，宁夏银川市永宁县冬季文旅产品茶话会，在看见闽宁·戏剧村落一处剧中院落举办。现场不设主席台，也没有排布整齐的桌椅，土墙、木窗、老炕桌都保留着剧目里原本的模样，演员们盘腿坐",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729262.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "以体育促成长 2026“少年有志”京乌青少年体育交流活动开营",
+      "sum": "2026“少年有志”京乌青少年体育交流活动近日在新疆乌鲁木齐举行开营仪式。在为期10天的交流活动中，两地青少年将以体育为纽带，通过联合训练、文化互动等形式增进对彼此的了解，共同开启",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10728991.shtml",
+      "source": "中新网体育",
+      "tag": "cul"
+    },
+    {
+      "title": "好戏从春唱到秋 深圳市戏曲名剧名家展演收官",
+      "sum": "伴随着河北省河北梆子剧院演出的《宝莲灯》精彩上演，第十四届深圳市戏曲名剧名家展演11月9日落幕",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-10/10729299.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "新疆最潮非遗新势力，年轻人扎堆的刺绣创业高地",
+      "sum": "青春华章 疆来可期｜新疆最潮非遗新势力，年轻人扎堆的刺绣创业高地",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-09/10729106.shtml",
+      "source": "中新网教育",
+      "tag": "cul"
+    },
+    {
+      "title": "“中场抓住嘛！”新疆足球大叔和他的草根训练场",
+      "sum": "题：“中场抓住嘛！” 新疆足球大叔和他的草根训练场",
+      "url": "https://www.chinanews.com.cn/txy/2026/11-10/10729323.shtml",
+      "source": "中新网",
+      "tag": "sport"
+    },
+    {
+      "title": "成都蓉城俱乐部董事长、总经理辞职 主教练阿洛伊西离任",
+      "sum": "11月9日晚，成都蓉城足球俱乐部有限公司(以下简称“成都蓉城”)连发两份公告，王磊辞去俱乐部董事长职务，吴博辞去俱乐部总经理职务；约翰·阿洛伊西不再担任成都蓉城足球俱乐部主教练职务",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10729127.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "新赛季WCBA联赛将启 新增两支参赛队伍",
+      "sum": "2026-2027赛季中国女子篮球联赛(WCBA)将于11月14日揭幕。记者在11月9日于北京举行的新闻发布会上获悉，本赛季联赛共有19支俱乐部球队参赛，新增广西金海和贵州极光破晓",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10729112.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "新赛季中国女子篮球联赛又添“新面孔”",
+      "sum": "2026-2027赛季中国女子篮球联赛(WCBA)将于11月14日启幕。记者从9日于北京举行的新闻发布会上获悉，包括广西金海和贵州极光破晓两家新增俱乐部在内，共有19家俱乐部球队参",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10729080.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "中国铁人三项联赛十周年“系列赛”收官战上演",
+      "sum": "2026年中国铁人三项联赛暨浙江云和第六届“瓯江诗路”铁人三项挑战赛8日在浙江省丽水市云和县长汀沙滩开赛",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10729082.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "英国大雾侵袭多地扰乱交通",
+      "sum": "近日大范围浓雾笼罩英格兰、威尔士多地，引发多起交通事故并造成交通延误。英国气象局9日发布新一轮黄色大雾预警",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729277.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "国铁沈阳局东北环线12趟动车雪具随车同行",
+      "sum": "记者从中国铁路沈阳局集团有限公司(以下简称国铁沈阳局)获悉，自2026年11月10日起至2027年3月20日，国铁沈阳局在东北环线继续推出“雪具便利行”服务，旅客可随车携带雪具并存",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729309.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "吃饭别踩5条红线！饥一顿饱一顿、主食太少都在降低免疫力",
+      "sum": "吃饭有5条红线千万别踩！",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-10/10729183.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "英国加大投入助基层医疗机构缓解NHS冬季压力",
+      "sum": "英国政府9日推出一项4000万英镑专项计划，支持全科医生为英格兰地区最多30万名脆弱高危患者提供早期干预服务，减少可避免住院，减轻国民医疗服务体系(NHS)冬季承压",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729282.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "浙江义乌台商捐赠3000套鞋垫及袜子为环卫工人送暖",
+      "sum": "“我们在大陆生活、工作，感受到了很多善意和温暖。我们看到，环卫工人为城市的干净整洁付出了很多，所以希望这份心意能让他们感受到一些来自我们的温暖。”11月9日，在浙江义乌，谈及发起此",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729302.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    }
+  ]
+}
