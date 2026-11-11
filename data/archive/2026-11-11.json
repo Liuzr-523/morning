@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-11T10:06:48+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Gilbert + Tobin rethinks the business of law with AI",
+      "sum": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+      "sum": "Microsoft researchers have discovered &#8220;Lazarus,&#8221; a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherw",
+      "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Gemini Intelligence: New features, on more devices",
+      "sum": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
+      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "MiniMax：MiniMax-H3-Image-PE 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-08 · text-generation · 0 下载",
+      "url": "https://hf-mirror.com/models/MiniMaxAI/MiniMax-H3-Image-PE",
+      "source": "MiniMax",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Qwen3.8-27B-DSpine-b16 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-07 · text-generation · 2627 下载",
+      "url": "https://hf-mirror.com/models/tencent/Qwen3.8-27B-DSpine-b16",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "智源：PingPongRealWorldRL 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-03 · reinforcement-learning · 21 下载",
+      "url": "https://hf-mirror.com/models/BAAI/PingPongRealWorldRL",
+      "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "Introducing Businesses in ChatGPT",
+      "sum": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
+      "url": "https://openai.com/index/introducing-businesses-chatgpt",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "sum": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "Control Room: A central system to track and stop model workloads across our rese",
+      "sum": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns a",
+      "url": "https://openai.com/index/control-room",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "sum": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "Guiding Data Allocation for Robust Subpopulation Generalization",
+      "sum": "Machine learning models often achieve high average accuracy in the training data while performing poorly on test data due to subpopulation shift. A co",
+      "url": "https://arxiv.org/abs/2611.12884v1",
+      "source": "arXiv · 2611.12884v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynam",
+      "sum": "Stochastic differential equations (SDEs) describe stochastic processes across a wide range of scientific domains, including physics, biology, and fina",
+      "url": "https://arxiv.org/abs/2611.12880v1",
+      "source": "arXiv · 2611.12880v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Adaptive Quantization Preserves Fast Rates for TD Learning over Rate-Limited Cha",
+      "sum": "Motivated by reinforcement learning subject to communication constraints, we study a policy evaluation problem with linear function approximation over",
+      "url": "https://arxiv.org/abs/2611.12878v1",
+      "source": "arXiv · 2611.12878v1",
+      "tag": "ai"
+    },
+    {
+      "title": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composi",
+      "sum": "As multimodal agents accumulate increasingly long interaction histories, effectively retrieving and utilizing past information becomes critical for lo",
+      "url": "https://arxiv.org/abs/2611.12872v1",
+      "source": "arXiv · 2611.12872v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Vendi Anomaly Scores for Efficient and Accurate Anomaly Detection",
+      "sum": "Anomaly detection (AD) is a critical for trustworthy machine learning and scientific discovery. Existing methods typically define anomalies through lo",
+      "url": "https://arxiv.org/abs/2611.12871v1",
+      "source": "arXiv · 2611.12871v1",
+      "tag": "ai"
+    },
+    {
+      "title": "2026年度邵逸夫奖颁奖典礼在香港举行",
+      "sum": "图为伊曼纽尔·康德斯（左）获颁授数学科学奖。中新网记者 陈永诺 摄 图为陈竺（左）获颁授生命科学与医学奖。中新网记者 陈永诺 摄 图为戴宇阁（左）获颁授生命科学与医学奖。中新网记者",
+      "url": "https://www.chinanews.com.cn/tp/2026/11-11/10729924.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "英格兰拟推新规中小学生在校全天不能接触手机",
+      "sum": "（记者 欧阳开宇）英国英格兰地区校园手机管理政策将进一步收紧，按照新版政府指导文件，自2027年9月起，中小学生在校全天都不能接触手机",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729759.shtml",
+      "source": "中新网国际",
+      "tag": "tech"
+    },
+    {
+      "title": "重庆两江新区加快打造智能网联新能源汽车之都核心承载地",
+      "sum": "重庆两江新区区委常委、区政府常务副区长肖文军10日在当地召开的新闻发布会上透露，作为打造重庆市智能网联新能源汽车之都的核心区，两江新区已形成了从汽车整车到三电系统、智能零部件以及后",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729823.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "2026年湖北省城市足球联赛落幕 宜昌队夺冠",
+      "sum": "2026年湖北省城市足球联赛(以下简称楚超)决赛8日下午在宜昌奥体中心体育场打响，宜昌东阳光队在主场力克武汉华工科技队，夺得楚超冠军，也标志着这场历时近八个月、覆盖湖北17个市州的",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10728666.shtml",
+      "source": "中新网体育",
+      "tag": "tech"
+    },
+    {
+      "title": "科技赋能解码西阴文化 200余件（组）文物回望中国考古学百年历程",
+      "sum": "1926年，中国考古学家李济、袁复礼在山西夏县西阴村掘下中国人独立主持现代田野考古的第一铲。100年后，“重读西阴——中国考古学本土化与科学化100周年特展”10日在山西博物院开展",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-10/10729618.shtml",
+      "source": "中新网文化",
+      "tag": "tech"
+    },
+    {
+      "title": "理响中国·讲好“中国式商量”故事｜一湖碧水如何“商量”出甜蜜经济与民生幸福",
+      "sum": "湖风徐来，碧波如练。岭南园的亭台楼榭间，几对新人正预约拍摄、等待领证，琉璃瓦顶映着新人笑靥；雕塑园旁，“花语书房”自助图书馆内，市民游客临窗而坐、静心翻阅。一湖碧水之畔，婚俗新风与",
+      "url": "https://www.chinanews.com.cn/ll/2026/11-11/10729929.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "英国央行副行长警示通胀有持续风险 释放进一步加息信号",
+      "sum": "英国央行负责货币政策的副行长克莱尔·隆巴代利10日在一场央行会议上表示，英国通胀持续风险正在显现，若无通胀降温的明确证据，短期内大概率需要再度加息",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-11/10729870.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "胡军：产业向新向绿让中国经济增长动能更加强劲",
+      "sum": "当地时间11月10日，在土耳其安塔利亚举行的《联合国气候变化框架公约》第三十一次缔约方大会(COP31)中国角主题边会上，习近平生态文明思想研究中心主任、生态环境部环境与经济政策研",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729860.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "两湾联动足球元老邀请赛在广西梧州收官",
+      "sum": "11月8日，2026“梦想成真·星耀梧州”两湾(粤港澳大湾区与北部湾经济区)联动足球元老邀请赛在广西梧州落下帷幕。来自海内外的35支队伍、约500名元老球员参赛，经三天角逐，共决出",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10728661.shtml",
+      "source": "中新网体育",
+      "tag": "fin"
+    },
+    {
+      "title": "（第九届进博会）全球时尚品牌用文化对话挖掘中国市场下一个增长点",
+      "sum": "在PVH亚太区执行副总裁兼首席财务官、中国区总裁吴颖看来，全球时尚品牌想要在中国市场挖掘出下一个增长机遇，关键在于融合全球积淀与深入本土消费者洞察。在这其中，本土共创和多元互动显得",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-10/10729580.shtml",
+      "source": "中新网文化",
+      "tag": "fin"
+    },
+    {
+      "title": "广东检察机关依法对肖杰涉嫌受贿案提起公诉",
+      "sum": "海南省人大常委会原党组成员、副主任肖杰涉嫌受贿一案，由国家监察委员会调查终结，移送检察机关审查起诉。最高人民检察院依法以涉嫌受贿罪对肖杰作出逮捕决定，并指定由广东省惠州市人民检察院",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-11/10729935.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "生态环境部应对气候变化司司长夏应显：中国建成全球最大、最完整的清洁能源产业链",
+      "sum": "“2025年，中国单位国内生产总值二氧化碳排放比上年下降5.0%，建成全球最大、最完整的清洁能源产业链。”",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729847.shtml",
+      "source": "中新网社会",
+      "tag": "cn"
+    },
+    {
+      "title": "泰国内阁批准数据中心七级监管政策",
+      "sum": "泰国内阁10日批准数据中心监管政策，决定按用电规模实施七级分类管理，20兆瓦及以上项目将面临更严格的选址要求。泰国副总理兼财政部长艾尼迪表示，政府将设立一站式服务中心，统筹数据中心",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-11/10729866.shtml",
+      "source": "中新网国际",
+      "tag": "cn"
+    },
+    {
+      "title": "马龙：应对气候变化不是少数国家的选择题",
+      "sum": "当地时间11月10日，普华永道中国税收政策服务主管合伙人马龙在土耳其安塔利亚表示，中国近年来的一系列财税政策，正用税收杠杆推动绿色承诺转化为企业的实际行动",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729802.shtml",
+      "source": "中新网财经",
+      "tag": "cn"
+    },
+    {
+      "title": "2026中国网球匹克球双拍赛暨首届“国金杯”上海站收官",
+      "sum": "2026中国网球匹克球双拍赛暨第一届中国网球协会匹克球社区运动会“国金杯”上海站8日在上海市普陀网球中心落下帷幕。作为国内首创的“一人双拍、分场竞技”全国性赛事IP，双拍赛最鲜明的",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729308.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "涉嫌为俄罗斯从事间谍活动，一名美军士兵在英国被捕",
+      "sum": "据路透社报道，英国警方当地时间10日表示，一名美国陆军高级士兵因涉嫌为俄罗斯从事间谍活动，在英国被捕",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-11/10729936.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "“四海One Table”亮相上海外滩 中外创作者共话跨文化传播",
+      "sum": "近日，一个名为“四海One Table”的跨文化交流品牌在上海市黄浦区外滩FTC首次亮相。首场活动由外滩FTC、黄浦区侨联、黄浦区新联会主办，来自15个国家和地区的120余位平台代",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729805.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "第九届巴黎和平论坛开幕 聚焦“从主权到合作”",
+      "sum": "第九届巴黎和平论坛当地时间10日在巴黎开幕",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-11/10729889.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "上海企业海外合作联盟举办德国专场对接活动",
+      "sum": "近日，由上海市侨办、上海市工商联(总商会)、上海市侨联主办的上海企业海外合作联盟海外合作对接活动(德国专场)在上海市长宁区举行",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729775.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "湛江举办国际潜水大赛 中美俄等多国运动员竞技",
+      "sum": "10日，2026湛江国际潜水大赛、2026年世界潜联蹼泳世界杯分站赛(泳池)开幕式在国家体育总局湛江潜水运动学校举行，世界潜联东亚联合会主席，世界潜联蹼泳世界杯技术官员，韩国、马来",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729531.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "西安高校团队研发公路安全仿真平台 护航山区通行",
+      "sum": "山区公路地形复杂，急弯、长下坡、桥隧密集，车辆通行的安全风险点多、管控难度大。长安大学“安行智构”团队研发国产化公路安全仿真平台，依托数字模拟技术提前识别道路隐患，为山区公路安全整",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-11/10729927.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "柬埔寨运送学生车辆坠塘事故致5死21伤 涉事司机被拘",
+      "sum": "柬埔寨干拉省警察局当地时间10日通报称，干拉省克萨干丹县当天发生的运送学生车辆坠塘事故造成5名学生死亡、21人受伤。柬副首相兼教育、青年和体育部大臣韩春那洛当天前往医院探望受伤学生",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729809.shtml",
+      "source": "中新网国际",
+      "tag": "edu"
+    },
+    {
+      "title": "吉林北大湖、松花湖雪场冲刺大冬会筹备",
+      "sum": "长春2027第33届世界大学生冬季运动会(下称“长春大冬会”)吉林市分赛区雪上项目比赛场地正加快提质升级改造",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729425.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "续读敬一丹 《那年那信》增订版在京发布",
+      "sum": "敬一丹新作《那年那信(增订版)》(以下简称《那年那信》)发布会暨历年作品回顾纪念会日前在中国传媒大学举行",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-10/10729676.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "北京一零一中教育集团校长熊永昌：让生态文明扎根孩子心中",
+      "sum": "“让绿色成为校园底色，让生态文明扎根孩子心中。”",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-10/10729857.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "以味为桥 80名厨师烹制西部陆海新通道沿线美食",
+      "sum": "2026年陆海新通道暨巴蜀文化旅游走廊酒店厨师技能大赛10日在重庆举行。来自川渝两地及贵州、广西、新疆等西部陆海新通道沿线地区的20支代表队、80名厨师齐聚山城，展开厨艺对决",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729834.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "“北京双奥中的中华传统文化”主题展览亮相北京奥运博物馆",
+      "sum": "“北京双奥中的中华传统文化”主题展览10日在北京奥运博物馆正式开启，面向社会公众免费开放。本次展览由北京奥运城市发展促进会策划推出，系统梳理两届奥运会筹办举办过程中，中华优秀传统文",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729655.shtml",
+      "source": "中新网体育",
+      "tag": "cul"
+    },
+    {
+      "title": "上海文艺创作成果“绽放”艺术节",
+      "sum": "音乐会《上海大歌剧院和她的朋友们》、舞剧《小刀会》、京剧《龙凤呈祥》、越剧《华山奇缘》、芭蕾《寻找木卡姆》、歌剧《爱之甘醇》……横跨多个艺术门类的“上海出品”力作“绽放”于第二十五",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-10/10729837.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "新疆最潮非遗新势力，年轻人扎堆的刺绣创业高地",
+      "sum": "青春华章 疆来可期｜新疆最潮非遗新势力，年轻人扎堆的刺绣创业高地",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-09/10729106.shtml",
+      "source": "中新网教育",
+      "tag": "cul"
+    },
+    {
+      "title": "极客公园创新大会 2027 首批嘉宾揭晓！",
+      "sum": "今年 12 月 5 日&mdash;6 日，北京 798艺术区，还是老地方。 极客公园创新大会（GEEKPARK IF），我们又要见面了。 IF 将进入第 17 年。它像一本记录中",
+      "url": "https://www.geekpark.net/news/373553",
+      "source": "极客公园",
+      "tag": "cul"
+    },
+    {
+      "title": "红色薪火代代传 “中华体育精神颂”走进四川甘孜",
+      "sum": "题：红色薪火代代传 “中华体育精神颂”走进四川甘孜",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729566.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "从秦巴腹地到黄龙山麓：陕西省自行车联赛由全域覆盖走向体系跃升",
+      "sum": "九站赛道、七个月、近6000人次——2026陕西省自行车联赛日前在延安黄龙收官。这场以“全民健身 运动三秦”为主题的省级群众性自行车赛事，把体育赛事办进了秦巴山区、渭河两岸与黄土高",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729414.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "逾百名全国中老年足球爱好者佛山“以赛会友”",
+      "sum": "第34届“中华杯”全国中老年足球赛(C组佛山赛区)正在三水健力宝足球青训中心举行。本次赛事吸引香港、澳门、北京、河南、湖北、辽宁、江西、深圳等地多支队伍参赛，100余名中老年足球爱",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729389.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "斯诺克冠中冠赛：中国军团3人参赛 卫冕冠军塞尔比小组战折戟",
+      "sum": "当地时间11月9日，2026年斯诺克冠中冠邀请赛在英国莱斯特展开首日比赛。在率先进行的第一小组较量中，世界排名第12位的英格兰球手克里斯·韦克林连赢两场成功突围，成为本次赛事首位晋",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729384.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "成都蓉城俱乐部董事长、总经理辞职 主教练阿洛伊西离任",
+      "sum": "11月9日晚，成都蓉城足球俱乐部有限公司(以下简称“成都蓉城”)连发两份公告，王磊辞去俱乐部董事长职务，吴博辞去俱乐部总经理职务；约翰·阿洛伊西不再担任成都蓉城足球俱乐部主教练职务",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10729127.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "未来三天北京晴天持续昼夜温差可达15℃ 扩散条件逐渐转差",
+      "sum": "中国天气网讯 未来三天(11月11日至13日)，北京晴天持续，最高气温可达16℃，但昼夜温差较大，早晚时段寒意足，公众需持续做好保暖工作",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-11/10729903.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "从线上到线下 求职招聘如何更好实现双向奔赴？",
+      "sum": "新闻1+1丨从线上到线下 求职招聘如何更好实现双向奔赴？",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-11/10729894.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "英国发布今冬首个低温健康黄色警报",
+      "sum": ")英国卫生安全局(UKHSA)10日发布2026#8209;2027年冬季首个低温健康黄色警报，警报覆盖英格兰西北部及西米德兰兹地区，生效时间为当地11月12日上午9时至14日中午",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729842.shtml",
+      "source": "中新网国际",
+      "tag": "life"
+    },
+    {
+      "title": "“只吃粗粮等于健康”盛行网络 真的如此吗？",
+      "sum": "真相来了丨“只吃粗粮等于健康”盛行网络 真的如此吗？",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-11/10729892.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "中央气象台：云南华南江南等地有降水 新疆等地多雨雪 华北黄淮等地将有霾天气",
+      "sum": "据中央气象台网站11日消息，昨日，全国大部地区降水稀少，仅云南部分地区出现较强降雨。预计未来三天，云南南部及华南等地降雨较强，注意防范局地强降雨可能引发的次生灾害；新疆北部、川西高",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-11/10729898.shtml",
+      "source": "中新网",
+      "tag": "life"
+    }
+  ]
+}
