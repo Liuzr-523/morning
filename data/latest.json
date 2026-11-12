@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-11",
-  "generatedAt": "2026-11-11T10:06:48+08:00",
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T11:15:52+08:00",
   "generator": "github-actions-rss",
   "perTag": 5,
   "news": [
@@ -12,6 +12,13 @@
       "tag": "ai"
     },
     {
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "sum": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
       "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
       "sum": "Microsoft researchers have discovered &#8220;Lazarus,&#8221; a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherw",
       "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
@@ -19,22 +26,15 @@
       "tag": "ai"
     },
     {
-      "title": "Gemini Intelligence: New features, on more devices",
-      "sum": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
-      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
-      "source": "Google",
-      "tag": "ai"
-    },
-    {
       "title": "MiniMax：MiniMax-H3-Image-PE 发布新模型（开源权重）",
-      "sum": "发布于 2026-11-08 · text-generation · 0 下载",
+      "sum": "发布于 2026-11-08 · text-generation · 600 下载",
       "url": "https://hf-mirror.com/models/MiniMaxAI/MiniMax-H3-Image-PE",
       "source": "MiniMax",
       "tag": "ai"
     },
     {
       "title": "腾讯：Qwen3.8-27B-DSpine-b16 发布新模型（开源权重）",
-      "sum": "发布于 2026-11-07 · text-generation · 2627 下载",
+      "sum": "发布于 2026-11-07 · text-generation · 3241 下载",
       "url": "https://hf-mirror.com/models/tencent/Qwen3.8-27B-DSpine-b16",
       "source": "腾讯",
       "tag": "ai"
@@ -44,6 +44,20 @@
       "sum": "发布于 2026-11-03 · reinforcement-learning · 21 下载",
       "url": "https://hf-mirror.com/models/BAAI/PingPongRealWorldRL",
       "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+      "sum": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+      "url": "https://openai.com/index/jiostar-vijay-seshadri",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Gemini Intelligence: New features, on more devices",
+      "sum": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
+      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+      "source": "Google",
       "tag": "ai"
     },
     {
@@ -61,149 +75,128 @@
       "tag": "ai"
     },
     {
-      "title": "Control Room: A central system to track and stop model workloads across our rese",
-      "sum": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns a",
-      "url": "https://openai.com/index/control-room",
-      "source": "OpenAI",
+      "title": "Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Tra",
+      "sum": "Foundation models pretrained on large natural-image collections are increasingly adapted for medical image segmentation, in the expectation that they ",
+      "url": "https://arxiv.org/abs/2611.14519v1",
+      "source": "arXiv · 2611.14519v1",
       "tag": "ai"
     },
     {
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "sum": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing.",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-      "source": "Google",
+      "title": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
+      "sum": "DeepLearning (DL)-based Computer-Aided Diagnostic (CAD) systems have shown great promise in supporting clinicians, but their performance heavily depen",
+      "url": "https://arxiv.org/abs/2611.14518v1",
+      "source": "arXiv · 2611.14518v1",
       "tag": "ai"
     },
     {
-      "title": "Guiding Data Allocation for Robust Subpopulation Generalization",
-      "sum": "Machine learning models often achieve high average accuracy in the training data while performing poorly on test data due to subpopulation shift. A co",
-      "url": "https://arxiv.org/abs/2611.12884v1",
-      "source": "arXiv · 2611.12884v1",
+      "title": "TorchCurves: Differentiable Parametric Curves",
+      "sum": "We present TorchCurves, a PyTorch library that treats vector-valued parametric curves as learnable primitives. Its central operation maps batches of s",
+      "url": "https://arxiv.org/abs/2611.14516v1",
+      "source": "arXiv · 2611.14516v1",
       "tag": "ai"
     },
     {
-      "title": "Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynam",
-      "sum": "Stochastic differential equations (SDEs) describe stochastic processes across a wide range of scientific domains, including physics, biology, and fina",
-      "url": "https://arxiv.org/abs/2611.12880v1",
-      "source": "arXiv · 2611.12880v1",
+      "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Model",
+      "sum": "Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number an",
+      "url": "https://arxiv.org/abs/2611.14515v1",
+      "source": "arXiv · 2611.14515v1",
       "tag": "ai"
     },
     {
-      "title": "Adaptive Quantization Preserves Fast Rates for TD Learning over Rate-Limited Cha",
-      "sum": "Motivated by reinforcement learning subject to communication constraints, we study a policy evaluation problem with linear function approximation over",
-      "url": "https://arxiv.org/abs/2611.12878v1",
-      "source": "arXiv · 2611.12878v1",
+      "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanatio",
+      "sum": "LLM agents are increasingly used for open-ended, data-driven scientific discovery, yet most of them evaluate hypotheses pointwise, testing an empirica",
+      "url": "https://arxiv.org/abs/2611.14514v1",
+      "source": "arXiv · 2611.14514v1",
       "tag": "ai"
     },
     {
-      "title": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composi",
-      "sum": "As multimodal agents accumulate increasingly long interaction histories, effectively retrieving and utilizing past information becomes critical for lo",
-      "url": "https://arxiv.org/abs/2611.12872v1",
-      "source": "arXiv · 2611.12872v1",
-      "tag": "ai"
-    },
-    {
-      "title": "Vendi Anomaly Scores for Efficient and Accurate Anomaly Detection",
-      "sum": "Anomaly detection (AD) is a critical for trustworthy machine learning and scientific discovery. Existing methods typically define anomalies through lo",
-      "url": "https://arxiv.org/abs/2611.12871v1",
-      "source": "arXiv · 2611.12871v1",
-      "tag": "ai"
-    },
-    {
-      "title": "2026年度邵逸夫奖颁奖典礼在香港举行",
-      "sum": "图为伊曼纽尔·康德斯（左）获颁授数学科学奖。中新网记者 陈永诺 摄 图为陈竺（左）获颁授生命科学与医学奖。中新网记者 陈永诺 摄 图为戴宇阁（左）获颁授生命科学与医学奖。中新网记者",
-      "url": "https://www.chinanews.com.cn/tp/2026/11-11/10729924.shtml",
+      "title": "深圳华强北吸引海外客商参观采购",
+      "sum": "11月11日，广东深圳华强北吸引海外客商。华强北位于深圳福田，被称为“中国电子第一街”。这里聚集了数十家大型电子市场，从芯片、元器件到手机数码、智能硬件一应俱全。中新社记者 陈楚红",
+      "url": "https://www.chinanews.com.cn/tp/2026/11-12/10730668.shtml",
       "source": "中新网",
       "tag": "tech"
     },
     {
-      "title": "英格兰拟推新规中小学生在校全天不能接触手机",
-      "sum": "（记者 欧阳开宇）英国英格兰地区校园手机管理政策将进一步收紧，按照新版政府指导文件，自2027年9月起，中小学生在校全天都不能接触手机",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729759.shtml",
-      "source": "中新网国际",
-      "tag": "tech"
-    },
-    {
-      "title": "重庆两江新区加快打造智能网联新能源汽车之都核心承载地",
-      "sum": "重庆两江新区区委常委、区政府常务副区长肖文军10日在当地召开的新闻发布会上透露，作为打造重庆市智能网联新能源汽车之都的核心区，两江新区已形成了从汽车整车到三电系统、智能零部件以及后",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729823.shtml",
-      "source": "中新网财经",
-      "tag": "tech"
-    },
-    {
-      "title": "2026年湖北省城市足球联赛落幕 宜昌队夺冠",
-      "sum": "2026年湖北省城市足球联赛(以下简称楚超)决赛8日下午在宜昌奥体中心体育场打响，宜昌东阳光队在主场力克武汉华工科技队，夺得楚超冠军，也标志着这场历时近八个月、覆盖湖北17个市州的",
-      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10728666.shtml",
-      "source": "中新网体育",
-      "tag": "tech"
-    },
-    {
-      "title": "科技赋能解码西阴文化 200余件（组）文物回望中国考古学百年历程",
-      "sum": "1926年，中国考古学家李济、袁复礼在山西夏县西阴村掘下中国人独立主持现代田野考古的第一铲。100年后，“重读西阴——中国考古学本土化与科学化100周年特展”10日在山西博物院开展",
-      "url": "https://www.chinanews.com.cn/cul/2026/11-10/10729618.shtml",
-      "source": "中新网文化",
-      "tag": "tech"
-    },
-    {
-      "title": "理响中国·讲好“中国式商量”故事｜一湖碧水如何“商量”出甜蜜经济与民生幸福",
-      "sum": "湖风徐来，碧波如练。岭南园的亭台楼榭间，几对新人正预约拍摄、等待领证，琉璃瓦顶映着新人笑靥；雕塑园旁，“花语书房”自助图书馆内，市民游客临窗而坐、静心翻阅。一湖碧水之畔，婚俗新风与",
-      "url": "https://www.chinanews.com.cn/ll/2026/11-11/10729929.shtml",
-      "source": "中新网",
-      "tag": "fin"
-    },
-    {
-      "title": "英国央行副行长警示通胀有持续风险 释放进一步加息信号",
-      "sum": "英国央行负责货币政策的副行长克莱尔·隆巴代利10日在一场央行会议上表示，英国通胀持续风险正在显现，若无通胀降温的明确证据，短期内大概率需要再度加息",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-11/10729870.shtml",
-      "source": "中新网国际",
-      "tag": "fin"
-    },
-    {
-      "title": "胡军：产业向新向绿让中国经济增长动能更加强劲",
-      "sum": "当地时间11月10日，在土耳其安塔利亚举行的《联合国气候变化框架公约》第三十一次缔约方大会(COP31)中国角主题边会上，习近平生态文明思想研究中心主任、生态环境部环境与经济政策研",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729860.shtml",
-      "source": "中新网财经",
-      "tag": "fin"
-    },
-    {
-      "title": "两湾联动足球元老邀请赛在广西梧州收官",
-      "sum": "11月8日，2026“梦想成真·星耀梧州”两湾(粤港澳大湾区与北部湾经济区)联动足球元老邀请赛在广西梧州落下帷幕。来自海内外的35支队伍、约500名元老球员参赛，经三天角逐，共决出",
-      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10728661.shtml",
-      "source": "中新网体育",
-      "tag": "fin"
-    },
-    {
-      "title": "（第九届进博会）全球时尚品牌用文化对话挖掘中国市场下一个增长点",
-      "sum": "在PVH亚太区执行副总裁兼首席财务官、中国区总裁吴颖看来，全球时尚品牌想要在中国市场挖掘出下一个增长机遇，关键在于融合全球积淀与深入本土消费者洞察。在这其中，本土共创和多元互动显得",
-      "url": "https://www.chinanews.com.cn/cul/2026/11-10/10729580.shtml",
-      "source": "中新网文化",
-      "tag": "fin"
-    },
-    {
-      "title": "广东检察机关依法对肖杰涉嫌受贿案提起公诉",
-      "sum": "海南省人大常委会原党组成员、副主任肖杰涉嫌受贿一案，由国家监察委员会调查终结，移送检察机关审查起诉。最高人民检察院依法以涉嫌受贿罪对肖杰作出逮捕决定，并指定由广东省惠州市人民检察院",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-11/10729935.shtml",
-      "source": "中新网",
-      "tag": "cn"
-    },
-    {
-      "title": "生态环境部应对气候变化司司长夏应显：中国建成全球最大、最完整的清洁能源产业链",
-      "sum": "“2025年，中国单位国内生产总值二氧化碳排放比上年下降5.0%，建成全球最大、最完整的清洁能源产业链。”",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729847.shtml",
+      "title": "《中国科学慈善基础画像报告》在沪发布",
+      "sum": "由天桥脑科学研究院(中国)和《中国慈善家》影响力慈善研究院联合主办的“社会力量支持基础研究大会”11日在上海科学会堂举行",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-11/10730517.shtml",
       "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "百亿级市场火爆！“超六成访客是老外” 有人当场下单",
+      "sum": "脑机接口，是指通过在脑与机器之间建立信息通道，实现生物智能与机器智能的协同交互，是生命科学和信息科学融合发展的前沿技术，分为非侵入式、侵入式、半侵入式等多种类型",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-12/10730587.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "第十三届产教融合发展战略国际论坛亮相武汉",
+      "sum": "据武汉市政府新闻办11日发布会消息，11月11日至13日，第十三届产教融合发展战略国际论坛在武汉举办，论坛围绕分类推进高校改革、强化科技和人才支撑主线展开，为区域发展和产业升级持续",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-11/10730457.shtml",
+      "source": "中新网教育",
+      "tag": "tech"
+    },
+    {
+      "title": "反复腹泻、胃痛别只当肠胃病 专家列出神经内分泌肿瘤预警信号",
+      "sum": "11月10日是“世界神经内分泌肿瘤日”。为提高公众对神经内分泌肿瘤的科学认识，推动早筛早诊和规范化诊疗，重庆大学附属肿瘤医院10日以“早识别、早筛查、科学管理神经内分泌肿瘤”为主题",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-10/10729468.shtml",
+      "source": "中新网健康",
+      "tag": "tech"
+    },
+    {
+      "title": "中消协：网购“AB货”同价不同质 公平交易不容“欺生凌弱”",
+      "sum": "12日，中国消费者协会在其官方网站发布《中消协观点：网购“AB货”同价不同质公平交易不容“欺生凌弱”》，文章称，近期，网购“AB货”争议持续升温，成为消费领域热门话题。网购“AB货",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-12/10730683.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "守住你的钱袋子 “双十一”网购防骗指南请查收",
+      "sum": "当前，“双十一”促销活动火热进行，不少消费者忙着下单收货。与此同时，不法分子也瞄准这波网购热潮伺机作案，诈骗套路不断更新，消费者该如何识别？我们梳理了五类多发骗局，帮您看清套路、守",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-12/10730574.shtml",
+      "source": "中新网社会",
+      "tag": "fin"
+    },
+    {
+      "title": "德权威机构大幅上调2026年德国经济增长预期",
+      "sum": "德国经济专家委员会11日发布的报告预计，2026年德国经济将增长1.3%。若这一预测实现，德国经济将迎来自2022年以来首次较为明显的增长",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-11/10730567.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "“双11”购物车折射消费新趋势",
+      "sum": "囤服务、买词元成热门选择",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-12/10730660.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "2026豫排联赛探索“跨省票根互认”机制 以赛事激活消费动能",
+      "sum": "2026年河南省女子排球城市联赛(简称“豫排联赛”)新闻通气会11日在河南郑州举行。会上通报，本届联赛将于11月13日开幕，将通过推行“票根经济”、探索跨省互认等举措，将赛事流量转",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-11/10730369.shtml",
+      "source": "中新网体育",
+      "tag": "fin"
+    },
+    {
+      "title": "直播海报：“北冥鲲鹏”不是神话 在东营蹲一场鸟浪扶摇",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-12/10730699.shtml",
+      "source": "中新网",
       "tag": "cn"
     },
     {
-      "title": "泰国内阁批准数据中心七级监管政策",
-      "sum": "泰国内阁10日批准数据中心监管政策，决定按用电规模实施七级分类管理，20兆瓦及以上项目将面临更严格的选址要求。泰国副总理兼财政部长艾尼迪表示，政府将设立一站式服务中心，统筹数据中心",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-11/10729866.shtml",
+      "title": "俄外交部：将持续致力于揭露日本军国主义罪行",
+      "sum": "俄罗斯外交部发言人扎哈罗娃11日表示，日本政府应当深刻汲取历史教训，放弃当前加速推进“再军事化”政策，并停止试图掩盖日本军国主义在第二次世界大战期间犯下的罪行",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-12/10730575.shtml",
       "source": "中新网国际",
       "tag": "cn"
     },
     {
-      "title": "马龙：应对气候变化不是少数国家的选择题",
-      "sum": "当地时间11月10日，普华永道中国税收政策服务主管合伙人马龙在土耳其安塔利亚表示，中国近年来的一系列财税政策，正用税收杠杆推动绿色承诺转化为企业的实际行动",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729802.shtml",
+      "title": "宁夏贺兰山东麓葡萄酒产区2030年品牌价值瞄准400亿元",
+      "sum": "记者11日从宁夏贺兰山东麓葡萄酒产业园区管委会获悉，根据宁夏回族自治区人民政府印发的《宁夏贺兰山东麓葡萄酒产业发展“十五五”规划》(下称《规划》)，到2030年，贺兰山东麓葡萄酒产",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-11/10730518.shtml",
       "source": "中新网财经",
       "tag": "cn"
     },
@@ -215,80 +208,87 @@
       "tag": "cn"
     },
     {
-      "title": "涉嫌为俄罗斯从事间谍活动，一名美军士兵在英国被捕",
-      "sum": "据路透社报道，英国警方当地时间10日表示，一名美国陆军高级士兵因涉嫌为俄罗斯从事间谍活动，在英国被捕",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-11/10729936.shtml",
+      "title": "@高校毕业生：提升就业能力 这三类补贴别错过",
+      "sum": "提升就业能力有补贴！高校毕业生别错过这项政策",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-10/10729728.shtml",
+      "source": "中新网教育",
+      "tag": "cn"
+    },
+    {
+      "title": "俄外交部：日本应放弃推进再军事化",
+      "sum": "当地时间11月11日，俄罗斯外交部发言人扎哈罗娃在例行记者会上表示，日本应汲取历史教训，放弃加速推进再军事化，停止试图掩盖日本军国主义在第二次世界大战期间犯下的罪行",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-12/10730695.shtml",
       "source": "中新网",
       "tag": "intl"
     },
     {
-      "title": "“四海One Table”亮相上海外滩 中外创作者共话跨文化传播",
-      "sum": "近日，一个名为“四海One Table”的跨文化交流品牌在上海市黄浦区外滩FTC首次亮相。首场活动由外滩FTC、黄浦区侨联、黄浦区新联会主办，来自15个国家和地区的120余位平台代",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729805.shtml",
+      "title": "中央气象台对台风“查帕卡”停止编号",
+      "sum": "中国天气网讯 今年第32号台风“查帕卡”已于昨天(11日)晚上在日本东南洋面变性为温带气旋，中央气象台对其停止编号",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-12/10730601.shtml",
       "source": "中新网社会",
       "tag": "intl"
     },
     {
-      "title": "第九届巴黎和平论坛开幕 聚焦“从主权到合作”",
-      "sum": "第九届巴黎和平论坛当地时间10日在巴黎开幕",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-11/10729889.shtml",
+      "title": "朝中社：金正恩现场指导重要海军基地建设",
+      "sum": "据朝中社报道，朝鲜劳动党总书记、国务委员长金正恩11日现场指导该国东海岸重要海军基地建设工作",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-12/10730649.shtml",
       "source": "中新网国际",
       "tag": "intl"
     },
     {
-      "title": "上海企业海外合作联盟举办德国专场对接活动",
-      "sum": "近日，由上海市侨办、上海市工商联(总商会)、上海市侨联主办的上海企业海外合作联盟海外合作对接活动(德国专场)在上海市长宁区举行",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729775.shtml",
+      "title": "第二艘国产大型邮轮“爱达·花城号”完成首个试运营航次",
+      "sum": "今天(12日)，第二艘国产大型邮轮“爱达·花城号”顺利完成首个试运营航次，抵达广州南沙国际邮轮母港。在首个试运营航次中，“爱达·花城号”模拟真实运营状态，围绕海事安全运营、船岸联动",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-12/10730602.shtml",
       "source": "中新网财经",
       "tag": "intl"
     },
     {
-      "title": "湛江举办国际潜水大赛 中美俄等多国运动员竞技",
-      "sum": "10日，2026湛江国际潜水大赛、2026年世界潜联蹼泳世界杯分站赛(泳池)开幕式在国家体育总局湛江潜水运动学校举行，世界潜联东亚联合会主席，世界潜联蹼泳世界杯技术官员，韩国、马来",
-      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729531.shtml",
+      "title": "“熊猫杯”国际足球锦标赛中国U19男足首站告捷",
+      "sum": "2026CFA中国之队·熊猫杯成都国际青年足球锦标赛(简称“熊猫杯”)11日在成都双流体育中心体育场打响。当晚，中国U19男足3:1击败越南U19男足，取得开门红",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-11/10730566.shtml",
       "source": "中新网体育",
       "tag": "intl"
     },
     {
-      "title": "西安高校团队研发公路安全仿真平台 护航山区通行",
-      "sum": "山区公路地形复杂，急弯、长下坡、桥隧密集，车辆通行的安全风险点多、管控难度大。长安大学“安行智构”团队研发国产化公路安全仿真平台，依托数字模拟技术提前识别道路隐患，为山区公路安全整",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-11/10729927.shtml",
+      "title": "2026年“校园苏州日”全国秋招在苏州大学落幕",
+      "sum": "2026年“校园苏州日”全国秋招苏州高校专场系列活动11日下午在苏州大学举办。至此，2026年“校园苏州日”全国秋招圆满落幕",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-12/10730691.shtml",
       "source": "中新网",
       "tag": "edu"
     },
     {
-      "title": "柬埔寨运送学生车辆坠塘事故致5死21伤 涉事司机被拘",
-      "sum": "柬埔寨干拉省警察局当地时间10日通报称，干拉省克萨干丹县当天发生的运送学生车辆坠塘事故造成5名学生死亡、21人受伤。柬副首相兼教育、青年和体育部大臣韩春那洛当天前往医院探望受伤学生",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729809.shtml",
+      "title": "2026年秋招推出第三批131场就业服务活动",
+      "sum": "记者从人力资源社会保障部了解到，“职引未来——2026年全国城市联合招聘高校毕业生秋季专场”推出第三批131场就业服务活动",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-12/10730609.shtml",
+      "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "英爱多地学校收到威胁邮件 当局认定系境外恶作剧",
+      "sum": "英国苏格兰、北爱尔兰以及爱尔兰共和国有关部门11日确认，当天大批学校收到同一封威胁邮件，经调查评估认定这一威胁不具备可信度，属于来自英国境外的恶作剧",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-12/10730569.shtml",
       "source": "中新网国际",
       "tag": "edu"
     },
     {
-      "title": "吉林北大湖、松花湖雪场冲刺大冬会筹备",
-      "sum": "长春2027第33届世界大学生冬季运动会(下称“长春大冬会”)吉林市分赛区雪上项目比赛场地正加快提质升级改造",
-      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729425.shtml",
+      "title": "黑龙江首届高校足球超级联赛打造体教融合新IP",
+      "sum": "11月11日，2026首届黑龙江省高校足球超级联赛新闻发布会在黑龙江省体育局举行，赛事将于12日晚在哈尔滨工业大学开幕，打造黑龙江省内首个“实体足球+足球电竞”虚实深度融合的高校体",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-11/10730123.shtml",
       "source": "中新网体育",
       "tag": "edu"
     },
     {
-      "title": "续读敬一丹 《那年那信》增订版在京发布",
-      "sum": "敬一丹新作《那年那信(增订版)》(以下简称《那年那信》)发布会暨历年作品回顾纪念会日前在中国传媒大学举行",
-      "url": "https://www.chinanews.com.cn/cul/2026/11-10/10729676.shtml",
+      "title": "四篇苏童作品汇入 话剧《夜间故事》于北京师范大学登台",
+      "sum": "根据苏童同名小说集改编的话剧《夜间故事》日前在北京师范大学北国剧场完成首轮演出",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-11/10730417.shtml",
       "source": "中新网文化",
       "tag": "edu"
     },
     {
-      "title": "北京一零一中教育集团校长熊永昌：让生态文明扎根孩子心中",
-      "sum": "“让绿色成为校园底色，让生态文明扎根孩子心中。”",
-      "url": "https://www.chinanews.com.cn/edu/2026/11-10/10729857.shtml",
-      "source": "中新网教育",
-      "tag": "edu"
-    },
-    {
-      "title": "以味为桥 80名厨师烹制西部陆海新通道沿线美食",
-      "sum": "2026年陆海新通道暨巴蜀文化旅游走廊酒店厨师技能大赛10日在重庆举行。来自川渝两地及贵州、广西、新疆等西部陆海新通道沿线地区的20支代表队、80名厨师齐聚山城，展开厨艺对决",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729834.shtml",
-      "source": "中新网社会",
+      "title": "长征路上，红军干部始终站在队伍最前列，冲在战斗第一线",
+      "sum": "在中国人民革命军事博物馆，“伟大的远征——纪念中国工农红军长征胜利90周年主题展览”吸引全国各地观众慕名而来，展厅内人流络绎不绝。在真实文物与历史场景的交织中，人们触摸信仰温度、聆",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-12/10730625.shtml",
+      "source": "中新网",
       "tag": "cul"
     },
     {
@@ -299,9 +299,9 @@
       "tag": "cul"
     },
     {
-      "title": "上海文艺创作成果“绽放”艺术节",
-      "sum": "音乐会《上海大歌剧院和她的朋友们》、舞剧《小刀会》、京剧《龙凤呈祥》、越剧《华山奇缘》、芭蕾《寻找木卡姆》、歌剧《爱之甘醇》……横跨多个艺术门类的“上海出品”力作“绽放”于第二十五",
-      "url": "https://www.chinanews.com.cn/cul/2026/11-10/10729837.shtml",
+      "title": "四十余位艺术家呈现百余件作品 “艺术家请客2026”在沪开启",
+      "sum": "“艺术家请客2026”艺术项目日前在上海开启。项目汇聚四十余位不同代际、不同创作媒介的艺术家，呈现100余件作品，以主题展览、公共论坛、学术讲座、创意工作坊等形式，让艺术家与公众在",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-11/10730451.shtml",
       "source": "中新网文化",
       "tag": "cul"
     },
@@ -320,72 +320,72 @@
       "tag": "cul"
     },
     {
-      "title": "红色薪火代代传 “中华体育精神颂”走进四川甘孜",
-      "sum": "题：红色薪火代代传 “中华体育精神颂”走进四川甘孜",
-      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729566.shtml",
+      "title": "2026豫排联赛：奥运冠军朱婷任形象大使 霹雳舞名将领衔开场",
+      "sum": "2026年河南省女子排球城市联赛(简称“豫排联赛”)开幕式暨揭幕战将于13日在河南郑州市体育馆举行，不仅邀请女排奥运冠军朱婷担任形象大使，而且在参赛资格上大幅“松绑”，实行“全员排",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-11/10730431.shtml",
       "source": "中新网体育",
       "tag": "sport"
     },
     {
-      "title": "从秦巴腹地到黄龙山麓：陕西省自行车联赛由全域覆盖走向体系跃升",
-      "sum": "九站赛道、七个月、近6000人次——2026陕西省自行车联赛日前在延安黄龙收官。这场以“全民健身 运动三秦”为主题的省级群众性自行车赛事，把体育赛事办进了秦巴山区、渭河两岸与黄土高",
-      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729414.shtml",
+      "title": "第二届全国全民健身大赛游泳总决赛在山东青岛开赛",
+      "sum": "第二届全国全民健身大赛游泳总决赛11日在位于青岛市崂山区的国信体育中心游泳跳水馆开赛。本次赛事共吸引全国14支代表队的219名游泳爱好者同场竞技",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-11/10730322.shtml",
       "source": "中新网体育",
       "tag": "sport"
     },
     {
-      "title": "逾百名全国中老年足球爱好者佛山“以赛会友”",
-      "sum": "第34届“中华杯”全国中老年足球赛(C组佛山赛区)正在三水健力宝足球青训中心举行。本次赛事吸引香港、澳门、北京、河南、湖北、辽宁、江西、深圳等地多支队伍参赛，100余名中老年足球爱",
-      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729389.shtml",
+      "title": "斯诺克冠中冠赛：特鲁姆普首轮出局 尼尔·罗伯逊晋级四强",
+      "sum": "当地时间11月10日，2026年斯诺克冠中冠邀请赛在英国莱斯特展开第二个比赛日的较量，澳大利亚名将尼尔·罗伯逊连赢两场成功突围，成为本次赛事第二位晋级四强的球手。上届赛事亚军、英格",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-11/10730049.shtml",
       "source": "中新网体育",
       "tag": "sport"
     },
     {
-      "title": "斯诺克冠中冠赛：中国军团3人参赛 卫冕冠军塞尔比小组战折戟",
-      "sum": "当地时间11月9日，2026年斯诺克冠中冠邀请赛在英国莱斯特展开首日比赛。在率先进行的第一小组较量中，世界排名第12位的英格兰球手克里斯·韦克林连赢两场成功突围，成为本次赛事首位晋",
-      "url": "https://www.chinanews.com.cn/ty/2026/11-10/10729384.shtml",
+      "title": "中超观众数刷新历史新高 中甲2028赛季将扩军至18队",
+      "sum": "中国足球职业联赛2026赛季总结暨2027赛季新政解读新闻通气会(简称“通气会”)10日在广州举行。记者获悉，2026赛季中超联赛现场观众达709.6万人次，中超现场观众人数创历史",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-11/10729986.shtml",
       "source": "中新网体育",
       "tag": "sport"
     },
     {
-      "title": "成都蓉城俱乐部董事长、总经理辞职 主教练阿洛伊西离任",
-      "sum": "11月9日晚，成都蓉城足球俱乐部有限公司(以下简称“成都蓉城”)连发两份公告，王磊辞去俱乐部董事长职务，吴博辞去俱乐部总经理职务；约翰·阿洛伊西不再担任成都蓉城足球俱乐部主教练职务",
-      "url": "https://www.chinanews.com.cn/ty/2026/11-09/10729127.shtml",
+      "title": "2026年广东省女子篮球联赛八强出炉",
+      "sum": "中国体育彩票·2026年广东省女子篮球联赛(以下简称“赛事”)于7日至10日进行小组赛及八强附加赛比拼。经过多场激烈角逐，八强席位全部产生",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-11/10729955.shtml",
       "source": "中新网体育",
       "tag": "sport"
     },
     {
-      "title": "未来三天北京晴天持续昼夜温差可达15℃ 扩散条件逐渐转差",
-      "sum": "中国天气网讯 未来三天(11月11日至13日)，北京晴天持续，最高气温可达16℃，但昼夜温差较大，早晚时段寒意足，公众需持续做好保暖工作",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-11/10729903.shtml",
+      "title": "美政商界人士呼吁共同推动稳定健康的美中关系",
+      "sum": "美中关系全国委员会成立60周年暨2026年度颁奖晚宴10日晚在纽约举办，中美政商界人士近400人出席。与会嘉宾表示，两国元首对新阶段两国关系发展的战略引领至关重要，呼吁扩大共识、管",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-12/10730693.shtml",
       "source": "中新网",
       "tag": "life"
     },
     {
-      "title": "从线上到线下 求职招聘如何更好实现双向奔赴？",
-      "sum": "新闻1+1丨从线上到线下 求职招聘如何更好实现双向奔赴？",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-11/10729894.shtml",
+      "title": "大洋彼岸，95岁的他还在想念“酸啾啾”",
+      "sum": "标题：寻找照片中的TA丨大洋彼岸，95岁的他还在想念“酸啾啾”",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-12/10730658.shtml",
       "source": "中新网社会",
       "tag": "life"
     },
     {
-      "title": "英国发布今冬首个低温健康黄色警报",
-      "sum": ")英国卫生安全局(UKHSA)10日发布2026#8209;2027年冬季首个低温健康黄色警报，警报覆盖英格兰西北部及西米德兰兹地区，生效时间为当地11月12日上午9时至14日中午",
-      "url": "https://www.chinanews.com.cn/gj/2026/11-10/10729842.shtml",
-      "source": "中新网国际",
+      "title": "报告显示：中国旅游市场人气旺盛 “流量转化”考题待解",
+      "sum": "世界旅游联盟等机构11日在合肥联合发布三份旅游报告，勾勒出当前中国旅游市场的基本轮廓：客流维持高景气状态，但“人气”尚未完全转化为“财气”，如何把旅游流量转化为收益，成为行业必须直",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-11/10730553.shtml",
+      "source": "中新网财经",
       "tag": "life"
     },
     {
-      "title": "“只吃粗粮等于健康”盛行网络 真的如此吗？",
-      "sum": "真相来了丨“只吃粗粮等于健康”盛行网络 真的如此吗？",
-      "url": "https://www.chinanews.com.cn/jk/2026/11-11/10729892.shtml",
+      "title": "号称“降压降糖抗癌” 食物真能代替药物吗",
+      "sum": "真相来了丨号称“降压降糖抗癌” 食物真能代替药物吗",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-12/10730579.shtml",
       "source": "中新网健康",
       "tag": "life"
     },
     {
-      "title": "中央气象台：云南华南江南等地有降水 新疆等地多雨雪 华北黄淮等地将有霾天气",
-      "sum": "据中央气象台网站11日消息，昨日，全国大部地区降水稀少，仅云南部分地区出现较强降雨。预计未来三天，云南南部及华南等地降雨较强，注意防范局地强降雨可能引发的次生灾害；新疆北部、川西高",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-11/10729898.shtml",
+      "title": "中新健康｜“减肥神药”或致永久失明 “司美格鲁肽副作用”冲上热搜",
+      "sum": "“司美格鲁肽副作用”近日冲上热搜",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-12/10730631.shtml",
       "source": "中新网",
       "tag": "life"
     }
