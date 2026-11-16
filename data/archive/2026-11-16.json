@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T10:20:18+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Introducing ChatGPT Wallet",
+      "sum": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protec",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Microsoft Research Focus – Edition #98",
+      "sum": "What's new in research at Microsoft? Host Anson Ho explores the latest, including AI-powered universal translation, a breakthrough in a 31-year-old ma",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "sum": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "MiniMax：MiniMax-H3-Image-PE 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-08 · text-generation · 2360 下载",
+      "url": "https://hf-mirror.com/models/MiniMaxAI/MiniMax-H3-Image-PE",
+      "source": "MiniMax",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Qwen3.8-27B-DSpine-b16 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-07 · text-generation · 5590 下载",
+      "url": "https://hf-mirror.com/models/tencent/Qwen3.8-27B-DSpine-b16",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "智源：PingPongRealWorldRL 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-03 · reinforcement-learning · 28 下载",
+      "url": "https://hf-mirror.com/models/BAAI/PingPongRealWorldRL",
+      "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "Gilbert + Tobin rethinks the business of law with AI",
+      "sum": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+      "sum": "Microsoft researchers have discovered &#8220;Lazarus,&#8221; a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherw",
+      "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "sum": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+      "sum": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+      "url": "https://openai.com/index/jiostar-vijay-seshadri",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "AmbiSteer: Selectively Eliciting Ambiguity-Aware Responses in Vision-Language Mo",
+      "sum": "Vision-language models (VLMs) often exhibit overconfidence, providing firm answers even when visual evidence is insufficient. A prominent case is refe",
+      "url": "https://arxiv.org/abs/2611.17900v1",
+      "source": "arXiv · 2611.17900v1",
+      "tag": "ai"
+    },
+    {
+      "title": "More Genes, Faster Inference: Efficient Large-Panel Spatial Transcriptomics Pred",
+      "sum": "Spatial transcriptomics (ST) prediction from histology aims to infer spatially resolved gene expression profiles directly from tissue images. This is ",
+      "url": "https://arxiv.org/abs/2611.17899v1",
+      "source": "arXiv · 2611.17899v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Hierarchical Bayesian physics-augmented neural networks for populations of hyper",
+      "sum": "The hyperelastic law of a material such as soft tissue differs between specimens, and often only a few specimens can be tested. Physics-augmented neur",
+      "url": "https://arxiv.org/abs/2611.17892v1",
+      "source": "arXiv · 2611.17892v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Quantum Graph Neural Networks: Architectures, Trainability, and Applications",
+      "sum": "Quantum graph neural networks (QGNNs) apply parametrized quantum circuits to graph-structured data, with the aim of overcoming limits of classical gra",
+      "url": "https://arxiv.org/abs/2611.17886v1",
+      "source": "arXiv · 2611.17886v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Securing Multi-Agent Systems by Design",
+      "sum": "Multi-agent systems solve complex tasks by decomposing them into subtasks, delegating the subtasks to agents, and aggregating the agents' responses us",
+      "url": "https://arxiv.org/abs/2611.17883v1",
+      "source": "arXiv · 2611.17883v1",
+      "tag": "ai"
+    },
+    {
+      "title": "华东师大首颗低轨高光谱卫星“华师-科达星”揭牌 “量天星座”计划同步启动",
+      "sum": "华东师范大学自主研发的首颗低轨高光谱卫星“华师-科达星”15日正式揭牌，“量天星座”建设计划同步启动，标志着该校在空天信息、智能遥感和地球系统科学交叉研究领域迈出关键一步",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-16/10732578.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "美国“火神”火箭未能将亚马逊卫星送入预定轨道",
+      "sum": "据哥伦比亚广播公司(CBS)报道，当地时间15日，美国联合发射联盟公司的“火神”运载火箭执行亚马逊低地轨道卫星发射任务，但升空约10分钟后出现异常，未能将搭载的40颗宽带通信卫星送",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-16/10732548.shtml",
+      "source": "中新网国际",
+      "tag": "tech"
+    },
+    {
+      "title": "居家机器人，何时进家门？",
+      "sum": "(融观中国)",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-16/10732556.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "第二十一届江西省高校摄影艺术作品展在南昌开幕",
+      "sum": "以光影记录时代，用镜头讲述赣鄱故事。13日，第二十一届江西省高校摄影艺术作品展在江西科技学院湖畔美术馆正式开幕",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-13/10731837.shtml",
+      "source": "中新网文化",
+      "tag": "tech"
+    },
+    {
+      "title": "首都高校新生同上“强国复兴有我”大思政课",
+      "sum": "“强国复兴有我”2026年首都高校新生教育主题“大思政课”12日在清华大学新清华学堂精彩开课。本次课程打破传统课堂边界，创新采用“科技+艺术”的表现形式，通过情景剧、舞蹈、诗歌合唱",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-13/10731671.shtml",
+      "source": "中新网教育",
+      "tag": "tech"
+    },
+    {
+      "title": "国家统计局：10月份国民经济运行总体平稳、向新向优",
+      "sum": "据国家统计局网站消息，10月份，各地区各部门认真贯彻落实党中央和国务院决策部署，坚持稳中求进工作总基调，强化存量政策和增量政策协同，扎实推进高质量发展，生产供给平稳增长，市场销售规",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-16/10732626.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "部分电动自行车3C认证卡壳 消费者上牌遇阻",
+      "sum": "花几千元买了一辆电动自行车，门店承诺可以上牌。可等到办理登记时，却被告知：车辆对应的3C认证证书已经暂停了。近日，不少地方的消费者向记者反映，自己遇到了类似难题：找门店，被告知等厂",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-15/10732245.shtml",
+      "source": "中新网社会",
+      "tag": "fin"
+    },
+    {
+      "title": "第49届东盟峰会在菲律宾马尼拉开幕",
+      "sum": "第49届东盟峰会15日在菲律宾首都马尼拉开幕。东盟各国领导人将围绕能源安全、粮食安全及经济合作等议题深入交流，探讨加强区域协作、应对共同挑战的举措",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-15/10732417.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "“政策落地相当实惠”——居民购房贷款贴息政策落地满月观察",
+      "sum": "“政策落地相当实惠”(财经深一度)",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-16/10732553.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "年度收官之战 2026中国龙舟公开赛总决赛在福建延平举行",
+      "sum": "2026年中国龙舟公开赛总决赛暨闽江通道经济发展带龙舟邀请赛14日至15日在福建南平延平区举行。作为中国龙舟协会重点打造的品牌赛事，本年度中国龙舟公开赛已顺利完成5站分站比拼，本次",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-15/10732471.shtml",
+      "source": "中新网体育",
+      "tag": "fin"
+    },
+    {
+      "title": "延寿、护心、舒缓颈椎 这项运动的好处被低估了",
+      "sum": "挥拍运动好处多多",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-16/10732629.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "法国周末示威活动中超过400人被拘捕",
+      "sum": "当地时间11月15日，法国内政部和巴黎检察院公布的最新数据显示，在14日举行的全国性示威活动中，共有404人被警方拘捕，其中在巴黎被拘捕的人员为134人",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-16/10732530.shtml",
+      "source": "中新网国际",
+      "tag": "cn"
+    },
+    {
+      "title": "中外400余名“铁人”齐聚重庆武隆 在喀斯特雄奇山水间展开角逐",
+      "sum": "15日，2026重庆武隆芙蓉湖铁人三项公开赛在重庆市武隆区鸣枪开赛。来自国内外的400余名选手齐聚芙蓉湖国家湿地公园，在喀斯特雄奇山水间展开速度与耐力的较量",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-15/10732507.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "HSK留学中国预科联盟在京成立",
+      "sum": "11月15日，2026世界中文大会期间，HSK留学中国预科联盟(以下简称“联盟”)正式成立。这是首个面向外国中文学习者，采用“国外＋国内”两段式，开展预科教育的中外合作机制",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-15/10732454.shtml",
+      "source": "中新网教育",
+      "tag": "cn"
+    },
+    {
+      "title": "抗过敏药吃7天就停？儿童过敏防治这四个误区要避开",
+      "sum": "立冬过后，进入规划来年过敏防治的关键时段，关于季节性过敏的防治，可能存在哪些误区？我们一一澄清。为孩子治疗过敏，不少家长都会纠结一个问题：抗过敏药连续吃了7天，是不是就该停药，效果",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-16/10732549.shtml",
+      "source": "中新网健康",
+      "tag": "cn"
+    },
+    {
+      "title": "（深圳APEC）习近平将同俄罗斯总统普京、美国总统特朗普举行中俄美元首会晤",
+      "sum": "中国外交部发言人16日宣布，11月19日，国家主席习近平将同俄罗斯总统普京、美国总统特朗普在深圳举行中俄美元首会晤。(完)",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-16/10732602.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "大范围雨雪持续影响中东部 北方大部地区进入低温模式",
+      "sum": "据中央气象台网站消息，昨日，新疆伊犁河谷、青海南部、甘肃东部、宁夏、陕西北部、内蒙古中西部、山西中北部、河北西北部、北京西北部等地出现小到中雪或雨夹雪，局地大雪或暴雪。今晨，新疆东",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-16/10732566.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "刚果（金）埃博拉疫情持续六个月 已致5400余人死亡",
+      "sum": "非洲疾控中心15日发布公告称，刚果(金)的本迪布焦型埃博拉疫情已持续六个月，累计报告病例超过1.1万例，死亡病例超过5400例。目前疫情仍在持续蔓延，每周新增病例400至500例",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-16/10732536.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "中国环境记协会主席：做好生态文明国际传播",
+      "sum": "中国环境新闻工作者协会主席，生态环境部宣教司原司长、新闻发言人刘友宾在日前出版的《学习时报》上撰文指出，做好生态文明国际传播，对外讲好生态文明建设的中国故事，有助于国际社会读懂中国",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-15/10732467.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "速度滑冰世界杯北京站收官 中国队再获1金2银",
+      "sum": "2026-2027赛季国际滑联速度滑冰世界杯北京站比赛15日迎来最后一个比赛日。中国队在男子500米项目和女子团体追逐项目中收获一枚金牌和两枚银牌",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-16/10732535.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "西部教师教育高质量发展论坛落地宁夏师范大学 探寻区域育人新路径",
+      "sum": "11月15日，西部教师教育高质量发展论坛在宁夏师范大学举办。论坛聚焦西部教育发展痛点与教师教育创新改革，为西部地区基础教育提质升级、建设高素质师资队伍搭建高水平学术交流平台",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-16/10732605.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "购买儿童票，看身高还是看年龄？",
+      "sum": "“高个儿童买全价票”“儿童购票可能比大学生买票贵”……",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-16/10732555.shtml",
+      "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "2026中国网球巡回赛职业级总决赛将在澳门举行",
+      "sum": "2026中国网球巡回赛“澳娱综合”职业级总决赛(澳门)暨全国网球单项锦标赛将于11月30日至12月6日在澳门网球学校举行。记者13日在北京举行的赛事新闻发布会上获悉，届时温网女双冠",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-14/10732098.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "脱口秀《和为贵》北下关公益场开演",
+      "sum": "11月13日，由北京市海淀区北下关街道党工委、办事处主办的“印记北下关 文化暖人心”2026年文化惠民系列活动——多子宣主打脱口秀《和为贵》北下关公益场，在北京交通大学天佑会堂举办",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-15/10732348.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "今年中文水平考试考生人数首破百万人次",
+      "sum": "11月13日至15日，2026世界中文大会在北京举行，来自160多个国家和地区的约5000名代表参会。记者从大会获悉，今年中文水平考试(HSK)考生人数首次突破100万人次。随着中",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-15/10732224.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "官方通报“湘超”球迷拉侮辱性横幅：2人被行拘",
+      "sum": "据“娄底文旅广体”微信公众号消息，“湘超”联赛娄底赛区组委会16日发布情况通报称，2026年11月15日，“湘超”联赛四分之一决赛娄底队主场对阵衡阳队。开赛之前，个别人员在场外呼喊",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-16/10732584.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "一馆看遍琼岛文脉 “海南文博综合馆”博博会人气旺",
+      "sum": "指尖一点，测一测“自己是哪件海南文物”；戴上耳机，听一段黎族鼻箫的悠远吟唱……",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-15/10732449.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "在柬埔寨金边“法语国家文化村”感受多元文化魅力",
+      "sum": "题：在柬埔寨金边“法语国家文化村”感受多元文化魅力",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-14/10732210.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "2026横店马拉松在浙江东阳横店鸣枪开跑 跑者共赴光影之约",
+      "sum": "11月15日，2026横店马拉松在浙江东阳横店鸣枪开跑。2.2万名跑者在奔跑中穿越不同影视场景，体验一场别具特色的“光影之旅”",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-15/10732470.shtml",
+      "source": "中新网体育",
+      "tag": "cul"
+    },
+    {
+      "title": "方言何以在青年网络生活中“潮”起来",
+      "sum": "博主“是舒舒”用四川泸州话为动漫角色配音，浙江衢州青年陈越将“奥扫”等家乡话写进说唱，由“棉毛裤”浙江方言发音转化而来的英文谐音梗“Me more cool”引来网友互动……在青年",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-16/10732539.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "全国羽毛球团体锦标赛落幕：浙江男队卫冕 江苏女队夺冠",
+      "sum": "“李宁·小糊涂仙杯”2026年全国羽毛球团体锦标赛15日在宜昌奥体中心综合馆收官。浙江男队、江苏女队分获男、女团体冠军",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-16/10732625.shtml",
+      "source": "中新网",
+      "tag": "sport"
+    },
+    {
+      "title": "重返“冰丝带”，北京冬奥会冠军高亭宇速滑世界杯夺金",
+      "sum": "15日，2026-2027赛季速度滑冰世界杯北京站结束最后一日争夺。北京冬奥会冠军高亭宇在主场国家速滑馆“冰丝带”夺得男子500米第二次比赛冠军",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-15/10732528.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "村民组队乡亲助威 湖南桃江“村拔”赛出乡村体育热",
+      "sum": "随着裁判哨响，由各村村民组成的参赛队员扎稳马步、重心后压，绳索中间的标识在双方角力之间来回摆动，现场呐喊助威声不绝于耳……11月15日，湖南桃江县首届全民拔河擂台赛决赛开赛，一根拔",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-16/10732604.shtml",
+      "source": "中新网",
+      "tag": "sport"
+    },
+    {
+      "title": "辽宁女足夺得2026赛季中国女超冠军",
+      "sum": "辽宁沈北禾丰女足15日坐镇主场，以1比1战平北京女足，提前一轮夺得2026赛季中国足球女子超级联赛(下称“女超”)冠军。这是球队队史首个女超联赛冠军，也是职业化以来辽宁足球首次在同",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-15/10732491.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "新安江畔近万人竞速 浙江建德打造长三角生态运动名片",
+      "sum": "晨雾漫过新安江畔，11月15日，2026建德马拉松鸣枪开跑。依托沿江山水廊道与厚重人文积淀，这场赛事迎来海内外跑者齐聚，在一江清风吹拂下开启奔跑之约",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-15/10732479.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "新版医保目录“新”在哪",
+      "sum": "11月14日，2026年国家医保药品目录和商业健康保险创新药品目录发布。基本医保目录新增107种药品，其中51个为1类创新药，创历史新高。商保创新药目录新增12种药品，总数达到28",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-16/10732590.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "医保钱包2.0版上线，“异地孝心”一键直达",
+      "sum": "跨省共济202.61万人次，医保个账结余变“家庭健康金”",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-16/10732546.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "健身半年，竟然两次真菌感染！医生提醒→",
+      "sum": "近日",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-16/10732579.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "老龄陪伴式服务正从社区试点走向家庭场景 如何让陪伴服务更可持续？",
+      "sum": "人口老龄化是当前和今后较长时期我国的基本国情，空巢、独居老人已经成为一个不可忽视的群体，不少异地打拼的子女难以时常陪伴在长辈身边，老人精神慰藉缺口凸显，于是，多地出现了老龄陪伴式服",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-16/10732545.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "供暖后室内干燥 医生教你如何“给空气补水”",
+      "sum": "朝“问”健康丨供暖后室内干燥 医生教你如何“给空气补水”",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-16/10732569.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    }
+  ]
+}
