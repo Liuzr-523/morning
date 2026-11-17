@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T12:42:25+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "TokenEconomizer: Learning from Experience to Make AI Coding Agents More Efficien",
+      "sum": "AI coding agents can waste time and tokens relearning the same lessons. TokenEconomizer is an open-source plugin that builds on past sessions to cut c",
+      "url": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Broadening access to AI for scientists",
+      "sum": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "sum": "We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "MiniMax：MiniMax-H3-Image-PE 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-08 · text-generation · 2730 下载",
+      "url": "https://hf-mirror.com/models/MiniMaxAI/MiniMax-H3-Image-PE",
+      "source": "MiniMax",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Qwen3.8-27B-DSpine-b16 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-07 · text-generation · 5984 下载",
+      "url": "https://hf-mirror.com/models/tencent/Qwen3.8-27B-DSpine-b16",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "智源：PingPongRealWorldRL 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-03 · reinforcement-learning · 30 下载",
+      "url": "https://hf-mirror.com/models/BAAI/PingPongRealWorldRL",
+      "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "Microsoft Research Focus – Edition #98",
+      "sum": "What's new in research at Microsoft? Host Anson Ho explores the latest, including AI-powered universal translation, a breakthrough in a 31-year-old ma",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Our first phase of embedded assessments",
+      "sum": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and ",
+      "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "sum": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "Advancing computer-use agents for healthcare teams",
+      "sum": "",
+      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "A Matrix with Steps: An Episodic and Procedural Memory Method for Tool-Using Age",
+      "sum": "Agents that call tools and robots that execute tasks are challenged by two shortcomings: they repeat what failed before, and they learn from runs that",
+      "url": "https://arxiv.org/abs/2611.20230v1",
+      "source": "arXiv · 2611.20230v1",
+      "tag": "ai"
+    },
+    {
+      "title": "SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations",
+      "sum": "A coding agent working within a software organization must establish what to build, collaborate with colleagues, and verify what it delivers. We intro",
+      "url": "https://arxiv.org/abs/2611.20218v1",
+      "source": "arXiv · 2611.20218v1",
+      "tag": "ai"
+    },
+    {
+      "title": "FIDEL: Abugida-Aware Pre-tokenization for Ethiopic Languages",
+      "sum": "Subword tokenizers assume that meaningful linguistic units can be recovered by splitting text at learned boundaries, an assumption better suited to co",
+      "url": "https://arxiv.org/abs/2611.20216v1",
+      "source": "arXiv · 2611.20216v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Paying Creators for Training Data Can Increase AI Displacement",
+      "sum": "Generative AI increasingly competes with creators while using their content as training data. In response, policymakers have called for platforms to c",
+      "url": "https://arxiv.org/abs/2611.20204v1",
+      "source": "arXiv · 2611.20204v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Radar Panoptic Transformer: Semantic-Guided Mask Queries for Dynamic Scene Under",
+      "sum": "Automotive radar provides long-range sensing and direct Doppler velocity measurements, but its sparse and non-uniformly sampled point clouds pose sign",
+      "url": "https://arxiv.org/abs/2611.20203v1",
+      "source": "arXiv · 2611.20203v1",
+      "tag": "ai"
+    },
+    {
+      "title": "APEC让数字红利惠及亚太",
+      "sum": "凌晨四点半，印度尼西亚泗水晨光熹微。24小时营业的便民小店内，店主莉娜·萨丽正低头翻看手机上的线上订单。“这个时间网络一定不能卡，很多客人一早就下单，如果支付失败，一天的生意都会受",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-17/10733326.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "“彩云汇”专题赛云南安宁开幕 以赛促科创项目落地转化",
+      "sum": "16日，2026年彩云汇科创大赛新能源新材料产业专题赛暨安宁全国招商大会在云南省安宁市开幕。为期两天的赛程中，涵盖新能源、新型储能及第三代半导体等领域的优质项目，将以“路演7分钟＋",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-16/10733040.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "首都高校新生同上“强国复兴有我”大思政课",
+      "sum": "“强国复兴有我”2026年首都高校新生教育主题“大思政课”12日在清华大学新清华学堂精彩开课。本次课程打破传统课堂边界，创新采用“科技+艺术”的表现形式，通过情景剧、舞蹈、诗歌合唱",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-13/10731671.shtml",
+      "source": "中新网教育",
+      "tag": "tech"
+    },
+    {
+      "title": "浙大研究团队首次揭示溶酶体钙摄取机制 筑基罕见病研究",
+      "sum": "浙江大学医学院、良渚实验室教授徐浩新团队13日在《科学》发表成果，首次鉴定出溶酶体中负责钙离子摄取的关键跨膜蛋白TMEM184B和TMEM184C，补全了溶酶体钙信号循环的最后一块",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-13/10731723.shtml",
+      "source": "中新网健康",
+      "tag": "tech"
+    },
+    {
+      "title": "消息称阿里调整员工回流政策，知情人士否认“史上最严”说法",
+      "sum": "据新浪科技今日报道，有市场消息称，近日阿里巴巴发布最新通知，员工回流政策有所调整。 即日起， 从阿里集团主动离职 1 次，要满 6 个月后方可应聘 ，但回流到集团内未曾任职的业务集",
+      "url": "https://www.ithome.com/1/028/217.htm",
+      "source": "IT之家",
+      "tag": "tech"
+    },
+    {
+      "title": "直播间“低价甩卖”藏猫腻 上海杨浦警方捣毁一售假团伙",
+      "sum": "原价4万元的品牌五花手链，直播间售价仅400余元；主播以“物超所值”“低价折扣”等话术吸引消费者下单，背后却是一条从直播引流、接单发货到仓储囤货的售假链条",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-17/10733310.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "餐品送达却仍遭退款 揭秘外卖代下单诈骗套路",
+      "sum": "近日，有外卖骑手按订单备注将餐品放进电梯，拍照确认送达后，却收到了退款申请。一桩看似普通的纠纷，牵出了利用二手平台代下单实施诈骗的乱象。外卖明明已经送达，退款为何还能发生？消费者以",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-17/10733184.shtml",
+      "source": "中新网社会",
+      "tag": "fin"
+    },
+    {
+      "title": "2026年欧元金融周“中国日”活动在法兰克福举行",
+      "sum": "2026年欧元金融周“中国日”活动16日在德国法兰克福举行。来自中欧双方政治、经济、金融等各界代表与会，围绕进一步加强中德、中欧经济金融合作等议题展开探讨",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-17/10733173.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "爱奇艺发布2026Q3财报：Non-GAAP运营盈利 转型战略稳步推进",
+      "sum": "11月16日，爱奇艺(NASDAQ:IQ)发布截至2026年9月30日未经审计的第三季度财报。三季度，爱奇艺总收入60.1亿元人民币。其中会员服务收入39.7亿元，在线广告服务收入",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-17/10733260.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "年度收官之战 2026中国龙舟公开赛总决赛在福建延平举行",
+      "sum": "2026年中国龙舟公开赛总决赛暨闽江通道经济发展带龙舟邀请赛14日至15日在福建南平延平区举行。作为中国龙舟协会重点打造的品牌赛事，本年度中国龙舟公开赛已顺利完成5站分站比拼，本次",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-15/10732471.shtml",
+      "source": "中新网体育",
+      "tag": "fin"
+    },
+    {
+      "title": "商务部等9部门深入推进再生资源回收体系建设",
+      "sum": "据商务部网站消息，商务部等9部门发布《关于深入推进再生资源回收体系建设 促进回收行业高质量发展的意见》",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-17/10733330.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "跨省揽才、政策托底 今年“秋招”已提供超550万个岗位",
+      "sum": "眼下，2026年全国城市联合招聘高校毕业生秋季专场活动正在进行。记者从人力资源社会保障部了解到，截至目前，各地共举办一万多场招聘会，26.4万家用人单位提供了551.5万个岗位",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-16/10733106.shtml",
+      "source": "中新网社会",
+      "tag": "cn"
+    },
+    {
+      "title": "联合国妇女署：将性别平等纳入气候政策，中国为全球提供借鉴",
+      "sum": "《联合国气候变化框架公约》第三十一次缔约方大会(COP31)正在土耳其安塔利亚举行。联合国妇女署政策专家、研究及数据副主任劳拉·图尔凯(Laura Turquet)当地时间16日在",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-16/10733049.shtml",
+      "source": "中新网国际",
+      "tag": "cn"
+    },
+    {
+      "title": "政策红利“落地成景” 海南前10月入境游客同比增43.2%",
+      "sum": "一次免签入境、一单离岛免税购物、一趟医疗康养之旅，正将海南自贸港的政策红利转化为境外游客可感可及的便利。今年1-10月，海南接待入境游客161.97万人次，同比增长43.2%，入境",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-17/10733270.shtml",
+      "source": "中新网财经",
+      "tag": "cn"
+    },
+    {
+      "title": "中外400余名“铁人”齐聚重庆武隆 在喀斯特雄奇山水间展开角逐",
+      "sum": "15日，2026重庆武隆芙蓉湖铁人三项公开赛在重庆市武隆区鸣枪开赛。来自国内外的400余名选手齐聚芙蓉湖国家湿地公园，在喀斯特雄奇山水间展开速度与耐力的较量",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-15/10732507.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "500强企业集聚海口江东新区：在这里出海更高效",
+      "sum": "随着南非专场投资对接会近日的举办，今年4月启动的“海链全球”8场国别推介活动收官，吸引10余个国家和地区的代表团先后到访海口江东新区",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-17/10733299.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "福建君子峰保护区再添4种大型真菌新种 累计发现8种新种",
+      "sum": "近日，国际真菌学知名期刊《Journal of Fungi》发布一项重要成果：福建君子峰国家级自然保护区发现近黄蜡鹅膏、中黑条纹粉褶蕈、浅褐乳菇、黄小乳菇4种大型真菌新种",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-17/10733282.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "8人凌晨3点潜入军工厂纵火，这个国家却要关闭对俄口岸！俄罗斯：这是“恐俄症”发作",
+      "sum": "关闭对俄口岸！俄罗斯：这是“恐俄症”发作 | 国际早察",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-17/10733273.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "TOP500、HPCG双榜第一！“灵晟”蝉联全球超算榜首",
+      "sum": "当地时间11月17日，在美国芝加哥举行的SC26国际超级计算大会期间，新一期全球超算TOP500榜单正式发布：国家超级计算深圳中心“灵晟”E级超算以2.198EFlops(每秒21",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-17/10733254.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "2000余名跑友老挝万象开跑 见证中老友谊",
+      "sum": "2026老中友谊(万象)国际半程马拉松15日在老挝首都万象赛色塔综合开发区举行。2000余名跑友用脚步丈量万象，以奔跑见证友谊",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-16/10733066.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "靖安县委统战部牵头开展产教融合调研 推动校企合作签约",
+      "sum": "为持续深化产教融合，推动校企协同育人，充分发挥统一战线凝心聚力、牵线搭桥作用，11月13日，靖安县委统战部组织靖安县中华职业教育社、南昌交通学院智能制造学院、南昌交通学院继续教育学",
+      "url": "https://www.chinanews.com.cn/txy/2026/11-17/10733313.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "2026年京澳高校足球邀请赛首次分设澳门、横琴两站",
+      "sum": "2026年京澳高校足球邀请赛12日至15日举行，赛事创新采用“一赛两地、跨境联动”模式，首次分设澳门、横琴两站，汇聚北京、澳门六所高校百余名师生以球会友",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-16/10732747.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "第十届沈阳青年影像节学术论坛举办 聚焦“想象东北的方法”",
+      "sum": "11月15日，第十届沈阳青年影像节核心活动之一——学术论坛在辽宁大学蒲河校区举办。论坛以“想象东北的方法”为主题，由辽宁省电视艺术家协会、辽宁省文艺评论家协会、辽宁省电影家协会指导",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-16/10733090.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "秋假如何让孩子们过得更尽兴、更有意义？",
+      "sum": "秋假，不止于多放几天假",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-17/10733168.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "职场年轻人谨防胃肠“亮红灯” 专家：条件允许尽量自制餐食",
+      "sum": "“由于很多疾病都是吃出来的，所以我们必须要有合理的生活规律，条件允许，尽可能自己做饭。”中山大学附属第一医院消化内科主任曾志荣14日表示，当前很多职场年轻人存在生活作息紊乱的问题，",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-15/10732247.shtml",
+      "source": "中新网健康",
+      "tag": "edu"
+    },
+    {
+      "title": "一张票根连双城，古井歌会让诗酒走入烟火",
+      "sum": "11月14日晚，“对酒当歌”古井贡酒·年份原浆群星歌会在合肥体育中心体育场唱响。罗大佑、孙楠、方锦龙等艺术家与新生代音乐人同台献艺，以诗词为魂、以音乐为桥，为观众奉上一场融汇传统文",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-17/10733294.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "中韩青年走进江西上犹：观山水生态 探县域产业融合密码",
+      "sum": "一颗脐橙如何变成一瓶果汁？一项新兴运动如何带动一方产业？16日，参加2026年阳光青年发展行动江西分团活动的中韩青年走进江西省赣州市上犹县，从特色食品加工到匹克球运动，再到生态文旅",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-17/10733278.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "第20届法语国家组织峰会通过《金边宣言》",
+      "sum": "第20届法语国家组织峰会当地时间16日在柬埔寨首都金边闭幕。会议通过《金边宣言》以及《金边呼吁：保护文化遗产》等3份成果文件",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-17/10733170.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "秋假2.0升级为“小黄金周”，文旅市场持续火热",
+      "sum": "研学游、亲子游、赏秋游多点开花",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-17/10733181.shtml",
+      "source": "中新网财经",
+      "tag": "cul"
+    },
+    {
+      "title": "2026横店马拉松在浙江东阳横店鸣枪开跑 跑者共赴光影之约",
+      "sum": "11月15日，2026横店马拉松在浙江东阳横店鸣枪开跑。2.2万名跑者在奔跑中穿越不同影视场景，体验一场别具特色的“光影之旅”",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-15/10732470.shtml",
+      "source": "中新网体育",
+      "tag": "cul"
+    },
+    {
+      "title": "2026Tennis123分级赛全国总决赛落幕",
+      "sum": "据赛事主办方消息，2026“决战莫干之巅”Tennis123分级赛全国总决赛日前在浙江湖州德清莫干山落下帷幕。这场为期两天的大赛，既是全国各级业余选手的城市对决，也是一场藏于诗画山",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-17/10733291.shtml",
+      "source": "中新网",
+      "tag": "sport"
+    },
+    {
+      "title": "三枚金牌，刻进KPL十年的高光里程碑",
+      "sum": "2026KPL年度总决赛14日在成都收官。北京WB战队以4:3的比分击败北京JDG战队，加冕2026年王者荣耀KPL年度总决赛总冠军，这也是KPL十周年节点上本年度收官之战的冠军。",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-16/10733153.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "新兴水上项目持续“圈粉”",
+      "sum": "2026MSGP动力冲浪板大奖赛暨全民健身动力冲浪板系列赛(横琴站)15日收官。经过三天角逐，原厂组、青少年组、大众成人组、大众大师组四个组别的冠军全部产生",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-16/10733116.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "2026北京朝阳区新就业群体运动会开幕",
+      "sum": "2026北京朝阳区新就业群体运动会16日开幕。活动以“奔忙有力量，运动暖朝阳”为主题，面向外卖骑手、快递员、网约车司机、网约家政、网络主播等新就业形态劳动者。赛事将持续至12月5日",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-16/10733013.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "广东“百千万”篮球赛珠三角六队出线",
+      "sum": "记者16日从广东省篮球协会获悉，2026年广东省“百县千镇万村”篮球赛省级大区赛(珠三角赛区，以下简称“赛事”)11月13日至15日在江门恩平体育馆举行。经过为期三天的激烈角逐，东",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-16/10732814.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "寒潮将给多地制造大风天气 北方十余省区市阵风可达7级以上",
+      "sum": "中国天气网讯 眼下，寒潮正自北向南影响我国，将带来大风、降温天气。今明两天(11月17日至18日)，北方至长江中下游一带风力较大，北方十余省区市部分地区阵风可达7至9级，公众需注意",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-17/10733302.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "江西九江“有事先商量”：协商沉一线 民生有回响",
+      "sum": "题：江西九江“有事先商量”：协商沉一线 民生有回响",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-17/10733277.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "泰国普吉一商业楼火灾致11人遇难",
+      "sum": "泰国南部旅游胜地普吉府芭东地区16日凌晨发生一起火灾，造成11人遇难、多人受伤。当地政府已组织救援和善后工作，并对火灾原因展开调查",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-16/10733058.shtml",
+      "source": "中新网国际",
+      "tag": "life"
+    },
+    {
+      "title": "中新健康｜隐匿期长达二三十年，阿尔茨海默病为何难攻克？",
+      "sum": "日前，演员黄渤在一档访谈节目中谈父母患阿尔茨海默病。他说，父亲已经因为这个病离世，晚年时认不出他，见面客气地称呼他为“老战友”；如今，母亲也正在被这个病折磨，记忆在一点点消散",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-16/10732934.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "吃“减肥神药”连吐3天去急诊 记者调查滥用处方药减肥现象",
+      "sum": "吃了粒“减肥神药”，连吐3天去急诊",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-17/10733219.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    }
+  ]
+}
