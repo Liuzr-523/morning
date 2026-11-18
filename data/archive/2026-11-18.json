@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T11:48:03+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "sum": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, an",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Put Gemini to work for you",
+      "sum": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things d",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "Can AI help build a healthier future?",
+      "sum": "What can AI enable in medicine, and how do we get there? Microsoft Research lead Doug Burger, Microsoft Principal Research Manager Ava Amini, Microsof",
+      "url": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "MiniMax：MiniMax-H3-Image-PE 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-08 · text-generation · 3181 下载",
+      "url": "https://hf-mirror.com/models/MiniMaxAI/MiniMax-H3-Image-PE",
+      "source": "MiniMax",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Qwen3.8-27B-DSpine-b16 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-07 · text-generation · 6361 下载",
+      "url": "https://hf-mirror.com/models/tencent/Qwen3.8-27B-DSpine-b16",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "智源：PingPongRealWorldRL 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-03 · reinforcement-learning · 31 下载",
+      "url": "https://hf-mirror.com/models/BAAI/PingPongRealWorldRL",
+      "source": "智源",
+      "tag": "ai"
+    },
+    {
+      "title": "Introducing ChatGPT for Sales",
+      "sum": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move dea",
+      "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "TokenEconomizer: Learning from Experience to Make AI Coding Agents More Efficien",
+      "sum": "AI coding agents can waste time and tokens relearning the same lessons. TokenEconomizer is an open-source plugin that builds on past sessions to cut c",
+      "url": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Broadening access to AI for scientists",
+      "sum": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Microsoft Research Focus – Edition #98",
+      "sum": "What's new in research at Microsoft? Host Anson Ho explores the latest, including AI-powered universal translation, a breakthrough in a 31-year-old ma",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "Multi-Branch Transformer",
+      "sum": "Branching Transformer blocks into parallel parameterized branches, combined with shared KV caching, improves language model quality and inference effi",
+      "url": "https://hf-mirror.com/papers/2611.19800",
+      "source": "arXiv · 2611.19800",
+      "tag": "ai"
+    },
+    {
+      "title": "ForceHarness: Turning Force into Action and Physics for Frozen Frontier Models",
+      "sum": "Frontier multimodal models can now control robots zero-shot from images, yet many manipulation tasks depend on contact forces that images cannot show.",
+      "url": "https://hf-mirror.com/papers/2611.21099",
+      "source": "arXiv · 2611.21099",
+      "tag": "ai"
+    },
+    {
+      "title": "Weight-Space Programming Doesn't Need Transformers",
+      "sum": "When large language models write neural network weights without gradient-based training, they tend to design sparse table or associative-memory models",
+      "url": "https://hf-mirror.com/papers/2611.22055",
+      "source": "arXiv · 2611.22055",
+      "tag": "ai"
+    },
+    {
+      "title": "MedJev: A System One Vision-Language Decision Model for Fast and Effective Medic",
+      "sum": "Medical image understanding with vision-language models (VLMs) typically relies on autoregressively generating reasoning and answer tokens. These unne",
+      "url": "https://hf-mirror.com/papers/2611.20992",
+      "source": "arXiv · 2611.20992",
+      "tag": "ai"
+    },
+    {
+      "title": "Breath-Dx: A Time Series Classification Benchmark for Disease Screening with eNo",
+      "sum": "A comprehensive benchmark evaluates time-series classification methods on a large clinical breath dataset under realistic temporal splits, showing tha",
+      "url": "https://hf-mirror.com/papers/2611.15348",
+      "source": "arXiv · 2611.15348",
+      "tag": "ai"
+    },
+    {
+      "title": "云南抚仙湖发现川蜷属三新种 近30年“失踪”瘤川蜷同步重现",
+      "sum": "中国科学院昆明动物研究所18日消息，该所东南亚野生动物多样性研究组领衔的研究人员通过对抚仙湖及周边地区开展系统调查，结合贝壳形态、解剖结构，并基于多基因及线粒体基因组的分子系统学分",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-18/10733926.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "2026知识产权服务万里行雄安站活动举办",
+      "sum": "17日，2026知识产权服务万里行“知识产权服务重点产业高质量发展暨科技成果赋智中小企业深度行”活动在河北雄安新区举行",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-17/10733736.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "“免押租赁”遭遇信息“过度索取” 如何保护消费者隐私安全？",
+      "sum": "出游拍照租一台相机，本来是图个方便，但最近不少消费者发现，电商平台上的“免押租赁”需要额外提供不少信息——除了身份证、手机号、家庭住址，还有用户被要求提供通讯录、微信好友、微信流水",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-18/10733846.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "《再走长征路》新书发布",
+      "sum": "11月16日，《再走长征路》新书发布会在北京举行。系列丛书从中国经营报社重大主题报道“再走长征路·见证新时代”中集结相关内容，由中国社会科学出版社出版",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-17/10733543.shtml",
+      "source": "中新网文化",
+      "tag": "tech"
+    },
+    {
+      "title": "青春华章·我们的新长征丨深耕职教沃土 培育“大国工匠”",
+      "sum": "央广网天津11月15日消息(记者韩雨晨 周思杨)时代的长征，从来不止一条征途。有人向着山海攻关前沿科技，有人扎根车间锤炼手上功夫。技能人才培育的赛道上，无数青年以技艺为行囊，在勤学",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-17/10733448.shtml",
+      "source": "中新网教育",
+      "tag": "tech"
+    },
+    {
+      "title": "多国工商界人士：期待APEC各经济体加强合作 创造繁荣",
+      "sum": "2026年APEC工商领导人峰会在深圳召开。参加此次APEC会议的工商界人士表示，连日来，多场密集对话释放了大量前沿信息，各方展现出强烈的合作意愿，希望接下来各经济体持续发力，促进",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-18/10733945.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "欧盟称今年前三季度经济增长好于预期",
+      "sum": "欧盟17日发布欧洲经济秋季展望报告，表示受商品出口强劲反弹等因素驱动，今年前三季度欧盟经济增长好于预期",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-18/10733828.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "汇聚工商力量培育持续动能",
+      "sum": "11月17日至18日，2026年亚太经合组织(APEC)工商领导人峰会在深圳举行，2000余位政商领袖参会，共谋区域合作大计，共绘亚太发展蓝图。这是一次凝聚共识的盛会，也是推动工商",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-18/10733913.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "中国汽车市场，不止一种赢法 | 极客车间",
+      "sum": "对消费者来说，当下的中国汽车消费市场，新品琳琅满目、供给充沛到足以挑花眼。 锚定一个预算区间，从外观设计、内饰风格，到舒适配置、智能化能力，总能找到各有所长的产品。选择足够丰富，也",
+      "url": "https://www.geekpark.net/news/373765",
+      "source": "极客公园",
+      "tag": "fin"
+    },
+    {
+      "title": "国台办批陆委会恐吓台商",
+      "sum": "11月18日，国务院台办举行例行新闻发布会。有记者问，陆委会主委邱垂正近日称，大陆经济面临内需不足、欧美国家制裁等问题，大陆台商应注意投资环境及人身安全等问题。对此有何评论？",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-18/10733939.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "国台办：台湾岛内议统望统热度不断升高",
+      "sum": "11月18日，国务院台办举行例行新闻发布会。有记者问，民进党当局称，大陆宣传统一利好及形塑“议统”氛围，面对大陆加大“对台施压及促统力度”，将捍卫所谓“国家主权安全”。请问对此有何",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-18/10733977.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "二手房交易活跃带动市场趋稳",
+      "sum": "各地不断调整优化房地产政策，我国房地产市场出现了一定的积极变化。当前二手住房成交量回升、一些城市商品住宅价格的趋稳和去库存取得积极成效，表明市场供需正逐步构建新的平衡",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-18/10733916.shtml",
+      "source": "中新网财经",
+      "tag": "cn"
+    },
+    {
+      "title": "卓越体育教师培养如何破局",
+      "sum": "中国教育发展战略学会体育与健康专业委员会(简称“专委会”)成立仪式暨《体育强国建设“十五五”规划》背景下体教融合战略构建学术研讨会16日在京举行。多位专家对卓越体育教师培养、职场健",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-17/10733612.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "中国四部门部署健康副校（园）长聘任与管理工作",
+      "sum": "据中国国家卫生健康委员会网站16日消息，国家卫健委与教育部、国家中医药管理局、国家疾病预防控制局联合印发通知，部署健康副校(园)长聘任与管理工作",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-16/10732944.shtml",
+      "source": "中新网教育",
+      "tag": "cn"
+    },
+    {
+      "title": "抗过敏药吃7天就停？儿童过敏防治这四个误区要避开",
+      "sum": "立冬过后，进入规划来年过敏防治的关键时段，关于季节性过敏的防治，可能存在哪些误区？我们一一澄清。为孩子治疗过敏，不少家长都会纠结一个问题：抗过敏药连续吃了7天，是不是就该停药，效果",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-16/10732549.shtml",
+      "source": "中新网健康",
+      "tag": "cn"
+    },
+    {
+      "title": "“投资中国 对话山西”中法产业合作圆桌会议在太原举办",
+      "sum": "“投资中国 对话山西”中法产业合作圆桌会议17日在太原举办。中法政企研代表聚焦绿色能源转型国际合作，探讨能源绿色低碳发展路径和前景，推动中法生态低碳城项目合作落地山西",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-18/10733927.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "中央气象台：强冷空气继续影响中东部地区",
+      "sum": "据中央气象台网站消息，受强冷空气影响，昨日，西北地区中东部、内蒙古中西部、山西、京津冀、河南中北部等地部分地区出现7～9级阵风，局地11级以上。今晨，青海、甘肃、宁夏、内蒙古中西部",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-18/10733858.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "胡塞武装宣布夺取也门西南两省的10个地区",
+      "sum": "萨那消息：也门胡塞武装当地时间17日称，经过数周在战略要地曼德海峡附近的激烈战斗，该组织已夺取也门西南两省的10个地区",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-18/10733893.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "袜子涨价引发风波，日本人生活成本压力难消",
+      "sum": "一双袜子能掀起多大风浪？日本优衣库给出了答案",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-18/10733880.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "CFA中国之队·肇庆国际足球邀请赛：中国队1胜1平收官",
+      "sum": "2026CFA中国之队·肇庆国际足球邀请赛17日在广东肇庆举行，中国男足2:2战平巴林队。至此，中国队以1胜1平的成绩结束此次邀请赛",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-18/10733830.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "28名华裔青年获奖学金 入琼学中文了解中华文化",
+      "sum": "海南外国语职业学院17日举行华文教育奖学金班开班仪式。来自印尼、柬埔寨、巴拿马等国家的28名华裔青年成为该班学生，开启学中文、了解中华文化的新旅程",
+      "url": "https://www.chinanews.com.cn/hr/2026/11-18/10733919.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "海口多校创新形式引导青少年树牢总体国家安全观",
+      "sum": "11月16日至17日，海南开展国家安全教育进校园系列活动。围绕《国家安全教育中小学生读本》核心内容，海口多所中小学设立主题公开课，配套举行知识转盘等互动体验，推动权威读本充分融入中",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-17/10733730.shtml",
+      "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "全国花滑少年逐梦长春 长春大冬会同步测试赛场",
+      "sum": "17日，2026—2027赛季全国花样滑冰少年锦标赛暨长春2027第33届世界大学生冬季运动会(下称“长春大冬会”)花样滑冰测试赛在长春五环体育馆开赛。赛事既为全国青少年选手搭建竞",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-17/10733616.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "宁夏第八届大学生艺术展演启幕 美育筑梦向未来",
+      "sum": "11月17日，宁夏第八届大学生艺术展演在银川市实验中学正式拉开帷幕，多所高校青年学子齐聚一堂，以艺术为媒，演绎青春风采",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-17/10733345.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "中外学者在北京研讨文明互鉴与中国自主知识体系构建",
+      "sum": "文明互鉴与中国自主知识体系构建学术研讨会16日在北京外国语大学举行。来自海内外高校、科研院所和文化交流机构的专家学者，围绕文明比较推动知识创新、汉学与世界中国学学科建设等议题展开讨",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-17/10733420.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "古都大同擘画“十五五”文物新图景：从守好家底到全民共享",
+      "sum": "山西省大同市委宣传部、大同市人民政府新闻办公室17日召开“开局起步‘十五五’”系列主题新闻发布会(市文物局专场)，介绍“十五五”期间文物工作重点。这座北魏都城、长城重镇，将把文物工",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-18/10733923.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "甘南青少年访国博：在文物中品读中华文化",
+      "sum": "来自甘肃甘南藏族自治州的49名青少年17日来到中国国家博物馆，在“古代中国”等展厅珍贵文物中品读中国历史、中华文化",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-17/10733744.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "马六甲·厦门侨批文化周暨主题交流展开幕",
+      "sum": "“壹纸情长·顺风相送”——马六甲·厦门侨批文化周暨主题交流展，11月17日上午在马六甲历史城区(鸡场街)闽南书院开幕",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-17/10733587.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "中新网评：虚拟人“带货”，带的必须是真话，守的必须是规矩",
+      "sum": "当虚拟人物开始代替真人出镜带货，广告营销也迎来了新的表达方式。然而，虚拟形象可以是数字技术的产物，产品体验却不能靠算法凭空编造",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-18/10733865.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "诺兰电影《奥德赛》登陆 Apple TV、Prime Video 等点播平台，支持数字租赁和购买",
+      "sum": "克里斯托弗 · 诺兰执导的电影《奥德赛》于当地时间 11 月 17 日登陆数字点播平台，观众可以通过 Apple TV、亚马逊 Prime Video、Fandango、YouTu",
+      "url": "https://www.ithome.com/1/028/672.htm",
+      "source": "IT之家",
+      "tag": "cul"
+    },
+    {
+      "title": "青少年健康用网公益行动走进河南 守护青少年上网边界",
+      "sum": "“请举起右手，把拇指和食指圈成一个圆，放到右眼前——现在，你透过这个‘望远镜’看讲台上的我，是变大了，还是变小了？”问题一出，郑州市第八中学体育馆里的回答此起彼伏，这正是青少年健康",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-18/10733871.shtml",
+      "source": "中新网财经",
+      "tag": "sport"
+    },
+    {
+      "title": "西藏体彩发布2025年度社会责任报告 筹集公益金3.69亿元",
+      "sum": "本报拉萨11月15日讯(记者 旦增兰泽)近日，记者从“高原筑梦 益彩同行——西藏体彩2025年度社会责任报告”发布会获悉，2025年西藏体彩全年销售体育彩票达15.47亿元，筹集公",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-18/10733892.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "CBSA中国普尔9球巡回赛安徽合肥站收官 刘莎莎三连冠",
+      "sum": "“皮尔力·来力杯”CBSA中国普尔9球巡回赛第四站安徽合肥站赛事近日在李宁体育园落幕，郑肖淮与刘莎莎成功卫冕，其中刘莎莎更是斩获三连冠",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-17/10733698.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "斯诺克德国大师赛资格赛：中国军团首日5胜",
+      "sum": "当地时间11月16日，2027斯诺克德国大师赛资格赛在英国维冈开杆。首日进行首轮(128进96)的部分场次较量，中国军团取得5胜6负",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-17/10733397.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "2026Tennis123分级赛全国总决赛落幕",
+      "sum": "据赛事主办方消息，2026“决战莫干之巅”Tennis123分级赛全国总决赛日前在浙江湖州德清莫干山落下帷幕。这场为期两天的大赛，既是全国各级业余选手的城市对决，也是一场藏于诗画山",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-17/10733291.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "广西硕龙口岸首迎越南团签入境旅游团",
+      "sum": "广西大新县硕龙口岸17日迎首批持团体旅游签证入境的越南旅游团，标志着中国(硕龙)—越南(里板)双边口岸跨境团队游态势向好，游客可在广西境内开展长线旅游",
+      "url": "https://www.chinanews.com.cn/aseaninfo/2026/11-18/10733922.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "兰合铁路全线铺轨正式启动 预计2027年底通车",
+      "sum": "11月17日，新建兰州至合作铁路在甘肃省临夏州永靖县刘家峡站启动全线铺轨。作为国家“八纵八横”高铁网兰(西)广通道重要组成部分，这条铁路建成后，将结束甘肃省临夏回族自治州、甘南藏族",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-18/10733887.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "俄称克里米亚大桥再遭袭击 交通暂时中断",
+      "sum": "俄罗斯侦查委员会17日通报说，针对乌克兰方面袭击克里米亚大桥，俄方已刑事立案并展开调查",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-17/10733611.shtml",
+      "source": "中新网国际",
+      "tag": "life"
+    },
+    {
+      "title": "今年前10个月 我国共批准发布1028项国家标准物质",
+      "sum": "标准物质是开展化学、生物等检测活动必不可少的“标尺”和“砝码”。市场监管总局今天(18日)发布数据：今年前十个月，我国共批准发布1028项国家标准物质，涉及环境监测、医疗卫生、食品",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-18/10733857.shtml",
+      "source": "中新网财经",
+      "tag": "life"
+    },
+    {
+      "title": "西安闹市区现北宋神秘群墓",
+      "sum": "车流不息、人声鼎沸的西安南稍门，背靠千年小雁塔，是西安主城区极具烟火气的繁华地带。这片寸土寸金的城市腹地，地下封存着一段近千年前的宋代民生往事",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-17/10733441.shtml",
+      "source": "中新网文化",
+      "tag": "life"
+    }
+  ]
+}
