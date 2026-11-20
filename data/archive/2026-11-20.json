@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T11:39:48+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "sum": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "sum": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Can AI help build a healthier future?",
+      "sum": "What can AI enable in medicine, and how do we get there? Microsoft Research lead Doug Burger, Microsoft Principal Research Manager Ava Amini, Microsof",
+      "url": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：Aion-1.0-Instruct-2.3B-ONNX-WebGPU 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-18 · text-generation · 39 下载",
+      "url": "https://hf-mirror.com/models/microsoft/Aion-1.0-Instruct-2.3B-ONNX-WebGPU",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Hy4-base 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-18 · image-text-to-text · 2 下载",
+      "url": "https://hf-mirror.com/models/tencent/Hy4-base",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "sum": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "Deploying Daybreak Red",
+      "sum": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
+      "url": "https://openai.com/business/learn/deploying-daybreak-red",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：Aion-1.0-Instruct-2.3B 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-18 · text-generation · 788 下载",
+      "url": "https://hf-mirror.com/models/microsoft/Aion-1.0-Instruct-2.3B",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "Put Gemini to work for you",
+      "sum": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things d",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "Research acceleration: The jagged frontier",
+      "sum": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-imp",
+      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Why Do LLMs Help with Scientific Misconduct Requests and What to Do About It?: I",
+      "sum": "Large language models (LLMs) support scientific research, but some of that assistance can also undermine research integrity. Existing safety evaluatio",
+      "url": "https://arxiv.org/abs/2611.25492v1",
+      "source": "arXiv · 2611.25492v1",
+      "tag": "ai"
+    },
+    {
+      "title": "When Should a Voice Agent Speak? End-of-Turn Detection in Turkish",
+      "sum": "A voice agent that waits for a fixed silence before replying either interrupts users who pause mid-utterance or responds late to users who have finish",
+      "url": "https://arxiv.org/abs/2611.25489v1",
+      "source": "arXiv · 2611.25489v1",
+      "tag": "ai"
+    },
+    {
+      "title": "Planning Width Is Hard to Approximate Even Given the Unique Optimal Plan",
+      "sum": "For each fixed $k$, iterative-width search finds optimal plans in polynomial time on tasks of bounded tuple-chain width, but the approximability of pl",
+      "url": "https://arxiv.org/abs/2611.25484v1",
+      "source": "arXiv · 2611.25484v1",
+      "tag": "ai"
+    },
+    {
+      "title": "AIstatLab at BraTS-GoAT 2026 Task 3: Quality-Controlled Consensus Pseudo-Labelin",
+      "sum": "BraTS-GoAT Task 3 evaluates brain-tumor segmentation across heterogeneous entities using shared ET, TC, and WT regions. We present a 3D ResidualEncode",
+      "url": "https://arxiv.org/abs/2611.25477v1",
+      "source": "arXiv · 2611.25477v1",
+      "tag": "ai"
+    },
+    {
+      "title": "WeightCode: Installing New Capabilities into Neural Networks via Weight-Space Pr",
+      "sum": "Neural networks encode learned capabilities in their weights, yet extending those capabilities with explicit task knowledge remains a fundamental chal",
+      "url": "https://arxiv.org/abs/2611.25476v1",
+      "source": "arXiv · 2611.25476v1",
+      "tag": "ai"
+    },
+    {
+      "title": "何以中国｜唐韵润古邑 诗脉续长安",
+      "sum": "山河更迭，风雅长存。11月19日，“何以中国·诗词里的千年文脉”网络主题宣传活动于古都西安启幕。纵使时代千帆竞发、科技日新月异，古典诗词始终沉淀着华夏儿女的家国情怀与人生哲思，是镌",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-19/10734943.shtml",
+      "source": "中新网社会",
+      "tag": "tech"
+    },
+    {
+      "title": "挪威创新署官员：中国电动汽车制造商正获得竞争优势",
+      "sum": "挪威创新署贸易与投资部门负责人加尔德·马德森(Gard Madsen)19日在接受记者采访时表示，中国新能源汽车产业发展令人印象深刻。随着中国电动汽车制造商逐渐站稳脚跟，其相较于世",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-20/10735042.shtml",
+      "source": "中新网国际",
+      "tag": "tech"
+    },
+    {
+      "title": "工信部启动2026年“5G+工业互联网”融合应用城市试点工作",
+      "sum": "11月18日至20日，2026中国5G+工业互联网大会在湖北武汉举行。主题会议上，工业和信息化部正式启动2026年“5G+工业互联网”融合应用城市试点(以下简称城市试点)工作。这是",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-20/10735086.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "孟京辉：在浪漫与科技间试探戏剧边界",
+      "sum": "“现在戏剧和以前不一样了。”11月18日至26日，2026第十五届杭州当代戏剧季在杭州举行。其间，戏剧导演孟京辉受访时表示，当下戏剧正走出小众剧场，被越来越多年轻人喜爱，持续释放独",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-19/10734596.shtml",
+      "source": "中新网文化",
+      "tag": "tech"
+    },
+    {
+      "title": "上课点名、体育长跑、饭卡充值……校园App为何越装越多？",
+      "sum": "近年来，随着“智慧校园”建设推进，各类移动应用本应方便师生，如今却在一些高校变成了学生手机里的负担。体育环(长)跑、上课点名、接水饮水、饭卡充值……校园生活的每一处场景，几乎都对应",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-19/10734464.shtml",
+      "source": "中新网教育",
+      "tag": "tech"
+    },
+    {
+      "title": "一卡玩转长三角！来文博会解锁展内展外多元新体验",
+      "sum": "11月19日，第七届长三角国际文化产业博览会在国家会展中心(上海)开幕。本届文博会以“促进文商旅体展融合发展、激发文化消费新活力”为主题，展期持续至11月22日。开幕式上，“长三角",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-20/10735115.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "双十一保价靠谱吗？补贴能否成为拒退理由",
+      "sum": "“双十一”大促刚刚落幕，和“大促”相关的消费纠纷这些天却还在持续。近日，不少消费者反映称，明明下单页面标注了“保价”，同款商品价格变低后，申请退差价却被拒绝",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-20/10735098.shtml",
+      "source": "中新网社会",
+      "tag": "fin"
+    },
+    {
+      "title": "外媒眼中的“现代化奇迹”，APEC深圳会议展现中国开放创新窗口",
+      "sum": "11月18日至19日，亚太经合组织(APEC)第三十三次领导人非正式会议在深圳举行。随着亚太各经济体领导人和工商界代表齐聚这座中国改革开放的前沿城市，深圳成为国际媒体关注的焦点",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-20/10735057.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "一颗“拼豆”的出海路",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-20/10735106.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "第七届长三角文博会开幕 聚焦文化消费新活力",
+      "sum": "第七届长三角国际文化产业博览会19日在国家会展中心(上海)开幕，汇聚超1500家参展商、163场活动，各类文化消费场景在此上演",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-19/10734678.shtml",
+      "source": "中新网文化",
+      "tag": "fin"
+    },
+    {
+      "title": "五部门印发2026版海洋产业投融资指导目录",
+      "sum": "今天(11月20日)，自然资源部联合国家发展改革委、中国人民银行等五部门，印发《海洋产业投融资指导目录(2026版)》(以下简称《目录》)，精准引导社会资本赋能海洋产业升级，助力我",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-20/10735127.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "上万日本民众举行抗议集会 反对高市政府扩军修宪",
+      "sum": "据日本《东京新闻》报道，当地时间19日，上万名日本民众在东京日本国会议事堂举行集会，抗议高市政府谋求修改“无核三原则”等一系列政策和动向",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-20/10735056.shtml",
+      "source": "中新网国际",
+      "tag": "cn"
+    },
+    {
+      "title": "2026年中国内地与香港企业会计准则保持持续趋同",
+      "sum": "中国财政部19日公布，2026年内地与香港企业会计准则保持持续趋同",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-19/10734909.shtml",
+      "source": "中新网财经",
+      "tag": "cn"
+    },
+    {
+      "title": "卓越体育教师培养如何破局",
+      "sum": "中国教育发展战略学会体育与健康专业委员会(简称“专委会”)成立仪式暨《体育强国建设“十五五”规划》背景下体教融合战略构建学术研讨会16日在京举行。多位专家对卓越体育教师培养、职场健",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-17/10733612.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "陕西省第八届大学生艺术展演活动现场展演启幕",
+      "sum": "陕西省第八届大学生艺术展演活动现场展演动员部署会18日在西北工业大学召开。本届展演共收到全省高校艺术表演类节目456个，经遴选后119个节目入围现场展演，覆盖全省41所高校。现场展",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-19/10734835.shtml",
+      "source": "中新网文化",
+      "tag": "cn"
+    },
+    {
+      "title": "“中文热”催生多元需求 海外华校推进“中文+”课程建设",
+      "sum": "近年来，全球中文学习热度持续上升，海外中文学习使用者已达2.1亿人。面对多元学习诉求，海外华校不断转型升级，推进“中文+”课程建设，推动华文教育融入住在国官方教育体系",
+      "url": "https://www.chinanews.com.cn/hr/2026/11-20/10735119.shtml",
+      "source": "中新网",
+      "tag": "intl"
+    },
+    {
+      "title": "“电子榨菜”变“文化硬菜” “duanju”为何在海外爆火",
+      "sum": "最近，“duanju”成为海外社交平台爆火的英文通用词。没错，它就是“短剧”的拼音。作为新兴文化传播现象，微短剧出海势头迅猛，效果明显，广受关注。据不完全统计，中国微短剧海外应用已",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-20/10735071.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "中泰媒体合作交流活动在曼谷举行",
+      "sum": "“中泰相约 山海共鸣”中泰媒体合作交流对话会暨海南广播电视总台与泰国广播电视专业协会联合会合作协议签署仪式19日在曼谷举行",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-20/10735044.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "拼音成单词，文化出海再添新符号",
+      "sum": "近期，“中国热”再添新词，汉语拼音“duanju”正在海外广泛传播，成为专指微短剧的英文单词，也成为文化出海的新风向标",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-20/10735097.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "中国男足世界排名上升一位至第95位",
+      "sum": "国际足联18日公布了最新一期男足世界排名，中国男足提升了一位，排在第95位",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-19/10734575.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "郑州大学第一附属医院原党委书记王成增被“双开”",
+      "sum": "据河南省纪委监委消息：经中共河南省委批准，河南省纪委监委对郑州大学第一附属医院原党委书记王成增严重违纪违法问题进行了立案审查调查",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-20/10735072.shtml",
+      "source": "中新网",
+      "tag": "edu"
+    },
+    {
+      "title": "“线上气氛组，线下社恐人”：大学生如何破局",
+      "sum": "当群里聊起你感兴趣的话题，你会兴致勃勃地接梗、刷表情包；可一旦有人发起线下见面的邀约，你会选择视而不见。你是这样的“线上气氛组，线下社恐人”吗？",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-20/10735010.shtml",
+      "source": "中新网社会",
+      "tag": "edu"
+    },
+    {
+      "title": "印度一学校62名学生疑因附近沥青厂污染出现恶心和呼吸困难症状",
+      "sum": "据印度报业托拉斯报道，印度喀拉拉邦奎隆县一所私立学校18日有62名学生因出现恶心、呼吸困难等症状并入院，相关症状据称与学校附近一处沥青搅拌厂造成的污染有关",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-19/10734747.shtml",
+      "source": "中新网国际",
+      "tag": "edu"
+    },
+    {
+      "title": "首届黑龙江省高校足球超级联赛落幕 “实体+电竞”融合赛事赋能冰雪文旅",
+      "sum": "11月18日，首届黑龙江省高校足球超级联赛第一阶段H8联赛闭幕式暨颁奖仪式在哈尔滨举办。赛事创新采用“实体足球+足球电竞”虚实融合模式，同步启动后续跨区域赛事，助力黑龙江冰雪文体与",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-18/10734400.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "《新历史知识理论》中文版首发",
+      "sum": "“德国史学思想的当代意义与价值——约恩·吕森《新历史知识理论》中译本新书发布暨座谈会”日前在山西大学举行。该书是德国著名史学理论家约恩·吕森职业生涯晚期对自身思想综合的一部集大成作",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-19/10734906.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "黑龙江铁力：小鹿踏雪林间行 农文旅融合激活乡村新动能",
+      "sum": "近日，在黑龙江省伊春铁力市的鹿野仙踪园区，成群梅花鹿漫步皑皑白雪，灵动身影与茫茫林海相映成趣，成为冬日里一道治愈的风景线",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-20/10735087.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "浙江文旅观察：秀山丽水缘何看重“疗休养”？",
+      "sum": "初冬时节，浙江丽水空气清新、阳光明媚。19日，云和梯田旁的民宿内，一批来自江苏的职工赏山水、品香茶，享受疗休养的惬意时光。而在相隔10多公里的云和县城，“我在丽水疗休养”第七届秀山",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-19/10734966.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "“游历于色彩与线条之间”特别企画展在东京中国文化中心举办",
+      "sum": "“游历于色彩与线条之间——中国现代艺术的新印象”特别企画展于16日在东京中国文化中心举办",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-19/10734653.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "舞步诉说山海情深 中国首部踢踏舞剧《扎西夏卓》亮相成都",
+      "sum": "19日晚，伴随着铿锵有力的踢踏舞步落下，中国首部踢踏舞剧《扎西夏卓》2026年全国巡演成都站首场演出在成都东安湖大剧院落幕，剧场内掌声经久不息，不少观众被剧中守望相助的动人故事深深",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-20/10735049.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "“汉语桥”连四海 隔万里尚为邻",
+      "sum": "“我真切感受到，‘汉语桥’不只是一座连接彼此的‘桥’，更是帮我跨越山海、拾级而上的‘阶梯’。”近日，在2026世界中文大会期间举办的“‘汉语桥’25周年：中文赋能跨文化理解”专项会",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-18/10734063.shtml",
+      "source": "中新网教育",
+      "tag": "cul"
+    },
+    {
+      "title": "WTT冠军赛将首次登陆上海",
+      "sum": "据上海市体育局19日消息，世界乒乓球职业大联盟(WTT)当日宣布，2027WTT上海冠军赛将于2027年1月19日至24日落户上海浦发银行东方体育中心，这也是WTT赛事首次来到上海",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-19/10734955.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "第七届全国乒乓球“业余球王”总决赛开赛 657名选手角逐“球王”荣誉",
+      "sum": "19日，第七届“李宁·红双喜杯”全国乒乓球“业余球王”总决赛暨2026年全国业余乒乓球锦标赛在重庆拉开帷幕。来自北京、天津、辽宁、江苏、浙江、江西、香港等地的70支队伍、657名运",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-19/10734834.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "“冰超”·2026-2027赛季全国冰壶联赛（伊春站）启幕",
+      "sum": "19日，“冰超”·2026-2027赛季全国冰壶联赛(伊春站)正式启幕，来自全国17个省(区、市)60支队伍、300余名运动员、教练员相聚“中国林都”，共赴这场冰上之约",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-19/10734925.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "斯诺克德国大师赛资格赛：丁俊晖晋级正赛32强",
+      "sum": "当地时间11月18日，2027斯诺克德国大师赛资格赛展开96进64轮剩余场次和部分第三轮(64进32)较量。中国球手10人出战，取得7胜3负。丁俊晖战胜英格兰球手扎克·舒尔第晋级正",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-19/10734622.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "年轻人看体育赛事是在看什么 超半数受访青年从竞体赛事中学会了接纳输赢",
+      "sum": "强势横扫、黑马逆袭、百炼成钢……如今，竞技体育赛事吸引了越来越多年轻人的目光。近日，中国青年报社社会调查中心联合问卷网(wenjuan.com)对1048名观看过竞技体育赛事的青年",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-19/10734473.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "云岭动态第四十五期",
+      "sum": "1.11月18日，民建云南省委会到昆明学院调研座谈，双方围绕支部建设、联合调研、校企合作、毕业生就业创业等交流，深化协作凝聚参政履职合力",
+      "url": "https://www.chinanews.com.cn/txy/2026/11-20/10735082.shtml",
+      "source": "中新网",
+      "tag": "life"
+    },
+    {
+      "title": "大凉山慢火车载几代人奔赴彝历新年",
+      "sum": "题：大凉山慢火车载几代人奔赴彝历新年",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-20/10735063.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "“零添加”“0蔗糖”未必更健康",
+      "sum": "本报记者 王美华",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-20/10735009.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "专卖店、修车铺都表示不提供改装 电动自行车“远光刺客”哪儿冒出来的？",
+      "sum": "本报记者 孙云柯",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-20/10735084.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "起床后这4件事易引发心梗，冬天尤其别做",
+      "sum": "今天是“中国心梗救治日”",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-20/10735004.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    }
+  ]
+}
