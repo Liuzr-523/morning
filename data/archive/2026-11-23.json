@@ -1,0 +1,365 @@
+{
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T10:58:58+08:00",
+  "generator": "github-actions-rss",
+  "perTag": 5,
+  "news": [
+    {
+      "title": "Perplexity and Intelligence",
+      "sum": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "sum": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "Can AI help build a healthier future?",
+      "sum": "What can AI enable in medicine, and how do we get there? Microsoft Research lead Doug Burger, Microsoft Principal Research Manager Ava Amini, Microsof",
+      "url": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
+      "source": "微软研究院",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：Aion-1.0-Instruct-2.3B-ONNX-WebGPU 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-18 · text-generation · 143 下载",
+      "url": "https://hf-mirror.com/models/microsoft/Aion-1.0-Instruct-2.3B-ONNX-WebGPU",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "腾讯：Hy4-base 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-18 · image-text-to-text · 609 下载",
+      "url": "https://hf-mirror.com/models/tencent/Hy4-base",
+      "source": "腾讯",
+      "tag": "ai"
+    },
+    {
+      "title": "Combatting adversarial distillation",
+      "sum": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability ex",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "sum": "The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "微软：Aion-1.0-Instruct-2.3B 发布新模型（开源权重）",
+      "sum": "发布于 2026-11-18 · text-generation · 3836 下载",
+      "url": "https://hf-mirror.com/models/microsoft/Aion-1.0-Instruct-2.3B",
+      "source": "微软",
+      "tag": "ai"
+    },
+    {
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "sum": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discov",
+      "url": "https://openai.com/index/introducing-medchembench",
+      "source": "OpenAI",
+      "tag": "ai"
+    },
+    {
+      "title": "Put Gemini to work for you",
+      "sum": "Tasks in Gemini is now free of charge in six countries, with new features starting in the U.S. and deeper Google Workspace integration to get things d",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "source": "Google",
+      "tag": "ai"
+    },
+    {
+      "title": "PURE: A Diagnostic Benchmark for Multi-Granularity Multimodal Identity Matching",
+      "sum": "A diagnostic benchmark evaluates multimodal large language models on multi-granularity identity matching, revealing gaps in understanding, reasoning, ",
+      "url": "https://hf-mirror.com/papers/2611.22343",
+      "source": "arXiv · 2611.22343",
+      "tag": "ai"
+    },
+    {
+      "title": "好吃又好玩！台青在深圳体验“未来生活”",
+      "sum": "机器人送早餐、机械臂掌勺炒菜",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-23/10736302.shtml",
+      "source": "中新网",
+      "tag": "tech"
+    },
+    {
+      "title": "韩国各地手机一天内三次警报大作，三天后韩国教育部长辞职",
+      "sum": "原标题：韩国各地手机一天内三次警报大作，有人被惊醒，有人误以为战争爆发，三天后韩国教育部长辞职 | 国际早察",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-23/10736272.shtml",
+      "source": "中新网国际",
+      "tag": "tech"
+    },
+    {
+      "title": "把机器人“教”进真实世界",
+      "sum": "具身智能机器人应用技术员：",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-23/10736244.shtml",
+      "source": "中新网财经",
+      "tag": "tech"
+    },
+    {
+      "title": "从经侦一线到书桌，46岁警察写出多部热门小说",
+      "sum": "夜色落下，吕铮给自己倒了一杯水，而后坐在书桌前，打开电脑里的某个文件夹，开始整理密密麻麻的素材",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-22/10735956.shtml",
+      "source": "中新网文化",
+      "tag": "tech"
+    },
+    {
+      "title": "浙大团队为钙钛矿稳定性难题提供新思路",
+      "sum": "浙江大学硅及先进半导体材料全国重点实验室科研团队11月20日在学术期刊《科学》发表研究成果，首次从力学异质性角度揭示钙钛矿软晶格的失稳机制，并将纳米金刚石引入钙钛矿薄膜，使电池获得",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-20/10735363.shtml",
+      "source": "中新网教育",
+      "tag": "tech"
+    },
+    {
+      "title": "电子商务助力经济向新向优",
+      "sum": "记者张翼从商务部获悉，今年1至10月，我国电子商务平稳发展，线上线下融合持续增强消费市场韧性，数字技术赋能产业转型升级，“丝路电商”拓展国际经贸合作，商务领域新质生产力不断培育壮大",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-23/10736330.shtml",
+      "source": "中新网",
+      "tag": "fin"
+    },
+    {
+      "title": "城市也要容得下野生动物",
+      "sum": "又到候鸟南迁时节，近10万只候鸟迁飞到深圳湾滩涂越冬，好不热闹。11月5日起施行的《深圳经济特区红树林湿地保护若干规定》，明确要求优化红树林湿地候鸟栖息地及周边区域的夜间照明布局并",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-23/10736234.shtml",
+      "source": "中新网社会",
+      "tag": "fin"
+    },
+    {
+      "title": "2026年清华财经新闻论坛在美举行",
+      "sum": "当地时间11月20日，2026年清华财经新闻论坛在美国首都华盛顿举行",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-23/10736226.shtml",
+      "source": "中新网国际",
+      "tag": "fin"
+    },
+    {
+      "title": "A股创业板指火速翻红",
+      "sum": "23日，A股开盘后，创业板指火速翻红，截至发稿涨0.08%。成分股中，新易盛、中际旭创、天孚通信集体上涨，其中，新易盛涨超5%",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-23/10736281.shtml",
+      "source": "中新网财经",
+      "tag": "fin"
+    },
+    {
+      "title": "“CMG电影文化嘉年华·成都专场”启动 聚焦“电影+”经济消费新业态",
+      "sum": "20日在成都启动的“CMG电影文化嘉年华”活动，围绕“电影+”创新设计，推出以“金秋电影季”为主题的系列活动，充分聚焦“电影+”经济消费新业态",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-21/10735877.shtml",
+      "source": "中新网文化",
+      "tag": "fin"
+    },
+    {
+      "title": "锐度·厚度·高度——从三个维度看广东加速从制造大省迈向制造强省",
+      "sum": "",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-23/10736334.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "中国援赤几医疗队发起“云端”交流 分享妇产科诊疗经验",
+      "sum": "针对赤道几内亚当地妇产科临床诊疗需求，第34批援赤道几内亚中国医疗队近日牵线中国国内医疗机构，在赤道几内亚巴塔总医院开展远程学术交流，通过专题讲座、手术视频演示及病例研讨，帮助当地",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-22/10736187.shtml",
+      "source": "中新网社会",
+      "tag": "cn"
+    },
+    {
+      "title": "国家级青少年皮划艇赛事落地宁波 山水之间释放运动活力",
+      "sum": "11月21日至22日，“富邦湖山天地”杯2026全国青少年皮划艇U系列联赛总决赛(宁波荪湖站)在宁波市江北区开赛，330余名来自国内各地的青少年选手齐聚山水之间，在青山环抱的自然水",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-22/10736183.shtml",
+      "source": "中新网体育",
+      "tag": "cn"
+    },
+    {
+      "title": "2027届全国普通高校毕业生规模预计1299万人",
+      "sum": "据教育部网站消息，11月19日，中央教育工作领导小组秘书组、教育部、人力资源社会保障部、工业和信息化部、国务院国资委在京联合召开2027届全国普通高校毕业生就业创业工作会议。会议强",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-19/10734743.shtml",
+      "source": "中新网教育",
+      "tag": "cn"
+    },
+    {
+      "title": "西班牙网球名将阿尔卡拉斯首夺ATP年终总决赛冠军",
+      "sum": "当地时间22日，在意大利都灵进行的2026年男子职业网球选手协会(ATP)年终总决赛单打决赛中，赛会二号种子、西班牙名将阿尔卡拉斯以6:2、7:6(7)战胜世界排名第一、德国名将兹",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-23/10736322.shtml",
+      "source": "中新网",
+      "tag": "cn"
+    },
+    {
+      "title": "冷空气东移南下 大风降温影响中东部地区",
+      "sum": "据中央气象台网站消息，气象监测显示，新一股冷空气已开始影响我国北方地区，过去一天，内蒙古、东北地区出现大风天气，部分地区阵风风力达到8~10级；南方降雨逐渐发展，广西中北部、海南岛",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-23/10736248.shtml",
+      "source": "中新网社会",
+      "tag": "intl"
+    },
+    {
+      "title": "美伊谈判僵持冲突外溢 内塔尼亚胡被曝欲单独对伊动武",
+      "sum": "当地时间22日，美国与伊朗之间军事冲突不断。伊朗宣布24小时内击落4架美军无人机，当天霍尔木兹海峡又有油轮触雷起火。与此同时，美伊冲突外溢持续，巴林称伊朗对该国的袭击造成人员受伤。",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-23/10736273.shtml",
+      "source": "中新网国际",
+      "tag": "intl"
+    },
+    {
+      "title": "黄金跌跌不休，何时反弹？",
+      "sum": "最近一周，国际金价接连失守3900美元、3800美元、3700美元、3600美元关口，创下近14个月新低",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-23/10736253.shtml",
+      "source": "中新网财经",
+      "tag": "intl"
+    },
+    {
+      "title": "速度滑冰世界杯日本带广站：中国队2金3银2铜收官",
+      "sum": "国际滑联官网消息，2026-2027赛季速度滑冰世界杯日本带广站22日落幕，北京冬奥会冠军、中国名将高亭宇当日在男子500米第二次比赛中摘银。中国队共获2金3银2铜，位列奖牌榜第二",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-22/10736207.shtml",
+      "source": "中新网体育",
+      "tag": "intl"
+    },
+    {
+      "title": "2026年“海韵乡情”世界闽南语吟唱大会在福建漳州召开",
+      "sum": "2026年“海韵乡情”世界闽南语吟唱大会暨闽南语吟唱传承与传播研讨会21日在福建省漳州市召开。当天，来自闽南文化、语言学、国际中文教育、非遗传承等领域的专家学者齐聚一堂，共探闽南语",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-22/10736052.shtml",
+      "source": "中新网文化",
+      "tag": "intl"
+    },
+    {
+      "title": "长春大冬会志愿者昵称“小冰凌”及标识发布",
+      "sum": "22日，长春2027第33届世界大学生冬季运动会(下称“长春大冬会”)志愿者昵称“小冰凌”以及志愿者标识首次对外发布。当天，长春大冬会志愿者风采展示活动在长春市五环体育馆举办，60",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-22/10736148.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "邢少臣师生作品展呈现当代大写意绘画的传承脉络",
+      "sum": "“近墨者明——邢少臣师生作品展”21日在北京人民美术出版社画廊开幕，展出中国国家画院研究员邢少臣及其15名学生的中国画作品近百幅，集中呈现当代大写意绘画的传承脉络",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-22/10736177.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "两部门：实施数据领域高技能人才集群培养计划",
+      "sum": "今天，国家数据局、教育部宣布成立全国数据职业教育教学指导委员会，实施数据领域高技能人才集群培养计划等系列行动计划",
+      "url": "https://www.chinanews.com.cn/edu/2026/11-23/10736240.shtml",
+      "source": "中新网教育",
+      "tag": "edu"
+    },
+    {
+      "title": "哈尔滨全民滑雪年启动 解锁全新冰雪运动时代",
+      "sum": "22日，哈尔滨全民滑雪年启动仪式暨首届“雪域狂飙”越野滑雪公开赛启幕，滑雪年活动内容覆盖公益惠民、赛事竞技、人才培养、冠军赋能、研学教育、产业联动六大维度，填补哈尔滨市非雪季冰雪体",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-22/10736055.shtml",
+      "source": "中新网体育",
+      "tag": "edu"
+    },
+    {
+      "title": "全是“针”功夫 姚惠芬苏绣艺术展在同济大学展出",
+      "sum": "正在同济大学博物馆展出的“丝韵缤‘芬’——姚惠芬苏绣艺术展”，汇集了中国工艺美术大师、国家级非遗苏绣代表性传承人姚惠芬及其弟子的120幅苏绣精品，集中展现苏绣艺术的独特魅力与精湛技",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-22/10736116.shtml",
+      "source": "中新网文化",
+      "tag": "edu"
+    },
+    {
+      "title": "“饮歌”唱响重庆 港乐金曲搭建渝港文化交流桥梁",
+      "sum": "22日晚，由香港特别行政区政府驻重庆联络处主办的“饮歌——香港影视流行音乐会”重庆站在重庆大剧院上演",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-23/10736303.shtml",
+      "source": "中新网",
+      "tag": "cul"
+    },
+    {
+      "title": "（文化新纪行）外国游客爱上“当一天中国古人”",
+      "sum": "今年以来，在持续走热的“China Travel”中，微妙的变化或许不在数量，而在方式",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-22/10736185.shtml",
+      "source": "中新网社会",
+      "tag": "cul"
+    },
+    {
+      "title": "“大美中国”中华纹样与民族古乐融合创新展演亮相巴黎",
+      "sum": "一场融合中国传统纹样数字影像与民族古乐的跨文化展演，日前在法国巴黎Wilde艺术中心拉开帷幕。通过数字展览与现场音乐演出相结合的形式，“大美中国”中华纹样与民族古乐融合创新展演向法",
+      "url": "https://www.chinanews.com.cn/gj/2026/11-22/10736122.shtml",
+      "source": "中新网国际",
+      "tag": "cul"
+    },
+    {
+      "title": "“奥运冠军之城”七台河：打造“体育+文旅+产业”融合样板",
+      "sum": "题：“奥运冠军之城”七台河：打造“体育+文旅+产业”融合样板",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-22/10736129.shtml",
+      "source": "中新网体育",
+      "tag": "cul"
+    },
+    {
+      "title": "（文化新纪行）山东梁山打造分布式流动演出 水浒文脉蕴新活力",
+      "sum": "题：山东梁山打造分布式流动演出 水浒文脉蕴新活力",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-22/10736206.shtml",
+      "source": "中新网文化",
+      "tag": "cul"
+    },
+    {
+      "title": "香港羽毛球公开赛收官 王祉怡女单夺冠",
+      "sum": "图为中国混双组合冯彦哲/黄东萍（右边组）对战队友蒋振邦/魏雅欣。中新网记者 李志华 摄 图为中国混双组合冯彦哲/黄东萍（左）在赛事中互相鼓励。中新网记者 李志华 摄 图为中国混双组",
+      "url": "https://www.chinanews.com.cnhttps://www.chinanews.com.cn/tp/hd2011/2026/11-23/1211419.shtml",
+      "source": "中新网",
+      "tag": "sport"
+    },
+    {
+      "title": "云南连续四年举办边境幸福村体育嘉年华 以赛事赋能兴边富民",
+      "sum": "11月20日至22日，2026年云南省建设面向南亚东南亚辐射中心体育交流大赛暨边境幸福村体育嘉年华主题活动在保山市举行。活动以云南边境县市和南亚东南亚国家体育交流为载体，串联文体旅",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-22/10736181.shtml",
+      "source": "中新网社会",
+      "tag": "sport"
+    },
+    {
+      "title": "“冰超”2026第三届上合组织冰球比赛在“中国冰球之城”开幕",
+      "sum": "“冰超”2026第三届上海合作组织冰球比赛开幕式22日晚在“中国冰球之城”齐齐哈尔市举行。来自中国、俄罗斯、哈萨克斯坦、乌兹别克斯坦、吉尔吉斯斯坦、塔吉克斯坦6个上合组织相关国家的",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-23/10736225.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "2026中国壁球公开赛落幕 埃及和马来西亚选手分获男、女单打冠军",
+      "sum": "2026中国壁球公开赛决赛22日晚在上海举行。埃及名将穆斯塔法·阿萨尔、马来西亚名将苏布拉马尼娅姆·西瓦桑加里分获男、女单打冠军",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-22/10736216.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "香港羽毛球公开赛：中国选手王祉怡女单卫冕 混双“凤凰”组合夺冠",
+      "sum": "2026年中国香港羽毛球公开赛决赛22日在香港启德体育园体艺馆举行，中国选手王祉怡2:0战胜泰国选手李美妙，卫冕女单冠军；在混双决赛中，中国国家羽毛球队“凤凰”组合冯彦哲/黄东萍“",
+      "url": "https://www.chinanews.com.cn/ty/2026/11-22/10736164.shtml",
+      "source": "中新网体育",
+      "tag": "sport"
+    },
+    {
+      "title": "江苏省气象台发布寒潮蓝色预警",
+      "sum": "据中央气象台网站消息。江苏省气象台2026年11月23日09时06分发布寒潮蓝色预警：受较强冷空气影响，预计23-25日，南京、无锡、常州、苏州、南通、淮安、盐城、扬州、镇江、泰州",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-23/10736259.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    },
+    {
+      "title": "错峰秋假，让淡季旅游“热”起来",
+      "sum": "主播说联播丨错峰秋假，让淡季旅游“热”起来",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-22/10736205.shtml",
+      "source": "中新网财经",
+      "tag": "life"
+    },
+    {
+      "title": "陈晓卿新作前往24地寻色 讲述刻在基因里的中国色",
+      "sum": "那个以擅长寻找美食、记录美食而闻名的陈晓卿，这次将镜头对准了“中国色”",
+      "url": "https://www.chinanews.com.cn/cul/2026/11-22/10736060.shtml",
+      "source": "中新网文化",
+      "tag": "life"
+    },
+    {
+      "title": "抗炎饮食不能靠“超级食物” 专家：调整膳食结构才是关键",
+      "sum": "22日，小雪节气来临。岭南地区昼夜温差拉大、湿气裹挟寒气，不仅让鼻炎、感冒等换季高发疾病频发，心脑血管疾病风险也日渐攀升",
+      "url": "https://www.chinanews.com.cn/jk/2026/11-23/10736263.shtml",
+      "source": "中新网健康",
+      "tag": "life"
+    },
+    {
+      "title": "兑现力，城市留人的新底牌",
+      "sum": "中国新闻周刊记者：陈淑莲",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-23/10736258.shtml",
+      "source": "中新网社会",
+      "tag": "life"
+    }
+  ]
+}
